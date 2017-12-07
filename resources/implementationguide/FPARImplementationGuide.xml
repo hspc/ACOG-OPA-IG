@@ -1,0 +1,1034 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="FPARImplementationGuide"/> 
+  <url value="http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide"/>
+  <version value="1.0"/>
+  <name value="The American Congress of Obstetricians and Gynecologists (ACOG) Family Planning Annual Report (FPAR)Implementation Guide"/> 
+  <status value="draft"/> 
+  <date value="2017-11-30"/> 
+  <publisher value="American Congress of Obstetricians and Gynecologists"/> 
+  <contact> 
+    <telecom> 
+      <system value="url"/> 
+      <value value="http://www.acog.org"/> 
+    </telecom> 
+  </contact> 
+  <description value="The Implementation Guide resource profile for FPAR"/> 
+  <purpose value="The set of resources and resource profiles for the Family Planning Annual Report FHIR implementation."/> 
+  <fhirVersion value="3.0.1"/> 
+  <mapping> 
+    <identity value="rim"/> 
+    <uri value="http://hl7.org/v3"/> 
+    <name value="RIM Mapping"/> 
+  </mapping> 
+  <mapping> 
+    <identity value="w5"/> 
+    <uri value="http://hl7.org/fhir/w5"/> 
+    <name value="W5 Mapping"/> 
+  </mapping> 
+  <mapping> 
+    <identity value="objimpl"/> 
+    <uri value="http://hl7.org/fhir/object-implementation"/> 
+    <name value="Object Implementation Information"/> 
+  </mapping> 
+  <abstract value="false"/> 
+  <type value="ImplementationGuide"/> 
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ImplementationGuide"/>
+  <derivation value="specialization"/>
+  <package>
+    <name value="Profiles and resources in this implementation guide."/>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AdministrativeEncounterId" />
+        <display value="The Administrative Encounter Id extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AdmitMedicationId" />
+        <display value="The Admit Medication Id extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AmbulatoryStatus" />
+        <display value="The Ambulatory Status extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-arrivedByTransportation" />
+        <display value="The Arrived by Transportation extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-associatedPrecondition" />
+        <display value="The Associated Precondition extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-bodyPosition" />
+        <display value="The Body Position extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-ChiefComplaintId" />
+        <display value="The Chief Complaint Id extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-CommunicationMode" />
+        <display value="The Communication Mode extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-confidentiality" />
+        <display value="The Confidentiality extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-contraceptionProvisionMethod" />
+        <display value="The Contraception Provision Method extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-dataAbsentReason" />
+        <display value="The Data Absent Reason extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-dataOriginationMode" />
+        <display value="The Data Origination Mode extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-deltaFlag" />
+        <display value="The Delta Flag extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-departedByTransportation" />
+        <display value="The Departed by Transportation extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-DischargeMedicationId" />
+        <display value="The Discharge Medication Id extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-focalSubject" />
+        <display value="The Focal Subject extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-hospitalService" />
+        <display value="The Hospital Service extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-location-organizationPeriod" />
+        <display value="The Oganization Period extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-primaryInsuranceClassification" />
+        <display value="The Primary Insurance Classification extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-reasonCancelled" />
+        <display value="The Reason Cancelled extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/extensions-reportingMethod" />
+        <display value="The Reporting Method extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-VipLevel" />
+        <display value="The VIP Level extension." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fpar-contraceptiveChoiceAtExit" />
+        <display value="An observation of one's choice in contraception evaluated at the end of a visit." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fpar-contraceptiveChoiceInitial" />
+        <display value="An observation of one's choice in contraception at the beginning of a visit." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fpar-contraceptiveCounseling" />
+        <display value="An education procedure that provides counseling in regards to contraception." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fpar-counselingToAchievePregnancy" />
+        <display value="An education procedure that provides counseling to achieve pregnancy." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fpar-coverage" />
+        <display value="The FPAR profile of the Coverage resource." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fpar-genEncounter" />
+        <display value="The FPAR General Encounter profile of the Encounter resource." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fpar-limitedEnglishProficiencyEval" />
+        <display value="An observation about an individual's ability to communicate in English." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fpar-organization" />
+        <display value="The FPAR profile of the Organization resource." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fparpatient" />
+        <display value="The FPAR profile of the Patient resource." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fpar-practitioner" />
+        <display value="The FPAR profile of the Practitioner resource." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://hl7.org/fhir/StructureDefinition/FPAR-PractitionerRole" />
+        <display value="The FPAR profile of the PractionerRole resource." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fparPregnancyIntentionEval" />
+        <display value="An observation of an individual's intention to be or not be pregnant." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fparPregnancyStatusEval" />
+        <display value="An observation of one's current state of pregnancy." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/fpar-virginalStatus" />
+        <display value="An observation to determine if an individual has ever had sex." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-annualHouseholdIncome" />
+        <display value="An observation of the income range for a household per year." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/BHcgPregSerplQl" />
+        <display value="The observation Choriogonadotropin.beta subunit (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2110-5" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/BHcgSerplAcnc" />
+        <display value="The observation Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma based on the LOINC code 21198-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-bodyWeight" />
+        <display value="An observation of an individual's weight." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/ChlamydiaDnaXxxQlPcr" />
+        <display value="The observation Chlamydia sp DNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 35729-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachAndGcDnaCervixQlPcr" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 45068-4" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachAndGcDnaGenitalQlPcr" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 44807-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachAndGcDnaUrQlPcr" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 44806-8" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachAndGcDnaXxxPcr" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36903-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachAndGcDnaXxxQlBdna" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe & signal amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43406-8" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CtrachAndGCDNAXXXQlPCR" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36902-5" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachAndGcRrnaCervixQlPrb" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45067-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachAndGcRrnaGenitalQlPrb" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 45069-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="ttp://fhir.org/guides/hspc/StructureDefinition/CTrachAndGcRrnaUrQlPrb" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Urine by DNA probe based on the LOINC code 45074-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachAndGcRrnaVagQlPrb" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45070-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachAndGcRrnaXxxQlPrb" />
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 45076-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspcCTrachDnaCvxQlPCR" />
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Cervix by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 21190-4" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachDnaCervMucusQlPcr" />
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21189-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="ttp://fhir.org/guides/hspc/StructureDefinition/CTrachDnaGenitalQlPcr" />
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6356-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachDnaUrQlPcr" />
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Urine by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 6357-8" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachDnaUrthQlPcr" />
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Urethra by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21191-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachDnaVagQlPcr" />
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 45084-1" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachDnaXxxPcr" />
+        <display value="The observation Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47212-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachDnaXxxPcrAcnc" />
+        <display value="The observation Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49096-1" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachDnaXxxQlBdna" />
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe & signal amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43404-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspcCTrachDnaXxxQlPcr" />
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 21613-5" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachL2DnaXxxQlPcr" />
+        <display value="The observation Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47211-8" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaCervixQlPcr" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Cervix by Probe & target amplification method|Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50387-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaCervixQlPrb" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45078-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaGenitalFlQlPrb" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Genital fluid by DNA probe based on the LOINC code 23838-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaGenitalQlPrb" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 16600-9" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaUrQlPcr" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urine by Probe & target amplification method|Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 42931-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaUrQlPrb" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urine by DNA probe based on the LOINC code 16601-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaUrthQlPcr" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urethra by Probe & target amplification method|Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53925-4" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaUrthQlPrb" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urethra by DNA probe based on the LOINC code 21192-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaVagQlPcr" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe & target amplification method|Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53926-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaVagQlPrb" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45080-9" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaXxxQlPcr" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43304-5" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CTrachRrnaXxxQlPrb" />
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 4993-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CytoCervix" />
+        <display value="The observation Microscopic observation [Identifier] in Cervix by Cyto stain based on the LOINC code 10524-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CytoCvxVag" />
+        <display value="The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain|Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain Narrative based on the LOINC code 19766-5" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CytoCvxVagCoded" />
+        <display value="The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19765-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CytologyCmntCvxVagCytoImp" />
+        <display value="The observation Cytology study comment Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 19774-9" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CytologyCvxVagDocCyto" />
+        <display value="The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 47528-5" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/CytologyCvxVagDocThinPrep" />
+        <display value="The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain.thin prep based on the LOINC code 47527-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-diastolicbp" />
+        <display value="An observation of an individual's diastolic blood pressure based on the LOINC code 8462-4." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/GenCategCvxVagCytoImp" />
+        <display value="The observation General categories [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|General categories [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19762-4" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-gravidity" />
+        <display value="The observation [#] Pregnancies based on the LOINC code 11996-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HcgPregSerplQl" />
+        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2118-8" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HcgPregSerQlIaRapid" />
+        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Serum by Rapid immunoassay based on the LOINC code 80385-8" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HcgPregUrQl" />
+        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Urine based on the LOINC code 2106-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HcgSerplAcnc" />
+        <display value="The observation Choriogonadotropin [Units/volume] in Serum or Plasma based on the LOINC code 19080-1" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-height" />
+        <display value="An observation for a person's height.  Based on the LOINC code 8302-2." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hiv1AbSerplbldQlEiaRapid" />
+        <display value="The observation HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test based on the LOINC code 68961-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hiv1AbSerQlIb" />
+        <display value="The observation HIV 1 Ab [Presence] in Serum by Immunoblot (IB) based on the LOINC code 5221-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hiv1And2AbSerQlEia" />
+        <display value="The observation HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 31201-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hiv1RnaSerplPcrDl17Log" />
+        <display value="The observation HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe & target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL based on the LOINC code 48510-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hiv1RnaSerplPcrDl50" />
+        <display value="The observation HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe & target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL based on the LOINC code 48511-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hiv1RnaXxxQlPcr" />
+        <display value="The observation HIV 1 RNA [Presence] in Unspecified specimen by Probe & target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 5018-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hiv2AbSerQlEia" />
+        <display value="The observation HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 30361-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-householdSize" />
+        <display value="An observation of the number of individuals in a household." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="ttp://fhir.org/guides/hspc/StructureDefinition/Hpv12HrTypesDnaTissQlPrb" />
+        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+66 DNA [Presence] in Tissue by DNA probe based on the LOINC code 73959-9" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hpv16And18AgCervixQl" />
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Cervix based on the LOINC code 14503-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hpv16And18AgGenitalQl" />
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Genital specimen based on the LOINC code 12223-4" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hpv16And18AgUrthQl" />
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Urethra based on the LOINC code 14506-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hpv16And18AgVagQl" />
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Vaginal fluid based on the LOINC code 14504-5" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/Hpv16And18AgXxxQl" />
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Unspecified specimen based on the LOINC code 17400-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HpvCervix" />
+        <display value="The observation Human papilloma virus identified in Cervix based on the LOINC code 11083-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HpvDnaCervixQlBdna" />
+        <display value="The observation Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe & signal amplification method|Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 38372-9" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HpvDnaCervixQlPrb" />
+        <display value="The observation Human papilloma virus DNA [Presence] in Cervix by DNA probe based on the LOINC code 44550-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HpvE6AndE7MrnaCervixQlPcr" />
+        <display value="The observation Human papilloma virus E6+E7 mRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 69002-4" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HpvIHRisk1DnaCervixQlBdna" />
+        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe & signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 30167-1" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HpvIHRisk1DnaXxxQlPcr" />
+        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe & target amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49896-4" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HpvIHRisk4DnaCervixQlBdna" />
+        <display value="The observation Human papilloma virus16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe & signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 59420-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HpvIHRiskDnaCervixQlPrb" />
+        <display value="The observation Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe based on the LOINC code 21440-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HpvRrnaGenitalQlPcr" />
+        <display value="The observation Human papilloma virus rRNA [Presence] in Genital specimen by Probe & target amplification method|Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6514-4" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/HpvRrnaXxxQlPcr" />
+        <display value="The observation Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe & target amplification method|Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 6516-9" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaAgGenitalQlEia" />
+        <display value="The observation Neisseria gonorrhoeae Ag [Presence] in Genital specimen by Immunoassay based on the LOINC code 6487-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaCervixQlCult" />
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture based on the LOINC code 688-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaDnaCervMucusQlPcr" />
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21414-8" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaDnaGenitalQlPcr" />
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 47387-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaDnaUrQlPcr" />
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Urine by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 21416-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaDnaUrthQlPcr" />
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21415-5" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaDnaVagQlPcr" />
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 32705-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaDnaXxxQlBdna" />
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe & signal amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43403-5" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaDnaXxxQlPcr" />
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 24111-7" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaGenitalQlCult" />
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Genital specimen by Organism specific culture based on the LOINC code 691-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaGenLochiaQlCult" />
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Genital lochia by Organism specific culture based on the LOINC code 692-4" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaRrnaCervixQlPcr" />
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe & target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50388-8" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaRrnaCervixQlPrb" />
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 32198-4" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaRrnaUrthQlPcr" />
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe & target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53927-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaRrnaUrthQlPrb" />
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by DNA probe based on the LOINC code 32199-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaRrnaVagQlPcr" />
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe & target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53879-3" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaRrnaXxxQlPcr" />
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe & target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43305-2" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaRrnaXxxQlPrb" />
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 5028-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaVagQlCult" />
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Vaginal fluid by Organism specific culture based on the LOINC code 693-2" />
+      </sourceReference>" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/NGonorrhoeaXxxQlCult" />
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Unspecified specimen by Organism specific culture based on the LOINC code 698-1"/>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-parity" />
+        <display value="The observation [#] Parity based on the LOINC code 11977-6" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-sexLastThreeMonths" />
+        <display value="An observation to determine if an individual has engaged in sexual activity within the last three months." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-sexLastTwelveMonths" />
+        <display value="An observation to determine if an individual has engaged in sexual activity within the last twelve months." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-smokingStatus" />
+        <display value="An observation about how much an individual smokes." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/StatOfAdqCvxVagCytoImp" />
+        <display value="The observation Statement of adequacy [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|Statement of adequacy [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19764-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/StudyreportFindPtCvxVagDocCytology" />
+        <display value="The observation Cytology Cervical or vaginal smear or scraping study based on the LOINC code 33717-0" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/hspc-systolicbp" />
+        <display value="The observation of an individual's systolic blood pressure." />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://fhir.org/guides/hspc/StructureDefinition/ThinPrepCervix" />
+        <display value="The observation Microscopic observation [Identifier] in Cervix by Cyto stain.thin prep based on the LOINC code 18500-9" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
+        <display value="The FPAR profile of the ReferalRequest resource." />
+      </sourceReference>
+    </resource>
+  </package>
+</StructureDefinition> 

@@ -1,0 +1,3749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="fpar-genEncounter"/>
+  <url value="http://fhir.org/guides/hspc/StructureDefinition/fpar-genEncounter"/>
+  <name value="FPAR General Encounter Profile"/>
+  <status value="draft"/>
+  <date value="2017-05-10"/>
+  <publisher value="HSPC on behalf of FPAR"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <mapping>
+    <identity value="qdm"/>
+    <uri value="http://www.healthit.gov/quality-data-model"/>
+    <name value="Quality Data Model"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="w5"/>
+    <uri value="http://hl7.org/fhir/w5"/>
+    <name value="W5 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Encounter"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <element id="Encounter:fpargeneralencounter">
+      <path value="Encounter"/>
+      <sliceName value="fpargeneralencounter"/>
+      <short value="An interaction during which services are provided to the patient"/>
+      <definition value="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient."/>
+      <alias value="Visit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <constraint> 
+        <key value="dom-2"/> 
+        <severity value="error"/> 
+        <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"/> 
+        <expression value="contained.contained.empty()"/> 
+        <xpath value="not(parent::f:contained and f:contained)"/> 
+        <source value="DomainResource"/> 
+      </constraint> 
+      <constraint> 
+        <key value="dom-1"/> 
+        <severity value="error"/> 
+        <human value="If the resource is contained in another resource, it SHALL NOT contain any narrative"/> 
+        <expression value="contained.text.empty()"/> 
+        <xpath value="not(parent::f:contained and f:text)"/> 
+        <source value="DomainResource"/> 
+      </constraint> 
+      <constraint> 
+        <key value="dom-4"/> 
+        <severity value="error"/> 
+        <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or
+         a meta.lastUpdated"/> 
+        <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"/> 
+        <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"/> 
+        <source value="DomainResource"/> 
+      </constraint> 
+      <constraint> 
+        <key value="dom-3"/> 
+        <severity value="error"/> 
+        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere
+         in the resource"/> 
+        <expression value="contained.where(('#'+id in %resource.descendants().reference).not()).empty()"/> 
+        <xpath value="not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f
+        :reference/@value=concat('#', $id))]))"/> 
+        <source value="DomainResource"/> 
+      </constraint>     
+      <mapping>
+        <identity value="rim"/>
+        <map value="Entity. Role, or Act"/> 
+      </mapping>
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="Encounter[@moodCode='EVN']"/> 
+      </mapping> 
+      <mapping>
+        <identity value="w5"/>
+        <map value="workflow.encounter"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.id">
+      <path value="Encounter.id"/>
+      <short value="Logical id of this artifact"/>
+      <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."/>
+      <comment value="The only time that a resource does not have an id is when it is being submitted to the server using a create operation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.id"/>
+        <min value="0"/>
+        <max value="1"/> 
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.meta">
+      <path value="Encounter.meta"/>
+      <short value="Metadata about the resource"/>
+      <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.meta"/>
+        <min value="0"/>
+        <max value="1"/> 
+      </base>
+      <type>
+        <code value="Meta"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.implicitRules">
+      <path value="Encounter.implicitRules"/>
+      <short value="A set of rules under which this content was created"/>
+      <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. 
+This element is labelled as a modifier because the implicit rules may provide additional
+       knowledge about the resource that modifies it's meaning or interpretation."/> 
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.implicitRules"/>
+        <min value="0"/>
+        <max value="1"/> 
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.language">
+      <path value="Encounter.language"/>
+      <short value="Language of the resource content"/>
+      <definition value="The base language in which the resource is written."/>
+      <comment value="Language is provided to support indexing and accessibility (typically, services such as
+       text to speech use the language tag). The html language tag in the narrative applies 
+       to the narrative. The language tag on the resource may be used to specify the language
+       of other presentations generated from the data in the resource  Not all the content has
+       to be in the base language. The Resource.language should not be assumed to apply to the
+       narrative automatically. If a language is specified, it should it also be specified on
+       the div element in the html (see rules in HTML5 for information about the relationship
+       between xml:lang and the html lang attribute)."/> 
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.language"/>
+        <min value="0"/>
+        <max value="1"/> 
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+          <valueReference>
+            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
+          </valueReference>
+        </extension> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Language"/> 
+        </extension> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/> 
+        </extension>
+        <strength value="extensible"/>
+        <description value="A human language."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.text">
+      <path value="Encounter.text"/>
+      <short value="Text summary of the resource, for human interpretation"/>
+      <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/> 
+      <comment value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded in formation is added later."/> 
+      <alias value="narrative"/>
+      <alias value="html"/>
+      <alias value="xhtml"/>
+      <alias value="display"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.text"/>
+        <min value="0"/>
+        <max value="1"/> 
+      </base>
+      <type>
+        <code value="Narrative"/>
+      </type>
+      <condition value="dom-1"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Act.text?"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.contained">
+      <path value="Encounter.contained"/>
+      <short value="Contained, inline Resources"/>
+      <definition value="These resources do not have an independent existence apart from the resource that contains
+       them - they cannot be identified independently, and nor can they have their own independent
+       transaction scope."/> 
+      <comment value="This should never be done when the content can be identified properly, as once identification
+       is lost, it is extremely difficult (and context dependent) to restore it again."/> 
+      <alias value="inline resources"/>
+      <alias value="anonymous resources"/>
+      <alias value="contained resources"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.contained"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Resource"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension">
+      <path value="Encounter.extension"/>
+      <slicing id="25">
+        <discriminator>
+		  <type value="value"/>
+		  <path value="url"/>
+		</discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/> 
+      <definition value="May be used to represent additional information that is not part of the basic definition
+       of the resource. In order to make the use of extensions safe and manageable, there is
+       a strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone."/> 
+      <alias value="extensions"/> 
+      <alias value="user content"/> 
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="N/A"/> 
+      </mapping> 
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:confidentiality">
+      <path value="Encounter.extension"/>
+      <sliceName value="Confidentiality"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The set of values that describe the level of confidentiality for the patient encounter."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0907"/>
+        </valueSetReference>
+      </binding>
+    </element>    
+    <element id="Encounter:fpargeneralencounter.extension:reasonCancelled">
+      <path value="Encounter.extension"/>
+      <sliceName value="ReasonCancelled"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A set of codes that describe why an individual's encounter has been done away with."/>
+        <valueSetReference>
+          <reference value="ValueSet/reasonCancelled"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:hospitalservice">
+      <path value="Encounter.extension"/>
+      <sliceName value="HospitalService"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The particular healthcare specialty or care group responsible for the care of the patient during the encounter"/>
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/practitioner-providerPractitionerSpecialty"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:viplevel">
+      <path value="Encounter.extension"/>
+      <sliceName value="VipLevel"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A set of codes that describe the sensitivity level of a patient's information"/>
+        <valueSetReference>
+          <reference value="ValueSet/hspc-viplevel"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:ambulatorystatus">
+      <path value="Encounter.extension"/>
+      <sliceName value="AmbulatoryStatus"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The codes that describe a patient's current level of ability to ambulate."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0009"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:departedbytransportation">
+      <path value="Encounter.extension"/>
+      <sliceName value="DepartedByTransportation"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <alias value="Departed By Transportation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A set of codes that describe various means of transportation used to leave a location"/>
+        <valueSetReference>
+          <reference value="ValueSet/departureTransportMode"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:arrivedbytransportation">
+      <path value="Encounter.extension"/>
+      <sliceName value="ArrivedByTransportation"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <alias value="Arrived By Transportation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A set of codes that describe various means of transportation used to arrive at a location"/>
+        <valueSetReference>
+          <reference value="ValueSet/arrivalTransportMode"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:chiefcomplaintid">
+      <path value="Encounter.extension"/>
+      <sliceName value="ChiefComplaintId"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:admitmedicationid">
+      <path value="Encounter.extension"/>
+      <sliceName value="AdmitMedicationId"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:dischargemedicationid">
+      <path value="Encounter.extension"/>
+      <sliceName value="DischargeMedicationId"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:communicationmode">
+      <path value="Encounter.extension"/>
+      <sliceName value="CommunicationMode"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The set of codes that describe the means by which a patient communicates with others."/>
+        <valueSetReference>
+          <reference value="ValueSet/communicationMode"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:administrativeencounterid">
+      <path value="Encounter.extension"/>
+      <sliceName value="AdministrativeEncounterId"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.modifierExtension">
+      <path value="Encounter.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition
+       of the resource, and that modifies the understanding of the element that contains it.
+       Usually modifier elements provide negation or qualification. In order to make the use
+       of extensions safe and manageable, there is a strict set of governance applied to the
+       definition and use of extensions. Though any implementer is allowed to define an extension,
+       there is a set of requirements that SHALL be met as part of the definition of the extension.
+       Applications processing a resource are required to check for modifier extensions."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone."/> 
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.identifier">
+      <path value="Encounter.identifier"/>
+      <short value="Identifier(s) by which this encounter is known"/>
+      <definition value="Identifier(s) by which this encounter is known."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-19"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".id"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="id"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.status">
+      <path value="Encounter.status"/>
+      <short value="planned | arrived | triaged | in-progress | onleave | finished | cancelled +"/> 
+      <definition value="planned | arrived | triaged | in-progress | onleave | finished | cancelled +."/> 
+      <comment value="Note that internal business rules will detemine the appropraite transitions that may occur between statuses (and also classes).  This element is labeled as a modifier because the status contains codes that mark the
+       encounter as not currently valid."/> 
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EncounterStatus"/> 
+        </extension> 
+        <strength value="required"/>
+        <description value="Current state of the encounter"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-status"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="No clear equivalent in HL7 v2; active/finished could be inferred from PV1-44, PV1-45, PV2-24; inactive could be inferred from PV2-16"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".statusCode"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="status"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.statusHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="StatusHistory"/> 
+      </extension> 
+      <path value="Encounter.statusHistory"/>
+      <short value="List of past encounter statuses"/>
+      <definition value="The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them."/>
+      <comment value="The current status is always found in the current version of the resource, not the status history."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.statusHistory"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint> 
+        <key value="ele-1"/> 
+        <severity value="error"/> 
+        <human value="All FHIR elements must have a @value or children"/> 
+        <expression value="hasValue() | (children().count() &gt; id.count())"/> 
+        <xpath value="@value|f:*|h:div"/> 
+        <source value="Element"/> 
+      </constraint> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element>
+    <element id="Encounter:fpargeneralencounter.statusHistory.id">
+      <path value="Encounter.statusHistory.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/> 
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.statusHistory.extension">
+      <path value="Encounter.statusHistory.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions. The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/> 
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.statusHistory.modifierExtension">
+      <path value="Encounter.statusHistory.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition
+       of the element, and that modifies the understanding of the element that contains it. Usually
+       modifier elements provide negation or qualification. In order to make the use of extensions
+       safe and manageable, there is a strict set of governance applied to the definition and
+       use of extensions. Though any implementer is allowed to define an extension, there is
+       a set of requirements that SHALL be met as part of the definition of the extension. Applications
+       processing a resource are required to check for modifier extensions."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone."/> 
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.statusHistory.status">
+      <path value="Encounter.statusHistory.status"/>
+      <short value="planned | arrived | triaged | in-progress | onleave | finished | cancelled +"/> 
+      <definition value="planned | arrived | triaged | in-progress | onleave | finished | cancelled +."/> 
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.statusHistory.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EncounterStatus"/> 
+        </extension> 
+        <strength value="required"/>
+        <description value="Current state of the encounter"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-status"/>
+        </valueSetReference>
+      </binding>
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element>
+    <element id="Encounter:fpargeneralencounter.statusHistory.period">
+      <path value="Encounter.statusHistory.period"/>
+      <short value="The time that the episode was in the specified status"/>
+      <definition value="The time that the episode was in the specified status."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.statusHistory.period"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element>
+    <element id="Encounter:fpargeneralencounter.class">
+      <path value="Encounter.class"/>
+      <short value="inpatient | outpatient | ambulatory | emergency +"/>
+      <definition value="inpatient | outpatient | ambulatory | emergency +."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.class"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EncounterClass"/> 
+        </extension> 
+        <strength value="extensible"/>
+        <description value="Classification of the encounter"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=LIST].code"/> 
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="class"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.classHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="ClassHistory"/> 
+      </extension> 
+      <path value="Encounter.classHistory"/> 
+      <short value="List of past encounter classes"/> 
+      <definition value="The class history permits the tracking of the encounters transitions without needing to
+       go  through the resource history.
+This would be used for a case where an admission starts of as an emergency encounter,
+       then transisions into an inpatient scenario. Doing this and not restarting a new encounter
+       ensures that any lab/diagnostic results can more easily follow the patient and not require
+       re-processing and not get lost or cancelled during a kindof discharge from emergency to
+       inpatient."/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <type> 
+        <code value="BackboneElement"/> 
+      </type> 
+      <constraint> 
+        <key value="ele-1"/> 
+        <severity value="error"/> 
+        <human value="All FHIR elements must have a @value or children"/> 
+        <expression value="hasValue() | (children().count() &gt; id.count())"/> 
+        <xpath value="@value|f:*|h:div"/> 
+        <source value="Element"/> 
+      </constraint> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.classHistory.id">
+      <path value="Encounter.classHistory.id"/> 
+      <representation value="xmlAttr"/> 
+      <short value="xml:id (or equivalent in JSON)"/> 
+      <definition value="unique id for the element within a resource (for internal references). This may be any
+       string value that does not contain spaces."/> 
+      <min value="0"/> 
+      <max value="1"/> 
+      <base> 
+        <path value="Element.id"/> 
+        <min value="0"/> 
+        <max value="1"/> 
+      </base> 
+      <type> 
+        <code value="string"/> 
+      </type> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.classHistory.extension">
+      <path value="Encounter.classHistory.extension"/> 
+      <short value="Additional Content defined by implementations"/> 
+      <definition value="May be used to represent additional information that is not part of the basic definition
+       of the element. In order to make the use of extensions safe and manageable, there is a
+       strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone."/> 
+      <alias value="extensions"/> 
+      <alias value="user content"/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <base> 
+        <path value="Element.extension"/> 
+        <min value="0"/> 
+        <max value="*"/> 
+      </base> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.classHistory.modifierExtension">
+      <path value="Encounter.classHistory.modifierExtension"/> 
+      <short value="Extensions that cannot be ignored"/> 
+      <definition value="May be used to represent additional information that is not part of the basic definition
+       of the element, and that modifies the understanding of the element that contains it. Usually
+       modifier elements provide negation or qualification. In order to make the use of extensions
+       safe and manageable, there is a strict set of governance applied to the definition and
+       use of extensions. Though any implementer is allowed to define an extension, there is
+       a set of requirements that SHALL be met as part of the definition of the extension. Applications
+       processing a resource are required to check for modifier extensions."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone."/> 
+      <alias value="extensions"/> 
+      <alias value="user content"/> 
+      <alias value="modifiers"/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <base> 
+        <path value="BackboneElement.modifierExtension"/> 
+        <min value="0"/> 
+        <max value="*"/> 
+      </base> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+      <isModifier value="true"/> 
+      <isSummary value="true"/> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="N/A"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.classHistory.class">
+      <path value="Encounter.classHistory.class"/> 
+      <short value="inpatient | outpatient | ambulatory | emergency +"/> 
+      <definition value="inpatient | outpatient | ambulatory | emergency +."/> 
+      <min value="1"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Coding"/> 
+      </type> 
+      <binding> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EncounterClass"/> 
+        </extension> 
+        <strength value="extensible"/> 
+        <description value="Classification of the encounter"/> 
+        <valueSetReference> 
+          <reference value="http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"/> 
+        </valueSetReference> 
+      </binding> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.classHistory.period">
+      <path value="Encounter.classHistory.period"/> 
+      <short value="The time that the episode was in the specified class"/> 
+      <definition value="The time that the episode was in the specified class."/> 
+      <min value="1"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Period"/> 
+      </type> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.type">
+      <path value="Encounter.type"/>
+      <short value="Specific type of encounter"/>
+      <definition value="Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing,
+       rehabilitation)."/> 
+      <comment value="Since there are many ways to further classify encounters, this element is 0..*."/> 
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.type"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EncounterType"/> 
+        </extension> 
+        <strength value="example"/>
+        <description value="The type of encounter"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-type"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-4 / PV1-18"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".code"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="class"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.priority">
+      <path value="Encounter.priority"/>
+      <short value="Indicates the urgency of the encounter"/>
+      <definition value="Indicates the urgency of the encounter."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.priority"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Priority"/> 
+        </extension> 
+        <strength value="preferred"/>
+        <description value="The level of urgency of the encounter"/>
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/encounterPriority"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV2-25"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".priorityCode"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="grade"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.subject">
+      <path value="Encounter.subject"/>
+      <short value="The patient or group present at the encounter"/> 
+      <definition value="The patient or group present at the encounter."/> 
+      <comment value="While the encounter is always about the patient, the patient may not actually be known in all contexts of use."/>
+      <alias value="patient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.patient"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://fhir.org/guides/hspc/StructureDefinition/hspc-patient"/> 
+      </type>
+      <type> 
+        <code value="Reference"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/> 
+      </type> 
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PID-3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=SBJ]/role[classCode=PAT]"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="who.focus"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.episodeOfCare">
+      <path value="Encounter.episodeOfCare"/>
+      <short value="Episode(s) of care that this encounter should be recorded against"/>
+      <definition value="Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used. This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care, and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.episodeOfCare"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/> 
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-54, PV1-53"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+      <mapping> 
+        <identity value="w5"/>
+        <map value="context"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.incomingReferral">
+      <path value="Encounter.incomingReferral"/>
+      <short value="The ReferralRequest that initiated this encounter"/>
+      <definition value="The referral request this encounter satisfies (incoming referral)."/> 
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.incomingReferral"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/> 
+      </type>
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".reason.ClinicalDocument"/> 
+      </mapping> 
+    </element>
+    <element id="Encounter:fpargeneralencounter.participant">
+      <path value="Encounter.participant"/>
+      <short value="List of participants involved in the encounter"/>
+      <definition value="The list of people responsible for providing the service."/> 
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.participant"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint> 
+        <key value="ele-1"/> 
+        <severity value="error"/> 
+        <human value="All FHIR elements must have a @value or children"/> 
+        <expression value="hasValue() | (children().count() &gt; id.count())"/> 
+        <xpath value="@value|f:*|h:div"/> 
+        <source value="Element"/> 
+      </constraint> 
+      <isSummary value="true"/> 
+      <mapping>
+        <identity value="v2"/>
+        <map value="ROL"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=PFM]"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.participant.id">
+      <path value="Encounter.participant.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/> 
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.participant.extension:providerservice">
+      <path value="Encounter.participant.extension"/>
+      <sliceName value="ProviderService"/>
+      <short value="Additional Content defined by implementations"/> 
+      <definition value="May be used to represent additional information that is not part of the basic definition
+       of the element. In order to make the use of extensions safe and manageable, there is a
+       strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/> 
+      <alias value="extensions"/> 
+      <alias value="user content"/> 
+      <min value="0"/>
+      <max value="*"/> 
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The codes that represent the particular specialty or practice group that a provider is affiliated with for the given encounter"/>
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/practitioner-providerPractitionerSpecialty"/>
+        </valueSetReference>
+      </binding>
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element>
+    <element id="Encounter:fpargeneralencounter.participant.modifierExtension">
+      <path value="Encounter.participant.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/> 
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/> 
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.participant.type">
+      <path value="Encounter.participant.type"/>
+      <short value="Role of participant in encounter"/>
+      <definition value="Role of participant in encounter."/>
+      <comment value="The participant type indicates how an individual partitipates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.participant.type"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <isSummary value="true"/> 
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ParticipantType"/> 
+        </extension> 
+        <strength value="extensible"/> 
+        <description value="Role of participant in encounter"/> 
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/> 
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="ROL-3 (or maybe PRT-4)"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".functionCode"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.participant.period">
+      <path value="Encounter.participant.period"/>
+      <short value="Period of time during the encounter that the participant participated"/> 
+      <definition value="The period of time that the specified participant participated in the encounter. These
+       can overlap or be sub-sets of the overall encounter's period."/> 
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.participant.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="ROL-5, ROL-6 (or maybe PRT-5)"/>
+      </mapping>
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".time"/> 
+      </mapping> 
+    </element>
+    <element id="Encounter:fpargeneralencounter.participant.individual">
+      <path value="Encounter.participant.individual"/>
+      <short value="Persons involved in the encounter other than the patient"/>
+      <definition value="Persons involved in the encounter other than the patient."/> 
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.participant.individual"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/> 
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="ROL-4"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".role"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="who"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.appointment">
+      <path value="Encounter.appointment"/>
+      <short value="The appointment that scheduled this encounter"/>
+      <definition value="The appointment that scheduled this encounter."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.appointment"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Appointment"/> 
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SCH-1 / SCH-2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".outboundRelationship[typeCode=FLFS].target[classCode=ENC, moodCode=APT]"/> 
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.period">
+      <path value="Encounter.period"/>
+      <short value="The start and end time of the encounter"/>
+      <definition value="The start and end time of the encounter."/>
+      <comment value="If not (yet) known, the end of the Period may be omitted."/> 
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-44, PV1-45"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".effectiveTime (low &amp; high)"/> 
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="when.done"/>
+      </mapping>
+    </element>
+	<element id="Encounter:fpargeneralencounter.period.start">
+	  <path value="Encounter.period.start"/>
+	  <short value="The start time for the encounter"/>
+	  <definition value="Time when the period of an encounter starts."/>
+	  <min value="0"/>
+	  <max value="1"/>
+	  <base>
+		<path value="Encounter.period.start"/>
+		<min value="0"/>
+		<max value="1"/>
+	  </base>
+	  <mapping>
+	    <identity value="LOINC"/>
+		<map value="76427-4"/>
+	  </mapping>
+	</element>
+    <element id="Encounter:fpargeneralencounter.length">
+      <path value="Encounter.length"/>
+      <slicing>
+        <discriminator>
+		  <type value= "value"/>
+		  <path value="url"/>
+		</discriminator>
+		<ordered value="true"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Quantity of time the encounter lasted (less time absent)"/>
+      <definition value="Quantity of time the encounter lasted. This excludes the time during leaves of absence."/>
+      <comment value="May differ from the time the Encounter.period lasted because of leave of absence."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.length"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Duration"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(PV1-45 less PV1-44) iff ( (PV1-44 not empty) and (PV1-45 not empty) ); units in minutes"/> 
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".lengthOfStayQuantity"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay">
+      <path value="Encounter.length"/>
+      <sliceName value="LengthOfStay"/>
+      <short value="Quantity of time the encounter lasted (less time absent)"/>
+      <definition value="Quantity of time the encounter lasted. This excludes the time during leaves of absence."/>
+      <comment value="May differ from the time the Encounter.period lasted because of leave of absence."/>
+      <alias value="Length of stay"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.length"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Duration"/>
+      </type>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(PV1-45 less PV1-44) iff ( (PV1-44 not empty) and (PV1-45 not empty) ); units in minutes"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".lengthOfStayQuantity"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay.id">
+      <path value="Encounter.length.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay.extension">
+      <path value="Encounter.length.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay.value">
+      <path value="Encounter.length.value"/>
+      <short value="Numerical value (with implicit precision)"/>
+      <definition value="The value of the measured amount. The value includes an implicit precision in the presentation of the value."/>
+      <comment value="The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books)."/>
+      <requirements value="Precision is handled implicitly in almost all cases of measurement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.value"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN.2  / CQ - N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay.comparator">
+      <path value="Encounter.length.comparator"/>
+      <short value="&lt; | &lt;= | &gt;= | &gt; - how to understand the value"/>
+      <definition value="How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is '&lt;' , then the real value is &lt; stated value."/>
+      <comment value="This is labeled as 'Is Modifier' because the comparator modifies the interpretation of the value significantly. If there is no comparator, then there is no modification of the value."/>
+      <requirements value="Need a framework for handling measures where the value is &lt;5ug/L or &gt;400mg/L due to the limitations of measuring methodology."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.comparator"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <meaningWhenMissing value="If there is no comparator, then there is no modification of the value"/>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <description value="How the Quantity should be understood and represented."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN.1  / CQ.1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="IVL properties"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay.unit">
+      <path value="Encounter.length.unit"/>
+      <short value="Unit representation"/>
+      <definition value="A human-readable form of the unit."/>
+      <requirements value="There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.unit"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(see OBX.6 etc.) / CQ.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ.unit"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay.system">
+      <path value="Encounter.length.system"/>
+      <short value="Primitive Type uri"/>
+      <definition value="String of characters used to identify a name or a resource"/>
+      <comment value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.system"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="uri"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+      </type>
+      <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay.code">
+      <path value="Encounter.length.code"/>
+      <short value="Primitive Type code"/>
+      <definition value="A string which has at least one character and no leading or trailing whitespace and where there is no whitespace other than single spaces in the contents"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.code"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+      </type>
+      <fixedCode value="d"/>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength">
+      <path value="Encounter.length"/>
+      <sliceName value="EncounterLength"/>
+      <short value="Quantity of time the encounter lasted (less time absent)"/>
+      <definition value="Quantity of time the encounter lasted. This excludes the time during leaves of absence."/>
+      <comment value="May differ from the time the Encounter.period lasted because of leave of absence."/>
+      <alias value="EncounterLength"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.length"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Duration"/>
+      </type>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(PV1-45 less PV1-44) iff ( (PV1-44 not empty) and (PV1-45 not empty) ); units in minutes"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".lengthOfStayQuantity"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength.id">
+      <path value="Encounter.length.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength.extension">
+      <path value="Encounter.length.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength.value">
+      <path value="Encounter.length.value"/>
+      <short value="Numerical value (with implicit precision)"/>
+      <definition value="The value of the measured amount. The value includes an implicit precision in the presentation of the value."/>
+      <comment value="The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books)."/>
+      <requirements value="Precision is handled implicitly in almost all cases of measurement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.value"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN.2  / CQ - N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength.comparator">
+      <path value="Encounter.length.comparator"/>
+      <short value="&lt; | &lt;= | &gt;= | &gt; - how to understand the value"/>
+      <definition value="How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is '&lt;' , then the real value is &lt; stated value."/>
+      <comment value="This is labeled as 'Is Modifier' because the comparator modifies the interpretation of the value significantly. If there is no comparator, then there is no modification of the value."/>
+      <requirements value="Need a framework for handling measures where the value is &lt;5ug/L or &gt;400mg/L due to the limitations of measuring methodology."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.comparator"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <meaningWhenMissing value="If there is no comparator, then there is no modification of the value"/>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <description value="How the Quantity should be understood and represented."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN.1  / CQ.1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="IVL properties"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength.unit">
+      <path value="Encounter.length.unit"/>
+      <short value="Unit representation"/>
+      <definition value="A human-readable form of the unit."/>
+      <requirements value="There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.unit"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(see OBX.6 etc.) / CQ.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ.unit"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength.system">
+      <path value="Encounter.length.system"/>
+      <short value="Primitive Type uri"/>
+      <definition value="String of characters used to identify a name or a resource"/>
+      <comment value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.system"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="uri"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+      </type>
+      <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength.code">
+      <path value="Encounter.length.code"/>
+      <short value="Primitive Type code"/>
+      <definition value="A string which has at least one character and no leading or trailing whitespace and where there is no whitespace other than single spaces in the contents"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.code"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+      </type>
+      <fixedCode value="min"/>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.reason">
+      <path value="Encounter.reason"/>
+      <short value="Reason the encounter takes place (code)"/>
+      <definition value="Reason the encounter takes place, expressed as a code. For admissions, this can be used for a coded admission diagnosis."/>
+      <comment value="For systems that need to know which was the primary diagnosis, these will be marked with the standard extension primaryDiagnosis (which is a sequence value rather than a flag, 1 = primary diagnosis)."/>
+      <alias value="Indication"/>
+      <alias value="Admission diagnosis"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.reason"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <isSummary value="true"/> 
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EncounterReason"/> 
+        </extension> 
+        <strength value="example"/> 
+        <description value="Reason why the encounter takes place."/> 
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/encounterReason"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="EVN-4 / PV2-3 (note: PV2-3 is nominally constrained to inpatient admissions; HL7 v2 makes
+         no vocabulary suggestions for PV2-3; would not expect PV2 segment or PV2-3 to be in use
+         in all implementations )"/> 
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".reasonCode"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="why"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.diagnosis">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Diagnosis"/> 
+      </extension> 
+      <path value="Encounter.diagnosis"/> 
+      <short value="The list of diagnosis relevant to this encounter"/> 
+      <definition value="The list of diagnosis relevant to this encounter."/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <type> 
+        <code value="BackboneElement"/> 
+      </type> 
+      <constraint> 
+        <key value="ele-1"/> 
+        <severity value="error"/> 
+        <human value="All FHIR elements must have a @value or children"/> 
+        <expression value="hasValue() | (children().count() &gt; id.count())"/> 
+        <xpath value="@value|f:*|h:div"/> 
+        <source value="Element"/> 
+      </constraint> 
+      <isSummary value="true"/> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".outboundRelationship[typeCode=RSON]"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.diagnosis.id">
+      <path value="Encounter.diagnosis.id"/> 
+      <representation value="xmlAttr"/> 
+      <short value="xml:id (or equivalent in JSON)"/> 
+      <definition value="unique id for the element within a resource (for internal references). This may be any
+       string value that does not contain spaces."/> 
+      <min value="0"/> 
+      <max value="1"/> 
+      <base> 
+        <path value="Element.id"/> 
+        <min value="0"/> 
+        <max value="1"/> 
+      </base> 
+      <type> 
+        <code value="string"/> 
+      </type> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.diagnosis.extension">
+      <path value="Encounter.diagnosis.extension"/> 
+      <short value="Additional Content defined by implementations"/> 
+      <definition value="May be used to represent additional information that is not part of the basic definition
+       of the element. In order to make the use of extensions safe and manageable, there is a
+       strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone."/> 
+      <alias value="extensions"/> 
+      <alias value="user content"/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <base> 
+        <path value="Element.extension"/> 
+        <min value="0"/> 
+        <max value="*"/> 
+      </base> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.diagnosis.modifierExtension">
+      <path value="Encounter.diagnosis.modifierExtension"/> 
+      <short value="Extensions that cannot be ignored"/> 
+      <definition value="May be used to represent additional information that is not part of the basic definition
+       of the element, and that modifies the understanding of the element that contains it. Usually
+       modifier elements provide negation or qualification. In order to make the use of extensions
+       safe and manageable, there is a strict set of governance applied to the definition and
+       use of extensions. Though any implementer is allowed to define an extension, there is
+       a set of requirements that SHALL be met as part of the definition of the extension. Applications
+       processing a resource are required to check for modifier extensions."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone."/> 
+      <alias value="extensions"/> 
+      <alias value="user content"/> 
+      <alias value="modifiers"/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <base> 
+        <path value="BackboneElement.modifierExtension"/> 
+        <min value="0"/> 
+        <max value="*"/> 
+      </base> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+      <isModifier value="true"/> 
+      <isSummary value="true"/> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="N/A"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.diagnosis.condition">
+      <path value="Encounter.diagnosis.condition"/> 
+      <short value="Reason the encounter takes place (resource)"/> 
+      <definition value="Reason the encounter takes place, as specified using information from another resource.
+       For admissions, this is the admission diagnosis. The indication will typically be a Condition
+       (with other resources referenced in the evidence.detail), or a Procedure."/> 
+      <comment value="For systems that need to know which was the primary diagnosis, these will be marked with
+       the standard extension primaryDiagnosis (which is a sequence value rather than a flag,
+       1 = primary diagnosis)."/> 
+      <alias value="Admission diagnosis"/> 
+      <alias value="discharge diagnosis"/> 
+      <alias value="indication"/> 
+      <min value="1"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Reference"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/> 
+      </type> 
+      <type> 
+        <code value="Reference"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/> 
+      </type> 
+      <mapping> 
+        <identity value="v2"/> 
+        <map value="Resources that would commonly referenced at Encounter.indication would be Condition and/or
+         Procedure. These most closely align with DG1/PRB and PR1 respectively."/> 
+      </mapping> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".outboundRelationship[typeCode=RSON].target"/> 
+      </mapping> 
+      <mapping> 
+        <identity value="w5"/> 
+        <map value="why"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.diagnosis.role">
+      <path value="Encounter.diagnosis.role"/> 
+      <short value="Role that this diagnosis has within the encounter (e.g. admission, billing, discharge
+       …)"/> 
+      <definition value="Role that this diagnosis has within the encounter (e.g. admission, billing, discharge
+       …)."/> 
+      <min value="0"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="CodeableConcept"/> 
+      </type> 
+      <binding> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="DiagnosisRole"/> 
+        </extension> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/> 
+        </extension> 
+        <strength value="preferred"/> 
+        <description value="The type of diagnosis this condition represents"/> 
+        <valueSetReference> 
+          <reference value="http://hl7.org/fhir/ValueSet/diagnosis-role"/> 
+        </valueSetReference> 
+      </binding> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.diagnosis.rank">
+      <path value="Encounter.diagnosis.rank"/> 
+      <short value="Ranking of the diagnosis (for each role type)"/> 
+      <definition value="Ranking of the diagnosis (for each role type)."/> 
+      <min value="0"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="positiveInt"/> 
+      </type> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".outboundRelationship[typeCode=RSON].priority"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.account">
+      <path value="Encounter.account"/>
+      <short value="The set of accounts that may be used for billing for this Encounter"/>
+      <definition value="The set of accounts that may be used for billing for this Encounter."/>
+      <comment value="The billing system may choose to allocate billable items associated with the Encounter to different referenced Accounts based on internal business rules."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.account"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Account"/> 
+      </type>
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".pertains.A_Account"/> 
+      </mapping> 
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization">
+      <path value="Encounter.hospitalization"/>
+      <short value="Details about the admission to a healthcare service"/>
+      <definition value="Details about the admission to a healthcare service."/>
+      <comment value="An Encounter may cover more than just the inpatient stay. Contexts such as outpatients, community clinics, and aged care facilities are also included.
+The duration recorded in the period of this encounter covers the entire scope of this
+       hospitalization record."/> 
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.hospitalization"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint> 
+        <key value="ele-1"/> 
+        <severity value="error"/> 
+        <human value="All FHIR elements must have a @value or children"/> 
+        <expression value="hasValue() | (children().count() &gt; id.count())"/> 
+        <xpath value="@value|f:*|h:div"/> 
+        <source value="Element"/> 
+      </constraint> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".outboundRelationship[typeCode=COMP].target[classCode=ENC, moodCode=EVN]"/> 
+      </mapping> 
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.id">
+      <path value="Encounter.hospitalization.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/> 
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.extension">
+      <path value="Encounter.hospitalization.extension"/>
+      <slicing id="26">
+        <discriminator>
+		  <type value="value"/>
+		  <path value="url"/>
+		</discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/> 
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/> 
+      <alias value="extensions"/> 
+      <alias value="user content"/> 
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.extension:preadmittestindicator">
+      <path value="Encounter.hospitalization.extension"/>
+      <sliceName value="PreAdmitTestIndicator"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The set of values to indicate affirmative or negative"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0136"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.extension:admittingDiagnosis">
+      <path value="Encounter.hospitalization.extension"/>
+      <sliceName value="AdmittingDiagnosis"/>
+      <short value="Extension"/>
+      <definition value="An extension"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+      </type>      
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.modifierExtension">
+      <path value="Encounter.hospitalization.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.preAdmissionIdentifier">
+      <path value="Encounter.hospitalization.preAdmissionIdentifier"/>
+      <short value="Pre-admission identifier"/>
+      <definition value="Pre-admission identifier."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.hospitalization.preAdmissionIdentifier"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-5"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".id"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.origin">
+      <path value="Encounter.hospitalization.origin"/>
+      <short value="The location from which the patient came before admission"/>
+      <definition value="The location from which the patient came before admission."/> 
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.hospitalization.origin"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/> 
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=ORG].role"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.admitSource">
+      <path value="Encounter.hospitalization.admitSource"/>
+      <short value="From where patient was admitted (physician referral, transfer)"/> 
+      <definition value="From where patient was admitted (physician referral, transfer)."/> 
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.hospitalization.admitSource"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="AdmitSource"/> 
+        </extension> 
+        <strength value="example"/>
+        <description value="The set of codes that describe where a patient came from for the current admission."/>
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/admissionSource"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-14"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".admissionReferralSourceCode"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.reAdmission">
+      <path value="Encounter.hospitalization.reAdmission"/>
+      <short value="The type of hospital re-admission that has occurred (if any). If the value is absent, then this is not identified as a readmission"/>
+      <definition value="Whether this hospitalization is a readmission and why if known."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.hospitalization.reAdmission"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ReAdmissionType"/> 
+        </extension> 
+        <strength value="example"/>
+        <description value="The reason for re-admission of this hospitalization encounter."/> 
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0092"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-13"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/> 
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.dietPreference">
+      <path value="Encounter.hospitalization.dietPreference"/>
+      <short value="Diet preferences reported by the patient"/>
+      <definition value="Diet preferences reported by the patient."/>
+      <comment value="For example a patient may request both a dairy-free and nut-free diet preference (not mutually exclusive)."/>
+      <requirements value="Used to track patient's diet restrictions and/or preference. For a complete description of the nutrition needs of a patient during their stay, one should use the nutritionOrder resource which links to Encounter."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.hospitalization.dietPreference"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PatientDiet"/> 
+        </extension> 
+        <strength value="preferred"/>
+        <description value="A set of codes that describe the kind of nutrition to be supplied to the patient."/>
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/dietType"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-38"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".outboundRelationship[typeCode=COMP].target[classCode=SBADM, moodCode=EVN, code=&quot;diet&quot;]"/> 
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.specialCourtesy">
+      <path value="Encounter.hospitalization.specialCourtesy"/>
+      <short value="Special courtesies (VIP, board member)"/>
+      <definition value="Special courtesies (VIP, board member)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.hospitalization.specialCourtesy"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Courtesies"/> 
+        </extension> 
+        <strength value="preferred"/>
+        <description value="Special courtesies"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-special-courtesy"/> 
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-16"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".specialCourtesiesCode"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.specialArrangement">
+      <path value="Encounter.hospitalization.specialArrangement"/>
+      <short value="Wheelchair, translator, stretcher, etc."/>
+      <definition value="Any special requests that have been made for this hospitalization encounter, such as the provision of specific equipment or other things."/> 
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Arrangements"/> 
+        </extension> 
+        <strength value="preferred"/>
+        <description value="Special arrangements"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-special-arrangements"/> 
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-15 / OBR-30 / OBR-43"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".specialArrangementCode"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.destination">
+      <path value="Encounter.hospitalization.destination"/>
+      <short value="Location to which the patient is discharged"/>
+      <definition value="Location to which the patient is discharged."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/> 
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-37"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=DST]"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.dischargeDisposition">
+      <path value="Encounter.hospitalization.dischargeDisposition"/>
+      <short value="Category or kind of location after discharge"/>
+      <definition value="Category or kind of location after discharge."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="DischargeDisp"/> 
+        </extension> 
+        <strength value="example"/>
+        <description value="Discharge Disposition"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition"/> 
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-36"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".dischargeDispositionCode"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location">
+      <path value="Encounter.location"/>
+      <slicing>
+        <discriminator>
+		  <type value="value"/>
+		  <path value="url"/>
+		</discriminator> 
+		<ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="List of locations where the patient has been"/>
+      <definition value="List of locations where  the patient has been during this encounter."/>
+      <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type &quot;kind&quot; such as &quot;client's home&quot; and an encounter.class = &quot;virtual&quot;."/> 
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Encounter.location"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint> 
+        <key value="ele-1"/> 
+        <severity value="error"/> 
+        <human value="All FHIR elements must have a @value or children"/> 
+        <expression value="hasValue() | (children().count() &gt; id.count())"/> 
+        <xpath value="@value|f:*|h:div"/> 
+        <source value="Element"/> 
+      </constraint> 
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=LOC]"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation">
+      <path value="Encounter.location"/>
+      <sliceName value="AssignedParticipatingLocation"/>
+      <short value="List of locations where the patient has been"/>
+      <definition value="List of locations where  the patient has been during this encounter."/>
+      <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type 'kind' such as 'client's home' and an encounter.class = 'virtual'."/>
+      <alias value="AssignedParticipatingLocation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.location"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=LOC]"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation.id">
+      <path value="Encounter.location.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation.extension:patientarrivalstatus">
+      <path value="Encounter.location.extension"/>
+      <sliceName value="PatientArrivalStatus"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The codes that describe whether or not the patient has arrived at the specified location for the encounter"/>
+        <valueSetReference>
+          <reference value="ValueSet/arrivalStatus"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation.modifierExtension">
+      <path value="Encounter.location.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation.location">
+      <path value="Encounter.location.location"/>
+      <short value="A reference from one resource to another"/>
+      <definition value="A reference from one resource to another."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.location.location"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
+      </type>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation.status">
+      <path value="Encounter.location.status"/>
+      <short value="planned | active | reserved | completed"/>
+      <definition value="The status of the participants' presence at the specified location during the period specified. If the participant is is no longer at the location, then the period will have an end date/time."/>
+      <comment value="When the patient is no longer active at a location, then the period end date is entered, and the status may be changed to completed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.location.status"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="The status of the location."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-location-status"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation.period">
+      <path value="Encounter.location.period"/>
+      <short value="Time period during which the patient was present at the location"/>
+      <definition value="Time period during which the patient was present at the location."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.location.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".time"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation">
+      <path value="Encounter.location"/>
+      <sliceName value="ServiceDeliveryLocation"/>
+      <short value="List of locations where the patient has been"/>
+      <definition value="List of locations where  the patient has been during this encounter."/>
+      <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type 'kind' such as 'client's home' and an encounter.class = 'virtual'."/>
+      <alias value="ServiceDeliveryLocationCondition"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.location"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=LOC]"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation.id">
+      <path value="Encounter.location.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation.extension:servicedeliverylocationcondition">
+      <path value="Encounter.location.extension"/>
+      <sliceName value="ServiceDeliveryLocationCondition"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The codes that describe the state of readiness of the encounter location"/>
+        <valueSetReference>
+          <reference value="ValueSet/locationCondition"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation.modifierExtension">
+      <path value="Encounter.location.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation.location">
+      <path value="Encounter.location.location"/>
+      <short value="A reference from one resource to another"/>
+      <definition value="A reference from one resource to another."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.location.location"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
+      </type>
+      <mustSupport value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation.status">
+      <path value="Encounter.location.status"/>
+      <short value="planned | active | reserved | completed"/>
+      <definition value="The status of the participants' presence at the specified location during the period specified. If the participant is is no longer at the location, then the period will have an end date/time."/>
+      <comment value="When the patient is no longer active at a location, then the period end date is entered, and the status may be changed to completed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.location.status"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="The status of the location."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-location-status"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation.period">
+      <path value="Encounter.location.period"/>
+      <short value="Time period during which the patient was present at the location"/>
+      <definition value="Time period during which the patient was present at the location."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.location.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".time"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location.id">
+      <path value="Encounter.location.id"/> 
+      <representation value="xmlAttr"/> 
+      <short value="xml:id (or equivalent in JSON)"/> 
+      <definition value="unique id for the element within a resource (for internal references). This may be any
+       string value that does not contain spaces."/> 
+      <min value="0"/> 
+      <max value="1"/> 
+      <base> 
+        <path value="Element.id"/> 
+        <min value="0"/> 
+        <max value="1"/> 
+      </base> 
+      <type> 
+        <code value="string"/> 
+      </type> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.location.extension">
+      <path value="Encounter.location.extension"/> 
+      <short value="Additional Content defined by implementations"/> 
+      <definition value="May be used to represent additional information that is not part of the basic definition
+       of the element. In order to make the use of extensions safe and manageable, there is a
+       strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone."/> 
+      <alias value="extensions"/> 
+      <alias value="user content"/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <base> 
+        <path value="Element.extension"/> 
+        <min value="0"/> 
+        <max value="*"/> 
+      </base> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="n/a"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.location.modifierExtension">
+      <path value="Encounter.location.modifierExtension"/> 
+      <short value="Extensions that cannot be ignored"/> 
+      <definition value="May be used to represent additional information that is not part of the basic definition
+       of the element, and that modifies the understanding of the element that contains it. Usually
+       modifier elements provide negation or qualification. In order to make the use of extensions
+       safe and manageable, there is a strict set of governance applied to the definition and
+       use of extensions. Though any implementer is allowed to define an extension, there is
+       a set of requirements that SHALL be met as part of the definition of the extension. Applications
+       processing a resource are required to check for modifier extensions."/> 
+      <comment value="There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone."/> 
+      <alias value="extensions"/> 
+      <alias value="user content"/> 
+      <alias value="modifiers"/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <base> 
+        <path value="BackboneElement.modifierExtension"/> 
+        <min value="0"/> 
+        <max value="*"/> 
+      </base> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+      <isModifier value="true"/> 
+      <isSummary value="true"/> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value="N/A"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.location.location">
+      <path value="Encounter.location.location"/> 
+      <short value="Location the encounter takes place"/> 
+      <definition value="The location where the encounter takes place."/> 
+      <min value="1"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Reference"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/> 
+      </type> 
+      <mapping> 
+        <identity value="v2"/> 
+        <map value="PV1-3 / PV1-6 / PV1-11 / PV1-42 / PV1-43"/> 
+      </mapping> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".role"/> 
+      </mapping> 
+      <mapping> 
+        <identity value="w5"/> 
+        <map value="where"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.location.status">
+      <path value="Encounter.location.status"/> 
+      <short value="planned | active | reserved | completed"/> 
+      <definition value="The status of the participants' presence at the specified location during the period specified.
+       If the participant is is no longer at the location, then the period will have an end date/time."/> 
+      <comment value="When the patient is no longer active at a location, then the period end date is entered,
+       and the status may be changed to completed."/> 
+      <min value="0"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="code"/> 
+      </type> 
+      <binding> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EncounterLocationStatus"/> 
+        </extension> 
+        <strength value="required"/> 
+        <description value="The status of the location."/> 
+        <valueSetReference> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-location-status"/> 
+        </valueSetReference> 
+      </binding> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".role.statusCode"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.location.period">
+      <path value="Encounter.location.period"/> 
+      <short value="Time period during which the patient was present at the location"/> 
+      <definition value="Time period during which the patient was present at the location."/> 
+      <min value="0"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Period"/> 
+      </type> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".time"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.serviceProvider">
+      <path value="Encounter.serviceProvider"/>
+      <short value="The custodian organization of this Encounter record"/>
+      <definition value="An organization that is in charge of maintaining the information of this Encounter (e.g. who maintains the report or the master service catalog item, etc.). This MAY be the same as the organization on the Patient record, however it could be different. This MAY not be not the Service Delivery Location's Organization."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.serviceProvider"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PV1-10 / PL.6  &amp; PL.1  (note: HL7 v2 definition is &quot;the treatment or type of
+         surgery that the patient is scheduled to receive&quot;; seems slightly out of alignment
+         with the concept name 'hospital service'. Would not trust that implementations apply this
+         semantic by default)"/> 
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".particiaption[typeCode=PFM].role"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.partOf">
+      <path value="Encounter.partOf"/>
+      <short value="Another Encounter this encounter is part of"/>
+      <definition value="Another Encounter of which this encounter is a part of (administratively or in time)."/>
+      <comment value="This is also used for associating a child's encounter back to the mother's encounter.  Refer to the Notes section in the Patient resource for further details."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.partOf"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/> 
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".inboundRelationship[typeCode=COMP].source[classCode=COMP, moodCode=EVN]"/> 
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Encounter:fpargeneralencounter">
+      <path value="Encounter"/>
+      <sliceName value="fpargeneralencounter"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="qdm"/>
+        <map value="Patient Characteristic"/>
+      </mapping>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:reasonCancelled">
+      <path value="Encounter.extension"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A set of codes that describe why an individual's encounter has been done away with."/>
+        <valueSetReference>
+          <reference value="ValueSet/reasonCancelled"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:confidentiality">
+      <path value="Encounter.extension"/>
+      <sliceName value="Confidentiality"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The set of values that describe the level of confidentiality for the patient encounter."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0907"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:hospitalservice">
+      <path value="Encounter.extension"/>
+      <sliceName value="HospitalService"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The particular healthcare specialty or care group responsible for the care of the patient during the encounter"/>
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/practitioner-providerPractitionerSpecialty"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:viplevel">
+      <path value="Encounter.extension"/>
+      <sliceName value="VipLevel"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A set of codes that describe the sensitivity level of a patient's information"/>
+        <valueSetReference>
+          <reference value="ValueSet/hspc-viplevel"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:ambulatorystatus">
+      <path value="Encounter.extension"/>
+      <sliceName value="AmbulatoryStatus"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The codes that describe a patient's current level of ability to ambulate."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0009"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:departedbytransportation">
+      <path value="Encounter.extension"/>
+      <sliceName value="DepartedByTransportation"/>
+      <alias value="Departed By Transportation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A set of codes that describe various means of transportation used to leave a location"/>
+        <valueSetReference>
+          <reference value="ValueSet/departureTransportMode"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:arrivedbytransportation">
+      <path value="Encounter.extension"/>
+      <sliceName value="ArrivedByTransportation"/>
+      <alias value="Arrived By Transportation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A set of codes that describe various means of transportation used to arrive at a location"/>
+        <valueSetReference>
+          <reference value="ValueSet/arrivalTransportMode"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:chiefcomplaintid">
+      <path value="Encounter.extension"/>
+      <sliceName value="ChiefComplaintId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:admitmedicationid">
+      <path value="Encounter.extension"/>
+      <sliceName value="AdmitMedicationId"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:dischargemedicationid">
+      <path value="Encounter.extension"/>
+      <sliceName value="DischargeMedicationId"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:communicationmode">
+      <path value="Encounter.extension"/>
+      <sliceName value="CommunicationMode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The set of codes that describe the means by which a patient communicates with others."/>
+        <valueSetReference>
+          <reference value="ValueSet/communicationMode"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.extension:administrativeencounterid">
+      <path value="Encounter.extension"/>
+      <sliceName value="AdministrativeEncounterId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.participant.extension:providerservice">
+      <path value="Encounter.participant.extension"/>
+      <sliceName value="ProviderService"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The codes that represent the particular specialty or practice group that a provider is affiliated with for the given encounter"/>
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/practitioner-providerPractitionerSpecialty"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.participant.individual">
+      <path value="Encounter.participant.individual"/> 
+      <short value="Persons involved in the encounter other than the patient"/> 
+      <definition value="Persons involved in the encounter other than the patient."/> 
+      <min value="0"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Reference"/> 
+        <targetProfile value="http://fhir.org/guides/hspc/StructureDefinition/hspc-practitioner"/> 
+      </type> 
+      <type> 
+        <code value="Reference"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
+      </type> 
+      <isSummary value="true"/> 
+      <mapping> 
+        <identity value="v2"/> 
+        <map value="ROL-4"/> 
+      </mapping> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".role"/> 
+      </mapping> 
+      <mapping> 
+        <identity value="w5"/> 
+        <map value="who"/> 
+      </mapping> 
+    </element>   
+	<element id="Encounter:fpargeneralencounter.period">
+      <path value="Encounter.period"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Encounter.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+	<element id="Encounter:fpargeneralencounter.period.start">
+	  <path value="Encounter.period.start"/>
+	  <short value="The start time for the encounter"/>
+	  <min value="0"/>
+	  <max value="1"/>
+	  <base>
+		<path value="Encounter.period.start"/>
+		<min value="0"/>
+		<max value="1"/>
+	  </base>
+	  <mapping>
+	    <identity value="LOINC"/>
+		<map value="76427-4"/>
+	  </mapping>
+	</element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay">
+      <path value="Encounter.length"/>
+      <sliceName value="LengthOfStay"/>
+      <slicing>
+        <discriminator>
+		  <type value="value"/>
+		  <path value="url"/>
+		</discriminator>
+		<ordered value="true"/>
+        <rules value="open"/>
+      </slicing>
+      <alias value="Length of stay"/>
+      <min value="0"/>
+      <max value="1"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay.system">
+      <path value="Encounter.length.system"/>
+      <type>
+        <code value="uri"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+      </type>
+      <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:lengthofstay.code">
+      <path value="Encounter.length.code"/>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+      </type>
+      <fixedCode value="d"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength">
+      <path value="Encounter.length"/>
+      <sliceName value="EncounterLength"/>
+      <alias value="EncounterLength"/>
+      <min value="0"/>
+      <max value="1"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength.system">
+      <path value="Encounter.length.system"/>
+      <type>
+        <code value="uri"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+      </type>
+      <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.length:encounterlength.code">
+      <path value="Encounter.length.code"/>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+      </type>
+      <fixedCode value="min"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.extension:preadmittestindicator">
+      <path value="Encounter.hospitalization.extension"/>
+      <sliceName value="PreAdmitTestIndicator"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The set of values to indicate affirmative or negative"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0136"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.admitSource">
+      <path value="Encounter.hospitalization.admitSource"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="example"/>
+        <description value="The set of codes that describe where a patient came from for the current admission."/>
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/admissionSource"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.dietPreference">
+      <path value="Encounter.hospitalization.dietPreference"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A set of codes that describe the kind of nutrition to be supplied to the patient."/>
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/dietType"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.hospitalization.specialArrangement">
+      <path value="Encounter.hospitalization.specialArrangement"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="A set of codes that describe any particular needs for a patient regarding this encounter."/>
+        <valueSetReference>
+          <reference value="http://fhir.org/guides/hspc/ValueSet/specialArrangement"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location">
+      <path value="Encounter.location"/> 
+      <short value="List of locations where the patient has been"/> 
+      <definition value="List of locations where  the patient has been during this encounter."/> 
+      <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference
+       to a location of type &quot;kind&quot; such as &quot;client's home&quot; and an encounter.class
+       = &quot;virtual&quot;."/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <type> 
+        <code value="BackboneElement"/> 
+      </type> 
+      <mapping> 
+        <identity value="rim"/> 
+        <map value=".participation[typeCode=LOC]"/> 
+      </mapping> 
+    </element> 
+    <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation">
+      <path value="Encounter.location"/>
+      <sliceName value="AssignedParticipatingLocation"/>
+      <slicing>
+        <discriminator>
+		  <type value="value"/>
+		  <path value="url"/>
+		</discriminator>
+		<ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <alias value="AssignedParticipatingLocation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation.extension:patientarrivalstatus">
+      <path value="Encounter.location.extension"/>
+      <sliceName value="PatientArrivalStatus"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The codes that describe whether or not the patient has arrived at the specified location for the encounter"/>
+        <valueSetReference>
+          <reference value="ValueSet/arrivalStatus"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation.location">
+      <path value="Encounter.location.location"/>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation">
+      <path value="Encounter.location"/>
+      <sliceName value="ServiceDeliveryLocation"/>
+      <alias value="ServiceDeliveryLocationCondition"/>
+      <min value="0"/>
+      <max value="1"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation.extension:servicedeliverylocationcondition">
+      <path value="Encounter.location.extension"/>
+      <sliceName value="ServiceDeliveryLocationCondition"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="preferred"/>
+        <description value="The codes that describe the state of readiness of the encounter location"/>
+        <valueSetReference>
+          <reference value="ValueSet/locationCondition"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation.location">
+      <path value="Encounter.location.location"/>
+      <type>
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>  
+  </differential>
+</StructureDefinition>
