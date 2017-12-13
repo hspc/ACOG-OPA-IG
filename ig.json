@@ -25,7 +25,7 @@
       "template-format": "instance-template-format.html"
     }
   },
-  "canonicalBase": "http://hl7.org/fhir/acogopa",
+  "canonicalBase": "http://hl7.org/fhir/fpar",
   "source": "ImplementationGuide/FPARImplementationGuide.xml",
   "sct-edition": "http://snomed.info/sct/20160901",
   "resources": {
