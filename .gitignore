@@ -1,0 +1,6 @@
+/.project
+/output/
+/qa/
+/temp/
+*.zip
+/org.hl7.fhir.igpublisher.jar
