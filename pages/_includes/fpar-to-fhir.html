@@ -1,0 +1,185 @@
+<div>
+  <p>
+    This guide defines the following profiles to be used to meet the FPAR reporting data elements. Note: For lab observations, the path for the date of the lab is Observation.effective[x], the path for the result of the lab is Observation.value[x], and the path for the LOINC code is Observation.code.
+  </p>
+  <h3>Non-lab data element crosswalk</h3>
+
+  <table class="grid">
+    <thead>
+      <tr>
+        <th width="40%">FPAR data element</th>
+        <th>FHIR profile or profile element</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Facility Identifier</td>
+        <td class=xl65>fpar-organization.id (within the fpar-organization profile)</td>
+      </tr>
+      <tr>
+        <td>Clinical Provider Identifier</td>
+        <td class=xl65>fparpractitioner.identifier (within fpar-practitioner profile)</td>
+      </tr>
+      <tr>
+        <td>Clinical Provider Role</td>
+        <td class=xl65>fpar-practitionerRole.specialty (within fpar-practitionerRole profile)</td>
+      </tr>
+      <tr>
+        <td>Visit Date</td>
+        <td class=xl65>fpargeneralencounterperiod.start (within fpar-genEncounter profile)</td>
+      </tr>
+      <tr>
+        <td>Annual Household Income</td>
+        <td class=xl65>hspc-annualHouseholdIncome</td>
+      </tr>
+      <tr>
+        <td>Household Size</td>
+        <td class=xl65>hspc-householdSize</td>
+      </tr>
+      <tr>
+        <td>Smoking status</td>
+        <td class=xl65>hspc-smokingStatus</td>
+      </tr>
+      <tr>
+        <td>Insurance Coverage Type</td>
+        <td class=xl65>fparCoverage.type (within fpar-coverage profile)</td>
+      </tr>
+      <tr>
+        <td>Payer for Visit</td>
+        <td class=xl65>extensions-primaryInsuranceClassification (within fpar-coverage profile)</td>
+      </tr>
+      <tr>
+        <td>Date of Birth</td>
+        <td class=xl65>fparpatient.birthDate (within fpar-patient profile)</td>
+      </tr>
+      <tr>
+        <td>Birth Sex</td>
+        <td class=xl65>fparpatient.extension:birthsex (within fpar-patient profile)</td>
+      </tr>
+      <tr>
+        <td>Race</td>
+        <td class=xl65>fparpatient.extension:race (within fpar-patient profile)</td>
+      </tr>
+      <tr>
+        <td>Ethnicity</td>
+        <td class=xl65>fparpatient.extension:ethnicity (within fpar-patient profile)</td>
+      </tr>
+      <tr>
+        <td>Limited English Proficiency</td>
+        <td class=xl65>fpar-limitedEnglishProficiencyEval</td>
+      </tr>
+      <tr>
+        <td>Patient Identifier</td>
+        <td class=xl65>fparpatient.identifier (within fpar-patient profile)</td>
+      </tr>
+      <tr>
+        <td>Height</td>
+        <td class=xl65>hspc-height</td>
+      </tr>
+      <tr>
+        <td>Weight</td>
+        <td class=xl65>hspc-bodyWeight</td>
+      </tr>
+      <tr>
+        <td>Systolic blood pressure</td>
+        <td class=xl65>hspc-systolicbp</td>
+      </tr>
+      <tr>
+        <td>Diastolic blood pressure</td>
+        <td class=xl65>hspc-diastolicbp</td>
+      </tr>
+      <tr>
+        <td>Parity</td>
+        <td class=xl65>hspc-parity</td>
+      </tr>
+      <tr>
+        <td>Gravidity</td>
+        <td class=xl65>hspc-gravidity</td>
+      </tr>
+      <tr>
+        <td>Pregnancy Status</td>
+        <td class=xl65>fpar-pregnancyStatusEval</td>
+      </tr>
+      <tr>
+        <td>Pregnancy Status Reporting Method</td>
+        <td class=xl65>fparPregnancyStatusEval.extension:reportingMethod (within fpar-pregnancyStatusEval profile)</td>
+      </tr>
+      <tr>
+        <td>Pregnancy Intention</td>
+        <td class=xl65>fpar-pregnancyIntentionEval</td>
+      </tr>
+      <tr>
+        <td>Ever Had Sex</td>
+        <td class=xl65>fpar-virginalStatusEval</td>
+      </tr>
+      <tr>
+        <td>Sex Last 3 Months</td>
+        <td class=xl65>hspc-sexLastThreeMonths</td>
+      </tr>
+      <tr>
+        <td>Sex Last 12 Months</td>
+        <td class=xl65>hspc-sexLastTwelveMonths</td>
+      </tr>
+      <tr>
+        <td>Contraceptive Method(s) at Intake</td>
+        <td class=xl65>fpar-contraceptiveChoiceInitial</td>
+      </tr>
+      <tr>
+        <td>Reason for no contraceptive method at intake</td>
+        <td class=xl65>fparcontraceptiveChoiceInitial.dataAbsentReason (within fpar-contraceptiveChoiceInitial profile)</td>
+      </tr>
+      <tr>
+        <td>Contraceptive Method(s) at Exit</td>
+        <td class=xl65>fpar-contraceptiveChoiceAtExit</td>
+      </tr>
+      <tr>
+        <td>How Contraceptive Method(s) Provided At Exit</td>
+        <td class=xl65>fparContraceptiveChoiceAtExit.extension:ContraceptionProvisionMethod$Extension (within fpar-contraceptiveChoiceAtExit profile)</td>
+      </tr>
+      <tr>
+        <td>Reason for no contraceptive method at exit</td>
+        <td class=xl74>fparContraceptiveChoiceAtExit.dataAbsentReason (within fpar-contraceptiveChoiceAtExit profile)</td>
+      </tr>
+      <tr>
+        <td>Contraceptive Counseling</td>
+        <td class=xl65>fpar-contraceptiveCounseling</td>
+      </tr>
+      <tr>
+        <td>Counseling to Achieve Pregnancy</td>
+        <td class=xl65>fpar-counselingToAchievePregnancy</td>
+      </tr>
+      <tr>
+        <td>HIV Referral Recommended Date</td>
+        <td class=xl65>referralRequest.authoredOn</td>
+      </tr>
+      <tr>
+        <td>HIV Referral Visit Completed Date</td>
+        <td class=xl65>encounterperiod.end</td>
+      </tr>
+      <tr>
+        <td>Date of Last HIV test <br> HIV Rapid Test Result<br> HIV Supplemental Test Result<br></td>
+        <td>hspc-Hiv1RnaXxxQlPcr</br>hspc-Hiv1AbSerQlIb</br>hspc-Hiv1AbSerplbldQlEiaRapid</br>hspc-Hiv2AbSerQlEia</br>hspc-Hiv1And2AbSerQlEia</br>hspc-Hiv1RnaSerplPcrDl17Log</br>hspc-Hiv1RnaSerplPcrDl50</td>
+      </tr>
+      <tr>
+        <td>Date of Last HPV Co-test<br> HPV Test Result</td>
+        <td>hspc-HpvIHRisk4DnaCervixQlBdna</br>hspc-HpvIHRiskDnaCervixQlPrb</br>hspc-HpvIHRisk1DnaCervixQlBdna</br>hspc-HpvDnaCervixQlBdna</br>hspc-HpvIHRisk1DnaXxxQlPcr</br>hspc-HpvE6AndE7MrnaCervixQlPcr</br>hspc-Hpv12HrTypesDnaTissQlPrb</br>hspc-HpvCervix</br>hspc-Hpv16And18AgGenitalQl</br>hspc-Hpv16And18AgCervixQl</br>hspc-Hpv16And18AgVagQl</br>hspc-Hpv16And18AgUrthQl</br>hspc-Hpv16And18AgXxxQl</br>hspc-HpvDnaCervixQlPrb</br>hspc-HpvRrnaGenitalQlPcr</br>hspc-HpvRrnaXxxQlPcr</td>
+      </tr>
+      <tr>
+        <td>Date of Last CT test<br> CT Test Result</td>
+        <td>hspc-CTrachDnaXxxPcrAcnc</br>hspc-CTrachRrnaXxxQlPcr</br>hspc-CTrachDnaUrthQlPcr</br>hspc-CTrachRrnaXxxQlPrb</br>hspc-CTrachRrnaGenitalQlPrb</br>hspc-CTrachRrnaUrQlPrb</br>hspc-CTrachDnaCervMucusQlPcr</br>hspc-CTrachDnaCervixQlPcr</br>hspc-CTrachRrnaUrthQlPrb</br>hspc-CTrachDnaXxxQlPcr</br>hspc-CTrachRrnaGenitalFlQlPrb</br>hspc-ChlamydiaDnaXxxQlPcr</br>hspc-CTrachRrnaUrQlPcr</br>hspc-CTrachDnaXxxQlBdna</br>hspc-CTrachRrnaCervixQlPrb</br>hspc-CTrachRrnaVagQlPrb</br>hspc-CTrachDnaVagQlPcr</br>hspc-CTrachL2DnaXxxQlPcr</br>hspc-CTrachDnaXxxPcr</br>hspc-CTrachRrnaCervixQlPcr</br>hspc-CTrachRrnaUrthQlPcr</br>hspc-CTrachRrnaVagQlPcr</br>hspc-CTrachDnaGenitalQlPcr</br>hspc-CTrachDnaUrQlPcr</td>
+      </tr>
+      <tr>
+        <td>Date of Last GC test <br> GC Test Result</td>
+        <td>hspc-NGonorrhoeaRrnaXxxQlPcr</br>hspc-NGonorrhoeaDnaUrthQlPcr</br>hspc-NGonorrhoeaDnaGenitalQlPcr</br>hspc-NGonorrhoeaRrnaCervixQlPcr</br>hspc-NGonorrhoeaDnaCervMucusQlPcr</br>hspc-NGonorrhoeaDnaUrQlPcr</br>hspc-NGonorrhoeaDnaXxxQlPcr</br>hspc-NGonorrhoeaRrnaCervixQlPrb</br>hspc-NGonorrhoeaRrnaUrthQlPrb</br>hspc-NGonorrhoeaDnaVagQlPcr</br>hspc-NGonorrhoeaDnaXxxQlBdna</br>hspc-NGonorrhoeaRrnaXxxQlPrb</br>hspc-NGonorrhoeaRrnaVagQlPcr</br>hspc-NGonorrhoeaRrnaUrthQlPcr</br>hspc-NGonorrhoeaAgGenitalQlEia</br>hspc-NGonorrhoeaCervixQlCult</br>hspc-NGonorrhoeaGenitalQlCult</br>hspc-NGonorrhoeaGenLochiaQlCult</br>hspc-NGonorrhoeaVagQlCult</br>hspc-NGonorrhoeaXxxQlCult</td>
+      </tr>
+      <tr>
+        <td>Date of Last CT test<br> CT Test Result<br> Date of Last GC test <br> GC Test Result</td>
+        <td>hspc-CtrachAndGCDNAXXXQlPCR</br>hspc-CTrachAndGcDnaXxxPcr</br>hspc-CTrachAndGcDnaXxxQlBdna</br>hspc-CTrachAndGcDnaUrQlPcr</br>hspc-CTrachAndGcDnaGenitalQlPcr</br>hspc-CTrachAndGcRrnaCervixQlPrb</br>hspc-CTrachAndGcDnaCervixQlPcr</br>hspc-CTrachAndGcRrnaGenitalQlPrb</br>hspc-CTrachAndGcRrnaVagQlPrb</br>hspc-CTrachAndGcRrnaUrQlPrb</br>hspc-CTrachAndGcRrnaXxxQlPrb</td>
+      </tr>
+      <tr>
+        <td>Date of Pap Tests Last 5 Years<br> Last Pap Result</td>
+        <td>hspc-CytoCervix</br>hspc-CytoCvxVag</br>hspc-CytoCvxVagCoded</br>hspc-CytologyCmntCvxVagCytoImp</br>hspc-CytologyCvxVagDocCyto</br>hspc-CytologyCvxVagDocThinPrep</br>hspc-GenCategCvxVagCytoImp</br>hspc-StatOfAdqCvxVagCytoImp</br>hspc-StudyreportFindPtCvxVagDocCytology</br>hspc-ThinPrepCervix</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
