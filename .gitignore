@@ -1,6 +1,9 @@
 /.project
+/.java-version
 /output/
 /qa/
 /temp/
+/txCache/
+*.swp
 *.zip
 /org.hl7.fhir.igpublisher.jar
