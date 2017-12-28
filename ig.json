@@ -13,8 +13,7 @@
   },
   "dependencyList": [{
     "name": "USCore",
-    "location": "http://hl7.org/fhir/us/core/2017Jan",
-    "source": "us-core-output"
+    "location": "http://hl7.org/fhir/us/core/"
   }],
   "defaults": {
     "Any": {
@@ -26,441 +25,441 @@
     }
   },
   "canonicalBase": "http://hl7.org/fhir/fpar",
-  "source": "ImplementationGuide/FPARImplementationGuide.xml",
+  "source": "implementationguide/FPARImplementationGuide.xml",
   "sct-edition": "http://snomed.info/sct/20160901",
   "resources": {
-	"StructureDefinition/Encounter.html"; {
+	"StructureDefinition/Encounter.html": {
 		"base": "StructureDefinition-Encounter.html"
 	},
-	"StructureDefinition/fpar-contraceptiveChoiceAtExit.html"; {
+	"StructureDefinition/fpar-contraceptiveChoiceAtExit.html": {
 		"base": "StructureDefinition-fpar-contraceptiveChoiceAtExit.html"
 	},
-	"StructureDefinition/fpar-contraceptiveChoiceInitial.html"; {
+	"StructureDefinition/fpar-contraceptiveChoiceInitial.html": {
 		"base": "StructureDefinition-fpar-contraceptiveChoiceInitial.html"
 	},
-	"StructureDefinition/fpar-contraceptiveCounseling.html"; {
+	"StructureDefinition/fpar-contraceptiveCounseling.html": {
 		"base": "StructureDefinition-fpar-contraceptiveCounseling.html"
 	},
-	"StructureDefinition/fpar-counselingToAchievePregnancy.html"; {
+	"StructureDefinition/fpar-counselingToAchievePregnancy.html": {
 		"base": "StructureDefinition-fpar-counselingToAchievePregnancy.html"
 	},
-	"StructureDefinition/fpar-coverage.html"; {
+	"StructureDefinition/fpar-coverage.html": {
 		"base": "StructureDefinition-fpar-coverage.html"
 	},
-	"StructureDefinition/fpar-genEncounter.html"; {
+	"StructureDefinition/fpar-genEncounter.html": {
 		"base": "StructureDefinition-fpar-genEncounter.html"
 	},
-	"StructureDefinition/fpar-limitedEnglishProficiencyEval.html"; {
+	"StructureDefinition/fpar-limitedEnglishProficiencyEval.html": {
 		"base": "StructureDefinition-fpar-limitedEnglishProficiencyEval.html"
 	},
-	"StructureDefinition/fpar-organization.html"; {
+	"StructureDefinition/fpar-organization.html": {
 		"base": "StructureDefinition-fpar-organization.html"
 	},
-	"StructureDefinition/fpar-patient.html"; {
+	"StructureDefinition/fpar-patient.html": {
 		"base": "StructureDefinition-fpar-patient.html"
 	},
-	"StructureDefinition/fpar-practitioner.html"; {
+	"StructureDefinition/fpar-practitioner.html": {
 		"base": "StructureDefinition-fpar-practitioner.html"
 	},
-	"StructureDefinition/fpar-practitionerRole.html"; {
+	"StructureDefinition/fpar-practitionerRole.html": {
 		"base": "StructureDefinition-fpar-practitionerRole.html"
 	},
-	"StructureDefinition/fpar-pregnancyIntentionEval.html"; {
+	"StructureDefinition/fpar-pregnancyIntentionEval.html": {
 		"base": "StructureDefinition-fpar-pregnancyIntentionEval.html"
 	},
-	"StructureDefinition/fpar-pregnancyStatusEval.html"; {
+	"StructureDefinition/fpar-pregnancyStatusEval.html": {
 		"base": "StructureDefinition-fpar-pregnancyStatusEval.html"
 	},
-	"StructureDefinition/fpar-virginalStatusEval.html"; {
+	"StructureDefinition/fpar-virginalStatusEval.html": {
 		"base": "StructureDefinition-fpar-virginalStatusEval.html"
 	},
-	"StructureDefinition/FPARImplementationGuide.html"; {
+	"StructureDefinition/FPARImplementationGuide.html": {
 		"base": "StructureDefinition-FPARImplementationGuide.html"
 	},
-	"StructureDefinition/hspc-annualHouseholdIncome.html"; {
+	"StructureDefinition/hspc-annualHouseholdIncome.html": {
 		"base": "StructureDefinition-hspc-annualHouseholdIncome.html"
 	},
-	"StructureDefinition/hspc-BHcgPregSerplQl.html"; {
+	"StructureDefinition/hspc-BHcgPregSerplQl.html": {
 		"base": "StructureDefinition-hspc-BHcgPregSerplQl.html"
 	},
-	"StructureDefinition/hspc-BHcgSerplAcnc.html"; {
+	"StructureDefinition/hspc-BHcgSerplAcnc.html": {
 		"base": "StructureDefinition-hspc-BHcgSerplAcnc.html"
 	},
-	"StructureDefinition/hspc-bodyWeight.html"; {
+	"StructureDefinition/hspc-bodyWeight.html": {
 		"base": "StructureDefinition-hspc-bodyWeight.html"
 	},
-	"StructureDefinition/hspc-ChlamydiaDnaXxxQlPcr.html"; {
+	"StructureDefinition/hspc-ChlamydiaDnaXxxQlPcr.html": {
 		"base": "StructureDefinition-hspc-ChlamydiaDnaXxxQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachAndGcDnaCervixQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachAndGcDnaCervixQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachAndGcDnaCervixQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachAndGcDnaGenitalQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachAndGcDnaGenitalQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachAndGcDnaGenitalQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachAndGcDnaUrQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachAndGcDnaUrQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachAndGcDnaUrQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachAndGcDnaXxxPcr.html"; {
+	"StructureDefinition/hspc-CTrachAndGcDnaXxxPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachAndGcDnaXxxPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachAndGcDnaXxxQlBdna.html"; {
+	"StructureDefinition/hspc-CTrachAndGcDnaXxxQlBdna.html": {
 		"base": "StructureDefinition-hspc-CTrachAndGcDnaXxxQlBdna.html"
 	},
-	"StructureDefinition/hspc-CtrachAndGCDNAXXXQlPCR.html"; {
+	"StructureDefinition/hspc-CtrachAndGCDNAXXXQlPCR.html": {
 		"base": "StructureDefinition-hspc-CtrachAndGCDNAXXXQlPCR.html"
 	},
-	"StructureDefinition/hspc-CTrachAndGcRrnaCervixQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachAndGcRrnaCervixQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachAndGcRrnaCervixQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachAndGcRrnaGenitalQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachAndGcRrnaGenitalQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachAndGcRrnaGenitalQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachAndGcRrnaUrQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachAndGcRrnaUrQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachAndGcRrnaUrQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachAndGcRrnaVagQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachAndGcRrnaVagQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachAndGcRrnaVagQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachAndGcRrnaXxxQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachAndGcRrnaXxxQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachAndGcRrnaXxxQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachDnaCervixQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachDnaCervixQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachDnaCervixQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachDnaCervMucusQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachDnaCervMucusQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachDnaCervMucusQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachDnaGenitalQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachDnaGenitalQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachDnaGenitalQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachDnaUrQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachDnaUrQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachDnaUrQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachDnaUrthQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachDnaUrthQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachDnaUrthQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachDnaVagQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachDnaVagQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachDnaVagQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachDnaXxxPcr.html"; {
+	"StructureDefinition/hspc-CTrachDnaXxxPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachDnaXxxPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachDnaXxxPcrAcnc.html"; {
+	"StructureDefinition/hspc-CTrachDnaXxxPcrAcnc.html": {
 		"base": "StructureDefinition-hspc-CTrachDnaXxxPcrAcnc.html"
 	},
-	"StructureDefinition/hspc-CTrachDnaXxxQlBdna.html"; {
+	"StructureDefinition/hspc-CTrachDnaXxxQlBdna.html": {
 		"base": "StructureDefinition-hspc-CTrachDnaXxxQlBdna.html"
 	},
-	"StructureDefinition/hspc-CTrachDnaXxxQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachDnaXxxQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachDnaXxxQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachL2DnaXxxQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachL2DnaXxxQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachL2DnaXxxQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaCervixQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachRrnaCervixQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaCervixQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaCervixQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachRrnaCervixQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaCervixQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaGenitalFlQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachRrnaGenitalFlQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaGenitalFlQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaGenitalQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachRrnaGenitalQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaGenitalQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaUrQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachRrnaUrQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaUrQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaUrQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachRrnaUrQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaUrQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaUrthQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachRrnaUrthQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaUrthQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaUrthQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachRrnaUrthQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaUrthQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaVagQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachRrnaVagQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaVagQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaVagQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachRrnaVagQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaVagQlPrb.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaXxxQlPcr.html"; {
+	"StructureDefinition/hspc-CTrachRrnaXxxQlPcr.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaXxxQlPcr.html"
 	},
-	"StructureDefinition/hspc-CTrachRrnaXxxQlPrb.html"; {
+	"StructureDefinition/hspc-CTrachRrnaXxxQlPrb.html": {
 		"base": "StructureDefinition-hspc-CTrachRrnaXxxQlPrb.html"
 	},
-	"StructureDefinition/hspc-CytoCervix.html"; {
+	"StructureDefinition/hspc-CytoCervix.html": {
 		"base": "StructureDefinition-hspc-CytoCervix.html"
 	},
-	"StructureDefinition/hspc-CytoCvxVag.html"; {
+	"StructureDefinition/hspc-CytoCvxVag.html": {
 		"base": "StructureDefinition-hspc-CytoCvxVag.html"
 	},
-	"StructureDefinition/hspc-CytoCvxVagCoded.html"; {
+	"StructureDefinition/hspc-CytoCvxVagCoded.html": {
 		"base": "StructureDefinition-hspc-CytoCvxVagCoded.html"
 	},
-	"StructureDefinition/hspc-CytologyCmntCvxVagCytoImp.html"; {
+	"StructureDefinition/hspc-CytologyCmntCvxVagCytoImp.html": {
 		"base": "StructureDefinition-hspc-CytologyCmntCvxVagCytoImp.html"
 	},
-	"StructureDefinition/hspc-CytologyCvxVagDocCyto.html"; {
+	"StructureDefinition/hspc-CytologyCvxVagDocCyto.html": {
 		"base": "StructureDefinition-hspc-CytologyCvxVagDocCyto.html"
 	},
-	"StructureDefinition/hspc-CytologyCvxVagDocThinPrep.html"; {
+	"StructureDefinition/hspc-CytologyCvxVagDocThinPrep.html": {
 		"base": "StructureDefinition-hspc-CytologyCvxVagDocThinPrep.html"
 	},
-	"StructureDefinition/hspc-diastolicbp.html"; {
+	"StructureDefinition/hspc-diastolicbp.html": {
 		"base": "StructureDefinition-hspc-diastolicbp.html"
 	},
-	"StructureDefinition/hspc-GenCategCvxVagCytoImp.html"; {
+	"StructureDefinition/hspc-GenCategCvxVagCytoImp.html": {
 		"base": "StructureDefinition-hspc-GenCategCvxVagCytoImp.html"
 	},
-	"StructureDefinition/hspc-gravidity.html"; {
+	"StructureDefinition/hspc-gravidity.html": {
 		"base": "StructureDefinition-hspc-gravidity.html"
 	},
-	"StructureDefinition/hspc-HcgPregSerplQl.html"; {
+	"StructureDefinition/hspc-HcgPregSerplQl.html": {
 		"base": "StructureDefinition-hspc-HcgPregSerplQl.html"
 	},
-	"StructureDefinition/hspc-HcgPregSerQlIaRapid.html"; {
+	"StructureDefinition/hspc-HcgPregSerQlIaRapid.html": {
 		"base": "StructureDefinition-hspc-HcgPregSerQlIaRapid.html"
 	},
-	"StructureDefinition/hspc-HcgPregUrQl.html"; {
+	"StructureDefinition/hspc-HcgPregUrQl.html": {
 		"base": "StructureDefinition-hspc-HcgPregUrQl.html"
 	},
-	"StructureDefinition/hspc-HcgSerplAcnc.html"; {
+	"StructureDefinition/hspc-HcgSerplAcnc.html": {
 		"base": "StructureDefinition-hspc-HcgSerplAcnc.html"
 	},
-	"StructureDefinition/hspc-height.html"; {
+	"StructureDefinition/hspc-height.html": {
 		"base": "StructureDefinition-hspc-height.html"
 	},
-	"StructureDefinition/hspc-Hiv1AbSerplbldQlEiaRapid.html"; {
+	"StructureDefinition/hspc-Hiv1AbSerplbldQlEiaRapid.html": {
 		"base": "StructureDefinition-hspc-Hiv1AbSerplbldQlEiaRapid.html"
 	},
-	"StructureDefinition/hspc-Hiv1AbSerQlIb.html"; {
+	"StructureDefinition/hspc-Hiv1AbSerQlIb.html": {
 		"base": "StructureDefinition-hspc-Hiv1AbSerQlIb.html"
 	},
-	"StructureDefinition/hspc-Hiv1And2AbSerQlEia.html"; {
+	"StructureDefinition/hspc-Hiv1And2AbSerQlEia.html": {
 		"base": "StructureDefinition-hspc-Hiv1And2AbSerQlEia.html"
 	},
-	"StructureDefinition/hspc-Hiv1RnaSerplPcrDl17Log.html"; {
+	"StructureDefinition/hspc-Hiv1RnaSerplPcrDl17Log.html": {
 		"base": "StructureDefinition-hspc-Hiv1RnaSerplPcrDl17Log.html"
 	},
-	"StructureDefinition/hspc-Hiv1RnaSerplPcrDl50.html"; {
+	"StructureDefinition/hspc-Hiv1RnaSerplPcrDl50.html": {
 		"base": "StructureDefinition-hspc-Hiv1RnaSerplPcrDl50.html"
 	},
-	"StructureDefinition/hspc-Hiv1RnaXxxQlPcr.html"; {
+	"StructureDefinition/hspc-Hiv1RnaXxxQlPcr.html": {
 		"base": "StructureDefinition-hspc-Hiv1RnaXxxQlPcr.html"
 	},
-	"StructureDefinition/hspc-Hiv2AbSerQlEia.html"; {
+	"StructureDefinition/hspc-Hiv2AbSerQlEia.html": {
 		"base": "StructureDefinition-hspc-Hiv2AbSerQlEia.html"
 	},
-	"StructureDefinition/hspc-householdSize.html"; {
+	"StructureDefinition/hspc-householdSize.html": {
 		"base": "StructureDefinition-hspc-householdSize.html"
 	},
-	"StructureDefinition/hspc-Hpv12HrTypesDnaTissQlPrb.html"; {
+	"StructureDefinition/hspc-Hpv12HrTypesDnaTissQlPrb.html": {
 		"base": "StructureDefinition-hspc-Hpv12HrTypesDnaTissQlPrb.html"
 	},
-	"StructureDefinition/hspc-Hpv16And18AgCervixQl.html"; {
+	"StructureDefinition/hspc-Hpv16And18AgCervixQl.html": {
 		"base": "StructureDefinition-hspc-Hpv16And18AgCervixQl.html"
 	},
-	"StructureDefinition/hspc-Hpv16And18AgGenitalQl.html"; {
+	"StructureDefinition/hspc-Hpv16And18AgGenitalQl.html": {
 		"base": "StructureDefinition-hspc-Hpv16And18AgGenitalQl.html"
 	},
-	"StructureDefinition/hspc-Hpv16And18AgUrthQl.html"; {
+	"StructureDefinition/hspc-Hpv16And18AgUrthQl.html": {
 		"base": "StructureDefinition-hspc-Hpv16And18AgUrthQl.html"
 	},
-	"StructureDefinition/hspc-Hpv16And18AgVagQl.html"; {
+	"StructureDefinition/hspc-Hpv16And18AgVagQl.html": {
 		"base": "StructureDefinition-hspc-Hpv16And18AgVagQl.html"
 	},
-	"StructureDefinition/hspc-Hpv16And18AgXxxQl.html"; {
+	"StructureDefinition/hspc-Hpv16And18AgXxxQl.html": {
 		"base": "StructureDefinition-hspc-Hpv16And18AgXxxQl.html"
 	},
-	"StructureDefinition/hspc-HpvCervix.html"; {
+	"StructureDefinition/hspc-HpvCervix.html": {
 		"base": "StructureDefinition-hspc-HpvCervix.html"
 	},
-	"StructureDefinition/hspc-HpvDnaCervixQlBdna.html"; {
+	"StructureDefinition/hspc-HpvDnaCervixQlBdna.html": {
 		"base": "StructureDefinition-hspc-HpvDnaCervixQlBdna.html"
 	},
-	"StructureDefinition/hspc-HpvDnaCervixQlPrb.html"; {
+	"StructureDefinition/hspc-HpvDnaCervixQlPrb.html": {
 		"base": "StructureDefinition-hspc-HpvDnaCervixQlPrb.html"
 	},
-	"StructureDefinition/hspc-HpvE6AndE7MrnaCervixQlPcr.html"; {
+	"StructureDefinition/hspc-HpvE6AndE7MrnaCervixQlPcr.html": {
 		"base": "StructureDefinition-hspc-HpvE6AndE7MrnaCervixQlPcr.html"
 	},
-	"StructureDefinition/hspc-HpvIHRisk1DnaCervixQlBdna.html"; {
+	"StructureDefinition/hspc-HpvIHRisk1DnaCervixQlBdna.html": {
 		"base": "StructureDefinition-hspc-HpvIHRisk1DnaCervixQlBdna.html"
 	},
-	"StructureDefinition/hspc-HpvIHRisk1DnaXxxQlPcr.html"; {
+	"StructureDefinition/hspc-HpvIHRisk1DnaXxxQlPcr.html": {
 		"base": "StructureDefinition-hspc-HpvIHRisk1DnaXxxQlPcr.html"
 	},
-	"StructureDefinition/hspc-HpvIHRisk4DnaCervixQlBdna.html"; {
+	"StructureDefinition/hspc-HpvIHRisk4DnaCervixQlBdna.html": {
 		"base": "StructureDefinition-hspc-HpvIHRisk4DnaCervixQlBdna.html"
 	},
-	"StructureDefinition/hspc-HpvIHRiskDnaCervixQlPrb.html"; {
+	"StructureDefinition/hspc-HpvIHRiskDnaCervixQlPrb.html": {
 		"base": "StructureDefinition-hspc-HpvIHRiskDnaCervixQlPrb.html"
 	},
-	"StructureDefinition/hspc-HpvRrnaGenitalQlPcr.html"; {
+	"StructureDefinition/hspc-HpvRrnaGenitalQlPcr.html": {
 		"base": "StructureDefinition-hspc-HpvRrnaGenitalQlPcr.html"
 	},
-	"StructureDefinition/hspc-HpvRrnaXxxQlPcr.html"; {
+	"StructureDefinition/hspc-HpvRrnaXxxQlPcr.html": {
 		"base": "StructureDefinition-hspc-HpvRrnaXxxQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaAgGenitalQlEia.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaAgGenitalQlEia.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaAgGenitalQlEia.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaCervixQlCult.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaCervixQlCult.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaCervixQlCult.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaDnaCervMucusQlPcr.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaDnaCervMucusQlPcr.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaDnaCervMucusQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaDnaGenitalQlPcr.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaDnaGenitalQlPcr.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaDnaGenitalQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaDnaUrQlPcr.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaDnaUrQlPcr.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaDnaUrQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaDnaUrthQlPcr.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaDnaUrthQlPcr.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaDnaUrthQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaDnaVagQlPcr.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaDnaVagQlPcr.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaDnaVagQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaDnaXxxQlBdna.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaDnaXxxQlBdna.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaDnaXxxQlBdna.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaDnaXxxQlPcr.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaDnaXxxQlPcr.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaDnaXxxQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaGenitalQlCult.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaGenitalQlCult.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaGenitalQlCult.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaGenLochiaQlCult.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaGenLochiaQlCult.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaGenLochiaQlCult.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPcr.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPcr.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaRrnaCervixQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPrb.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPrb.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaRrnaCervixQlPrb.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPcr.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPcr.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaRrnaUrthQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPrb.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPrb.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaRrnaUrthQlPrb.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaRrnaVagQlPcr.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaRrnaVagQlPcr.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaRrnaVagQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPcr.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPcr.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaRrnaXxxQlPcr.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPrb.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPrb.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaRrnaXxxQlPrb.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaVagQlCult.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaVagQlCult.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaVagQlCult.html"
 	},
-	"StructureDefinition/hspc-NGonorrhoeaXxxQlCult.html"; {
+	"StructureDefinition/hspc-NGonorrhoeaXxxQlCult.html": {
 		"base": "StructureDefinition-hspc-NGonorrhoeaXxxQlCult.html"
 	},
-	"StructureDefinition/hspc-parity.html"; {
+	"StructureDefinition/hspc-parity.html": {
 		"base": "StructureDefinition-hspc-parity.html"
 	},
-	"StructureDefinition/hspc-sexLastThreeMonths.html"; {
+	"StructureDefinition/hspc-sexLastThreeMonths.html": {
 		"base": "StructureDefinition-hspc-sexLastThreeMonths.html"
 	},
-	"StructureDefinition/hspc-sexLastTwelveMonths.html"; {
+	"StructureDefinition/hspc-sexLastTwelveMonths.html": {
 		"base": "StructureDefinition-hspc-sexLastTwelveMonths.html"
 	},
-	"StructureDefinition/hspc-smokingStatus.html"; {
+	"StructureDefinition/hspc-smokingStatus.html": {
 		"base": "StructureDefinition-hspc-smokingStatus.html"
 	},
-	"StructureDefinition/hspc-StatOfAdqCvxVagCytoImp.html"; {
+	"StructureDefinition/hspc-StatOfAdqCvxVagCytoImp.html": {
 		"base": "StructureDefinition-hspc-StatOfAdqCvxVagCytoImp.html"
 	},
-	"StructureDefinition/hspc-StudyreportFindPtCvxVagDocCytology.html"; {
+	"StructureDefinition/hspc-StudyreportFindPtCvxVagDocCytology.html": {
 		"base": "StructureDefinition-hspc-StudyreportFindPtCvxVagDocCytology.html"
 	},
-	"StructureDefinition/hspc-systolicbp.html"; {
+	"StructureDefinition/hspc-systolicbp.html": {
 		"base": "StructureDefinition-hspc-systolicbp.html"
 	},
-	"StructureDefinition/hspc-ThinPrepCervix.html"; {
+	"StructureDefinition/hspc-ThinPrepCervix.html": {
 		"base": "StructureDefinition-hspc-ThinPrepCervix.html"
 	},
-	"StructureDefinition/ReferralRequest.html"; {
+	"StructureDefinition/ReferralRequest.html": {
 		"base": "StructureDefinition-ReferralRequest.html"
 	},
-	"Extensions/extensions-administrativeEncounterId.html":  {
+	"StructureDefinition/extensions-administrativeEncounterId.html":  {
 		"base" : "extensions-administrativeEncounterId.html"
 	},
-	"Extensions/extensions-admitMedicationId.html":  {
+	"StructureDefinition/extensions-admitMedicationId.html":  {
 		"base" : "extensions-admitMedicationId.html"
 	},
-	"Extensions/extensions-ambulatoryStatus.html":  {
+	"StructureDefinition/extensions-ambulatoryStatus.html":  {
 		"base" : "extensions-ambulatoryStatus.html"
 	},
-	"Extensions/extensions-arrivedByTransportation.html":  {
+	"StructureDefinition/extensions-arrivedByTransportation.html":  {
 		"base" : "extensions-arrivedByTransportation.html"
 	},
-	"Extensions/extensions-associatedPrecondition.html":  {
+	"StructureDefinition/extensions-associatedPrecondition.html":  {
 		"base" : "extensions-associatedPrecondition.html"
 	},
-	"Extensions/extensions-bodyPosition.html":  {
+	"StructureDefinition/extensions-bodyPosition.html":  {
 		"base" : "extensions-bodyPosition.html"
 	},
-	"Extensions/extensions-chiefComplaintId.html":  {
+	"StructureDefinition/extensions-chiefComplaintId.html":  {
 		"base" : "extensions-chiefComplaintId.html"
 	},
-	"Extensions/extensions-communicationMode.html":  {
+	"StructureDefinition/extensions-communicationMode.html":  {
 		"base" : "extensions-communicationMode.html"
 	},
-	"Extensions/extensions-confidentiality.html":  {
+	"StructureDefinition/extensions-confidentiality.html":  {
 		"base" : "extensions-confidentiality.html"
 	},
-	"Extensions/extensions-contraceptionProvisionMethod.html":  {
+	"StructureDefinition/extensions-contraceptionProvisionMethod.html":  {
 		"base" : "extensions-contraceptionProvisionMethod.html"
 	},
-	"Extensions/extensions-dataAbsentReason.html":  {
+	"StructureDefinition/extensions-dataAbsentReason.html":  {
 		"base" : "extensions-dataAbsentReason.html"
 	},
-	"Extensions/extensions-dataOriginationMode.html":  {
+	"StructureDefinition/extensions-dataOriginationMode.html":  {
 		"base" : "extensions-dataOriginationMode.html"
 	},
-	"Extensions/extensions-deltaFlag.html":  {
+	"StructureDefinition/extensions-deltaFlag.html":  {
 		"base" : "extensions-deltaFlag.html"
 	},
-	"Extensions/extensions-departedByTransportation.html":  {
+	"StructureDefinition/extensions-departedByTransportation.html":  {
 		"base" : "extensions-departedByTransportation.html"
 	},
-	"Extensions/extensions-dischargeMedicationId.html":  {
+	"StructureDefinition/extensions-dischargeMedicationId.html":  {
 		"base" : "extensions-dischargeMedicationId.html"
 	},
-	"Extensions/extensions-focalSubject.html":  {
+	"StructureDefinition/extensions-focalSubject.html":  {
 		"base" : "extensions-focalSubject.html"
 	},
-	"Extensions/extensions-hospitalService.html":  {
+	"StructureDefinition/extensions-hospitalService.html":  {
 		"base" : "extensions-hospitalService.html"
 	},
-	"Extensions/extensions-organizationPeriod.html":  {
+	"StructureDefinition/extensions-organizationPeriod.html":  {
 		"base" : "extensions-organizationPeriod.html"
 	},
-	"Extensions/extensions-primaryInsuranceClassification.html":  {
+	"StructureDefinition/extensions-primaryInsuranceClassification.html":  {
 		"base" : "extensions-primaryInsuranceClassification.html"
 	},
-	"Extensions/extensions-reasonCancelled.html":  {
+	"StructureDefinition/extensions-reasonCancelled.html":  {
 		"base" : "extensions-reasonCancelled.html"
 	},
-	"Extensions/extensions-reportingMethod.html":  {
+	"StructureDefinition/extensions-reportingMethod.html":  {
 		"base" : "extensions-reportingMethod.html"
 	},
-	"Extensions/extensions-vipLevel.html":  {
+	"StructureDefinition/extensions-vipLevel.html":  {
 		"base" : "extensions-vipLevel.html"
-	},
+	}
 
   }
 }
