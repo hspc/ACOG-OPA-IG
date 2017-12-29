@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="fpar-contraceptiveCounseling"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/fpar-contraceptiveCounseling"/>
+  <url value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-contraceptiveCounseling"/>
   <version value="1.0.0"/>
   <name value="FPAR Contraceptive Counseling Profile"/>
   <status value="draft"/>
@@ -21,23 +21,23 @@
   </mapping>
   <mapping>
     <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
+    <uri value="http://fhir.org/v3"/>
     <name value="RIM Mapping"/>
   </mapping>
   <mapping>
     <identity value="w5"/>
-    <uri value="http://hl7.org/fhir/w5"/>
+    <uri value="http://fhir.org/fhir/w5"/>
     <name value="W5 Mapping"/>
   </mapping>
   <mapping>
     <identity value="v2"/>
-    <uri value="http://hl7.org/v2"/>
+    <uri value="http://fhir.org/v2"/>
     <name value="HL7 v2 Mapping"/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Procedure"/>
-  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+  <baseDefinition value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="Procedure:fparcontraceptiveCounseling">
@@ -178,21 +178,21 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
+          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
     </element>
@@ -331,15 +331,15 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/PlanDefinition"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ActivityDefinition"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/HealthcareService"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -361,15 +361,15 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/CarePlan"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ProcedureRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ReferralRequest"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -392,15 +392,15 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Procedure"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Observation"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/MedicationAdministration"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -429,7 +429,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/event-status"/>
+          <reference value="http://fhir.org/fhir/ValueSet/event-status"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -485,13 +485,13 @@
       <condition value="pro-1"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureNegationReason"/>
         </extension>
         <strength value="example"/>
         <description value="A code that identifies the reason a procedure was not performed."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-not-performed-reason"/>
+          <reference value="http://fhir.org/fhir/ValueSet/procedure-not-performed-reason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -515,13 +515,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureCategory"/>
         </extension>
         <strength value="example"/>
         <description value="A code that classifies a procedure for searching, sorting and display purposes."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-category"/>
+          <reference value="http://fhir.org/fhir/ValueSet/procedure-category"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -559,15 +559,15 @@
       <mustSupport value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
+            <reference value="http://fhir.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
           </valueReference>
         </extension>
         <strength value="extensible"/>
         <description value="Codes describing the type of  Procedure"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
+          <reference value="http://fhir.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -601,7 +601,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+        <targetProfile value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-patient"/>
       </type>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -636,11 +636,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Encounter"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/EpisodeOfCare"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -803,13 +803,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedurePerformerRole"/>
         </extension>
         <strength value="example"/>
         <description value="A code that identifies the role of a performer of the procedure."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/performer-role"/>
+          <reference value="http://fhir.org/fhir/ValueSet/performer-role"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -835,23 +835,23 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Practitioner"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -881,7 +881,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -902,7 +902,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Location"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -930,13 +930,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureReason"/>
         </extension>
         <strength value="example"/>
         <description value="A code that identifies the reason a procedure is  required."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-reason"/>
+          <reference value="http://fhir.org/fhir/ValueSet/procedure-reason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -962,11 +962,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Condition"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Observation"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -994,13 +994,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="BodySite"/>
         </extension>
         <strength value="example"/>
         <description value="Codes describing anatomical locations. May include laterality."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/body-site"/>
+          <reference value="http://fhir.org/fhir/ValueSet/body-site"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1029,13 +1029,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureOutcome"/>
         </extension>
         <strength value="example"/>
         <description value="An outcome of a procedure - whether it was resolved or otherwise."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-outcome"/>
+          <reference value="http://fhir.org/fhir/ValueSet/procedure-outcome"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1057,7 +1057,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/DiagnosticReport"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -1080,13 +1080,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureComplication"/>
         </extension>
         <strength value="example"/>
         <description value="Codes describing complications that resulted from a procedure."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/condition-code"/>
+          <reference value="http://fhir.org/fhir/ValueSet/condition-code"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1108,7 +1108,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Condition"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -1130,13 +1130,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureFollowUp"/>
         </extension>
         <strength value="example"/>
         <description value="Specific follow up required for a procedure e.g. removal of sutures."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-followup"/>
+          <reference value="http://fhir.org/fhir/ValueSet/procedure-followup"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1276,13 +1276,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="DeviceActionKind"/>
         </extension>
         <strength value="preferred"/>
         <description value="A kind of change that happened to the device during the procedure."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/device-action"/>
+          <reference value="http://fhir.org/fhir/ValueSet/device-action"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1303,7 +1303,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -1325,15 +1325,15 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Medication"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Substance"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -1356,13 +1356,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureUsed"/>
         </extension>
         <strength value="example"/>
         <description value="Codes describing items used during a procedure"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/device-kind"/>
+          <reference value="http://fhir.org/fhir/ValueSet/device-kind"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1397,7 +1397,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/event-status"/>
+          <reference value="http://fhir.org/fhir/ValueSet/event-status"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1416,15 +1416,15 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
+            <reference value="http://fhir.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
           </valueReference>
         </extension>
         <strength value="extensible"/>
         <description value="Codes describing the type of  Procedure"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
+          <reference value="http://fhir.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1438,7 +1438,7 @@
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+        <targetProfile value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-patient"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>

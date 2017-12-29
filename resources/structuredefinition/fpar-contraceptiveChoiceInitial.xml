@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="fparcontraceptiveChoiceInitial"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/fpar-contraceptiveChoiceInitial"/>
+  <id value="fpar-contraceptiveChoiceInitial"/>
+  <url value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-contraceptiveChoiceInitial"/>
   <version value="1.0.0"/>
   <name value="Family Planning Annual Report Contraceptive Choice Initial Profile"/>
   <status value="draft"/>
@@ -21,7 +21,7 @@
   </mapping>
   <mapping>
     <identity value="workflow"/>
-    <uri value="http://hl7.org/fhir/workflow"/>
+    <uri value="http://fhir.org/fhir/workflow"/>
     <name value="Workflow Mapping"/>
   </mapping>
   <mapping>
@@ -31,17 +31,17 @@
   </mapping>
   <mapping>
     <identity value="v2"/>
-    <uri value="http://hl7.org/v2"/>
+    <uri value="http://fhir.org/v2"/>
     <name value="HL7 v2 Mapping"/>
   </mapping>
   <mapping>
     <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
+    <uri value="http://fhir.org/v3"/>
     <name value="RIM Mapping"/>
   </mapping>
   <mapping>
     <identity value="w5"/>
-    <uri value="http://hl7.org/fhir/w5"/>
+    <uri value="http://fhir.org/fhir/w5"/>
     <name value="W5 Mapping"/>
   </mapping>
   <mapping>
@@ -52,10 +52,10 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Observation"/>
-  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
+  <baseDefinition value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
   <derivation value="constraint"/>
   <snapshot>
-    <element id="Observation:fparcontraceptiveChoiceInitial">
+    <element id="Observation:fpar-contraceptiveChoiceInitial">
       <path value="Observation"/>
       <sliceName value="FPARContraceptiveChoiceInitial"/>
       <short value="FPAR Contraceptive Choice Initial Profile."/>
@@ -154,7 +154,7 @@
         <map value="Observation"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.id">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.id">
       <path value="Observation.id"/>
       <short value="Logical id of this artifact"/>
       <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."/>
@@ -171,7 +171,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.meta">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.meta">
       <path value="Observation.meta"/>
       <short value="Metadata about the resource"/>
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
@@ -187,7 +187,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.implicitRules">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.implicitRules">
       <path value="Observation.implicitRules"/>
       <short value="A set of rules under which this content was created"/>
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
@@ -205,7 +205,7 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.language">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.language">
       <path value="Observation.language"/>
       <short value="Language of the resource content"/>
       <definition value="The base language in which the resource is written."/>
@@ -221,25 +221,25 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
+          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.text">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.text">
       <path value="Observation.text"/>
       <short value="Text summary of the resource, for human interpretation"/>
       <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
@@ -264,7 +264,7 @@
         <map value="Act.text?"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.contained">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.contained">
       <path value="Observation.contained"/>
       <short value="Contained, inline Resources"/>
       <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
@@ -287,7 +287,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.extension">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.extension">
       <path value="Observation.extension"/>
       <slicing id="2">
         <discriminator> 
@@ -317,7 +317,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.modifierExtension">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.modifierExtension">
       <path value="Observation.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -340,7 +340,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.identifier">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.identifier">
       <path value="Observation.identifier"/>
       <short value="Business Identifier for observation"/>
       <definition value="A unique identifier assigned to this observation."/>
@@ -373,7 +373,7 @@
         <map value="id"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.basedOn">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.basedOn">
       <path value="Observation.basedOn"/>
       <short value="Fulfills plan, proposal or order"/>
       <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event."/>
@@ -388,31 +388,31 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/CarePlan"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/DeviceRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/MedicationRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/NutritionOrder"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ProcedureRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ReferralRequest"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -428,8 +428,8 @@
         <map value=".outboundRelationship[typeCode=FLFS].target"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.status">
+      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-display-hint">
         <valueString value="default: final"/>
       </extension>
       <path value="Observation.status"/>
@@ -453,7 +453,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-status"/>
+          <reference value="http://fhir.org/fhir/ValueSet/observation-status"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -481,7 +481,7 @@
         <map value="Observation.status"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.category">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.category">
       <path value="Observation.category"/>
       <short value="Classification of  type of observation"/>
       <definition value="A code that classifies the general type of observation being made."/>
@@ -500,19 +500,19 @@
       <constraint>
         <key value="us-core-5"/>
         <severity value="error"/>
-        <human value="Must have a category of &#39;laboratory&#39; and a code system &#39;http://hl7.org/fhir/observation-category&#39;"/>
-        <expression value="where(coding.system=&#39;http://hl7.org/fhir/observation-category&#39; and coding.code=&#39;laboratory&#39;).exists()"/>
-        <xpath value="exists(f:coding/code[@value=&#39;laboratory&#39;]) and exists(f:coding/system[@value=&#39;http://hl7.org/fhir/observation-category&#39;])"/>
+        <human value="Must have a category of &#39;laboratory&#39; and a code system &#39;http://fhir.org/fhir/observation-category&#39;"/>
+        <expression value="where(coding.system=&#39;http://fhir.org/fhir/observation-category&#39; and coding.code=&#39;laboratory&#39;).exists()"/>
+        <xpath value="exists(f:coding/code[@value=&#39;laboratory&#39;]) and exists(f:coding/system[@value=&#39;http://fhir.org/fhir/observation-category&#39;])"/>
       </constraint>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCategory"/>
         </extension>
         <strength value="preferred"/>
         <description value="Codes for high level observation categories."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-category"/>
+          <reference value="http://fhir.org/fhir/ValueSet/observation-category"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -528,7 +528,7 @@
         <map value="Observation.category"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.code">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.code">
       <path value="Observation.code"/>
       <short value="Laboratory Test Name"/>
       <definition value="The test that was performed.  A LOINC **SHALL** be used if the concept is present in LOINC."/>
@@ -560,7 +560,7 @@
         <strength value="extensible"/>
         <description value="LOINC codes"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-codes"/>
+          <reference value="http://fhir.org/fhir/ValueSet/observation-codes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -592,7 +592,7 @@
         <map value="Observation.code"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.subject">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.subject">
       <path value="Observation.subject"/>
       <short value="Who and/or what this is about"/>
       <definition value="The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject."/>
@@ -607,7 +607,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/hspc/StructureDefinition/fpar-patient"/>
+        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-patient"/>
       </type>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -632,7 +632,7 @@
         <map value="Observation.subject"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.context">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.context">
       <path value="Observation.context"/>
       <short value="Healthcare event during which this observation is made"/>
       <definition value="The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made."/>
@@ -648,11 +648,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Encounter"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/EpisodeOfCare"/>
       </type>
       <mapping>
         <identity value="workflow"/>
@@ -671,7 +671,7 @@
         <map value="context"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.effective[x]">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.effective[x]">
       <path value="Observation.effective[x]"/>
       <short value="Clinically relevant time/time-period for observation"/>
       <definition value="For lab tests this is the specimen collection date.  For Ask at Order Entry Questions (AOE)&#39;s this is the date the question was asked."/>
@@ -721,7 +721,7 @@
         <map value="Observation.effective[x]"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.issued">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.issued">
       <path value="Observation.issued"/>
       <short value="Date/Time this was made available"/>
       <definition value="The date and time this observation was made available to providers, typically after the results have been reviewed and verified."/>
@@ -750,7 +750,7 @@
         <map value="when.recorded"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.performer">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.performer">
       <path value="Observation.performer"/>
       <short value="Who is responsible for the observation"/>
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;."/>
@@ -764,19 +764,19 @@
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="http://fhir.org/guides/hspc/StructureDefinition/hspc-practitioner"/>
+        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-practitioner"/>
       </type>
       <type>
         <code value="Reference"/>
-        <profile value="http://fhir.org/guides/hspc/StructureDefinition/hspc-organization"/>
+        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-organization"/>
       </type>
       <type>
         <code value="Reference"/>
-        <profile value="http://fhir.org/guides/hspc/StructureDefinition/hspc-patient"/>
+        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-patient"/>
       </type>
       <type>
         <code value="Reference"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -796,7 +796,7 @@
         <map value="who.actor"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.valueCodeableConcept">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.valueCodeableConcept">
       <path value="Observation.valueCodeableConcept"/>
       <short value="A coded result"/>
       <definition value="A coded value that represents the result of an observation, assessment, or evaluation."/>
@@ -845,7 +845,7 @@
         <map value="Observation.value[x]"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.dataAbsentReason">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.dataAbsentReason">
       <path value="Observation.dataAbsentReason"/>
       <short value="Why the result is missing"/>
       <definition value="Provides a reason why the expected value in the element Observation.value[x] is missing."/>
@@ -888,7 +888,7 @@
         <map value="Observation.dataAbsentReason"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.interpretation">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.interpretation">
       <path value="Observation.interpretation"/>
       <short value="High, low, normal, etc."/>
       <definition value="The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag."/>
@@ -921,7 +921,7 @@
         <map value="363713009 |Has interpretation|"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.comment">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.comment">
       <path value="Observation.comment"/>
       <short value="Comments about result"/>
       <definition value="May include statements about significant, unexpected or unreliable values, or information about the source of the value where this may be relevant to the interpretation of the result."/>
@@ -949,7 +949,7 @@
         <map value="subjectOf.observationEvent[code=&quot;annotation&quot;].value"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.bodySite">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.bodySite">
       <path value="Observation.bodySite"/>
       <short value="Observed body part"/>
       <definition value="Indicates the site on the subject&#39;s body where the observation was made (i.e. the target site)."/>
@@ -965,13 +965,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="BodySite"/>
         </extension>
         <strength value="example"/>
         <description value="Codes describing anatomical locations. May include laterality."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/body-site"/>
+          <reference value="http://fhir.org/fhir/ValueSet/body-site"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -991,7 +991,7 @@
         <map value="718497002 |Inherent location|"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.method">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.method">
       <path value="Observation.method"/>
       <short value="How it was done"/>
       <definition value="Indicates the mechanism used to perform the observation."/>
@@ -1008,13 +1008,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationMethod"/>
         </extension>
         <strength value="example"/>
         <description value="Methods for simple observations."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-methods"/>
+          <reference value="http://fhir.org/fhir/ValueSet/observation-methods"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1026,7 +1026,7 @@
         <map value="methodCode"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.specimen">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.specimen">
       <path value="Observation.specimen"/>
       <short value="Specimen used for this observation"/>
       <definition value="The specimen that was used when this observation was made."/>
@@ -1040,7 +1040,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Specimen"/>
       </type>
       <mapping>
         <identity value="sct-concept"/>
@@ -1059,7 +1059,7 @@
         <map value="704319004 |Inherent in|"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.device">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.device">
       <path value="Observation.device"/>
       <short value="(Measurement) Device"/>
       <definition value="The device used to generate the observation data."/>
@@ -1073,11 +1073,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/DeviceMetric"/>
       </type>
       <mapping>
         <identity value="sct-concept"/>
@@ -1096,7 +1096,7 @@
         <map value="424226004 |Using device|"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange">
       <path value="Observation.referenceRange"/>
       <short value="Provides guide for interpretation"/>
       <definition value="Guidance on how to interpret the value by comparison to a normal or recommended range."/>
@@ -1136,7 +1136,7 @@
         <map value="outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange.id">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange.id">
       <path value="Observation.referenceRange.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1156,7 +1156,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange.extension">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange.extension">
       <path value="Observation.referenceRange.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -1178,7 +1178,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange.modifierExtension">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange.modifierExtension">
       <path value="Observation.referenceRange.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -1203,7 +1203,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange.low">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange.low">
       <path value="Observation.referenceRange.low"/>
       <short value="Low Range, if relevant"/>
       <definition value="The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is &gt;=5 - &lt;=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is &lt;=2.3)."/>
@@ -1216,7 +1216,7 @@
       </base>
       <type>
         <code value="Quantity"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/SimpleQuantity"/>
       </type>
       <condition value="obs-3"/>
       <mapping>
@@ -1228,7 +1228,7 @@
         <map value="value:IVL_PQ.low"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange.high">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange.high">
       <path value="Observation.referenceRange.high"/>
       <short value="High Range, if relevant"/>
       <definition value="The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is &gt;=5 - &lt;=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is &gt;= 2.3)."/>
@@ -1241,7 +1241,7 @@
       </base>
       <type>
         <code value="Quantity"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/SimpleQuantity"/>
       </type>
       <condition value="obs-3"/>
       <mapping>
@@ -1253,7 +1253,7 @@
         <map value="value:IVL_PQ.high"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange.type">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange.type">
       <path value="Observation.referenceRange.type"/>
       <short value="Reference range qualifier"/>
       <definition value="Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range."/>
@@ -1270,13 +1270,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRangeMeaning"/>
         </extension>
         <strength value="extensible"/>
         <description value="Code for the meaning of a reference range."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/referencerange-meaning"/>
+          <reference value="http://fhir.org/fhir/ValueSet/referencerange-meaning"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1292,7 +1292,7 @@
         <map value="interpretationCode"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange.appliesTo">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange.appliesTo">
       <path value="Observation.referenceRange.appliesTo"/>
       <short value="Reference range population"/>
       <definition value="Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race."/>
@@ -1309,13 +1309,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRangeType"/>
         </extension>
         <strength value="example"/>
         <description value="Codes identifying the population the reference range applies to."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/referencerange-appliesto"/>
+          <reference value="http://fhir.org/fhir/ValueSet/referencerange-appliesto"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1331,7 +1331,7 @@
         <map value="interpretationCode"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange.age">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange.age">
       <path value="Observation.referenceRange.age"/>
       <short value="Applicable age range, if relevant"/>
       <definition value="The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so."/>
@@ -1351,7 +1351,7 @@
         <map value="outboundRelationship[typeCode=PRCN].targetObservationCriterion[code=&quot;age&quot;].value"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange.text">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange.text">
       <path value="Observation.referenceRange.text"/>
       <short value="Text based reference range in an observation"/>
       <definition value="Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of &quot;Negative&quot; or a list or table of &#39;normals&#39;."/>
@@ -1374,7 +1374,7 @@
         <map value="value:ST"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.related">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.related">
       <path value="Observation.related"/>
       <short value="Resource related to this observation"/>
       <definition value="A  reference to another resource (usually another Observation) whose relationship is defined by the relationship type code."/>
@@ -1408,7 +1408,7 @@
         <map value="outBoundRelationship"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.related.id">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.related.id">
       <path value="Observation.related.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1428,7 +1428,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.related.extension">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.related.extension">
       <path value="Observation.related.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -1450,7 +1450,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.related.modifierExtension">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.related.modifierExtension">
       <path value="Observation.related.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -1475,7 +1475,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.related.type">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.related.type">
       <path value="Observation.related.type"/>
       <short value="has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by"/>
       <definition value="A code specifying the kind of relationship that exists with the target resource."/>
@@ -1492,13 +1492,13 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRelationshipType"/>
         </extension>
         <strength value="required"/>
         <description value="Codes specifying how two observations are related."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-relationshiptypes"/>
+          <reference value="http://fhir.org/fhir/ValueSet/observation-relationshiptypes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1510,7 +1510,7 @@
         <map value=".typeCode"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.related.target">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.related.target">
       <path value="Observation.related.target"/>
       <short value="Resource that is related to this one"/>
       <definition value="A reference to the observation or [QuestionnaireResponse](questionnaireresponse.html#) resource that is related to this observation."/>
@@ -1523,22 +1523,22 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Observation"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/QuestionnaireResponse"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Sequence"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Sequence"/>
       </type>
       <mapping>
         <identity value="rim"/>
         <map value=".targetObservation"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.component">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.component">
       <path value="Observation.component"/>
       <short value="Component results"/>
       <definition value="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations."/>
@@ -1572,7 +1572,7 @@
         <map value="outBoundRelationship[typeCode=COMP]"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.component.id">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.component.id">
       <path value="Observation.component.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1592,7 +1592,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.component.extension">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.component.extension">
       <path value="Observation.component.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -1614,7 +1614,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.component.modifierExtension">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.component.modifierExtension">
       <path value="Observation.component.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -1639,7 +1639,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.component.code">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.component.code">
       <path value="Observation.component.code"/>
       <short value="Type of component observation (code / type)"/>
       <definition value="Describes what was observed. Sometimes this is called the observation &quot;code&quot;."/>
@@ -1656,13 +1656,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="example"/>
         <description value="Codes identifying names of simple observations."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-codes"/>
+          <reference value="http://fhir.org/fhir/ValueSet/observation-codes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1682,11 +1682,11 @@
         <map value="what"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.component.value[x]">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.component.value[x]">
       <path value="Observation.component.value[x]"/>
       <short value="Actual component result"/>
       <definition value="The information determined as a result of making the observation, if the information has a simple value."/>
-      <comment value="Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.   For boolean values use valueCodeableConcept and select codes from &lt;http://hl7.org/fhir/ValueSet/v2-0136&gt; (these &quot;yes/no&quot; concepts can be mapped to the display name &quot;true/false&quot; or other mutually exclusive terms that may be needed&quot;).  The element, Observation.value[x], has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueRatio, valueChoice, valuePeriod, valueSampleData, or valueString (the name format is &quot;&#39;value&#39; + the type name&quot; with a capital on the first letter of the type)."/>
+      <comment value="Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.   For boolean values use valueCodeableConcept and select codes from &lt;http://fhir.org/fhir/ValueSet/v2-0136&gt; (these &quot;yes/no&quot; concepts can be mapped to the display name &quot;true/false&quot; or other mutually exclusive terms that may be needed&quot;).  The element, Observation.value[x], has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueRatio, valueChoice, valuePeriod, valueSampleData, or valueString (the name format is &quot;&#39;value&#39; + the type name&quot; with a capital on the first letter of the type)."/>
       <requirements value="An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations."/>
       <min value="0"/>
       <max value="1"/>
@@ -1743,7 +1743,7 @@
         <map value="363714003 |Interprets|"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.component.dataAbsentReason">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.component.dataAbsentReason">
       <path value="Observation.component.dataAbsentReason"/>
       <short value="Why the component result is missing"/>
       <definition value="Provides a reason why the expected value in the element Observation.value[x] is missing."/>
@@ -1761,13 +1761,13 @@
       </type>
       <condition value="obs-6"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationValueAbsentReason"/>
         </extension>
         <strength value="extensible"/>
         <description value="Codes specifying why the result (Observation.value[x]) is missing."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason"/>
+          <reference value="http://fhir.org/fhir/ValueSet/observation-valueabsentreason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1779,7 +1779,7 @@
         <map value="value.nullFlavor"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.component.interpretation">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.component.interpretation">
       <path value="Observation.component.interpretation"/>
       <short value="High, low, normal, etc."/>
       <definition value="The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag."/>
@@ -1797,13 +1797,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationInterpretation"/>
         </extension>
         <strength value="extensible"/>
         <description value="Codes identifying interpretations of observations."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
+          <reference value="http://fhir.org/fhir/ValueSet/observation-interpretation"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1823,7 +1823,7 @@
         <map value="363713009 |Has interpretation|"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.component.referenceRange">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.component.referenceRange">
       <path value="Observation.component.referenceRange"/>
       <short value="Provides guide for interpretation of component result"/>
       <definition value="Guidance on how to interpret the value by comparison to a normal or recommended range."/>
@@ -1848,7 +1848,7 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Observation:fparcontraceptiveChoiceInitial">
+    <element id="Observation:fpar-contraceptiveChoiceInitial">
      <path value="Observation"/>      
      <sliceName value="fparContraceptiveChoiceInitial"/>
      <short value="FPAR Contraceptive Choice Initial."/>
@@ -1869,7 +1869,7 @@
         <map value="Observation"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.code">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.code">
       <path value="Observation.code"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -1886,7 +1886,7 @@
         <map value="Observation.code"/>
       </mapping>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.valueCodeableConcept">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.valueCodeableConcept">
       <path value="Observation.valueCodeableConcept"/>
       <min value="0"/>
       <max value="1"/>
@@ -1904,7 +1904,7 @@
 	</valueSetReference>
       </binding>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.bodySite">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.bodySite">
       <path value="Observation.bodySite"/>
       <min value="0"/>
       <max value="0"/>
@@ -1915,7 +1915,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.dataAbsentReason">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.dataAbsentReason">
       <path value="Observation.dataAbsentReason"/>
       <alias value="Contraception not used reason"/>
       <min value="0"/>
@@ -1932,7 +1932,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.method">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.method">
       <path value="Observation.method"/>
       <min value="0"/>
       <max value="0"/>
@@ -1943,7 +1943,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.specimen">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.specimen">
       <path value="Observation.specimen"/>
       <min value="0"/>
       <max value="0"/>
@@ -1954,7 +1954,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.device">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.device">
       <path value="Observation.device"/>
       <min value="0"/>
       <max value="0"/>
@@ -1965,7 +1965,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.referenceRange">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.referenceRange">
       <path value="Observation.referenceRange"/>
       <min value="0"/>
       <max value="0"/>
@@ -1973,7 +1973,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.related">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.related">
       <path value="Observation.related"/>
       <min value="0"/>
       <max value="0"/>
@@ -1984,7 +1984,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Observation:fparcontraceptiveChoiceInitial.component">
+    <element id="Observation:fpar-contraceptiveChoiceInitial.component">
       <path value="Observation.component"/>
       <min value="0"/>
       <max value="0"/>

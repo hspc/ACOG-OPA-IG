@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="fpar-practitioner"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/fpar-practitioner"/>
+  <url value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-practitioner"/>
   <name value="FPAR Practitioner Profile"/>
   <status value="draft"/>
   <date value="2017-05-03"/>
@@ -15,12 +15,12 @@
   <fhirVersion value="3.0.0"/>
   <mapping>
     <identity value="v2"/>
-    <uri value="http://hl7.org/v2"/>
+    <uri value="http://fhir.org/v2"/>
     <name value="HL7 v2 Mapping"/>
   </mapping>
   <mapping>
     <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
+    <uri value="http://fhir.org/v3"/>
     <name value="RIM Mapping"/>
   </mapping>
   <mapping>
@@ -30,18 +30,18 @@
   </mapping>
   <mapping>
     <identity value="w5"/>
-    <uri value="http://hl7.org/fhir/w5"/>
+    <uri value="http://fhir.org/fhir/w5"/>
     <name value="W5 Mapping"/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Practitioner"/>
-  <baseDefinition value="http://fhir.org/guides/hspc/StructureDefinition/fpar-practitioner"/>
+  <baseDefinition value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-practitioner"/>
   <derivation value="constraint"/>
   <snapshot>
-    <element id="Practitioner:fparpractitioner">
+    <element id="Practitioner:fpar-practitioner">
       <path value="Practitioner"/>
-      <sliceName value="fparpractitioner"/>
+      <sliceName value="fpar-practitioner"/>
       <short value="FPAR Practitioner"/>
       <definition value="This is a constraint on the HSPC Practitioner profile.  A provider or practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."/>
       <comment value="Note that a cab driver no longer fits the bill. You probably would be interested in the organization rather than the individual?"/>
@@ -107,7 +107,7 @@
         <map value="administrative.individual"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.id">
+    <element id="Practitioner:fpar-practitioner.id">
       <path value="Practitioner.id"/>
       <short value="Logical id of this artifact"/>
       <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."/>
@@ -124,7 +124,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Practitioner:fparpractitioner.meta">
+    <element id="Practitioner:fpar-practitioner.meta">
       <path value="Practitioner.meta"/>
       <short value="Metadata about the resource"/>
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
@@ -140,7 +140,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Practitioner:fparpractitioner.implicitRules">
+    <element id="Practitioner:fpar-practitioner.implicitRules">
       <path value="Practitioner.implicitRules"/>
       <short value="A set of rules under which this content was created"/>
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
@@ -158,7 +158,7 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
     </element>
-    <element id="Practitioner:fparpractitioner.language">
+    <element id="Practitioner:fpar-practitioner.language">
       <path value="Practitioner.language"/>
       <short value="Language of the resource content"/>
       <definition value="The base language in which the resource is written."/>
@@ -174,25 +174,25 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
+          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
     </element>
-    <element id="Practitioner:fparpractitioner.text">
+    <element id="Practitioner:fpar-practitioner.text">
       <path value="Practitioner.text"/>
       <short value="Text summary of the resource, for human interpretation"/>
       <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
@@ -217,7 +217,7 @@
         <map value="Act.text?"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.contained">
+    <element id="Practitioner:fpar-practitioner.contained">
       <path value="Practitioner.contained"/>
       <short value="Contained, inline Resources"/>
       <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
@@ -240,7 +240,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.extension">
+    <element id="Practitioner:fpar-practitioner.extension">
       <path value="Practitioner.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -262,7 +262,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.modifierExtension">
+    <element id="Practitioner:fpar-practitioner.modifierExtension">
       <path value="Practitioner.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -285,7 +285,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier">
+    <element id="Practitioner:fpar-practitioner.identifier">
       <path value="Practitioner.identifier"/>
       <short value="A identifier for the person as this agent"/>
       <definition value="An identifier that applies to this person in this role."/>
@@ -319,7 +319,7 @@
         <map value="id"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier.id">
+    <element id="Practitioner:fpar-practitioner.identifier.id">
       <path value="Practitioner.identifier.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -339,7 +339,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier.extension">
+    <element id="Practitioner:fpar-practitioner.identifier.extension">
       <path value="Practitioner.identifier.extension"/>
       <slicing>
         <discriminator>
@@ -369,7 +369,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier.use">
+    <element id="Practitioner:fpar-practitioner.identifier.use">
       <path value="Practitioner.identifier.use"/>
       <short value="usual | official | temp | secondary (If known)"/>
       <definition value="The purpose of this identifier."/>
@@ -388,13 +388,13 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierUse"/>
         </extension>
         <strength value="required"/>
         <description value="Identifies the purpose for this identifier, if known ."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-use"/>
+          <reference value="http://fhir.org/fhir/ValueSet/identifier-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -406,7 +406,7 @@
         <map value="Role.code or implied by context"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier.type">
+    <element id="Practitioner:fpar-practitioner.identifier.type">
       <path value="Practitioner.identifier.type"/>
       <short value="Description of identifier"/>
       <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."/>
@@ -424,16 +424,16 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type"/>
+          <reference value="http://fhir.org/fhir/ValueSet/identifier-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -445,7 +445,7 @@
         <map value="Role.code or implied by context"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier.system">
+    <element id="Practitioner:fpar-practitioner.identifier.system">
       <path value="Practitioner.identifier.system"/>
       <short value="NPI could be used as the identifier system in the US."/>
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."/>
@@ -484,7 +484,7 @@
         <map value="./IdentifierType"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier.value">
+    <element id="Practitioner:fpar-practitioner.identifier.value">
       <path value="Practitioner.identifier.value"/>
       <short value="The value that is unique"/>
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."/>
@@ -518,7 +518,7 @@
         <map value="./Value"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier.period">
+    <element id="Practitioner:fpar-practitioner.identifier.period">
       <path value="Practitioner.identifier.period"/>
       <short value="Time period when id is/was valid for use"/>
       <definition value="Time period during which identifier is/was valid for use."/>
@@ -546,7 +546,7 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier.assigner">
+    <element id="Practitioner:fpar-practitioner.identifier.assigner">
       <path value="Practitioner.identifier.assigner"/>
       <short value="Organization that issued id (may be just text)"/>
       <definition value="Organization that issued/manages the identifier."/>
@@ -560,7 +560,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -576,7 +576,7 @@
         <map value="./IdentifierIssuingAuthority"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.active">
+    <element id="Practitioner:fpar-practitioner.active">
       <path value="Practitioner.active"/>
       <short value="Whether this practitioner&#39;s record is in active use"/>
       <definition value="Whether this practitioner&#39;s record is in active use."/>
@@ -603,7 +603,7 @@
         <map value="status"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.name">
+    <element id="Practitioner:fpar-practitioner.name">
       <path value="Practitioner.name"/>
       <short value="The name(s) associated with the practitioner"/>
       <definition value="The name(s) associated with the practitioner."/>
@@ -634,7 +634,7 @@
         <map value="./PreferredName (GivenNames, FamilyName, TitleCode)"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.name.id">
+    <element id="Practitioner:fpar-practitioner.name.id">
       <path value="Practitioner.name.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -654,7 +654,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.name.extension">
+    <element id="Practitioner:fpar-practitioner.name.extension">
       <path value="Practitioner.name.extension"/>
       <slicing>
         <discriminator>
@@ -684,7 +684,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.name.use">
+    <element id="Practitioner:fpar-practitioner.name.use">
       <path value="Practitioner.name.use"/>
       <short value="usual | official | temp | nickname | anonymous | old | maiden"/>
       <definition value="Identifies the purpose for this name."/>
@@ -703,13 +703,13 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="NameUse"/>
         </extension>
         <strength value="required"/>
         <description value="The use of a human name"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/name-use"/>
+          <reference value="http://fhir.org/fhir/ValueSet/name-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -725,7 +725,7 @@
         <map value="./NamePurpose"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.name.text">
+    <element id="Practitioner:fpar-practitioner.name.text">
       <path value="Practitioner.name.text"/>
       <short value="Text representation of the full name"/>
       <definition value="A full text representation of the name."/>
@@ -751,7 +751,7 @@
         <map value="./formatted"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.name.family">
+    <element id="Practitioner:fpar-practitioner.name.family">
       <path value="Practitioner.name.family"/>
       <short value="Family name (often called &#39;Surname&#39;)"/>
       <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
@@ -782,7 +782,7 @@
         <map value="./FamilyName"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.name.given">
+    <element id="Practitioner:fpar-practitioner.name.given">
       <path value="Practitioner.name.given"/>
       <short value="Given names (not always &#39;first&#39;). Includes middle names"/>
       <definition value="Given name."/>
@@ -814,7 +814,7 @@
         <map value="./GivenNames"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.name.prefix">
+    <element id="Practitioner:fpar-practitioner.name.prefix">
       <path value="Practitioner.name.prefix"/>
       <short value="Parts that come before the name"/>
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."/>
@@ -843,7 +843,7 @@
         <map value="./TitleCode"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.name.suffix">
+    <element id="Practitioner:fpar-practitioner.name.suffix">
       <path value="Practitioner.name.suffix"/>
       <short value="Parts that come after the name"/>
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name."/>
@@ -868,7 +868,7 @@
         <map value="./part[partType = SFX]"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.name.period">
+    <element id="Practitioner:fpar-practitioner.name.period">
       <path value="Practitioner.name.period"/>
       <short value="Time period when name was/is in use"/>
       <definition value="Indicates the period of time when this name was valid for the named person."/>
@@ -897,7 +897,7 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.telecom">
+    <element id="Practitioner:fpar-practitioner.telecom">
       <path value="Practitioner.telecom"/>
       <short value="A contact detail for the practitioner (that apply to all roles)"/>
       <definition value="A contact detail for the practitioner, e.g. a telephone number or an email address."/>
@@ -927,7 +927,7 @@
         <map value="./ContactPoints"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.telecom.id">
+    <element id="Practitioner:fpar-practitioner.telecom.id">
       <path value="Practitioner.telecom.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -947,7 +947,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.telecom.extension:preferenceindicator$Extension">
+    <element id="Practitioner:fpar-practitioner.telecom.extension:preferenceindicator$Extension">
       <path value="Practitioner.telecom.extension"/>
       <sliceName value="PreferenceIndicator"/>
       <short value="Extension"/>
@@ -961,7 +961,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -974,7 +974,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.telecom.system">
+    <element id="Practitioner:fpar-practitioner.telecom.system">
       <path value="Practitioner.telecom.system"/>
       <short value="phone | fax | email | pager | other"/>
       <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact."/>
@@ -994,7 +994,7 @@
         <strength value="required"/>
         <description value="Telecommunications form for contact point"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/contact-point-system"/>
+          <reference value="http://fhir.org/fhir/ValueSet/contact-point-system"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1010,7 +1010,7 @@
         <map value="./ContactPointType"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.telecom.value">
+    <element id="Practitioner:fpar-practitioner.telecom.value">
       <path value="Practitioner.telecom.value"/>
       <short value="The actual contact point details"/>
       <definition value="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)."/>
@@ -1040,7 +1040,7 @@
         <map value="./Value"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.telecom.use">
+    <element id="Practitioner:fpar-practitioner.telecom.use">
       <path value="Practitioner.telecom.use"/>
       <short value="home | work | temp | old | mobile - purpose of this contact point"/>
       <definition value="Identifies the purpose for the contact point."/>
@@ -1062,7 +1062,7 @@
         <strength value="required"/>
         <description value="Use of contact point"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/contact-point-use"/>
+          <reference value="http://fhir.org/fhir/ValueSet/contact-point-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1078,7 +1078,7 @@
         <map value="./ContactPointPurpose"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.telecom.rank">
+    <element id="Practitioner:fpar-practitioner.telecom.rank">
       <path value="Practitioner.telecom.rank"/>
       <short value="Specify preferred order of use (1 = highest)"/>
       <definition value="Specifies a preferred order in which to use a set of contacts. Contacts are ranked with lower values coming before higher values."/>
@@ -1103,7 +1103,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.telecom.period">
+    <element id="Practitioner:fpar-practitioner.telecom.period">
       <path value="Practitioner.telecom.period"/>
       <short value="Time period when the contact point was/is in use"/>
       <definition value="Time period when the contact point was/is in use."/>
@@ -1131,7 +1131,7 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address">
+    <element id="Practitioner:fpar-practitioner.address">
       <path value="Practitioner.address"/>
       <short value="Address(es) of the practitioner that are not role specific (typically home address)"/>
       <definition value="Address(es) of the practitioner that are not role specific (typically home address). &#xD;Work addresses are not typically entered in this property as they are usually role dependent."/>
@@ -1161,7 +1161,7 @@
         <map value="./Addresses"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.id">
+    <element id="Practitioner:fpar-practitioner.address.id">
       <path value="Practitioner.address.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1181,7 +1181,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.extension:primaryindicator$Extension">
+    <element id="Practitioner:fpar-practitioner.address.extension:primaryindicator$Extension">
       <path value="Practitioner.address.extension"/>
       <sliceName value="PrimaryIndicator"/>
       <short value="Extension"/>
@@ -1195,7 +1195,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1211,11 +1211,11 @@
         <strength value="preferred"/>
         <description value="The set of values to indicate affirmative or negative"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/v2-0136"/>
+          <reference value="http://fhir.org/fhir/ValueSet/v2-0136"/>
         </valueSetReference>
       </binding>
     </element>
-    <element id="Practitioner:fparpractitioner.address.use">
+    <element id="Practitioner:fpar-practitioner.address.use">
       <path value="Practitioner.address.use"/>
       <short value="home | work | temp | old - purpose of this address"/>
       <definition value="The purpose of this address."/>
@@ -1237,7 +1237,7 @@
         <strength value="required"/>
         <description value="The use of an address"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/address-use"/>
+          <reference value="http://fhir.org/fhir/ValueSet/address-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1253,7 +1253,7 @@
         <map value="./AddressPurpose"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.type">
+    <element id="Practitioner:fpar-practitioner.address.type">
       <path value="Practitioner.address.type"/>
       <short value="postal | physical | both"/>
       <definition value="Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both."/>
@@ -1272,7 +1272,7 @@
         <strength value="required"/>
         <description value="The type of an address (physical / postal)"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/address-type"/>
+          <reference value="http://fhir.org/fhir/ValueSet/address-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1288,7 +1288,7 @@
         <map value="address type parameter"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.text">
+    <element id="Practitioner:fpar-practitioner.address.text">
       <path value="Practitioner.address.text"/>
       <short value="Text representation of the address"/>
       <definition value="A full text representation of the address."/>
@@ -1318,7 +1318,7 @@
         <map value="address label parameter"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.line">
+    <element id="Practitioner:fpar-practitioner.address.line">
       <path value="Practitioner.address.line"/>
       <short value="Street name, number, direction, and P.O. Box etc."/>
       <definition value="This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information."/>
@@ -1351,7 +1351,7 @@
         <map value="./StreetAddress (newline delimitted)"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.city">
+    <element id="Practitioner:fpar-practitioner.address.city">
       <path value="Practitioner.address.city"/>
       <short value="Name of city, town etc."/>
       <definition value="The name of the city, town, village or other community or delivery center."/>
@@ -1384,7 +1384,7 @@
         <map value="./Jurisdiction"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.district">
+    <element id="Practitioner:fpar-practitioner.address.district">
       <path value="Practitioner.address.district"/>
       <short value="District name (aka county)"/>
       <definition value="The name of the administrative area (county)."/>
@@ -1410,7 +1410,7 @@
         <map value="AD.part[parttype = CNT | CPA]"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.state">
+    <element id="Practitioner:fpar-practitioner.address.state">
       <path value="Practitioner.address.state"/>
       <short value="Sub-unit of country (abbreviations ok)"/>
       <definition value="Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes)."/>
@@ -1444,7 +1444,7 @@
         <map value="./Region"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.postalCode">
+    <element id="Practitioner:fpar-practitioner.address.postalCode">
       <path value="Practitioner.address.postalCode"/>
       <short value="Postal code for area"/>
       <definition value="A postal code designating a region defined by the postal service."/>
@@ -1477,7 +1477,7 @@
         <map value="./PostalIdentificationCode"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.country">
+    <element id="Practitioner:fpar-practitioner.address.country">
       <path value="Practitioner.address.country"/>
       <short value="Country (can be ISO 3166 3 letter code)"/>
       <definition value="Country - a nation as commonly understood or generally accepted."/>
@@ -1510,7 +1510,7 @@
         <map value="./Country"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.address.period">
+    <element id="Practitioner:fpar-practitioner.address.period">
       <path value="Practitioner.address.period"/>
       <short value="Time period when address was/is in use"/>
       <definition value="Time period when address was/is in use."/>
@@ -1539,7 +1539,7 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.gender">
+    <element id="Practitioner:fpar-practitioner.gender">
       <path value="Practitioner.gender"/>
       <short value="male | female | other | unknown"/>
       <definition value="Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes."/>
@@ -1556,16 +1556,16 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="AdministrativeGender"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="required"/>
         <description value="The gender of a person used for administrative purposes."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+          <reference value="http://fhir.org/fhir/ValueSet/administrative-gender"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1581,7 +1581,7 @@
         <map value="./GenderCode"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.birthDate">
+    <element id="Practitioner:fpar-practitioner.birthDate">
       <path value="Practitioner.birthDate"/>
       <short value="The date  on which the practitioner was born"/>
       <definition value="The date of birth for the practitioner."/>
@@ -1610,7 +1610,7 @@
         <map value="(not represented in ServD)"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.photo">
+    <element id="Practitioner:fpar-practitioner.photo">
       <path value="Practitioner.photo"/>
       <short value="Image of the person"/>
       <definition value="Image of the person."/>
@@ -1634,7 +1634,7 @@
         <map value="./ImageURI (only supports the URI reference)"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.qualification">
+    <element id="Practitioner:fpar-practitioner.qualification">
       <path value="Practitioner.qualification"/>
       <short value="Qualifications obtained by training and certification"/>
       <definition value="Qualifications obtained by training and certification."/>
@@ -1669,7 +1669,7 @@
         <map value="./Qualifications"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.qualification.id">
+    <element id="Practitioner:fpar-practitioner.qualification.id">
       <path value="Practitioner.qualification.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1689,7 +1689,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.qualification.extension:credentialeligibiltyindicator$Extension">
+    <element id="Practitioner:fpar-practitioner.qualification.extension:credentialeligibiltyindicator$Extension">
       <path value="Practitioner.qualification.extension"/>
       <sliceName value="CredentialEligibiltyIndicator"/>
       <short value="Extension"/>
@@ -1703,7 +1703,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1719,11 +1719,11 @@
         <strength value="preferred"/>
         <description value="The set of values to indicate affirmative or negative"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/v2-0136"/>
+          <reference value="http://fhir.org/fhir/ValueSet/v2-0136"/>
         </valueSetReference>
       </binding>
     </element>
-    <element id="Practitioner:fparpractitioner.qualification.modifierExtension">
+    <element id="Practitioner:fpar-practitioner.qualification.modifierExtension">
       <path value="Practitioner.qualification.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -1748,7 +1748,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.qualification.identifier">
+    <element id="Practitioner:fpar-practitioner.qualification.identifier">
       <path value="Practitioner.qualification.identifier"/>
       <short value="An identifier for this qualification for the practitioner"/>
       <definition value="An identifier that applies to this person&#39;s qualification in this role."/>
@@ -1768,7 +1768,7 @@
         <map value=".playingEntity.playingRole[classCode=QUAL].id"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.qualification.code">
+    <element id="Practitioner:fpar-practitioner.qualification.code">
       <path value="Practitioner.qualification.code"/>
       <short value="Coded representation of the qualification"/>
       <definition value="Coded representation of the qualification."/>
@@ -1783,13 +1783,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Qualification"/>
         </extension>
         <strength value="example"/>
         <description value="Specific qualification the practitioner has to provide a service"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/anzsco-occupations"/>
+          <reference value="http://fhir.org/fhir/ValueSet/anzsco-occupations"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1801,7 +1801,7 @@
         <map value="./Qualifications.Value"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.qualification.period">
+    <element id="Practitioner:fpar-practitioner.qualification.period">
       <path value="Practitioner.qualification.period"/>
       <short value="Period during which the qualification is valid"/>
       <definition value="Period during which the qualification is valid."/>
@@ -1825,7 +1825,7 @@
         <map value="./Qualifications.StartDate and ./Qualifications.EndDate"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.qualification.issuer">
+    <element id="Practitioner:fpar-practitioner.qualification.issuer">
       <path value="Practitioner.qualification.issuer"/>
       <short value="Organization that regulates and issues the qualification"/>
       <definition value="Organization that regulates and issues the qualification."/>
@@ -1838,14 +1838,14 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <mapping>
         <identity value="rim"/>
         <map value=".playingEntity.playingRole[classCode=QUAL].scoper"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.communication">
+    <element id="Practitioner:fpar-practitioner.communication">
       <path value="Practitioner.communication"/>
       <short value="A language the practitioner is able to use in patient communication"/>
       <definition value="A language the practitioner is able to use in patient communication."/>
@@ -1862,21 +1862,21 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
+          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1892,7 +1892,7 @@
         <map value="./Languages.LanguageSpokenCode"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.communication.id">
+    <element id="Practitioner:fpar-practitioner.communication.id">
       <path value="Practitioner.communication.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1912,7 +1912,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.communication.extension:communicationmode$Extension">
+    <element id="Practitioner:fpar-practitioner.communication.extension:communicationmode$Extension">
       <path value="Practitioner.communication.extension"/>
       <sliceName value="CommunicationMode"/>
       <short value="Extension"/>
@@ -1926,7 +1926,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1946,7 +1946,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Practitioner:fparpractitioner.communication.coding">
+    <element id="Practitioner:fpar-practitioner.communication.coding">
       <path value="Practitioner.communication.coding"/>
       <short value="Code defined by a terminology system"/>
       <definition value="A reference to a code defined by a terminology system."/>
@@ -1976,7 +1976,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
       </mapping>
     </element>
-    <element id="Practitioner:fparpractitioner.communication.text">
+    <element id="Practitioner:fpar-practitioner.communication.text">
       <path value="Practitioner.communication.text"/>
       <short value="Plain text representation of the concept"/>
       <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user."/>
@@ -2008,16 +2008,16 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Practitioner:fparpractitioner">
+    <element id="Practitioner:fpar-practitioner">
       <path value="Practitioner"/>
-      <sliceName value="fparpractitioner"/>
+      <sliceName value="fpar-practitioner"/>
       <short value="FPAR Practitioner"/>
       <definition value="This is a constraint on the US Core Practitioner profile."/>
       <alias value="Provider"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier">
+    <element id="Practitioner:fpar-practitioner.identifier">
       <path value="Practitioner.identifier"/>
       <requirements value="Either id or name is needed."/>
       <min value="1"/>
@@ -2028,7 +2028,7 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier.system">
+    <element id="Practitioner:fpar-practitioner.identifier.system">
       <path value="Practitioner.identifier.system"/>
       <short value="NPI could be used as the identifier system in the US."/>
       <comment value="NPI could be used as the identifier system in the US."/>
@@ -2044,7 +2044,7 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.identifier.value">
+    <element id="Practitioner:fpar-practitioner.identifier.value">
       <path value="Practitioner.identifier.value"/>
       <min value="1"/>
       <max value="1"/>
@@ -2054,7 +2054,7 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.name">
+    <element id="Practitioner:fpar-practitioner.name">
       <path value="Practitioner.name"/>
       <min value="1"/>
       <max value="1"/>
@@ -2064,7 +2064,7 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.name.family">
+    <element id="Practitioner:fpar-practitioner.name.family">
       <path value="Practitioner.name.family"/>
       <min value="1"/>
       <max value="1"/>
@@ -2074,35 +2074,35 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.telecom">
+    <element id="Practitioner:fpar-practitioner.telecom">
       <path value="Practitioner.telecom"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.telecom.extension:preferenceindicator$Extension">
+    <element id="Practitioner:fpar-practitioner.telecom.extension:preferenceindicator$Extension">
       <path value="Practitioner.telecom.extension"/>
       <sliceName value="PreferenceIndicator"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.address">
+    <element id="Practitioner:fpar-practitioner.address">
       <path value="Practitioner.address"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.address.extension:primaryindicator$Extension">
+    <element id="Practitioner:fpar-practitioner.address.extension:primaryindicator$Extension">
       <path value="Practitioner.address.extension"/>
       <sliceName value="PrimaryIndicator"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2111,22 +2111,22 @@
         <strength value="preferred"/>
         <description value="The set of values to indicate affirmative or negative"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/v2-0136"/>
+          <reference value="http://fhir.org/fhir/ValueSet/v2-0136"/>
         </valueSetReference>
       </binding>
     </element>
-    <element id="Practitioner:fparpractitioner.qualification">
+    <element id="Practitioner:fpar-practitioner.qualification">
       <path value="Practitioner.qualification"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Practitioner:fparpractitioner.qualification.extension:credentialeligibiltyindicator$Extension">
+    <element id="Practitioner:fpar-practitioner.qualification.extension:credentialeligibiltyindicator$Extension">
       <path value="Practitioner.qualification.extension"/>
       <sliceName value="CredentialEligibiltyIndicator"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2135,11 +2135,11 @@
         <strength value="preferred"/>
         <description value="The set of values to indicate affirmative or negative"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/v2-0136"/>
+          <reference value="http://fhir.org/fhir/ValueSet/v2-0136"/>
         </valueSetReference>
       </binding>
     </element>
-    <element id="Practitioner:fparpractitioner.communication">
+    <element id="Practitioner:fpar-practitioner.communication">
       <path value="Practitioner.communication"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2151,7 +2151,7 @@
       <definition value="The method by which an individual communicates."/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>

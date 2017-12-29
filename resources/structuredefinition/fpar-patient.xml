@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="fparpatient"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/fparpatient"/>
+  <id value="fpar-patient"/>
+  <url value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-patient"/>
   <version value="2.0.0"/>
   <name value="FPAR Patient Profile"/>
   <status value="draft"/>
@@ -21,22 +21,22 @@
   </mapping>
   <mapping>
     <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
+    <uri value="http://fhir.org/v3"/>
     <name value="RIM Mapping"/>
   </mapping>
   <mapping>
     <identity value="cda"/>
-    <uri value="http://hl7.org/v3/cda"/>
+    <uri value="http://fhir.org/v3/cda"/>
     <name value="CDA (R2)"/>
   </mapping>
   <mapping>
     <identity value="w5"/>
-    <uri value="http://hl7.org/fhir/w5"/>
+    <uri value="http://fhir.org/fhir/w5"/>
     <name value="W5 Mapping"/>
   </mapping>
   <mapping>
     <identity value="v2"/>
-    <uri value="http://hl7.org/v2"/>
+    <uri value="http://fhir.org/v2"/>
     <name value="HL7 v2 Mapping"/>
   </mapping>
   <mapping>
@@ -47,10 +47,10 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Patient"/>
-  <baseDefinition value="http://fhir.org/guides/hspc/StructureDefinition/hspc-patient"/>
+  <baseDefinition value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-patient"/>
   <derivation value="constraint"/>
   <snapshot>
-    <element id="Patient:fparpatient">
+    <element id="Patient:fpar-patient">
       <path value="Patient"/>
       <sliceName value="FPARPatient"/>
       <short value="FPAR Patient Profile"/>
@@ -117,7 +117,7 @@
         <map value="Patient"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.id">
+    <element id="Patient:fpar-patient.id">
       <path value="Patient.id"/>
       <short value="Logical id of this artifact"/>
       <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."/>
@@ -134,7 +134,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Patient:fparpatient.meta">
+    <element id="Patient:fpar-patient.meta">
       <path value="Patient.meta"/>
       <short value="Metadata about the resource"/>
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
@@ -150,7 +150,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Patient:fparpatient.implicitRules">
+    <element id="Patient:fpar-patient.implicitRules">
       <path value="Patient.implicitRules"/>
       <short value="A set of rules under which this content was created"/>
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
@@ -168,7 +168,7 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
     </element>
-    <element id="Patient:fparpatient.language">
+    <element id="Patient:fpar-patient.language">
       <path value="Patient.language"/>
       <short value="Language of the resource content"/>
       <definition value="The base language in which the resource is written."/>
@@ -184,25 +184,25 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
+          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
     </element>
-    <element id="Patient:fparpatient.text">
+    <element id="Patient:fpar-patient.text">
       <path value="Patient.text"/>
       <short value="Text summary of the resource, for human interpretation"/>
       <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
@@ -227,7 +227,7 @@
         <map value="Act.text?"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contained">
+    <element id="Patient:fpar-patient.contained">
       <path value="Patient.contained"/>
       <short value="Contained, inline Resources"/>
       <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
@@ -250,7 +250,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.extension">
+    <element id="Patient:fpar-patient.extension">
       <path value="Patient.extension"/>
       <slicing id="2">
         <discriminator> 
@@ -273,7 +273,7 @@
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Patient:fparpatient.extension:race">
+    <element id="Patient:fpar-patient.extension:race">
       <path value="Patient.extension"/>
       <sliceName value="race"/>
       <short value="Extension"/>
@@ -287,7 +287,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
+        <profile value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-race"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -304,7 +304,7 @@
         <map value="2.16.840.1.113883.3.2074.1.1.3"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.extension:ethnicity">
+    <element id="Patient:fpar-patient.extension:ethnicity">
       <path value="Patient.extension"/>
       <sliceName value="ethnicity"/>
       <short value="Extension"/>
@@ -318,7 +318,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"/>
+        <profile value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-ethnicity"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -335,7 +335,7 @@
         <map value="2.16.840.1.114222.4.11.837"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.extension:birthsex">
+    <element id="Patient:fpar-patient.extension:birthsex">
       <path value="Patient.extension"/>
       <sliceName value="birthsex"/>
       <short value="Extension"/>
@@ -349,7 +349,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"/>
+        <profile value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-birthsex"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -357,7 +357,7 @@
         <strength value="required"/>
         <description value="Code for sex assigned at birth"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex"/>
+          <reference value="http://fhir.org/fhir/us/core/ValueSet/us-core-birthsex"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -373,7 +373,7 @@
 		<map value="2.16.840.1.113883.1.11.1"/>
      </mapping>
     </element>
-    <element id="Patient:fparpatient.modifierExtension">
+    <element id="Patient:fpar-patient.modifierExtension">
       <path value="Patient.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -392,7 +392,7 @@
       </type>
       <isModifier value="true"/>
 	  <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Limited English Proficiency"/>
         </extension>
         <strength value="preferred"/>
@@ -406,7 +406,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier">
+    <element id="Patient:fpar-patient.identifier">
       <path value="Patient.identifier"/>
       <short value="An identifier for this patient"/>
       <definition value="An identifier for this patient."/>
@@ -448,7 +448,7 @@
         <map value="76435-7"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier.id">
+    <element id="Patient:fpar-patient.identifier.id">
       <path value="Patient.identifier.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -468,7 +468,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier.extension">
+    <element id="Patient:fpar-patient.identifier.extension">
       <path value="Patient.identifier.extension"/>
       <slicing>
         <discriminator>
@@ -498,7 +498,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier.use">
+    <element id="Patient:fpar-patient.identifier.use">
       <path value="Patient.identifier.use"/>
       <short value="usual | official | temp | secondary (If known)"/>
       <definition value="The purpose of this identifier."/>
@@ -517,13 +517,13 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierUse"/>
         </extension>
         <strength value="required"/>
         <description value="Identifies the purpose for this identifier, if known ."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-use"/>
+          <reference value="http://fhir.org/fhir/ValueSet/identifier-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -535,7 +535,7 @@
         <map value="Role.code or implied by context"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier.type">
+    <element id="Patient:fpar-patient.identifier.type">
       <path value="Patient.identifier.type"/>
       <short value="Description of identifier"/>
       <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."/>
@@ -553,16 +553,16 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type"/>
+          <reference value="http://fhir.org/fhir/ValueSet/identifier-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -574,7 +574,7 @@
         <map value="Role.code or implied by context"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier.system">
+    <element id="Patient:fpar-patient.identifier.system">
       <path value="Patient.identifier.system"/>
       <short value="The namespace for the identifier value"/>
       <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."/>
@@ -612,7 +612,7 @@
         <map value="Patient.identifier.system"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier.value">
+    <element id="Patient:fpar-patient.identifier.value">
       <path value="Patient.identifier.value"/>
       <short value="The value that is unique within the system."/>
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."/>
@@ -650,7 +650,7 @@
         <map value="Patient.identifier.value"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier.period">
+    <element id="Patient:fpar-patient.identifier.period">
       <path value="Patient.identifier.period"/>
       <short value="Time period when id is/was valid for use"/>
       <definition value="Time period during which identifier is/was valid for use."/>
@@ -678,7 +678,7 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier.assigner">
+    <element id="Patient:fpar-patient.identifier.assigner">
       <path value="Patient.identifier.assigner"/>
       <short value="Organization that issued id (may be just text)"/>
       <definition value="Organization that issued/manages the identifier."/>
@@ -692,7 +692,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -708,7 +708,7 @@
         <map value="./IdentifierIssuingAuthority"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.active">
+    <element id="Patient:fpar-patient.active">
       <path value="Patient.active"/>
       <short value="Whether this patient&#39;s record is in active use"/>
       <definition value="Whether this patient record is in active use."/>
@@ -740,7 +740,7 @@
         <map value="status"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name">
+    <element id="Patient:fpar-patient.name">
       <path value="Patient.name"/>
       <short value="A name associated with the patient"/>
       <definition value="A name associated with the individual."/>
@@ -775,7 +775,7 @@
         <map value="Patient.name"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.id">
+    <element id="Patient:fpar-patient.name.id">
       <path value="Patient.name.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -795,7 +795,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.extension">
+    <element id="Patient:fpar-patient.name.extension">
       <path value="Patient.name.extension"/>
       <slicing>
         <discriminator>
@@ -825,7 +825,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.use">
+    <element id="Patient:fpar-patient.name.use">
       <path value="Patient.name.use"/>
       <short value="usual | official | temp | nickname | anonymous | old | maiden"/>
       <definition value="Identifies the purpose for this name."/>
@@ -844,13 +844,13 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="NameUse"/>
         </extension>
         <strength value="required"/>
         <description value="The use of a human name"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/name-use"/>
+          <reference value="http://fhir.org/fhir/ValueSet/name-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -866,7 +866,7 @@
         <map value="./NamePurpose"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.text">
+    <element id="Patient:fpar-patient.name.text">
       <path value="Patient.name.text"/>
       <short value="Text representation of the full name"/>
       <definition value="A full text representation of the name."/>
@@ -892,7 +892,7 @@
         <map value="./formatted"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.family">
+    <element id="Patient:fpar-patient.name.family">
       <path value="Patient.name.family"/>
       <short value="Family name (often called &#39;Surname&#39;)"/>
       <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
@@ -927,7 +927,7 @@
         <map value="Patient.name.family"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.given">
+    <element id="Patient:fpar-patient.name.given">
       <path value="Patient.name.given"/>
       <short value="Given names (not always &#39;first&#39;). Includes middle names"/>
       <definition value="Given name."/>
@@ -964,7 +964,7 @@
         <map value="Patient.name.given"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.prefix">
+    <element id="Patient:fpar-patient.name.prefix">
       <path value="Patient.name.prefix"/>
       <short value="Parts that come before the name"/>
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."/>
@@ -993,7 +993,7 @@
         <map value="./TitleCode"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.suffix">
+    <element id="Patient:fpar-patient.name.suffix">
       <path value="Patient.name.suffix"/>
       <short value="Parts that come after the name"/>
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name."/>
@@ -1018,7 +1018,7 @@
         <map value="./part[partType = SFX]"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.period">
+    <element id="Patient:fpar-patient.name.period">
       <path value="Patient.name.period"/>
       <short value="Time period when name was/is in use"/>
       <definition value="Indicates the period of time when this name was valid for the named person."/>
@@ -1047,7 +1047,7 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.telecom">
+    <element id="Patient:fpar-patient.telecom">
       <path value="Patient.telecom"/>
       <short value="A contact detail for the individual"/>
       <definition value="A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted."/>
@@ -1077,7 +1077,7 @@
         <map value=".telecom"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.gender">
+    <element id="Patient:fpar-patient.gender">
       <path value="Patient.gender"/>
       <short value="male | female | other | unknown"/>
       <definition value="Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes."/>
@@ -1098,7 +1098,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+          <reference value="http://fhir.org/fhir/ValueSet/administrative-gender"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1118,7 +1118,7 @@
         <map value="Patient.gender"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.birthDate">
+    <element id="Patient:fpar-patient.birthDate">
       <path value="Patient.birthDate"/>
       <short value="The date of birth for the individual"/>
       <definition value="The date of birth for the individual."/>
@@ -1157,7 +1157,7 @@
         <map value="Patient.birthDate"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.birthDate.extension:birthdateverificationmethod">
+    <element id="Patient:fpar-patient.birthDate.extension:birthdateverificationmethod">
       <path value="Patient.birthDate.extension"/>
       <sliceName value="birthDateVerificationMethod"/>
       <short value="Extension"/>
@@ -1171,7 +1171,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1191,7 +1191,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Patient:fparpatient.deceased[x]">
+    <element id="Patient:fpar-patient.deceased[x]">
       <path value="Patient.deceased[x]"/>
       <short value="Indicates if the individual is deceased or not"/>
       <definition value="Indicates if the individual is deceased or not."/>
@@ -1225,7 +1225,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address">
+    <element id="Patient:fpar-patient.address">
       <path value="Patient.address"/>
       <short value="Addresses for the individual"/>
       <definition value="Addresses for the individual."/>
@@ -1255,7 +1255,7 @@
         <map value=".addr"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.id">
+    <element id="Patient:fpar-patient.address.id">
       <path value="Patient.address.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1275,7 +1275,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.extension:addressprimaryind">
+    <element id="Patient:fpar-patient.address.extension:addressprimaryind">
       <path value="Patient.address.extension"/>
       <sliceName value="addressprimaryind"/>
       <short value="Extension"/>
@@ -1290,7 +1290,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1306,11 +1306,11 @@
         <strength value="preferred"/>
         <description value="The set of values to indicate affirmative or negative"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/v2-0136"/>
+          <reference value="http://fhir.org/fhir/ValueSet/v2-0136"/>
         </valueSetReference>
       </binding>
     </element>
-    <element id="Patient:fparpatient.address.use">
+    <element id="Patient:fpar-patient.address.use">
       <path value="Patient.address.use"/>
       <short value="home | work | temp | old - purpose of this address"/>
       <definition value="The purpose of this address."/>
@@ -1332,7 +1332,7 @@
         <strength value="required"/>
         <description value="The use of an address"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/address-use"/>
+          <reference value="http://fhir.org/fhir/ValueSet/address-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1348,7 +1348,7 @@
         <map value="./AddressPurpose"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.type:addresstype">
+    <element id="Patient:fpar-patient.address.type:addresstype">
       <path value="Patient.address.type"/>
       <sliceName value="addressType"/>
       <short value="postal | physical | both"/>
@@ -1369,7 +1369,7 @@
         <strength value="required"/>
         <description value="The type of an address (physical / postal)"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/address-type"/>
+          <reference value="http://fhir.org/fhir/ValueSet/address-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1385,7 +1385,7 @@
         <map value="address type parameter"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.text">
+    <element id="Patient:fpar-patient.address.text">
       <path value="Patient.address.text"/>
       <short value="Text representation of the address"/>
       <definition value="A full text representation of the address."/>
@@ -1415,7 +1415,7 @@
         <map value="address label parameter"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.line">
+    <element id="Patient:fpar-patient.address.line">
       <path value="Patient.address.line"/>
       <short value="Street name, number, direction, and P.O. Box etc."/>
       <definition value="This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information."/>
@@ -1448,7 +1448,7 @@
         <map value="./StreetAddress (newline delimitted)"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.city">
+    <element id="Patient:fpar-patient.address.city">
       <path value="Patient.address.city"/>
       <short value="Name of city, town etc."/>
       <definition value="The name of the city, town, village or other community or delivery center."/>
@@ -1481,7 +1481,7 @@
         <map value="./Jurisdiction"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.district">
+    <element id="Patient:fpar-patient.address.district">
       <path value="Patient.address.district"/>
       <short value="District name (aka county)"/>
       <definition value="The name of the administrative area (county)."/>
@@ -1507,7 +1507,7 @@
         <map value="AD.part[parttype = CNT | CPA]"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.state">
+    <element id="Patient:fpar-patient.address.state">
       <path value="Patient.address.state"/>
       <short value="Sub-unit of country (abbreviations ok)"/>
       <definition value="Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes)."/>
@@ -1541,7 +1541,7 @@
         <map value="./Region"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.postalCode">
+    <element id="Patient:fpar-patient.address.postalCode">
       <path value="Patient.address.postalCode"/>
       <short value="Postal code for area"/>
       <definition value="A postal code designating a region defined by the postal service."/>
@@ -1574,7 +1574,7 @@
         <map value="./PostalIdentificationCode"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.country">
+    <element id="Patient:fpar-patient.address.country">
       <path value="Patient.address.country"/>
       <short value="Country (can be ISO 3166 3 letter code)"/>
       <definition value="Country - a nation as commonly understood or generally accepted."/>
@@ -1607,7 +1607,7 @@
         <map value="./Country"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address.period">
+    <element id="Patient:fpar-patient.address.period">
       <path value="Patient.address.period"/>
       <short value="Time period when address was/is in use"/>
       <definition value="Time period when address was/is in use."/>
@@ -1636,7 +1636,7 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.maritalStatus">
+    <element id="Patient:fpar-patient.maritalStatus">
       <path value="Patient.maritalStatus"/>
       <short value="Marital (civil) status of a patient"/>
       <definition value="This field contains a patient&#39;s most recent marital (civil) status."/>
@@ -1652,16 +1652,16 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MaritalStatus"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="The domestic partnership status of a person."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/marital-status"/>
+          <reference value="http://fhir.org/fhir/ValueSet/marital-status"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1677,7 +1677,7 @@
         <map value=".patient.maritalStatusCode"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.multipleBirth[x]">
+    <element id="Patient:fpar-patient.multipleBirth[x]">
       <path value="Patient.multipleBirth[x]"/>
       <short value="Whether patient is part of a multiple birth"/>
       <definition value="Indicates whether the patient is part of a multiple (bool) or indicates the actual birth order (integer)."/>
@@ -1709,7 +1709,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.photo">
+    <element id="Patient:fpar-patient.photo">
       <path value="Patient.photo"/>
       <short value="Image of the patient"/>
       <definition value="Image of the patient."/>
@@ -1737,8 +1737,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+    <element id="Patient:fpar-patient.contact">
+      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Contact"/>
       </extension>
       <path value="Patient.contact"/>
@@ -1788,8 +1788,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+    <element id="Patient:fpar-patient.contact:emergencycontact">
+      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Contact"/>
       </extension>
       <path value="Patient.contact"/>
@@ -1827,7 +1827,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.id">
+    <element id="Patient:fpar-patient.contact:emergencycontact.id">
       <path value="Patient.contact.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1848,7 +1848,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.extension:contactpartyid">
+    <element id="Patient:fpar-patient.contact:emergencycontact.extension:contactpartyid">
       <path value="Patient.contact.extension"/>
       <sliceName value="contactPartyId"/>
       <short value="Extension"/>
@@ -1862,7 +1862,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1875,7 +1875,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.modifierExtension">
+    <element id="Patient:fpar-patient.contact:emergencycontact.modifierExtension">
       <path value="Patient.contact.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -1900,7 +1900,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.relationship">
+    <element id="Patient:fpar-patient.contact:emergencycontact.relationship">
       <path value="Patient.contact.relationship"/>
       <short value="Concept - reference to a terminology or just  text"/>
       <definition value="A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text."/>
@@ -1914,11 +1914,11 @@
       </base>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
       <fixedCodeableConcept>
         <coding>
-          <system value="http://hl7.org/fhir/v2/0131"/>
+          <system value="http://fhir.org/fhir/v2/0131"/>
           <code value="C"/>
           <display value="Emergency Contact"/>
         </coding>
@@ -1929,7 +1929,7 @@
         <strength value="extensible"/>
         <description value="The nature of the relationship between a patient and a contact person for that patient."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/v2-0131"/>
+          <reference value="http://fhir.org/fhir/ValueSet/v2-0131"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1945,7 +1945,7 @@
         <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.name">
+    <element id="Patient:fpar-patient.contact:emergencycontact.name">
       <path value="Patient.contact.name"/>
       <short value="A name associated with the contact person"/>
       <definition value="A name associated with the contact person."/>
@@ -1973,7 +1973,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.telecom">
+    <element id="Patient:fpar-patient.contact:emergencycontact.telecom">
       <path value="Patient.contact.telecom"/>
       <short value="A contact detail for the person"/>
       <definition value="A contact detail for the person, e.g. a telephone number or an email address."/>
@@ -2002,7 +2002,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.address">
+    <element id="Patient:fpar-patient.contact:emergencycontact.address">
       <path value="Patient.contact.address"/>
       <short value="Address for the contact person"/>
       <definition value="Address for the contact person."/>
@@ -2030,7 +2030,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.gender">
+    <element id="Patient:fpar-patient.contact:emergencycontact.gender">
       <path value="Patient.contact.gender"/>
       <short value="male | female | other | unknown"/>
       <definition value="Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes."/>
@@ -2049,7 +2049,7 @@
         <strength value="required"/>
         <description value="The gender of a person used for administrative purposes."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+          <reference value="http://fhir.org/fhir/ValueSet/administrative-gender"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2065,7 +2065,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.organization">
+    <element id="Patient:fpar-patient.contact:emergencycontact.organization">
       <path value="Patient.contact.organization"/>
       <short value="Organization that is associated with the contact"/>
       <definition value="Organization on behalf of which the contact is acting or for which the contact is working."/>
@@ -2079,7 +2079,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <condition value="pat-1"/>
       <mapping>
@@ -2095,7 +2095,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.period">
+    <element id="Patient:fpar-patient.contact:emergencycontact.period">
       <path value="Patient.contact.period"/>
       <short value="The period during which this contact person or organization is valid to be contacted relating to this patient"/>
       <definition value="The period during which this contact person or organization is valid to be contacted relating to this patient."/>
@@ -2118,8 +2118,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:contact">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+    <element id="Patient:fpar-patient.contact:contact">
+      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Contact"/>
       </extension>
       <path value="Patient.contact"/>
@@ -2157,7 +2157,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:contact.id">
+    <element id="Patient:fpar-patient.contact:contact.id">
       <path value="Patient.contact.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -2177,7 +2177,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:contact.extension:contactpartyid">
+    <element id="Patient:fpar-patient.contact:contact.extension:contactpartyid">
       <path value="Patient.contact.extension"/>
       <sliceName value="contactPartyId"/>
       <short value="Extension"/>
@@ -2191,7 +2191,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2204,7 +2204,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient:fparpatient.contact:contact.modifierExtension">
+    <element id="Patient:fpar-patient.contact:contact.modifierExtension">
       <path value="Patient.contact.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -2229,7 +2229,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:contact.relationship">
+    <element id="Patient:fpar-patient.contact:contact.relationship">
       <path value="Patient.contact.relationship"/>
       <short value="The kind of relationship"/>
       <definition value="The nature of the relationship between the patient and the contact person."/>
@@ -2245,13 +2245,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ContactRelationship"/>
         </extension>
         <strength value="extensible"/>
         <description value="The nature of the relationship between a patient and a contact person for that patient."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/v2-0131"/>
+          <reference value="http://fhir.org/fhir/ValueSet/v2-0131"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2267,7 +2267,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:contact.name">
+    <element id="Patient:fpar-patient.contact:contact.name">
       <path value="Patient.contact.name"/>
       <short value="A name associated with the contact person"/>
       <definition value="A name associated with the contact person."/>
@@ -2295,7 +2295,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:contact.telecom">
+    <element id="Patient:fpar-patient.contact:contact.telecom">
       <path value="Patient.contact.telecom"/>
       <short value="A contact detail for the person"/>
       <definition value="A contact detail for the person, e.g. a telephone number or an email address."/>
@@ -2324,7 +2324,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:contact.address">
+    <element id="Patient:fpar-patient.contact:contact.address">
       <path value="Patient.contact.address"/>
       <short value="Address for the contact person"/>
       <definition value="Address for the contact person."/>
@@ -2352,7 +2352,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:contact.gender">
+    <element id="Patient:fpar-patient.contact:contact.gender">
       <path value="Patient.contact.gender"/>
       <short value="male | female | other | unknown"/>
       <definition value="Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes."/>
@@ -2368,16 +2368,16 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="AdministrativeGender"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="required"/>
         <description value="The gender of a person used for administrative purposes."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+          <reference value="http://fhir.org/fhir/ValueSet/administrative-gender"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2393,7 +2393,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:contact.organization">
+    <element id="Patient:fpar-patient.contact:contact.organization">
       <path value="Patient.contact.organization"/>
       <short value="Organization that is associated with the contact"/>
       <definition value="Organization on behalf of which the contact is acting or for which the contact is working."/>
@@ -2407,7 +2407,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <condition value="pat-1"/>
       <mapping>
@@ -2423,7 +2423,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.contact:contact.period">
+    <element id="Patient:fpar-patient.contact:contact.period">
       <path value="Patient.contact.period"/>
       <short value="The period during which this contact person or organization is valid to be contacted relating to this patient"/>
       <definition value="The period during which this contact person or organization is valid to be contacted relating to this patient."/>
@@ -2446,8 +2446,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.animal">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+    <element id="Patient:fpar-patient.animal">
+      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Animal"/>
       </extension>
       <path value="Patient.animal"/>
@@ -2489,7 +2489,7 @@
         <map value="Patient.animal"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.animal.id">
+    <element id="Patient:fpar-patient.animal.id">
       <path value="Patient.animal.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -2509,7 +2509,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.animal.extension">
+    <element id="Patient:fpar-patient.animal.extension">
       <path value="Patient.animal.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -2531,7 +2531,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.animal.modifierExtension">
+    <element id="Patient:fpar-patient.animal.modifierExtension">
       <path value="Patient.animal.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -2556,7 +2556,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.animal.species">
+    <element id="Patient:fpar-patient.animal.species">
       <path value="Patient.animal.species"/>
       <short value="E.g. Dog, Cow"/>
       <definition value="Identifies the high level taxonomic categorization of the kind of animal."/>
@@ -2574,13 +2574,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="AnimalSpecies"/>
         </extension>
         <strength value="example"/>
         <description value="The species of an animal."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/animal-species"/>
+          <reference value="http://fhir.org/fhir/ValueSet/animal-species"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2596,7 +2596,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.animal.breed">
+    <element id="Patient:fpar-patient.animal.breed">
       <path value="Patient.animal.breed"/>
       <short value="E.g. Poodle, Angus"/>
       <definition value="Identifies the detailed categorization of the kind of animal."/>
@@ -2614,13 +2614,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="AnimalBreed"/>
         </extension>
         <strength value="example"/>
         <description value="The breed of an animal."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/animal-breeds"/>
+          <reference value="http://fhir.org/fhir/ValueSet/animal-breeds"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2636,7 +2636,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.animal.genderStatus">
+    <element id="Patient:fpar-patient.animal.genderStatus">
       <path value="Patient.animal.genderStatus"/>
       <short value="E.g. Neutered, Intact"/>
       <definition value="Indicates the current state of the animal&#39;s reproductive organs."/>
@@ -2653,13 +2653,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="AnimalGenderStatus"/>
         </extension>
         <strength value="example"/>
         <description value="The state of the animal&#39;s reproductive organs."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/animal-genderstatus"/>
+          <reference value="http://fhir.org/fhir/ValueSet/animal-genderstatus"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2675,7 +2675,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.communication">
+    <element id="Patient:fpar-patient.communication">
       <path value="Patient.communication"/>
       <short value="A list of Languages which may be used to communicate with the patient about his or her health"/>
       <definition value="Languages which may be used to communicate with the patient about his or her health."/>
@@ -2713,7 +2713,7 @@
         <map value="Patient.communication"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.communication.id">
+    <element id="Patient:fpar-patient.communication.id">
       <path value="Patient.communication.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -2733,7 +2733,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.communication.extension:communicationmode">
+    <element id="Patient:fpar-patient.communication.extension:communicationmode">
       <path value="Patient.communication.extension"/>
       <sliceName value="communicationmode"/>
       <short value="Extension"/>
@@ -2748,7 +2748,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2768,7 +2768,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Patient:fparpatient.communication.modifierExtension">
+    <element id="Patient:fpar-patient.communication.modifierExtension">
       <path value="Patient.communication.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -2793,7 +2793,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.communication.language">
+    <element id="Patient:fpar-patient.communication.language">
       <path value="Patient.communication.language"/>
       <short value="The language which can be used to communicate with the patient about his or her health"/>
       <definition value="The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English."/>
@@ -2811,14 +2811,14 @@
       </type>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
+            <reference value="http://fhir.org/fhir/us/core/ValueSet/simple-language"/>
           </valueReference>
         </extension>
         <strength value="extensible"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
+          <reference value="http://fhir.org/fhir/us/core/ValueSet/simple-language"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2838,7 +2838,7 @@
         <map value="Patient.communication.language"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.communication.preferred">
+    <element id="Patient:fpar-patient.communication.preferred">
       <path value="Patient.communication.preferred"/>
       <short value="Language preference indicator"/>
       <definition value="Indicates whether or not the patient prefers this language (over other languages he masters up a certain level)."/>
@@ -2867,7 +2867,7 @@
         <map value=".preferenceInd"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.generalPractitioner">
+    <element id="Patient:fpar-patient.generalPractitioner">
       <path value="Patient.generalPractitioner"/>
       <short value="Patient&#39;s nominated primary care provider"/>
       <definition value="Patient&#39;s nominated care provider."/>
@@ -2882,11 +2882,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Practitioner"/>
       </type>
       <mapping>
         <identity value="v2"/>
@@ -2901,7 +2901,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.managingOrganization">
+    <element id="Patient:fpar-patient.managingOrganization">
       <path value="Patient.managingOrganization"/>
       <short value="Organization that is the custodian of the patient record"/>
       <definition value="Organization that is the custodian of the patient record."/>
@@ -2916,7 +2916,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -2928,7 +2928,7 @@
         <map value=".providerOrganization"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.link">
+    <element id="Patient:fpar-patient.link">
       <path value="Patient.link"/>
       <short value="Link to another patient resource that concerns the same actual person"/>
       <definition value="Link to another patient resource that concerns the same actual patient."/>
@@ -2963,7 +2963,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.link.id">
+    <element id="Patient:fpar-patient.link.id">
       <path value="Patient.link.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -2983,7 +2983,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.link.extension">
+    <element id="Patient:fpar-patient.link.extension">
       <path value="Patient.link.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -3005,7 +3005,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.link.modifierExtension">
+    <element id="Patient:fpar-patient.link.modifierExtension">
       <path value="Patient.link.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -3030,7 +3030,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.link.other">
+    <element id="Patient:fpar-patient.link.other">
       <path value="Patient.link.other"/>
       <short value="The other patient or related person resource that the link refers to"/>
       <definition value="The other patient resource that the link refers to."/>
@@ -3044,11 +3044,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -3064,7 +3064,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.link.type">
+    <element id="Patient:fpar-patient.link.type">
       <path value="Patient.link.type"/>
       <short value="replaced-by | replaces | refer | seealso - type of link"/>
       <definition value="The type of link between this patient resource and another patient resource."/>
@@ -3080,13 +3080,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="LinkType"/>
         </extension>
         <strength value="required"/>
         <description value="The type of link between this patient resource and another patient resource."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/link-type"/>
+          <reference value="http://fhir.org/fhir/ValueSet/link-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -3100,7 +3100,7 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Patient:fparpatient">
+    <element id="Patient:fpar-patient">
       <path value="Patient"/>
       <sliceName value="FPARPatient"/>
       <short value="FPAR Patient Profile"/>
@@ -3112,14 +3112,14 @@
         <map value="Patient"/>
       </mapping>
     </element>	
-	  <element id="Patient:fparpatient.extension:race">
+	  <element id="Patient:fpar-patient.extension:race">
       <path value="Patient.extension"/>
       <sliceName value="race"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
+        <profile value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-race"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -3136,14 +3136,14 @@
         <map value="2.16.840.1.113883.3.2074.1.1.3"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.extension:ethnicity">
+    <element id="Patient:fpar-patient.extension:ethnicity">
       <path value="Patient.extension"/>
       <sliceName value="ethnicity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"/>
+        <profile value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-ethnicity"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -3160,14 +3160,14 @@
         <map value="2.16.840.1.114222.4.11.837"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.extension:birthsex">
+    <element id="Patient:fpar-patient.extension:birthsex">
       <path value="Patient.extension"/>
       <sliceName value="birthsex"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"/>
+        <profile value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-birthsex"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -3175,7 +3175,7 @@
         <strength value="required"/>
         <description value="Code for sex assigned at birth"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex"/>
+          <reference value="http://fhir.org/fhir/us/core/ValueSet/us-core-birthsex"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -3187,7 +3187,7 @@
 		<map value="2.16.840.1.113883.1.11.1"/>
      </mapping>
     </element>	
-    <element id="Patient:fparpatient.identifier">
+    <element id="Patient:fpar-patient.identifier">
       <path value="Patient.identifier"/>
       <min value="1"/>
       <max value="*"/>
@@ -3201,7 +3201,7 @@
         <map value="Patient.identifier"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier.system">
+    <element id="Patient:fpar-patient.identifier.system">
       <path value="Patient.identifier.system"/>
       <min value="1"/>
       <max value="1"/>
@@ -3215,7 +3215,7 @@
         <map value="Patient.identifier.system"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.identifier.value">
+    <element id="Patient:fpar-patient.identifier.value">
       <path value="Patient.identifier.value"/>
       <short value="The value that is unique within the system."/>
       <min value="1"/>
@@ -3230,7 +3230,7 @@
         <map value="Patient.identifier.value"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name">
+    <element id="Patient:fpar-patient.name">
       <path value="Patient.name"/>
       <min value="1"/>
       <max value="*"/>
@@ -3244,7 +3244,7 @@
         <map value="Patient.name"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.family">
+    <element id="Patient:fpar-patient.name.family">
       <path value="Patient.name.family"/>
       <min value="1"/>
       <max value="1"/>
@@ -3258,7 +3258,7 @@
         <map value="Patient.name.family"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.name.given">
+    <element id="Patient:fpar-patient.name.given">
       <path value="Patient.name.given"/>
       <min value="1"/>
       <max value="*"/>
@@ -3272,7 +3272,7 @@
         <map value="Patient.name.given"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.gender">
+    <element id="Patient:fpar-patient.gender">
       <path value="Patient.gender"/>
       <min value="1"/>
       <max value="1"/>
@@ -3284,7 +3284,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+          <reference value="http://fhir.org/fhir/ValueSet/administrative-gender"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -3292,13 +3292,13 @@
         <map value="Patient.gender"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.address">
+    <element id="Patient:fpar-patient.address">
       <path value="Patient.address"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient:fparpatient.address.extension:addressprimaryind">
+    <element id="Patient:fpar-patient.address.extension:addressprimaryind">
       <path value="Patient.address.extension"/>
       <sliceName value="addressprimaryind"/>
       <comment value="Make general extension."/>
@@ -3306,7 +3306,7 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3315,11 +3315,11 @@
         <strength value="preferred"/>
         <description value="The set of values to indicate affirmative or negative"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/v2-0136"/>
+          <reference value="http://fhir.org/fhir/ValueSet/v2-0136"/>
         </valueSetReference>
       </binding>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact">
+    <element id="Patient:fpar-patient.contact:emergencycontact">
       <path value="Patient.contact"/>
       <sliceName value="EmergencyContact"/>
       <slicing>
@@ -3337,30 +3337,30 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.extension:contactpartyid">
+    <element id="Patient:fpar-patient.contact:emergencycontact.extension:contactpartyid">
       <path value="Patient.contact.extension"/>
       <sliceName value="contactPartyId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient:fparpatient.contact:emergencycontact.relationship">
+    <element id="Patient:fpar-patient.contact:emergencycontact.relationship">
       <path value="Patient.contact.relationship"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
       <fixedCodeableConcept>
         <coding>
-          <system value="http://hl7.org/fhir/v2/0131"/>
+          <system value="http://fhir.org/fhir/v2/0131"/>
           <code value="C"/>
           <display value="Emergency Contact"/>
         </coding>
@@ -3369,7 +3369,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient:fparpatient.contact:contact">
+    <element id="Patient:fpar-patient.contact:contact">
       <path value="Patient.contact"/>
       <sliceName value="Contact"/>
       <alias value="Contact"/>
@@ -3377,26 +3377,26 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient:fparpatient.contact:contact.extension:contactpartyid">
+    <element id="Patient:fpar-patient.contact:contact.extension:contactpartyid">
       <path value="Patient.contact.extension"/>
       <sliceName value="contactPartyId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient:fparpatient.communication">
+    <element id="Patient:fpar-patient.communication">
       <path value="Patient.communication"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient:fparpatient.communication.extension:communicationmode">
+    <element id="Patient:fpar-patient.communication.extension:communicationmode">
       <path value="Patient.communication.extension"/>
       <sliceName value="communicationmode"/>
       <comment value="HL7 Comm. Mode. TBD."/>
@@ -3404,7 +3404,7 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3417,7 +3417,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Patient:fparpatient.communication.language">
+    <element id="Patient:fpar-patient.communication.language">
       <path value="Patient.communication.language"/>
       <min value="1"/>
       <max value="1"/>
@@ -3427,14 +3427,14 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
+            <reference value="http://fhir.org/fhir/us/core/ValueSet/simple-language"/>
           </valueReference>
         </extension>
         <strength value="extensible"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
+          <reference value="http://fhir.org/fhir/us/core/ValueSet/simple-language"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -3442,7 +3442,7 @@
         <map value="Patient.communication.language"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.birthDate">
+    <element id="Patient:fpar-patient.birthDate">
       <path value="Patient.birthDate"/>
       <min value="0"/>
       <max value="1"/>
@@ -3456,14 +3456,14 @@
         <map value="Patient.birthDate"/>
       </mapping>
     </element>
-    <element id="Patient:fparpatient.birthDate.extension:birthdateverificationmethod">
+    <element id="Patient:fpar-patient.birthDate.extension:birthdateverificationmethod">
       <path value="Patient.birthDate.extension"/>
       <sliceName value="birthDateVerificationMethod"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3476,7 +3476,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Patient:fparpatient.animal">
+    <element id="Patient:fpar-patient.animal">
 	  <path value="Patient.animal"/>
 	  <min value="0"/>
 	  <max value="0"/>

@@ -3,13 +3,13 @@
   <meta> 
     <lastUpdated value="2017-04-19T07:44:43.294+10:00"/> 
   </meta> 
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+  <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/> 
   </extension> 
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+  <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pc"/> 
   </extension> 
-  <url value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/> 
+  <url value="http://fhir.org/fhir/fpar/StructureDefinition/ReferralRequest"/> 
   <name value="ReferralRequest"/> 
   <status value="draft"/> 
   <date value="2017-04-19T07:44:43+10:00"/> 
@@ -17,36 +17,36 @@
   <contact> 
     <telecom> 
       <system value="url"/> 
-      <value value="http://hl7.org/fhir"/> 
+      <value value="http://fhir.org/fhir"/> 
     </telecom> 
   </contact> 
   <contact> 
     <telecom> 
       <system value="url"/> 
-      <value value="http://www.hl7.org/Special/committees/patientcare/index.cfm"/> 
+      <value value="http://www.fhir.org/Special/committees/patientcare/index.cfm"/> 
     </telecom> 
   </contact> 
   <description value="Base StructureDefinition for ReferralRequest Resource"/> 
   <fhirVersion value="3.0.1"/> 
   <mapping> 
     <identity value="w5"/> 
-    <uri value="http://hl7.org/fhir/w5"/> 
+    <uri value="http://fhir.org/fhir/w5"/> 
     <name value="W5 Mapping"/> 
   </mapping> 
   <mapping> 
     <identity value="v2"/> 
-    <uri value="http://hl7.org/v2"/> 
+    <uri value="http://fhir.org/v2"/> 
     <name value="HL7 v2 Mapping"/> 
   </mapping> 
   <mapping> 
     <identity value="rim"/> 
-    <uri value="http://hl7.org/v3"/> 
+    <uri value="http://fhir.org/v3"/> 
     <name value="RIM Mapping"/> 
   </mapping> 
   <kind value="resource"/> 
   <abstract value="false"/> 
   <type value="ReferralRequest"/> 
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DomainResource"/> 
+  <baseDefinition value="http://fhir.org/fhir/StructureDefinition/DomainResource"/> 
   <derivation value="specialization"/> 
   <snapshot> 
     <element id="ReferralRequest">
@@ -186,21 +186,21 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <code value="code"/> 
       </type> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference> 
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/> 
+            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/> 
           </valueReference> 
         </extension> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/> 
         </extension> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/> 
         </extension> 
         <strength value="extensible"/> 
         <description value="A human language."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/languages"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/languages"/> 
         </valueSetReference> 
       </binding> 
     </element> 
@@ -354,11 +354,11 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ActivityDefinition"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/PlanDefinition"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -376,15 +376,15 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ReferralRequest"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/CarePlan"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ProcedureRequest"/> 
       </type> 
       <isModifier value="false"/> 
       <isSummary value="true"/> 
@@ -405,7 +405,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ReferralRequest"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -444,13 +444,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="true"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralRequestStatus"/> 
         </extension> 
         <strength value="required"/> 
         <description value="The status of the referral."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/request-status"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/request-status"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -477,13 +477,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="true"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralCategory"/> 
         </extension> 
         <strength value="required"/> 
         <description value="Codes identifying the stage lifecycle stage of a request"/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/request-intent"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/request-intent"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -504,13 +504,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="false"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralType"/> 
         </extension> 
         <strength value="example"/> 
         <description value="Codes for types of referral; e.g. consult, transfer, temporary transfer."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/referral-type"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/referral-type"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -535,13 +535,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="false"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralPriority"/> 
         </extension> 
         <strength value="required"/> 
         <description value="Codes indicating the relative priority of the referral."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/request-priority"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/request-priority"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -566,13 +566,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="false"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="RequestedService"/> 
         </extension> 
         <strength value="example"/> 
         <description value="Codes indicating the types of services that might be requested as part of a referral."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/c80-practice-codes"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/c80-practice-codes"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -593,11 +593,11 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Group"/> 
       </type> 
       <isModifier value="false"/> 
       <isSummary value="true"/> 
@@ -619,11 +619,11 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Encounter"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/EpisodeOfCare"/> 
       </type> 
       <isModifier value="false"/> 
       <isSummary value="true"/> 
@@ -813,23 +813,23 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Practitioner"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -851,7 +851,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
       </type> 
       <condition value="rfr-1"/> 
       <isSummary value="true"/> 
@@ -872,13 +872,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </type> 
       <isModifier value="false"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralSpecialty"/> 
         </extension> 
         <strength value="example"/> 
         <description value="Codes indicating the types of capability the referred to service provider must have."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/practitioner-specialty"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/practitioner-specialty"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -897,15 +897,15 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Practitioner"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/HealthcareService"/> 
       </type> 
       <isModifier value="false"/> 
       <isSummary value="true"/> 
@@ -931,13 +931,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="false"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralReason"/> 
         </extension> 
         <strength value="example"/> 
         <description value="Codes indicating why the referral is being requested."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/clinical-findings"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/clinical-findings"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -957,11 +957,11 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Condition"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Observation"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -997,7 +997,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Resource"/> 
       </type> 
       <isModifier value="false"/> 
     </element> 
@@ -1025,7 +1025,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Provenance"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Provenance"/> 
       </type> 
       <mapping> 
         <identity value="rim"/> 
@@ -1076,11 +1076,11 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ActivityDefinition"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/PlanDefinition"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -1098,15 +1098,15 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ReferralRequest"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/CarePlan"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ProcedureRequest"/> 
       </type> 
       <isModifier value="false"/> 
       <isSummary value="true"/> 
@@ -1127,7 +1127,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ReferralRequest"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -1166,13 +1166,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="true"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralRequestStatus"/> 
         </extension> 
         <strength value="required"/> 
         <description value="The status of the referral."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/request-status"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/request-status"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1199,13 +1199,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="true"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralCategory"/> 
         </extension> 
         <strength value="required"/> 
         <description value="Codes identifying the stage lifecycle stage of a request"/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/request-intent"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/request-intent"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1226,13 +1226,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="false"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralType"/> 
         </extension> 
         <strength value="example"/> 
         <description value="Codes for types of referral; e.g. consult, transfer, temporary transfer."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/referral-type"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/referral-type"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1257,13 +1257,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="false"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralPriority"/> 
         </extension> 
         <strength value="required"/> 
         <description value="Codes indicating the relative priority of the referral."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/request-priority"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/request-priority"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1288,13 +1288,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="false"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="RequestedService"/> 
         </extension> 
         <strength value="example"/> 
         <description value="Codes indicating the types of services that might be requested as part of a referral."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/c80-practice-codes"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/c80-practice-codes"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1315,11 +1315,11 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Group"/> 
       </type> 
       <isModifier value="false"/> 
       <isSummary value="true"/> 
@@ -1341,11 +1341,11 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Encounter"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/EpisodeOfCare"/> 
       </type> 
       <isModifier value="false"/> 
       <isSummary value="true"/> 
@@ -1443,23 +1443,23 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Practitioner"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -1481,7 +1481,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
       </type> 
       <condition value="rfr-1"/> 
       <isSummary value="true"/> 
@@ -1502,13 +1502,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </type> 
       <isModifier value="false"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralSpecialty"/> 
         </extension> 
         <strength value="example"/> 
         <description value="Codes indicating the types of capability the referred to service provider must have."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/practitioner-specialty"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/practitioner-specialty"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1527,15 +1527,15 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Practitioner"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/HealthcareService"/> 
       </type> 
       <isModifier value="false"/> 
       <isSummary value="true"/> 
@@ -1561,13 +1561,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="false"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReferralReason"/> 
         </extension> 
         <strength value="example"/> 
         <description value="Codes indicating why the referral is being requested."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/clinical-findings"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/clinical-findings"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1587,11 +1587,11 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Condition"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Observation"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -1627,7 +1627,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Resource"/> 
       </type> 
       <isModifier value="false"/> 
     </element> 
@@ -1655,7 +1655,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Provenance"/> 
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Provenance"/> 
       </type> 
       <mapping> 
         <identity value="rim"/> 

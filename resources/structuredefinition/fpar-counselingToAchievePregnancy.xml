@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="fparcounselingToAchievePregnancy"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/fpar-counselingToAchievePregnancy"/>
+  <id value="fpar-counselingToAchievePregnancy"/>
+  <url value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-counselingToAchievePregnancy"/>
   <version value="1.0.0"/>
   <name value="FPAR Counseling To Achieve Pregnancy Profile"/>
   <status value="draft"/>
@@ -21,28 +21,28 @@
   </mapping>
   <mapping>
     <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
+    <uri value="http://fhir.org/v3"/>
     <name value="RIM Mapping"/>
   </mapping>
   <mapping>
     <identity value="w5"/>
-    <uri value="http://hl7.org/fhir/w5"/>
+    <uri value="http://fhir.org/fhir/w5"/>
     <name value="W5 Mapping"/>
   </mapping>
   <mapping>
     <identity value="v2"/>
-    <uri value="http://hl7.org/v2"/>
+    <uri value="http://fhir.org/v2"/>
     <name value="HL7 v2 Mapping"/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Procedure"/>
-  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+  <baseDefinition value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
   <derivation value="constraint"/>
   <snapshot>
-    <element id="Procedure:fparcounselingToAchievePregnancy">
+    <element id="Procedure:fpar-counselingToAchievePregnancy">
       <path value="Procedure"/>
-      <sliceName value="fparcounselingToAchievePregnancy"/>
+      <sliceName value="fpar-counselingToAchievePregnancy"/>
       <short value="FPAR Counseling To Achieve Pregnancy Profile"/>
       <definition value="FPAR Counseling To Achieve Pregnancy Profile is based on the US Core Procedure Profile"/>
 	  <comment value="Counseling to achieve pregnancy is an interaction in which a provider spends time during an encounter discussing any services and/or provides counseling provided related either to achieving pregnancy or addressing infertility."/>
@@ -111,7 +111,7 @@
         <map value="Procedure"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.id">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.id">
       <path value="Procedure.id"/>
       <short value="Logical id of this artifact"/>
       <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."/>
@@ -128,7 +128,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.meta">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.meta">
       <path value="Procedure.meta"/>
       <short value="Metadata about the resource"/>
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
@@ -144,7 +144,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.implicitRules">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.implicitRules">
       <path value="Procedure.implicitRules"/>
       <short value="A set of rules under which this content was created"/>
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
@@ -162,7 +162,7 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.language">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.language">
       <path value="Procedure.language"/>
       <short value="Language of the resource content"/>
       <definition value="The base language in which the resource is written."/>
@@ -178,25 +178,25 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
+          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.text">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.text">
       <path value="Procedure.text"/>
       <short value="Text summary of the resource, for human interpretation"/>
       <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
@@ -221,7 +221,7 @@
         <map value="Act.text?"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.contained">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.contained">
       <path value="Procedure.contained"/>
       <short value="Contained, inline Resources"/>
       <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
@@ -244,7 +244,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.extension">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.extension">
       <path value="Procedure.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -266,7 +266,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.modifierExtension">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.modifierExtension">
       <path value="Procedure.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -289,7 +289,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.identifier">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.identifier">
       <path value="Procedure.identifier"/>
       <short value="External Identifiers for this procedure"/>
       <definition value="This records identifiers associated with this procedure that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)."/>
@@ -318,7 +318,7 @@
         <map value="id"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.definition">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.definition">
       <path value="Procedure.definition"/>
       <short value="Instantiates protocol or definition"/>
       <definition value="A protocol, guideline, orderset or other definition that was adhered to in whole or in part by this procedure."/>
@@ -331,15 +331,15 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/PlanDefinition"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ActivityDefinition"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/HealthcareService"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -347,7 +347,7 @@
         <map value=".outboundRelationship[typeCode=DEFN].target"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.basedOn">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.basedOn">
       <path value="Procedure.basedOn"/>
       <short value="A request for this procedure"/>
       <definition value="A reference to a resource that contains details of the request for this procedure."/>
@@ -361,15 +361,15 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/CarePlan"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ProcedureRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ReferralRequest"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -377,7 +377,7 @@
         <map value=".outboundRelationship[typeCode=FLFS].target[classCode=(various e.g. PROC, OBS, PCPR, ACT,  moodCode=RQO].code"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.partOf">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.partOf">
       <path value="Procedure.partOf"/>
       <short value="Part of referenced event"/>
       <definition value="A larger event of which this particular procedure is a component or step."/>
@@ -392,15 +392,15 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Procedure"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Observation"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/MedicationAdministration"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -408,7 +408,7 @@
         <map value=".inboundRelationship[typeCode=COMP].source[classCode=SBADM or PROC or OBS, moodCode=EVN]"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.status">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.status">
       <path value="Procedure.status"/>
       <short value="preparation | in-progress | suspended | aborted | completed | entered-in-error | unknown"/>
       <definition value="A code specifying the state of the procedure. Generally this will be in-progress or completed state."/>
@@ -429,7 +429,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/event-status"/>
+          <reference value="http://fhir.org/fhir/ValueSet/event-status"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -445,7 +445,7 @@
         <map value="Procedure.status"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.notDone">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.notDone">
       <path value="Procedure.notDone"/>
       <short value="True if procedure was not performed as scheduled"/>
       <definition value="Set this to true if the record is saying that the procedure was NOT performed."/>
@@ -468,7 +468,7 @@
         <map value=".actionNegationInd"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.notDoneReason">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.notDoneReason">
       <path value="Procedure.notDoneReason"/>
       <short value="Reason procedure was not performed"/>
       <definition value="A code indicating why the procedure was not performed."/>
@@ -485,13 +485,13 @@
       <condition value="pro-1"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureNegationReason"/>
         </extension>
         <strength value="example"/>
         <description value="A code that identifies the reason a procedure was not performed."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-not-performed-reason"/>
+          <reference value="http://fhir.org/fhir/ValueSet/procedure-not-performed-reason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -499,7 +499,7 @@
         <map value=".reason.Observation.value"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.category">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.category">
       <path value="Procedure.category"/>
       <short value="Classification of the procedure"/>
       <definition value="A code that classifies the procedure for searching, sorting and display purposes (e.g. &quot;Surgical Procedure&quot;)."/>
@@ -515,13 +515,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureCategory"/>
         </extension>
         <strength value="example"/>
         <description value="A code that classifies a procedure for searching, sorting and display purposes."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-category"/>
+          <reference value="http://fhir.org/fhir/ValueSet/procedure-category"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -533,7 +533,7 @@
         <map value="class"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.code">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.code">
       <path value="Procedure.code"/>
       <short value="SNOMED-CT | ICD-10 | CPT-4"/>
       <definition value="The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. &quot;Laparoscopic Appendectomy&quot;)."/>
@@ -552,15 +552,15 @@
       <mustSupport value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
+            <reference value="http://fhir.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
           </valueReference>
         </extension>
         <strength value="extensible"/>
         <description value="Codes describing the type of  Procedure"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
+          <reference value="http://fhir.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -580,7 +580,7 @@
         <map value="Procedure.code"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.subject">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.subject">
       <path value="Procedure.subject"/>
       <short value="Who the procedure was performed on"/>
       <definition value="The person, animal or group on which the procedure was performed."/>
@@ -594,7 +594,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+        <targetProfile value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-patient"/>
       </type>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -615,7 +615,7 @@
         <map value="Procedure.subject"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.context">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.context">
       <path value="Procedure.context"/>
       <short value="Encounter or episode associated with the procedure"/>
       <definition value="The encounter during which the procedure was performed."/>
@@ -629,11 +629,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Encounter"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/EpisodeOfCare"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -649,7 +649,7 @@
         <map value="context"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.performed[x]">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.performed[x]">
       <path value="Procedure.performed[x]"/>
       <short value="Date/Period the procedure was performed"/>
       <definition value="The date(time)/period over which the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured."/>
@@ -685,7 +685,7 @@
         <map value="Procedure.performed[x]"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.performer">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.performer">
       <path value="Procedure.performer"/>
       <short value="The people who performed the procedure"/>
       <definition value="Limited to &#39;real&#39; people rather than equipment."/>
@@ -713,7 +713,7 @@
         <map value=".participation[typeCode=PRF]"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.performer.id">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.performer.id">
       <path value="Procedure.performer.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -733,7 +733,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.performer.extension">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.performer.extension">
       <path value="Procedure.performer.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -755,7 +755,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.performer.modifierExtension">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.performer.modifierExtension">
       <path value="Procedure.performer.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -780,7 +780,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.performer.role">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.performer.role">
       <path value="Procedure.performer.role"/>
       <short value="The role the actor was in"/>
       <definition value="For example: surgeon, anaethetist, endoscopist."/>
@@ -796,13 +796,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedurePerformerRole"/>
         </extension>
         <strength value="example"/>
         <description value="A code that identifies the role of a performer of the procedure."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/performer-role"/>
+          <reference value="http://fhir.org/fhir/ValueSet/performer-role"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -814,7 +814,7 @@
         <map value=".functionCode"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.performer.actor">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.performer.actor">
       <path value="Procedure.performer.actor"/>
       <short value="The reference to the practitioner"/>
       <definition value="The practitioner who was involved in the procedure."/>
@@ -828,23 +828,23 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Practitioner"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -860,7 +860,7 @@
         <map value="who.actor"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.performer.onBehalfOf">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.performer.onBehalfOf">
       <path value="Procedure.performer.onBehalfOf"/>
       <short value="Organization the device or practitioner was acting for"/>
       <definition value="The organization the device or practitioner was acting on behalf of."/>
@@ -874,14 +874,14 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
       </type>
       <mapping>
         <identity value="rim"/>
         <map value=".scoper"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.location">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.location">
       <path value="Procedure.location"/>
       <short value="Where the procedure happened"/>
       <definition value="The location where the procedure actually happened.  E.g. a newborn at home, a tracheostomy at a restaurant."/>
@@ -895,7 +895,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Location"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -907,7 +907,7 @@
         <map value="where"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.reasonCode">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.reasonCode">
       <path value="Procedure.reasonCode"/>
       <short value="Coded reason procedure performed"/>
       <definition value="The coded reason why the procedure was performed. This may be coded entity of some type, or may simply be present as text."/>
@@ -923,13 +923,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureReason"/>
         </extension>
         <strength value="example"/>
         <description value="A code that identifies the reason a procedure is  required."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-reason"/>
+          <reference value="http://fhir.org/fhir/ValueSet/procedure-reason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -941,7 +941,7 @@
         <map value="why"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.reasonReference">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.reasonReference">
       <path value="Procedure.reasonReference"/>
       <short value="Condition that is the reason the procedure performed"/>
       <definition value="The condition that is the reason why the procedure was performed."/>
@@ -955,11 +955,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Condition"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Observation"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -971,7 +971,7 @@
         <map value="why"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.bodySite">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.bodySite">
       <path value="Procedure.bodySite"/>
       <short value="Target body sites"/>
       <definition value="Detailed and structured anatomical location information. Multiple locations are allowed - e.g. multiple punch biopsies of a lesion."/>
@@ -987,13 +987,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="BodySite"/>
         </extension>
         <strength value="example"/>
         <description value="Codes describing anatomical locations. May include laterality."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/body-site"/>
+          <reference value="http://fhir.org/fhir/ValueSet/body-site"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1005,7 +1005,7 @@
         <map value=".targetSiteCode"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.outcome">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.outcome">
       <path value="Procedure.outcome"/>
       <short value="The result of procedure"/>
       <definition value="The outcome of the procedure - did it resolve reasons for the procedure being performed?"/>
@@ -1022,13 +1022,13 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureOutcome"/>
         </extension>
         <strength value="example"/>
         <description value="An outcome of a procedure - whether it was resolved or otherwise."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-outcome"/>
+          <reference value="http://fhir.org/fhir/ValueSet/procedure-outcome"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1036,7 +1036,7 @@
         <map value=".outboundRelationship[typeCode=OUT].target.text"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.report">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.report">
       <path value="Procedure.report"/>
       <short value="Any report resulting from the procedure"/>
       <definition value="This could be a histology result, pathology report, surgical report, etc.."/>
@@ -1050,14 +1050,14 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/DiagnosticReport"/>
       </type>
       <mapping>
         <identity value="rim"/>
         <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN]"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.complication">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.complication">
       <path value="Procedure.complication"/>
       <short value="Complication following the procedure"/>
       <definition value="Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure itself rather than any &#39;post procedure&#39; issues."/>
@@ -1073,13 +1073,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureComplication"/>
         </extension>
         <strength value="example"/>
         <description value="Codes describing complications that resulted from a procedure."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/condition-code"/>
+          <reference value="http://fhir.org/fhir/ValueSet/condition-code"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1087,7 +1087,7 @@
         <map value=".outboundRelationship[typeCode=OUTC].target[classCode=OBS, code=&quot;complication&quot;, moodCode=EVN].value"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.complicationDetail">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.complicationDetail">
       <path value="Procedure.complicationDetail"/>
       <short value="A condition that&#xA0;is a result of the procedure"/>
       <definition value="Any complications that occurred during the procedure, or in the immediate post-performance period."/>
@@ -1101,14 +1101,14 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Condition"/>
       </type>
       <mapping>
         <identity value="rim"/>
         <map value=".outboundRelationship[typeCode=OUTC].target[classCode=OBS, code=&quot;complication&quot;, moodCode=EVN].value"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.followUp">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.followUp">
       <path value="Procedure.followUp"/>
       <short value="Instructions for follow up"/>
       <definition value="If the procedure required specific follow up - e.g. removal of sutures. The followup may be represented as a simple note, or could potentially be more complex in which case the CarePlan resource can be used."/>
@@ -1123,13 +1123,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureFollowUp"/>
         </extension>
         <strength value="example"/>
         <description value="Specific follow up required for a procedure e.g. removal of sutures."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-followup"/>
+          <reference value="http://fhir.org/fhir/ValueSet/procedure-followup"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1137,7 +1137,7 @@
         <map value=".outboundRelationship[typeCode=COMP].target[classCode=ACT, moodCode=INT].code"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.note">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.note">
       <path value="Procedure.note"/>
       <short value="Additional information about the procedure"/>
       <definition value="Any other notes about the procedure.  E.g. the operative notes."/>
@@ -1160,7 +1160,7 @@
         <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;annotation&quot;].value"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.focalDevice">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.focalDevice">
       <path value="Procedure.focalDevice"/>
       <short value="Device changed in procedure"/>
       <definition value="A device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound-vac, etc.) as a focal portion of the Procedure."/>
@@ -1187,7 +1187,7 @@
         <map value=".participation[typeCode=DEV].role[classCode=MANU]"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.focalDevice.id">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.focalDevice.id">
       <path value="Procedure.focalDevice.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1207,7 +1207,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.focalDevice.extension">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.focalDevice.extension">
       <path value="Procedure.focalDevice.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -1229,7 +1229,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.focalDevice.modifierExtension">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.focalDevice.modifierExtension">
       <path value="Procedure.focalDevice.modifierExtension"/>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
@@ -1254,7 +1254,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.focalDevice.action">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.focalDevice.action">
       <path value="Procedure.focalDevice.action"/>
       <short value="Kind of change to device"/>
       <definition value="The kind of change that happened to the device during the procedure."/>
@@ -1269,13 +1269,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="DeviceActionKind"/>
         </extension>
         <strength value="preferred"/>
         <description value="A kind of change that happened to the device during the procedure."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/device-action"/>
+          <reference value="http://fhir.org/fhir/ValueSet/device-action"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1283,7 +1283,7 @@
         <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;procedure device action&quot;].value=:procedure device action codes"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.focalDevice.manipulated">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.focalDevice.manipulated">
       <path value="Procedure.focalDevice.manipulated"/>
       <short value="Device that was changed"/>
       <definition value="The device that was manipulated (changed) during the procedure."/>
@@ -1296,14 +1296,14 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/>
       </type>
       <mapping>
         <identity value="rim"/>
         <map value=".participation[typeCode=DEV].role[classCode=SDLOC]"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.usedReference">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.usedReference">
       <path value="Procedure.usedReference"/>
       <short value="Items used during procedure"/>
       <definition value="Identifies medications, devices and any other substance used as part of the procedure."/>
@@ -1318,22 +1318,22 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Medication"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance"/>
+        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Substance"/>
       </type>
       <mapping>
         <identity value="rim"/>
         <map value=".participation[typeCode=DEV].role[classCode=MANU] or&#xA;.participation[typeCode=CSM].role[classCode=ADMM] (for Medication or Substance)"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.usedCode">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.usedCode">
       <path value="Procedure.usedCode"/>
       <short value="Coded items used during the procedure"/>
       <definition value="Identifies coded items that were used as part of the procedure."/>
@@ -1349,13 +1349,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureUsed"/>
         </extension>
         <strength value="example"/>
         <description value="Codes describing items used during a procedure"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/device-kind"/>
+          <reference value="http://fhir.org/fhir/ValueSet/device-kind"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1365,9 +1365,9 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Procedure:fparcounselingToAchievePregnancy">
+    <element id="Procedure:fpar-counselingToAchievePregnancy">
       <path value="Procedure"/>
-      <sliceName value="fparcounselingToAchievePregnancy"/>
+      <sliceName value="fpar-counselingToAchievePregnancy"/>
       <short value="FPAR Counseling To Achieve Pregnancy Profile"/>
       <definition value="FPAR Counseling To Achieve Pregnancy Profile is based on the US Core Procedure Profile"/>
 	  <comment value="Counseling to achieve pregnancy is an interaction in which a provider spends time during an encounter discussing any services and/or provides counseling provided related either to achieving pregnancy or addressing infertility."/>
@@ -1378,7 +1378,7 @@
         <map value="Procedure"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.status">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.status">
       <path value="Procedure.status"/>
       <min value="1"/>
       <max value="1"/>
@@ -1390,7 +1390,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/event-status"/>
+          <reference value="http://fhir.org/fhir/ValueSet/event-status"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1398,7 +1398,7 @@
         <map value="Procedure.status"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.code">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.code">
       <path value="Procedure.code"/>
       <short value="SNOMED-CT | ICD-10 | CPT-4"/>
       <min value="1"/>
@@ -1409,15 +1409,15 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
+            <reference value="http://fhir.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
           </valueReference>
         </extension>
         <strength value="extensible"/>
         <description value="Codes describing the type of  Procedure"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
+          <reference value="http://fhir.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1425,13 +1425,13 @@
         <map value="Procedure.code"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.subject">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.subject">
       <path value="Procedure.subject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+        <targetProfile value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-patient"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -1440,7 +1440,7 @@
         <map value="Procedure.subject"/>
       </mapping>
     </element>
-    <element id="Procedure:fparcounselingToAchievePregnancy.performed[x]">
+    <element id="Procedure:fpar-counselingToAchievePregnancy.performed[x]">
       <path value="Procedure.performed[x]"/>
       <min value="1"/>
       <max value="1"/>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="FPAR-PractitionerRole"/> 
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+  <id value="fpar-practitionerRole"/> 
+  <extension url="http://fhir.org/fhir/fpar/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/> 
   </extension> 
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+  <extension url="http://fhir.org/fhir/fpar/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa"/> 
   </extension> 
-  <url value="http://hl7.org/fhir/StructureDefinition/FPAR-PractitionerRole"/> 
+  <url value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-practitionerRole"/> 
   <name value="FPAR Practitioner Role"/> 
   <status value="draft"/> 
   <date value="2017-04-27"/> 
@@ -23,12 +23,12 @@
   <fhirVersion value="3.0.1"/> 
   <mapping> 
     <identity value="v2"/> 
-    <uri value="http://hl7.org/v2"/> 
+    <uri value="http://fhir.org/v2"/> 
     <name value="HL7 v2 Mapping"/> 
   </mapping> 
   <mapping> 
     <identity value="rim"/> 
-    <uri value="http://hl7.org/v3"/> 
+    <uri value="http://fhir.org/v3"/> 
     <name value="RIM Mapping"/> 
   </mapping> 
   <mapping> 
@@ -38,13 +38,13 @@
   </mapping> 
   <mapping> 
     <identity value="w5"/> 
-    <uri value="http://hl7.org/fhir/w5"/> 
+    <uri value="http://fhir.org/fhir/w5"/> 
     <name value="W5 Mapping"/> 
   </mapping> 
   <kind value="resource"/> 
   <abstract value="false"/> 
   <type value="PractitionerRole"/> 
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/"/> 
+  <baseDefinition value="http://fhir.org/fhir/fpar/StructureDefinition/"/> 
   <derivation value="specialization"/> 
   <snapshot> 
     <element id="PractitionerRole:fparPractitionerRole">
@@ -195,21 +195,21 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <code value="code"/> 
       </type> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://fhir.org/fhir/fpar/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference> 
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/> 
+            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/> 
           </valueReference> 
         </extension> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/fpar/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/> 
         </extension> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://fhir.org/fhir/fpar/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/> 
         </extension> 
         <strength value="extensible"/> 
         <description value="A human language."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/languages"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/languages"/> 
         </valueSetReference> 
       </binding> 
     </element> 
@@ -429,7 +429,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/> 
+        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/Practitioner"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -445,7 +445,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/Organization"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -491,7 +491,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </type> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/fpar/StructureDefinition/elementdefinition-bindingName">
           <valueString value="PractitionerSpecialty"/> 
         </extension>
 	    <strength value="preferred"/>
@@ -520,7 +520,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/> 
+        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/Location"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -546,7 +546,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/> 
+        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/HealthcareService"/> 
       </type> 
       <mapping> 
         <identity value="v2"/> 
@@ -691,13 +691,13 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <code value="code"/> 
       </type> 
       <binding> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/fpar/StructureDefinition/elementdefinition-bindingName">
           <valueString value="DaysOfWeek"/> 
         </extension> 
         <strength value="required"/> 
         <description value="The days of the week."/> 
         <valueSetReference> 
-          <reference value="http://hl7.org/fhir/ValueSet/days-of-week"/> 
+          <reference value="http://fhir.org/fhir/ValueSet/days-of-week"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -915,7 +915,7 @@ So the endpoint satisfies the need to be able to define the technical connection
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Endpoint"/> 
+        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/Endpoint"/> 
       </type> 
       <mapping> 
         <identity value="rim"/> 
@@ -930,7 +930,7 @@ So the endpoint satisfies the need to be able to define the technical connection
 	  <min value="0"/>
 	  <max value="1"/>
 	  <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://fhir.org/fhir/fpar/StructureDefinition/elementdefinition-bindingName">
           <valueString value="PractitionerSpecialty"/> 
         </extension>
 	    <strength value="preferred"/>
