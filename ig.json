@@ -23,7 +23,7 @@
             "template-format": "instance-template-sd.html"
         }
     },
-    "canonicalBase": "http://hl7.org/fhir/fpar",
+    "canonicalBase": "http://fhir.org/fhir/fpar",
     "source": "implementationguide/FPARImplementationGuide.xml",
     "sct-edition": "http://snomed.info/sct/20160901",
     "resources": {
@@ -69,8 +69,8 @@
         "StructureDefinition/fpar-pregnancyStatusEval": {
             "base": "StructureDefinition-fpar-pregnancyStatusEval.html"
         },
-        "StructureDefinition/fpar-virginalStatusEval": {
-            "base": "StructureDefinition-fpar-virginalStatusEval.html"
+        "StructureDefinition/fpar-virginalStatus": {
+            "base": "StructureDefinition-fpar-virginalStatus.html"
         },
         "StructureDefinition/FPARImplementationGuide": {
             "base": "StructureDefinition-FPARImplementationGuide.html"
@@ -392,72 +392,6 @@
         },
         "StructureDefinition/ReferralRequest": {
             "base": "StructureDefinition-ReferralRequest.html"
-        },
-        "StructureDefinition/extensions-administrativeEncounterId":  {
-            "base" : "extensions-administrativeEncounterId.html"
-        },
-        "StructureDefinition/extensions-admitMedicationId":  {
-            "base" : "extensions-admitMedicationId.html"
-        },
-        "StructureDefinition/extensions-ambulatoryStatus":  {
-            "base" : "extensions-ambulatoryStatus.html"
-        },
-        "StructureDefinition/extensions-arrivedByTransportation":  {
-            "base" : "extensions-arrivedByTransportation.html"
-        },
-        "StructureDefinition/extensions-associatedPrecondition":  {
-            "base" : "extensions-associatedPrecondition.html"
-        },
-        "StructureDefinition/extensions-bodyPosition":  {
-            "base" : "extensions-bodyPosition.html"
-        },
-        "StructureDefinition/extensions-chiefComplaintId":  {
-            "base" : "extensions-chiefComplaintId.html"
-        },
-        "StructureDefinition/extensions-communicationMode":  {
-            "base" : "extensions-communicationMode.html"
-        },
-        "StructureDefinition/extensions-confidentiality":  {
-            "base" : "extensions-confidentiality.html"
-        },
-        "StructureDefinition/extensions-contraceptionProvisionMethod":  {
-            "base" : "extensions-contraceptionProvisionMethod.html"
-        },
-        "StructureDefinition/extensions-dataAbsentReason":  {
-            "base" : "extensions-dataAbsentReason.html"
-        },
-        "StructureDefinition/extensions-dataOriginationMode":  {
-            "base" : "extensions-dataOriginationMode.html"
-        },
-        "StructureDefinition/extensions-deltaFlag":  {
-            "base" : "extensions-deltaFlag.html"
-        },
-        "StructureDefinition/extensions-departedByTransportation":  {
-            "base" : "extensions-departedByTransportation.html"
-        },
-        "StructureDefinition/extensions-dischargeMedicationId":  {
-            "base" : "extensions-dischargeMedicationId.html"
-        },
-        "StructureDefinition/extensions-focalSubject":  {
-            "base" : "extensions-focalSubject.html"
-        },
-        "StructureDefinition/extensions-hospitalService":  {
-            "base" : "extensions-hospitalService.html"
-        },
-        "StructureDefinition/extensions-organizationPeriod":  {
-            "base" : "extensions-organizationPeriod.html"
-        },
-        "StructureDefinition/extensions-primaryInsuranceClassification":  {
-            "base" : "extensions-primaryInsuranceClassification.html"
-        },
-        "StructureDefinition/extensions-reasonCancelled":  {
-            "base" : "extensions-reasonCancelled.html"
-        },
-        "StructureDefinition/extensions-reportingMethod":  {
-            "base" : "extensions-reportingMethod.html"
-        },
-        "StructureDefinition/extensions-vipLevel":  {
-            "base" : "extensions-vipLevel.html"
         }
     }
 }
