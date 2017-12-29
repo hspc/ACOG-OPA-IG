@@ -7,17 +7,16 @@ resources - fhir profiles, extensions, etc...
 
 
 
-
-
 ## Prep to Build the IG
   * Clone this repository locally
   * Download the FHIR IG Publisher JAR file from http://build.fhir.org/downloads.html
   * (direct link to jar: http://build.fhir.org/org.hl7.fhir.igpublisher.jar)
   * Put the publisher jar file in the root of the cloned repository
+  * run publish.sh or publish.bat
 
 ## Build the IG
   * A number of scripts have been provided to make this as easy as possible
-  * Note: The build process creates a number of directories (qa, temp, output, etc... )
+  * Note: The build process creates a number of directories (qa, temp, output, txCache)
 
 ## Latest IG build available at: http://build.fhir.org/ig/HL7/fpar-on-fhir/
 
