@@ -192,7 +192,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <binding> 
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference> 
-            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/> 
+            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/> 
           </valueReference> 
         </extension> 
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -204,7 +204,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <strength value="extensible"/> 
         <description value="A human language."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/languages"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/languages"/> 
         </valueSetReference> 
       </binding> 
     </element> 
@@ -375,7 +375,7 @@ This element is labeled as a modifier because the status contains codes that mar
         <strength value="required"/> 
         <description value="Current state of the encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-status"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-status"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -521,7 +521,7 @@ This element is labeled as a modifier because the status contains codes that mar
         <strength value="required"/> 
         <description value="Current state of the encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-status"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-status"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -560,7 +560,7 @@ This element is labeled as a modifier because the status contains codes that mar
         <strength value="extensible"/> 
         <description value="Classification of the encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/v3-ActEncounterCode"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -708,7 +708,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="extensible"/> 
         <description value="Classification of the encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/v3-ActEncounterCode"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -749,7 +749,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="example"/> 
         <description value="The type of encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-type"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-type"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -781,7 +781,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="example"/> 
         <description value="Indicates the urgency of the encounter."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/v3-ActPriority"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/v3-ActPriority"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1009,7 +1009,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="extensible"/> 
         <description value="Role of participant in encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-participant-type"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1153,7 +1153,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="preferred"/> 
         <description value="Reason why the encounter takes place."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-reason"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-reason"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1338,7 +1338,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="preferred"/> 
         <description value="The type of diagnosis this condition represents"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/diagnosis-role"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/diagnosis-role"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1537,7 +1537,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/> 
         <description value="From where the patient was admitted."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-admit-source"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-admit-source"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1566,7 +1566,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="example"/> 
         <description value="The reason for re-admission of this hospitalization encounter."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/v2-0092"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0092"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1599,7 +1599,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="example"/> 
         <description value="Medical, cultural or ethical food preferences to help with catering requirements."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-diet"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-diet"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1627,7 +1627,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/> 
         <description value="Special courtesies"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-special-courtesy"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-special-courtesy"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1656,7 +1656,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/> 
         <description value="Special arrangements"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-special-arrangements"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-special-arrangements"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1703,7 +1703,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="example"/> 
         <description value="Discharge Disposition"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-discharge-disposition"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1866,7 +1866,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="required"/> 
         <description value="The status of the location."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-location-status"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-location-status"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1996,7 +1996,7 @@ This element is labeled as a modifier because the status contains codes that mar
         <strength value="required"/> 
         <description value="Current state of the encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-status"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-status"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2050,7 +2050,7 @@ This element is labeled as a modifier because the status contains codes that mar
         <strength value="required"/> 
         <description value="Current state of the encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-status"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-status"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2089,7 +2089,7 @@ This element is labeled as a modifier because the status contains codes that mar
         <strength value="extensible"/> 
         <description value="Classification of the encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/v3-ActEncounterCode"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2145,7 +2145,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="extensible"/> 
         <description value="Classification of the encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/v3-ActEncounterCode"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2186,7 +2186,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="example"/> 
         <description value="The type of encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-type"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-type"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2218,7 +2218,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="example"/> 
         <description value="Indicates the urgency of the encounter."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/v3-ActPriority"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/v3-ActPriority"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2354,7 +2354,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="extensible"/> 
         <description value="Role of participant in encounter"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-participant-type"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2498,7 +2498,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="preferred"/> 
         <description value="Reason why the encounter takes place."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-reason"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-reason"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2591,7 +2591,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="preferred"/> 
         <description value="The type of diagnosis this condition represents"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/diagnosis-role"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/diagnosis-role"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2698,7 +2698,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/> 
         <description value="From where the patient was admitted."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-admit-source"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-admit-source"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2727,7 +2727,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="example"/> 
         <description value="The reason for re-admission of this hospitalization encounter."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/v2-0092"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0092"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2760,7 +2760,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="example"/> 
         <description value="Medical, cultural or ethical food preferences to help with catering requirements."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-diet"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-diet"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2788,7 +2788,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/> 
         <description value="Special courtesies"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-special-courtesy"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-special-courtesy"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2817,7 +2817,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/> 
         <description value="Special arrangements"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-special-arrangements"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-special-arrangements"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2864,7 +2864,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="example"/> 
         <description value="Discharge Disposition"/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-discharge-disposition"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -2935,7 +2935,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="required"/> 
         <description value="The status of the location."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/encounter-location-status"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-location-status"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 

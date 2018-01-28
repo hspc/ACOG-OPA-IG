@@ -186,7 +186,7 @@
       <binding>
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -198,7 +198,7 @@
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
+          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
     </element>
@@ -523,7 +523,7 @@
         <strength value="required"/>
         <description value="Identifies the purpose for this identifier, if known ."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/identifier-use"/>
+          <reference value="http://hl7.org/fhir/ValueSet/identifier-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -562,7 +562,7 @@
         <strength value="extensible"/>
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/identifier-type"/>
+          <reference value="http://hl7.org/fhir/ValueSet/identifier-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -850,7 +850,7 @@
         <strength value="required"/>
         <description value="The use of a human name"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/name-use"/>
+          <reference value="http://hl7.org/fhir/ValueSet/name-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1098,7 +1098,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/administrative-gender"/>
+          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1306,7 +1306,7 @@
         <strength value="preferred"/>
         <description value="The set of values to indicate affirmative or negative"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/v2-0136"/>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0136"/>
         </valueSetReference>
       </binding>
     </element>
@@ -1332,7 +1332,7 @@
         <strength value="required"/>
         <description value="The use of an address"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/address-use"/>
+          <reference value="http://hl7.org/fhir/ValueSet/address-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1369,7 +1369,7 @@
         <strength value="required"/>
         <description value="The type of an address (physical / postal)"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/address-type"/>
+          <reference value="http://hl7.org/fhir/ValueSet/address-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1661,7 +1661,7 @@
         <strength value="extensible"/>
         <description value="The domestic partnership status of a person."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/marital-status"/>
+          <reference value="http://hl7.org/fhir/ValueSet/marital-status"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1929,7 +1929,7 @@
         <strength value="extensible"/>
         <description value="The nature of the relationship between a patient and a contact person for that patient."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/v2-0131"/>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0131"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2049,7 +2049,7 @@
         <strength value="required"/>
         <description value="The gender of a person used for administrative purposes."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/administrative-gender"/>
+          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2251,7 +2251,7 @@
         <strength value="extensible"/>
         <description value="The nature of the relationship between a patient and a contact person for that patient."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/v2-0131"/>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0131"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2377,7 +2377,7 @@
         <strength value="required"/>
         <description value="The gender of a person used for administrative purposes."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/administrative-gender"/>
+          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2580,7 +2580,7 @@
         <strength value="example"/>
         <description value="The species of an animal."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/animal-species"/>
+          <reference value="http://hl7.org/fhir/ValueSet/animal-species"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2620,7 +2620,7 @@
         <strength value="example"/>
         <description value="The breed of an animal."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/animal-breeds"/>
+          <reference value="http://hl7.org/fhir/ValueSet/animal-breeds"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2659,7 +2659,7 @@
         <strength value="example"/>
         <description value="The state of the animal&#39;s reproductive organs."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/animal-genderstatus"/>
+          <reference value="http://hl7.org/fhir/ValueSet/animal-genderstatus"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -3086,7 +3086,7 @@
         <strength value="required"/>
         <description value="The type of link between this patient resource and another patient resource."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/link-type"/>
+          <reference value="http://hl7.org/fhir/ValueSet/link-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -3284,7 +3284,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/administrative-gender"/>
+          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -3315,7 +3315,7 @@
         <strength value="preferred"/>
         <description value="The set of values to indicate affirmative or negative"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/v2-0136"/>
+          <reference value="http://hl7.org/fhir/ValueSet/v2-0136"/>
         </valueSetReference>
       </binding>
     </element>

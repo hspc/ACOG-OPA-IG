@@ -222,7 +222,7 @@
       <binding>
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -234,7 +234,7 @@
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
+          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
     </element>
@@ -444,7 +444,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-status"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-status"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -503,7 +503,7 @@
         <strength value="preferred"/>
         <description value="Codes for high level observation categories."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-category"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-category"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -791,7 +791,7 @@
     <element id="Observation:hspcHcgPregSerQlIaRapid.valueCodeableConcept">
 	<path value="Observation.valueCodeableConcept"/>
       <short value="Result Value"/>
-      <definition value="The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://fhir.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://fhir.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification."/>
+      <definition value="The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://fhir.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification."/>
       <comment value="Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is &quot;&#39;value&#39; + the type name&quot; with a capital on the first letter of the type).&#xD;&#xD;&#xD;If the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below."/>
       <requirements value="An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations."/>
       <min value="0"/>
@@ -1282,7 +1282,7 @@
         <strength value="example"/>
         <description value="Codes describing anatomical locations. May include laterality."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/body-site"/>
+          <reference value="http://hl7.org/fhir/ValueSet/body-site"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1325,7 +1325,7 @@
         <strength value="example"/>
         <description value="Methods for simple observations."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-methods"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-methods"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1587,7 +1587,7 @@
         <strength value="extensible"/>
         <description value="Code for the meaning of a reference range."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/referencerange-meaning"/>
+          <reference value="http://hl7.org/fhir/ValueSet/referencerange-meaning"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1626,7 +1626,7 @@
         <strength value="example"/>
         <description value="Codes identifying the population the reference range applies to."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/referencerange-appliesto"/>
+          <reference value="http://hl7.org/fhir/ValueSet/referencerange-appliesto"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1809,7 +1809,7 @@
         <strength value="required"/>
         <description value="Codes specifying how two observations are related."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-relationshiptypes"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-relationshiptypes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1973,7 +1973,7 @@
         <strength value="example"/>
         <description value="Codes identifying names of simple observations."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-codes"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-codes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1997,7 +1997,7 @@
       <path value="Observation.component.value[x]"/>
       <short value="Actual component result"/>
       <definition value="The information determined as a result of making the observation, if the information has a simple value."/>
-      <comment value="Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.   For boolean values use valueCodeableConcept and select codes from &lt;http://fhir.org/fhir/ValueSet/v2-0136&gt; (these &quot;yes/no&quot; concepts can be mapped to the display name &quot;true/false&quot; or other mutually exclusive terms that may be needed&quot;).  The element, Observation.value[x], has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueRatio, valueChoice, valuePeriod, valueSampleData, or valueString (the name format is &quot;&#39;value&#39; + the type name&quot; with a capital on the first letter of the type)."/>
+      <comment value="Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.   For boolean values use valueCodeableConcept and select codes from &lt;http://hl7.org/fhir/ValueSet/v2-0136&gt; (these &quot;yes/no&quot; concepts can be mapped to the display name &quot;true/false&quot; or other mutually exclusive terms that may be needed&quot;).  The element, Observation.value[x], has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueRatio, valueChoice, valuePeriod, valueSampleData, or valueString (the name format is &quot;&#39;value&#39; + the type name&quot; with a capital on the first letter of the type)."/>
       <requirements value="An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations."/>
       <min value="0"/>
       <max value="1"/>
@@ -2078,7 +2078,7 @@
         <strength value="extensible"/>
         <description value="Codes specifying why the result (Observation.value[x]) is missing."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-valueabsentreason"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2114,7 +2114,7 @@
         <strength value="extensible"/>
         <description value="Codes identifying interpretations of observations."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-interpretation"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2211,7 +2211,7 @@
     <element id="Observation:hspcHcgPregSerQlIaRapid.valueCodeableConcept">
 	<path value="Observation.valueCodeableConcept"/>
       <short value="Result Value"/>
-      <definition value="The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://fhir.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://fhir.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification."/>
+      <definition value="The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://fhir.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification."/>
       <comment value="Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is &quot;&#39;value&#39; + the type name&quot; with a capital on the first letter of the type).&#xD;&#xD;&#xD;If the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below."/>
       <requirements value="An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations."/>
       <min value="0"/>

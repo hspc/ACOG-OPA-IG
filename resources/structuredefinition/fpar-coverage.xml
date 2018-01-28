@@ -199,7 +199,7 @@
       <binding> 
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference> 
-            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/> 
+            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/> 
           </valueReference> 
         </extension> 
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -211,7 +211,7 @@
         <strength value="extensible"/> 
         <description value="A human language."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/languages"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/languages"/> 
         </valueSetReference> 
       </binding> 
     </element> 
@@ -455,7 +455,7 @@
         <strength value="required"/> 
         <description value="A code specifying the state of the resource instance."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/fm-status"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/fm-status"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -644,7 +644,7 @@
         <strength value="example"/> 
         <description value="The relationship between the Policyholder and the Beneficiary (insured/covered party/patient)."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/policyholder-relationship"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/policyholder-relationship"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1282,7 +1282,7 @@
         <strength value="required"/> 
         <description value="A code specifying the state of the resource instance."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/fm-status"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/fm-status"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
@@ -1471,7 +1471,7 @@
         <strength value="example"/> 
         <description value="The relationship between the Policyholder and the Beneficiary (insured/covered party/patient)."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/policyholder-relationship"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/policyholder-relationship"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 

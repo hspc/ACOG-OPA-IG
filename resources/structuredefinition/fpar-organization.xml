@@ -183,7 +183,7 @@
       <binding>
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -195,7 +195,7 @@
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
+          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
     </element>
@@ -417,7 +417,7 @@
         <strength value="required"/>
         <description value="Identifies the purpose for this identifier, if known ."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/identifier-use"/>
+          <reference value="http://hl7.org/fhir/ValueSet/identifier-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -456,7 +456,7 @@
         <strength value="extensible"/>
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/identifier-type"/>
+          <reference value="http://hl7.org/fhir/ValueSet/identifier-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -655,7 +655,7 @@
         <strength value="example"/>
         <description value="Used to categorize the organization"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/organization-type"/>
+          <reference value="http://hl7.org/fhir/ValueSet/organization-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -894,7 +894,7 @@
         <strength value="required"/>
         <description value="The use of an address"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/address-use"/>
+          <reference value="http://hl7.org/fhir/ValueSet/address-use"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -936,7 +936,7 @@
         <strength value="required"/>
         <description value="The type of an address (physical / postal)"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/address-type"/>
+          <reference value="http://hl7.org/fhir/ValueSet/address-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1115,7 +1115,7 @@
         <strength value="required"/>
         <description value="Two letter USPS alphabetic codes."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/usps-state"/>
+          <reference value="http://hl7.org/fhir/ValueSet/usps-state"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1456,7 +1456,7 @@
         <strength value="extensible"/>
         <description value="The purpose for which you would contact a contact party"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/contactentity-type"/>
+          <reference value="http://hl7.org/fhir/ValueSet/contactentity-type"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1710,7 +1710,7 @@
         <strength value="required"/>
         <description value="Two letter USPS alphabetic codes."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/usps-state"/>
+          <reference value="http://hl7.org/fhir/ValueSet/usps-state"/>
         </valueSetReference>
       </binding>
       <mapping>

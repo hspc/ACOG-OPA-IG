@@ -224,7 +224,7 @@
       <binding>
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -236,7 +236,7 @@
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
+          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
     </element>
@@ -446,7 +446,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-status"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-status"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -505,7 +505,7 @@
         <strength value="preferred"/>
         <description value="Codes for high level observation categories."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-category"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-category"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -967,7 +967,7 @@
         <strength value="example"/>
         <description value="Codes describing anatomical locations. May include laterality."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/body-site"/>
+          <reference value="http://hl7.org/fhir/ValueSet/body-site"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1010,7 +1010,7 @@
         <strength value="example"/>
         <description value="Methods for simple observations."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-methods"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-methods"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1272,7 +1272,7 @@
         <strength value="extensible"/>
         <description value="Code for the meaning of a reference range."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/referencerange-meaning"/>
+          <reference value="http://hl7.org/fhir/ValueSet/referencerange-meaning"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1311,7 +1311,7 @@
         <strength value="example"/>
         <description value="Codes identifying the population the reference range applies to."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/referencerange-appliesto"/>
+          <reference value="http://hl7.org/fhir/ValueSet/referencerange-appliesto"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1494,7 +1494,7 @@
         <strength value="required"/>
         <description value="Codes specifying how two observations are related."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-relationshiptypes"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-relationshiptypes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1658,7 +1658,7 @@
         <strength value="example"/>
         <description value="Codes identifying names of simple observations."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-codes"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-codes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1726,7 +1726,7 @@
         <strength value="extensible"/>
         <description value="Codes specifying why the result (Observation.value[x]) is missing."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-valueabsentreason"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1762,7 +1762,7 @@
         <strength value="extensible"/>
         <description value="Codes identifying interpretations of observations."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/observation-interpretation"/>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
         </valueSetReference>
       </binding>
       <mapping>

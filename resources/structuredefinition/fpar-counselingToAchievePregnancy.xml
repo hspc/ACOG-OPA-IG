@@ -180,7 +180,7 @@
       <binding>
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
-            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/>
+            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
         <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -192,7 +192,7 @@
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/languages"/>
+          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
         </valueSetReference>
       </binding>
     </element>
@@ -429,7 +429,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/event-status"/>
+          <reference value="http://hl7.org/fhir/ValueSet/event-status"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -491,7 +491,7 @@
         <strength value="example"/>
         <description value="A code that identifies the reason a procedure was not performed."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/procedure-not-performed-reason"/>
+          <reference value="http://hl7.org/fhir/ValueSet/procedure-not-performed-reason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -521,7 +521,7 @@
         <strength value="example"/>
         <description value="A code that classifies a procedure for searching, sorting and display purposes."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/procedure-category"/>
+          <reference value="http://hl7.org/fhir/ValueSet/procedure-category"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -802,7 +802,7 @@
         <strength value="example"/>
         <description value="A code that identifies the role of a performer of the procedure."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/performer-role"/>
+          <reference value="http://hl7.org/fhir/ValueSet/performer-role"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -929,7 +929,7 @@
         <strength value="example"/>
         <description value="A code that identifies the reason a procedure is  required."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/procedure-reason"/>
+          <reference value="http://hl7.org/fhir/ValueSet/procedure-reason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -993,7 +993,7 @@
         <strength value="example"/>
         <description value="Codes describing anatomical locations. May include laterality."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/body-site"/>
+          <reference value="http://hl7.org/fhir/ValueSet/body-site"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1028,7 +1028,7 @@
         <strength value="example"/>
         <description value="An outcome of a procedure - whether it was resolved or otherwise."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/procedure-outcome"/>
+          <reference value="http://hl7.org/fhir/ValueSet/procedure-outcome"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1079,7 +1079,7 @@
         <strength value="example"/>
         <description value="Codes describing complications that resulted from a procedure."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/condition-code"/>
+          <reference value="http://hl7.org/fhir/ValueSet/condition-code"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1129,7 +1129,7 @@
         <strength value="example"/>
         <description value="Specific follow up required for a procedure e.g. removal of sutures."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/procedure-followup"/>
+          <reference value="http://hl7.org/fhir/ValueSet/procedure-followup"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1275,7 +1275,7 @@
         <strength value="preferred"/>
         <description value="A kind of change that happened to the device during the procedure."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/device-action"/>
+          <reference value="http://hl7.org/fhir/ValueSet/device-action"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1355,7 +1355,7 @@
         <strength value="example"/>
         <description value="Codes describing items used during a procedure"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/device-kind"/>
+          <reference value="http://hl7.org/fhir/ValueSet/device-kind"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1390,7 +1390,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/ValueSet/event-status"/>
+          <reference value="http://hl7.org/fhir/ValueSet/event-status"/>
         </valueSetReference>
       </binding>
       <mapping>

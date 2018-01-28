@@ -197,7 +197,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <binding> 
         <extension url="http://fhir.org/fhir/fpar/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference> 
-            <reference value="http://fhir.org/fhir/ValueSet/all-languages"/> 
+            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/> 
           </valueReference> 
         </extension> 
         <extension url="http://fhir.org/fhir/fpar/StructureDefinition/elementdefinition-bindingName">
@@ -209,7 +209,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <strength value="extensible"/> 
         <description value="A human language."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/languages"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/languages"/> 
         </valueSetReference> 
       </binding> 
     </element> 
@@ -697,7 +697,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <strength value="required"/> 
         <description value="The days of the week."/> 
         <valueSetReference> 
-          <reference value="http://fhir.org/fhir/ValueSet/days-of-week"/> 
+          <reference value="http://hl7.org/fhir/ValueSet/days-of-week"/> 
         </valueSetReference> 
       </binding> 
       <mapping> 
