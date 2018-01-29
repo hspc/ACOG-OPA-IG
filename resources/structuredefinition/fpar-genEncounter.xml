@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="fpar-genEncounter"/>
-  <url value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-genEncounter"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/fpar-genEncounter"/>
   <name value="FPAR General Encounter Profile"/>
   <status value="draft"/>
   <date value="2017-05-10"/>
@@ -19,23 +19,23 @@
   </mapping>
   <mapping>
     <identity value="rim"/>
-    <uri value="http://fhir.org/v3"/>
+    <uri value="http://hl7.org/v3"/>
     <name value="RIM Mapping"/>
   </mapping>
   <mapping>
     <identity value="w5"/>
-    <uri value="http://fhir.org/fhir/w5"/>
+    <uri value="http://hl7.org/fhir/w5"/>
     <name value="W5 Mapping"/>
   </mapping>
   <mapping>
     <identity value="v2"/>
-    <uri value="http://fhir.org/v2"/>
+    <uri value="http://hl7.org/v2"/>
     <name value="HL7 v2 Mapping"/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Encounter"/>
-  <baseDefinition value="http://fhir.org/fhir/StructureDefinition/Encounter"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="Encounter:fpargeneralencounter">
@@ -170,15 +170,15 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
             <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/> 
         </extension> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/> 
         </extension>
         <strength value="extensible"/>
@@ -290,7 +290,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -324,7 +324,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -358,7 +358,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -374,7 +374,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <strength value="preferred"/>
         <description value="The particular healthcare specialty or care group responsible for the care of the patient during the encounter"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
         </valueSetReference>
       </binding>
     </element>
@@ -392,7 +392,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -426,7 +426,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -461,7 +461,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -496,7 +496,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -530,7 +530,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -557,7 +557,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -584,7 +584,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -611,7 +611,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -645,7 +645,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -737,7 +737,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <isModifier value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="EncounterStatus"/> 
         </extension> 
         <strength value="required"/>
@@ -760,7 +760,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </mapping>
     </element>
     <element id="Encounter:fpargeneralencounter.statusHistory">
-      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="StatusHistory"/> 
       </extension> 
       <path value="Encounter.statusHistory"/>
@@ -881,7 +881,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="EncounterStatus"/> 
         </extension> 
         <strength value="required"/>
@@ -930,7 +930,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="EncounterClass"/> 
         </extension> 
         <strength value="extensible"/>
@@ -953,7 +953,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       </mapping>
     </element>
     <element id="Encounter:fpargeneralencounter.classHistory">
-      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="ClassHistory"/> 
       </extension> 
       <path value="Encounter.classHistory"/> 
@@ -1077,7 +1077,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <code value="Coding"/> 
       </type> 
       <binding> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="EncounterClass"/> 
         </extension> 
         <strength value="extensible"/> 
@@ -1123,7 +1123,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="EncounterType"/> 
         </extension> 
         <strength value="example"/>
@@ -1162,13 +1162,13 @@ This would be used for a case where an admission starts of as an emergency encou
       <mustSupport value="false"/>
       <isSummary value="false"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Priority"/> 
         </extension> 
         <strength value="preferred"/>
         <description value="The level of urgency of the encounter"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/encounterPriority"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/encounterPriority"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1199,11 +1199,11 @@ This would be used for a case where an admission starts of as an emergency encou
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-patient"/> 
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-patient"/> 
       </type>
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Group"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/> 
       </type> 
       <isSummary value="true"/>
       <mapping>
@@ -1232,7 +1232,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/EpisodeOfCare"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/> 
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -1261,7 +1261,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ReferralRequest"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/> 
       </type>
       <mapping> 
         <identity value="rim"/> 
@@ -1356,7 +1356,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="preferred"/>
         <description value="The codes that represent the particular specialty or practice group that a provider is affiliated with for the given encounter"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
         </valueSetReference>
       </binding>
       <mapping> 
@@ -1406,7 +1406,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </type>
       <isSummary value="true"/> 
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ParticipantType"/> 
         </extension> 
         <strength value="extensible"/> 
@@ -1461,11 +1461,11 @@ This would be used for a case where an admission starts of as an emergency encou
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Practitioner"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/> 
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -1494,7 +1494,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Appointment"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Appointment"/> 
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -1752,7 +1752,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </base>
       <type>
         <code value="uri"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/uri"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
       </type>
       <fixedUri value="http://unitsofmeasure.org"/>
       <mustSupport value="false"/>
@@ -1771,7 +1771,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </base>
       <type>
         <code value="code"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/code"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
       </type>
       <fixedCode value="d"/>
       <mustSupport value="false"/>
@@ -1947,7 +1947,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </base>
       <type>
         <code value="uri"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/uri"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
       </type>
       <fixedUri value="http://unitsofmeasure.org"/>
       <mustSupport value="false"/>
@@ -1966,7 +1966,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </base>
       <type>
         <code value="code"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/code"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
       </type>
       <fixedCode value="min"/>
       <mustSupport value="false"/>
@@ -1991,13 +1991,13 @@ This would be used for a case where an admission starts of as an emergency encou
       </type>
       <isSummary value="true"/> 
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="EncounterReason"/> 
         </extension> 
         <strength value="example"/> 
         <description value="Reason why the encounter takes place."/> 
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/encounterReason"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/encounterReason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2016,7 +2016,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </mapping>
     </element>
     <element id="Encounter:fpargeneralencounter.diagnosis">
-      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Diagnosis"/> 
       </extension> 
       <path value="Encounter.diagnosis"/> 
@@ -2141,11 +2141,11 @@ This would be used for a case where an admission starts of as an emergency encou
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Condition"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Procedure"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/> 
       </type> 
       <mapping> 
         <identity value="v2"/> 
@@ -2173,10 +2173,10 @@ This would be used for a case where an admission starts of as an emergency encou
         <code value="CodeableConcept"/> 
       </type> 
       <binding> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="DiagnosisRole"/> 
         </extension> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/> 
         </extension> 
         <strength value="preferred"/> 
@@ -2218,7 +2218,7 @@ This would be used for a case where an admission starts of as an emergency encou
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Account"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Account"/> 
       </type>
       <mapping> 
         <identity value="rim"/> 
@@ -2319,7 +2319,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2353,7 +2353,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Condition"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
       </type>      
       <constraint>
         <key value="ext-1"/>
@@ -2427,7 +2427,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Location"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/> 
       </type>
       <mapping>
         <identity value="rim"/>
@@ -2451,13 +2451,13 @@ The duration recorded in the period of this encounter covers the entire scope of
       <mustSupport value="false"/>
       <isSummary value="false"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="AdmitSource"/> 
         </extension> 
         <strength value="example"/>
         <description value="The set of codes that describe where a patient came from for the current admission."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/admissionSource"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/admissionSource"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2484,7 +2484,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ReAdmissionType"/> 
         </extension> 
         <strength value="example"/>
@@ -2521,13 +2521,13 @@ The duration recorded in the period of this encounter covers the entire scope of
       <mustSupport value="false"/>
       <isSummary value="false"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="PatientDiet"/> 
         </extension> 
         <strength value="preferred"/>
         <description value="A set of codes that describe the kind of nutrition to be supplied to the patient."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/dietType"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/dietType"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2554,7 +2554,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Courtesies"/> 
         </extension> 
         <strength value="preferred"/>
@@ -2582,7 +2582,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Arrangements"/> 
         </extension> 
         <strength value="preferred"/>
@@ -2608,7 +2608,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Location"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/> 
       </type>
       <mapping>
         <identity value="v2"/>
@@ -2629,7 +2629,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="DischargeDisp"/> 
         </extension> 
         <strength value="example"/>
@@ -2741,7 +2741,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2799,7 +2799,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
       </type>
       <mustSupport value="false"/>
       <isSummary value="false"/>
@@ -2908,7 +2908,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2966,7 +2966,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
       </type>
       <mustSupport value="false"/>
       <isSummary value="false"/>
@@ -3109,7 +3109,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Location"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/> 
       </type> 
       <mapping> 
         <identity value="v2"/> 
@@ -3137,7 +3137,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <code value="code"/> 
       </type> 
       <binding> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="EncounterLocationStatus"/> 
         </extension> 
         <strength value="required"/> 
@@ -3178,7 +3178,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
       </type>
       <mapping>
         <identity value="v2"/>
@@ -3206,7 +3206,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Encounter"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/> 
       </type>
       <mapping>
         <identity value="rim"/>
@@ -3246,7 +3246,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3266,7 +3266,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3275,7 +3275,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="The particular healthcare specialty or care group responsible for the care of the patient during the encounter"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3286,7 +3286,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3306,7 +3306,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3327,7 +3327,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3348,7 +3348,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3368,7 +3368,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3381,7 +3381,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="*"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3394,7 +3394,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="*"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3407,7 +3407,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3427,7 +3427,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3440,7 +3440,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3449,7 +3449,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="The codes that represent the particular specialty or practice group that a provider is affiliated with for the given encounter"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3461,11 +3461,11 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-practitioner"/> 
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-practitioner"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -3531,7 +3531,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <path value="Encounter.length.system"/>
       <type>
         <code value="uri"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/uri"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
       </type>
       <fixedUri value="http://unitsofmeasure.org"/>
       <mustSupport value="false"/>
@@ -3542,7 +3542,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <path value="Encounter.length.code"/>
       <type>
         <code value="code"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/code"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
       </type>
       <fixedCode value="d"/>
       <mustSupport value="false"/>
@@ -3563,7 +3563,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <path value="Encounter.length.system"/>
       <type>
         <code value="uri"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/uri"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
       </type>
       <fixedUri value="http://unitsofmeasure.org"/>
       <mustSupport value="false"/>
@@ -3574,7 +3574,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <path value="Encounter.length.code"/>
       <type>
         <code value="code"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/code"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
       </type>
       <fixedCode value="min"/>
       <mustSupport value="false"/>
@@ -3588,7 +3588,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3610,7 +3610,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="example"/>
         <description value="The set of codes that describe where a patient came from for the current admission."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/admissionSource"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/admissionSource"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3623,7 +3623,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="A set of codes that describe the kind of nutrition to be supplied to the patient."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/dietType"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/dietType"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3636,7 +3636,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="A set of codes that describe any particular needs for a patient regarding this encounter."/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/specialArrangement"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/specialArrangement"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3682,7 +3682,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3699,7 +3699,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <path value="Encounter.location.location"/>
       <type>
         <code value="Reference"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3722,7 +3722,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3739,7 +3739,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <path value="Encounter.location.location"/>
       <type>
         <code value="Reference"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Reference"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>

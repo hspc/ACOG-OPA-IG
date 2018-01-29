@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="fpar-coverage"/> 
-  <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-fmm">
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/> 
   </extension> 
-  <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-wg">
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fm"/> 
   </extension> 
-  <url value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-coverage"/> 
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/fpar-coverage"/> 
   <name value="fpar-coverage"/> 
   <status value="draft"/> 
   <date value="2017-05-23"/> 
@@ -22,17 +22,17 @@
   <fhirVersion value="3.0.1"/> 
   <mapping> 
     <identity value="workflow"/> 
-    <uri value="http://fhir.org/fhir/workflow"/> 
+    <uri value="http://hl7.org/fhir/workflow"/> 
     <name value="Workflow Mapping"/> 
   </mapping> 
   <mapping> 
     <identity value="rim"/> 
-    <uri value="http://fhir.org/v3"/> 
+    <uri value="http://hl7.org/v3"/> 
     <name value="RIM Mapping"/> 
   </mapping> 
   <mapping> 
     <identity value="w5"/> 
-    <uri value="http://fhir.org/fhir/w5"/> 
+    <uri value="http://hl7.org/fhir/w5"/> 
     <name value="W5 Mapping"/> 
   </mapping> 
   <mapping> 
@@ -42,7 +42,7 @@
   </mapping> 
   <mapping> 
     <identity value="v2"/> 
-    <uri value="http://fhir.org/v2"/> 
+    <uri value="http://hl7.org/v2"/> 
     <name value="HL7 v2 Mapping"/> 
   </mapping> 
   <mapping> 
@@ -53,7 +53,7 @@
   <kind value="resource"/> 
   <abstract value="false"/> 
   <type value="Coverage"/> 
-  <baseDefinition value="http://fhir.org/fhir/StructureDefinition/Coverage"/> 
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coverage"/> 
   <derivation value="constraint"/> 
   <snapshot> 
     <element id="Coverage:fpar-coverage">
@@ -197,15 +197,15 @@
         <code value="code"/> 
       </type> 
       <binding> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference> 
             <reference value="http://hl7.org/fhir/ValueSet/all-languages"/> 
           </valueReference> 
         </extension> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/> 
         </extension> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/> 
         </extension> 
         <strength value="extensible"/> 
@@ -326,7 +326,7 @@
 		</base>
 	  <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/primaryInsuranceClassification"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/primaryInsuranceClassification"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -356,7 +356,7 @@
 	  </base>
 	  <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/dataAbsentReason"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/dataAbsentReason"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -364,7 +364,7 @@
 		<strength value="preferred"/>
 		<description value="The reason why there is no data for the given element."/>
 		<valueSetReference>
-			<reference value="http://fhir.org/fhir/fpar/CodeSystem/nullValueReason"/>
+			<reference value="http://hl7.org/fhir/fpar/CodeSystem/nullValueReason"/>
 		</valueSetReference>
 	  </binding>
 	</element>
@@ -449,7 +449,7 @@
       <isModifier value="true"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="CoverageStatus"/> 
         </extension> 
         <strength value="required"/> 
@@ -480,7 +480,7 @@
       </type> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="FPAR Insurance Coverage Type"/> 
         </extension> 
         <strength value="required"/>
@@ -507,15 +507,15 @@
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -544,11 +544,11 @@
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -603,7 +603,7 @@
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -638,7 +638,7 @@
         <code value="CodeableConcept"/> 
       </type> 
       <binding> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Relationship"/> 
         </extension> 
         <strength value="example"/> 
@@ -687,15 +687,15 @@
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -716,7 +716,7 @@
       </mapping> 
     </element> 
     <element id="Coverage:fpar-coverage.grouping">
-      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Group"/> 
       </extension> 
       <path value="Coverage.grouping"/> 
@@ -1135,7 +1135,7 @@
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Contract"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Contract"/> 
       </type> 
       <mapping> 
         <identity value="cdanetv4"/> 
@@ -1185,7 +1185,7 @@
 		</base>
 	  <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/primaryInsuranceClassification"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/primaryInsuranceClassification"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -1215,7 +1215,7 @@
 	  </base>
 	  <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/dataAbsentReason"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/dataAbsentReason"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -1223,7 +1223,7 @@
 		<strength value="preferred"/>
 		<description value="The reason why there is no data for the given element."/>
 		<valueSetReference>
-			<reference value="http://fhir.org/fhir/fpar/CodeSystem/nullValueReason"/>
+			<reference value="http://hl7.org/fhir/fpar/CodeSystem/nullValueReason"/>
 		</valueSetReference>
 	  </binding>
 	</element>
@@ -1276,7 +1276,7 @@
       <isModifier value="true"/> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="CoverageStatus"/> 
         </extension> 
         <strength value="required"/> 
@@ -1307,7 +1307,7 @@
       </type> 
       <isSummary value="true"/> 
       <binding> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="FPAR Insurance Coverage Type"/> 
         </extension> 
         <strength value="required"/>
@@ -1334,15 +1334,15 @@
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -1371,11 +1371,11 @@
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -1430,7 +1430,7 @@
       <max value="1"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -1465,7 +1465,7 @@
         <code value="CodeableConcept"/> 
       </type> 
       <binding> 
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Relationship"/> 
         </extension> 
         <strength value="example"/> 
@@ -1514,15 +1514,15 @@
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Patient"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/> 
       </type> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
       </type> 
       <isSummary value="true"/> 
       <mapping> 
@@ -1543,7 +1543,7 @@
       </mapping> 
     </element> 
     <element id="Coverage:fpar-coverage.grouping">
-      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Group"/> 
       </extension> 
       <path value="Coverage.grouping"/> 
@@ -1870,7 +1870,7 @@
       <max value="*"/> 
       <type> 
         <code value="Reference"/> 
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Contract"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Contract"/> 
       </type> 
       <mapping> 
         <identity value="cdanetv4"/> 

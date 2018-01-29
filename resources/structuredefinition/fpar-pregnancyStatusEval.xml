@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="fpar-pregnancyStatusEval"/>
-  <url value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-pregnancyStatusEval"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/fpar-pregnancyStatusEval"/>
   <version value="1.0.0"/>
   <name value="FPAR Pregnancy Status Eval Profile"/>
   <status value="draft"/>
@@ -21,7 +21,7 @@
   </mapping>
   <mapping>
     <identity value="workflow"/>
-    <uri value="http://fhir.org/fhir/workflow"/>
+    <uri value="http://hl7.org/fhir/workflow"/>
     <name value="Workflow Mapping"/>
   </mapping>
   <mapping>
@@ -31,17 +31,17 @@
   </mapping>
   <mapping>
     <identity value="v2"/>
-    <uri value="http://fhir.org/v2"/>
+    <uri value="http://hl7.org/v2"/>
     <name value="HL7 v2 Mapping"/>
   </mapping>
   <mapping>
     <identity value="rim"/>
-    <uri value="http://fhir.org/v3"/>
+    <uri value="http://hl7.org/v3"/>
     <name value="RIM Mapping"/>
   </mapping>
   <mapping>
     <identity value="w5"/>
-    <uri value="http://fhir.org/fhir/w5"/>
+    <uri value="http://hl7.org/fhir/w5"/>
     <name value="W5 Mapping"/>
   </mapping>
   <mapping>
@@ -52,7 +52,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Observation"/>
-  <baseDefinition value="http://fhir.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="Observation:fpar-pregnancyStatusEval">
@@ -223,15 +223,15 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
             <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
@@ -333,12 +333,12 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/reportingMethod"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/reportingMethod"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCategory"/>
         </extension>
         <strength value="preferred"/>
@@ -419,31 +419,31 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/CarePlan"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/DeviceRequest"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/MedicationRequest"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/NutritionOrder"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ProcedureRequest"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ReferralRequest"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -460,7 +460,7 @@
       </mapping>
     </element>
     <element id="Observation:fpar-pregnancyStatusEval.status">
-      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-display-hint">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
         <valueString value="default: final"/>
       </extension>
       <path value="Observation.status"/>
@@ -531,13 +531,13 @@
       <constraint>
         <key value="us-core-5"/>
         <severity value="error"/>
-        <human value="Must have a category of &#39;laboratory&#39; and a code system &#39;http://fhir.org/fhir/observation-category&#39;"/>
-        <expression value="where(coding.system=&#39;http://fhir.org/fhir/observation-category&#39; and coding.code=&#39;laboratory&#39;).exists()"/>
-        <xpath value="exists(f:coding/code[@value=&#39;laboratory&#39;]) and exists(f:coding/system[@value=&#39;http://fhir.org/fhir/observation-category&#39;])"/>
+        <human value="Must have a category of &#39;laboratory&#39; and a code system &#39;http://hl7.org/fhir/observation-category&#39;"/>
+        <expression value="where(coding.system=&#39;http://hl7.org/fhir/observation-category&#39; and coding.code=&#39;laboratory&#39;).exists()"/>
+        <xpath value="exists(f:coding/code[@value=&#39;laboratory&#39;]) and exists(f:coding/system[@value=&#39;http://hl7.org/fhir/observation-category&#39;])"/>
       </constraint>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCategory"/>
         </extension>
         <strength value="preferred"/>
@@ -638,7 +638,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-patient"/>
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-patient"/>
       </type>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -679,11 +679,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Encounter"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
       </type>
       <mapping>
         <identity value="workflow"/>
@@ -795,19 +795,19 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-practitioner"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-organization"/>
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-organization"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-patient"/>
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-patient"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -996,7 +996,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="BodySite"/>
         </extension>
         <strength value="example"/>
@@ -1039,7 +1039,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationMethod"/>
         </extension>
         <strength value="example"/>
@@ -1071,7 +1071,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Specimen"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
       </type>
       <mapping>
         <identity value="sct-concept"/>
@@ -1104,11 +1104,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/DeviceMetric"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric"/>
       </type>
       <mapping>
         <identity value="sct-concept"/>
@@ -1247,7 +1247,7 @@
       </base>
       <type>
         <code value="Quantity"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/SimpleQuantity"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
       </type>
       <condition value="obs-3"/>
       <mapping>
@@ -1272,7 +1272,7 @@
       </base>
       <type>
         <code value="Quantity"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/SimpleQuantity"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
       </type>
       <condition value="obs-3"/>
       <mapping>
@@ -1301,7 +1301,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRangeMeaning"/>
         </extension>
         <strength value="extensible"/>
@@ -1340,7 +1340,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRangeType"/>
         </extension>
         <strength value="example"/>
@@ -1523,7 +1523,7 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRelationshipType"/>
         </extension>
         <strength value="required"/>
@@ -1554,15 +1554,15 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/QuestionnaireResponse"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Sequence"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Sequence"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -1687,7 +1687,7 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="example"/>
@@ -1792,7 +1792,7 @@
       </type>
       <condition value="obs-6"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationValueAbsentReason"/>
         </extension>
         <strength value="extensible"/>
@@ -1828,7 +1828,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationInterpretation"/>
         </extension>
         <strength value="extensible"/>
@@ -1944,12 +1944,12 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/reportingMethod"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/reportingMethod"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCategory"/>
         </extension>
         <strength value="preferred"/>

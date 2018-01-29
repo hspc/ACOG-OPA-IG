@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
 <id value="NGonorrhoeaDnaVagQlPcr"/>
-<url value="http://fhir.org/fhir/fpar/StructureDefinition/NGonorrhoeaDnaVagQlPcr"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/NGonorrhoeaDnaVagQlPcr"/>
   <version value="2.0.0"/>
   <name value="HSPC NGonorrhoeaDnaVagQlPcr Profile"/>
   <status value="draft"/>
@@ -21,7 +21,7 @@
   </mapping>
   <mapping>
     <identity value="workflow"/>
-    <uri value="http://fhir.org/fhir/workflow"/>
+    <uri value="http://hl7.org/fhir/workflow"/>
     <name value="Workflow Mapping"/>
   </mapping>
   <mapping>
@@ -31,17 +31,17 @@
   </mapping>
   <mapping>
     <identity value="v2"/>
-    <uri value="http://fhir.org/v2"/>
+    <uri value="http://hl7.org/v2"/>
     <name value="HL7 v2 Mapping"/>
   </mapping>
   <mapping>
     <identity value="rim"/>
-    <uri value="http://fhir.org/v3"/>
+    <uri value="http://hl7.org/v3"/>
     <name value="RIM Mapping"/>
   </mapping>
   <mapping>
     <identity value="w5"/>
-    <uri value="http://fhir.org/fhir/w5"/>
+    <uri value="http://hl7.org/fhir/w5"/>
     <name value="W5 Mapping"/>
   </mapping>
   <mapping>
@@ -52,7 +52,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Observation"/>
-  <baseDefinition value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-stdord"/>
+  <baseDefinition value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-stdord"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="Observation:hspcNGonorrhoeaDnaVagQlPcr">
@@ -220,15 +220,15 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
             <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
@@ -379,31 +379,31 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/CarePlan"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/DeviceRequest"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/MedicationRequest"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/NutritionOrder"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ProcedureRequest"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/ReferralRequest"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -420,7 +420,7 @@
       </mapping>
     </element>
     <element id="Observation:hspcNGonorrhoeaDnaVagQlPcr.status">
-      <extension url="http://fhir.org/fhir/StructureDefinition/structuredefinition-display-hint">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
         <valueString value="default: final"/>
       </extension>
       <path value="Observation.status"/>
@@ -491,13 +491,13 @@
       <constraint>
         <key value="us-core-5"/>
         <severity value="error"/>
-        <human value="Must have a category of &#39;laboratory&#39; and a code system &#39;http://fhir.org/fhir/observation-category&#39;"/>
-        <expression value="where(coding.system=&#39;http://fhir.org/fhir/observation-category&#39; and coding.code=&#39;laboratory&#39;).exists()"/>
-        <xpath value="exists(f:coding/code[@value=&#39;laboratory&#39;]) and exists(f:coding/system[@value=&#39;http://fhir.org/fhir/observation-category&#39;])"/>
+        <human value="Must have a category of &#39;laboratory&#39; and a code system &#39;http://hl7.org/fhir/observation-category&#39;"/>
+        <expression value="where(coding.system=&#39;http://hl7.org/fhir/observation-category&#39; and coding.code=&#39;laboratory&#39;).exists()"/>
+        <xpath value="exists(f:coding/code[@value=&#39;laboratory&#39;]) and exists(f:coding/system[@value=&#39;http://hl7.org/fhir/observation-category&#39;])"/>
       </constraint>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCategory"/>
         </extension>
         <strength value="preferred"/>
@@ -537,7 +537,7 @@
       </base>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
       <fixedCodeableConcept>	
         <coding>	
@@ -552,7 +552,7 @@
         <strength value="extensible"/>
         <description value="LOINC codes"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/OrdinalLabCodes"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/OrdinalLabCodes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -599,7 +599,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-patient"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-patient"/>
       </type>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -640,11 +640,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-genEncounter"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genEncounter"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
       </type>
       <mapping>
         <identity value="workflow"/>
@@ -756,19 +756,19 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-practitioner"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/hpsc-organization"/>
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hpsc-organization"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/fpar/StructureDefinition/hspc-patient"/>
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-patient"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -791,7 +791,7 @@
     <element id="Observation:hspcNGonorrhoeaDnaVagQlPcr.valueCodeableConcept">
 	<path value="Observation.valueCodeableConcept"/>
       <short value="Result Value"/>
-      <definition value="The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://fhir.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification."/>
+      <definition value="The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification."/>
       <comment value="Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is &quot;&#39;value&#39; + the type name&quot; with a capital on the first letter of the type).&#xD;&#xD;&#xD;If the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below."/>
       <requirements value="An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations."/>
       <min value="0"/>
@@ -803,11 +803,11 @@
       </base>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
       <condition value="obs-7"/>
       <constraint>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bestpractice">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice">
           <valueBoolean value="true"/>
         </extension>
         <key value="us-core-4"/>
@@ -1172,7 +1172,7 @@
         <strength value="preferred"/>
         <description value="The list of reasons a lab value may be missing"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/hspc-LabNullFlavor"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-LabNullFlavor"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1212,7 +1212,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe in what way a lab value is abnormal"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/hspc-abnInt-NumericNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-abnInt-NumericNom"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1276,7 +1276,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="BodySite"/>
         </extension>
         <strength value="example"/>
@@ -1319,7 +1319,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationMethod"/>
         </extension>
         <strength value="example"/>
@@ -1351,7 +1351,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Specimen"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
       </type>
       <mapping>
         <identity value="sct-concept"/>
@@ -1384,11 +1384,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/DeviceMetric"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric"/>
       </type>
       <mapping>
         <identity value="sct-concept"/>
@@ -1527,7 +1527,7 @@
       </base>
       <type>
         <code value="Quantity"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/SimpleQuantity"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
       </type>
       <condition value="obs-3"/>
       <mapping>
@@ -1552,7 +1552,7 @@
       </base>
       <type>
         <code value="Quantity"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/SimpleQuantity"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
       </type>
       <condition value="obs-3"/>
       <mapping>
@@ -1581,7 +1581,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRangeMeaning"/>
         </extension>
         <strength value="extensible"/>
@@ -1620,7 +1620,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRangeType"/>
         </extension>
         <strength value="example"/>
@@ -1803,7 +1803,7 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRelationshipType"/>
         </extension>
         <strength value="required"/>
@@ -1834,15 +1834,15 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/QuestionnaireResponse"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Sequence"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Sequence"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -1967,7 +1967,7 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="example"/>
@@ -2072,7 +2072,7 @@
       </type>
       <condition value="obs-6"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationValueAbsentReason"/>
         </extension>
         <strength value="extensible"/>
@@ -2108,7 +2108,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationInterpretation"/>
         </extension>
         <strength value="extensible"/>
@@ -2200,7 +2200,7 @@
         <strength value="preferred"/>
         <description value="Standard LOINC ordinal codes"/>
         <valueSetReference>
-          <reference value="http://fhir.org/fhir/fpar/ValueSet/OrdinalLabCodes"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/OrdinalLabCodes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2211,7 +2211,7 @@
     <element id="Observation:hspcNGonorrhoeaDnaVagQlPcr.valueCodeableConcept">
 	<path value="Observation.valueCodeableConcept"/>
       <short value="Result Value"/>
-      <definition value="The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://fhir.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification."/>
+      <definition value="The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT](http://hl7.org/fhir/ValueSet/uslab-obs-codedresults).  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM](http://unitsofmeasure.org).  A FHIR [UCUM Codes value set](http://hl7.org/fhir/STU3/valueset-ucum-units.html) that defines all UCUM codes is in the FHIR specification."/>
       <comment value="Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is &quot;&#39;value&#39; + the type name&quot; with a capital on the first letter of the type).&#xD;&#xD;&#xD;If the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below."/>
       <requirements value="An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations."/>
       <min value="0"/>
@@ -2223,11 +2223,11 @@
       </base>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
       <condition value="obs-7"/>
       <constraint>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bestpractice">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice">
           <valueBoolean value="true"/>
         </extension>
         <key value="us-core-4"/>

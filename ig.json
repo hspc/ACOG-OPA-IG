@@ -23,7 +23,7 @@
             "template-format": "instance-template-sd.html"
         }
     },
-    "canonicalBase": "http://fhir.org/fhir/fpar",
+    "canonicalBase": "http://hl7.org/fhir/fpar",
     "source": "implementationguide/FPARImplementationGuide.xml",
     "sct-edition": "http://snomed.info/sct/20160901",
     "resources": {

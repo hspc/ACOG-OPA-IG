@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="fpar-practitioner"/>
-  <url value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-practitioner"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/fpar-practitioner"/>
   <name value="FPAR Practitioner Profile"/>
   <status value="draft"/>
   <date value="2017-05-03"/>
@@ -15,12 +15,12 @@
   <fhirVersion value="3.0.0"/>
   <mapping>
     <identity value="v2"/>
-    <uri value="http://fhir.org/v2"/>
+    <uri value="http://hl7.org/v2"/>
     <name value="HL7 v2 Mapping"/>
   </mapping>
   <mapping>
     <identity value="rim"/>
-    <uri value="http://fhir.org/v3"/>
+    <uri value="http://hl7.org/v3"/>
     <name value="RIM Mapping"/>
   </mapping>
   <mapping>
@@ -30,13 +30,13 @@
   </mapping>
   <mapping>
     <identity value="w5"/>
-    <uri value="http://fhir.org/fhir/w5"/>
+    <uri value="http://hl7.org/fhir/w5"/>
     <name value="W5 Mapping"/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Practitioner"/>
-  <baseDefinition value="http://fhir.org/fhir/fpar/StructureDefinition/fpar-practitioner"/>
+  <baseDefinition value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-practitioner"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="Practitioner:fpar-practitioner">
@@ -174,15 +174,15 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
             <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
@@ -388,7 +388,7 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierUse"/>
         </extension>
         <strength value="required"/>
@@ -424,10 +424,10 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType"/>
         </extension>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
@@ -560,7 +560,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -703,7 +703,7 @@
       <isModifier value="true"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="NameUse"/>
         </extension>
         <strength value="required"/>
@@ -961,7 +961,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1195,7 +1195,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1556,10 +1556,10 @@
       </type>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="AdministrativeGender"/>
         </extension>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="required"/>
@@ -1703,7 +1703,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1783,7 +1783,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Qualification"/>
         </extension>
         <strength value="example"/>
@@ -1838,7 +1838,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -1862,15 +1862,15 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueReference>
             <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
           </valueReference>
         </extension>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-bindingName">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://fhir.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
           <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
@@ -1926,7 +1926,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2085,7 +2085,7 @@
       <sliceName value="PreferenceIndicator"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2102,7 +2102,7 @@
       <sliceName value="PrimaryIndicator"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2126,7 +2126,7 @@
       <sliceName value="CredentialEligibiltyIndicator"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2151,7 +2151,7 @@
       <definition value="The method by which an individual communicates."/>
       <type>
         <code value="Extension"/>
-        <profile value="http://fhir.org/fhir/StructureDefinition/Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
