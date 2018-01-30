@@ -8,7 +8,7 @@
         "output": "output",
         "qa": "qa",
         "txCache" : "txCache",
-        "specification": "http://hl7.org/fhir/2017Jan"
+        "specification": "http://hl7.org/fhir/2017Jan/"
     },
     "dependencyList": [{
         "name": "USCore",
