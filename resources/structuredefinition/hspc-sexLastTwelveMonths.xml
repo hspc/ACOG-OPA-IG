@@ -16,7 +16,7 @@
   <fhirVersion value="3.0.0"/>
   <mapping>
     <identity value="argonaut-dq-dstu2"/>
-    <uri value="http://unknown.org/Argonaut DQ DSTU2"/>
+    <uri value="http://unknown.org/Argonaut_DQ_DSTU2"/>
     <name value="Argonaut DQ DSTU2"/>
   </mapping>
   <mapping>
@@ -815,7 +815,7 @@
       <binding>
       	<strength value="preferred"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-yesNo"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/hspc-yesNo"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2020,7 +2020,7 @@
       <binding>
       	<strength value="preferred"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-yesNo"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/hspc-yesNo"/>
         </valueSetReference>
       </binding>
       <mapping>

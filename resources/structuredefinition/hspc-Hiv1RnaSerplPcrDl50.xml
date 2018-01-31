@@ -16,7 +16,7 @@
   <fhirVersion value="3.0.0"/>
   <mapping>
     <identity value="argonaut-dq-dstu2"/>
-    <uri value="http://unknown.org/Argonaut DQ DSTU2"/>
+    <uri value="http://unknown.org/Argonaut_DQ_DSTU2"/>
     <name value="Argonaut DQ DSTU2"/>
   </mapping>
   <mapping>
@@ -1089,7 +1089,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe in what way a lab value is abnormal"/>
         <valueSetReference>
-          <reference value="ValueSet/abnInt-NumericNom"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/abnInt-NumericNom"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2074,7 +2074,7 @@
         <strength value="preferred"/>
         <description value="Standard LOINC codes"/>
         <valueSetReference>
-          <reference value="ValueSet/QuantitativeLabCodes"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/QuantitativeLabCodes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2152,7 +2152,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe in what way a lab value is abnormal"/>
         <valueSetReference>
-          <reference value="ValueSet/abnInt-NumericNom"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/abnInt-NumericNom"/>
         </valueSetReference>
       </binding>
     </element>

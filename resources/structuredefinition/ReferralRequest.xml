@@ -9,7 +9,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pc"/> 
   </extension> 
-  <url value="http://hl7.org/fhir/fpar/StructureDefinition/ReferralRequest"/> 
+  <url value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"/> 
   <name value="ReferralRequest"/> 
   <status value="draft"/> 
   <date value="2017-04-19T07:44:43+10:00"/> 

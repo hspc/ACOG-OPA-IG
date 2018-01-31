@@ -16,7 +16,7 @@
   <fhirVersion value="3.0.0"/>
   <mapping>
     <identity value="argonaut-dq-dstu2"/>
-    <uri value="http://unknown.org/Argonaut DQ DSTU2"/>
+    <uri value="http://unknown.org/Argonaut_DQ_DSTU2"/>
     <name value="Argonaut DQ DSTU2"/>
   </mapping>
   <mapping>
@@ -349,7 +349,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the manner in which a value has changed from a previous value"/>
         <valueSetReference>
-          <reference value="ValueSet/deltaFlag-numericNom"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/deltaFlag-numericNom"/>
         </valueSetReference>
       </binding>
     </element>
@@ -383,7 +383,7 @@
         <strength value="preferred"/>
         <description value="The description of how the data came into being"/>
         <valueSetReference>
-          <reference value="ValueSet/observation-dataOriginationMode"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-dataOriginationMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -417,7 +417,7 @@
         <strength value="preferred"/>
         <description value="The conditions during which an individual's height was measured"/>
         <valueSetReference>
-          <reference value="ValueSet/observation-weightPrecond"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-weightPrecond"/>
         </valueSetReference>
       </binding>
     </element>
@@ -1122,7 +1122,7 @@
         <strength value="preferred"/>
         <description value="The list of codes that describe the mass units used for weight."/>
         <valueSetReference>
-          <reference value="ValueSet/weightmassunits"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/weightmassunits"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1311,7 +1311,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method or device used to measure an individual's height"/>
         <valueSetReference>
-          <reference value="ValueSet/observation-weightMeasMethodDevice"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-weightMeasMethodDevice"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2182,7 +2182,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the manner in which a value has changed from a previous value"/>
         <valueSetReference>
-          <reference value="ValueSet/deltaFlag-numericNom"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/deltaFlag-numericNom"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2202,7 +2202,7 @@
         <strength value="preferred"/>
         <description value="The description of how the data came into being"/>
         <valueSetReference>
-          <reference value="ValueSet/observation-dataOriginationMode"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-dataOriginationMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2222,7 +2222,7 @@
         <strength value="preferred"/>
         <description value="The conditions during which an individual's weight was measured"/>
         <valueSetReference>
-          <reference value="ValueSet/observation-weightPrecond"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-weightPrecond"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2306,7 +2306,7 @@
         <strength value="preferred"/>
         <description value="The list of codes that describe the mass units used for weight."/>
         <valueSetReference>
-          <reference value="ValueSet/weightmassunits"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/weightmassunits"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2330,7 +2330,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method or device used to measure an individual's height"/>
         <valueSetReference>
-          <reference value="ValueSet/observation-weightMeasMethodDevice"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-weightMeasMethodDevice"/>
         </valueSetReference>
       </binding>
     </element>

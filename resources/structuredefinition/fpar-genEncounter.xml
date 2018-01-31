@@ -340,7 +340,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <strength value="preferred"/>
         <description value="A set of codes that describe why an individual's encounter has been done away with."/>
         <valueSetReference>
-          <reference value="ValueSet/reasonCancelled"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/reasonCancelled"/>
         </valueSetReference>
       </binding>
     </element>
@@ -374,7 +374,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <strength value="preferred"/>
         <description value="The particular healthcare specialty or care group responsible for the care of the patient during the encounter"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/practitioner-providerPractitionerSpecialty"/>
         </valueSetReference>
       </binding>
     </element>
@@ -408,7 +408,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <strength value="preferred"/>
         <description value="A set of codes that describe the sensitivity level of a patient's information"/>
         <valueSetReference>
-          <reference value="ValueSet/hspc-viplevel"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/hspc-viplevel"/>
         </valueSetReference>
       </binding>
     </element>
@@ -477,7 +477,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <strength value="preferred"/>
         <description value="A set of codes that describe various means of transportation used to leave a location"/>
         <valueSetReference>
-          <reference value="ValueSet/departureTransportMode"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/departureTransportMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -512,7 +512,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <strength value="preferred"/>
         <description value="A set of codes that describe various means of transportation used to arrive at a location"/>
         <valueSetReference>
-          <reference value="ValueSet/arrivalTransportMode"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/arrivalTransportMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -627,7 +627,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <strength value="preferred"/>
         <description value="The set of codes that describe the means by which a patient communicates with others."/>
         <valueSetReference>
-          <reference value="ValueSet/communicationMode"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/communicationMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -1168,7 +1168,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="preferred"/>
         <description value="The level of urgency of the encounter"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/encounterPriority"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/encounterPriority"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1356,7 +1356,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="preferred"/>
         <description value="The codes that represent the particular specialty or practice group that a provider is affiliated with for the given encounter"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/practitioner-providerPractitionerSpecialty"/>
         </valueSetReference>
       </binding>
       <mapping> 
@@ -1997,7 +1997,7 @@ This would be used for a case where an admission starts of as an emergency encou
         <strength value="example"/> 
         <description value="Reason why the encounter takes place."/> 
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/encounterReason"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/encounterReason"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2457,7 +2457,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="example"/>
         <description value="The set of codes that describe where a patient came from for the current admission."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/admissionSource"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/admissionSource"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2527,7 +2527,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="A set of codes that describe the kind of nutrition to be supplied to the patient."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/dietType"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/dietType"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2757,7 +2757,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="The codes that describe whether or not the patient has arrived at the specified location for the encounter"/>
         <valueSetReference>
-          <reference value="ValueSet/arrivalStatus"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/arrivalStatus"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2924,7 +2924,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="The codes that describe the state of readiness of the encounter location"/>
         <valueSetReference>
-          <reference value="ValueSet/locationCondition"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/locationCondition"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3235,7 +3235,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="A set of codes that describe why an individual's encounter has been done away with."/>
         <valueSetReference>
-          <reference value="ValueSet/reasonCancelled"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/reasonCancelled"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3275,7 +3275,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="The particular healthcare specialty or care group responsible for the care of the patient during the encounter"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/practitioner-providerPractitionerSpecialty"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3295,7 +3295,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="A set of codes that describe the sensitivity level of a patient's information"/>
         <valueSetReference>
-          <reference value="ValueSet/hspc-viplevel"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/hspc-viplevel"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3336,7 +3336,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="A set of codes that describe various means of transportation used to leave a location"/>
         <valueSetReference>
-          <reference value="ValueSet/departureTransportMode"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/departureTransportMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3357,7 +3357,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="A set of codes that describe various means of transportation used to arrive at a location"/>
         <valueSetReference>
-          <reference value="ValueSet/arrivalTransportMode"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/arrivalTransportMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3416,7 +3416,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="The set of codes that describe the means by which a patient communicates with others."/>
         <valueSetReference>
-          <reference value="ValueSet/communicationMode"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/communicationMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3449,7 +3449,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="The codes that represent the particular specialty or practice group that a provider is affiliated with for the given encounter"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/practitioner-providerPractitionerSpecialty"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3610,7 +3610,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="example"/>
         <description value="The set of codes that describe where a patient came from for the current admission."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/admissionSource"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/admissionSource"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3623,7 +3623,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="A set of codes that describe the kind of nutrition to be supplied to the patient."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/dietType"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/dietType"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3636,7 +3636,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="A set of codes that describe any particular needs for a patient regarding this encounter."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/specialArrangement"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/specialArrangement"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3691,7 +3691,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="The codes that describe whether or not the patient has arrived at the specified location for the encounter"/>
         <valueSetReference>
-          <reference value="ValueSet/arrivalStatus"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/arrivalStatus"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3731,7 +3731,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="The codes that describe the state of readiness of the encounter location"/>
         <valueSetReference>
-          <reference value="ValueSet/locationCondition"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/locationCondition"/>
         </valueSetReference>
       </binding>
     </element>
