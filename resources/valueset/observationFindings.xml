@@ -7,7 +7,7 @@
   </meta>
   <url value="http://hl7.org/fhir/hspc/ValueSet/observationFindings"/>
   <version value="0.01"/>
-  <name value="HSPC SNOMED Findings Value Set Definition"/>
+  <name value="HSPC Findings Value Set Definition"/>
   <status value="draft"/>
   <publisher value="Health Services Platform Consortium (HSPC)"/>
   <date value="2015-02-09"/>

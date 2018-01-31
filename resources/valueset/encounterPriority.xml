@@ -7,7 +7,7 @@
   </meta>
   <url value="http://hl7.org/fhir/hspc/ValueSet/encounterPriority"/>
   <version value="0.01"/>
-  <name value="HSPC SNOMED Priorities"/>
+  <name value="HSPC Encounter Priority value set."/>
   <status value="draft"/>
   <publisher value="Health Services Platform Consortium (HSPC)"/>
   <date value="2015-12-03"/>

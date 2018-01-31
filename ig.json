@@ -25,7 +25,7 @@
     },
     "canonicalBase": "http://hl7.org/fhir/fpar",
     "source": "implementationguide/FPARImplementationGuide.xml",
-    "sct-edition": "http://snomed.info/sct/20160901",
+    "sct-edition": "http://snomed.info/sct/731000124108",
     "resources": {
         "StructureDefinition/Encounter": {
             "base": "StructureDefinition-Encounter.html"
@@ -392,6 +392,81 @@
         },
         "StructureDefinition/ReferralRequest": {
             "base": "StructureDefinition-ReferralRequest.html"
-        }
+        },
+		"ValueSet/abnInt-NumericNom":{
+			"base": "ValueSet-abnInt-NumericNom.html"
+		},
+		"ValueSet/admissionSource":{
+			"base": "ValueSet-admissionSource.html"
+		},
+		"ValueSet/arrivalStatus":{
+			"base": "ValueSet-arrivalStatus.html"
+		},
+		"ValueSet/arrivalTransportMode":{
+			"base": "ValueSet-arrivalTransportMode.html"
+		},
+		"ValueSet/bdVerificationMethod":{
+			"base": "ValueSet-bdVerificationMethod.html"
+		},
+		"ValueSet/communicationMode":{
+			"base": "ValueSet-communicationMode.html"
+		},
+		"ValueSet/departureTransportMode":{
+			"base": "ValueSet-departureTransportMode.html"
+		},
+		"ValueSet/dietType":{
+			"base": "ValueSet-dietType.html"
+		},
+		"ValueSet/encounterPriority":{
+			"base": "ValueSet-encounterPriority.html"
+		},
+		"ValueSet/encounterReason":{
+			"base": "ValueSet-encounterReason.html"
+		},
+		"ValueSet/LabNullFlavor":{
+			"base": "ValueSet-LabNullFlavor.html"
+		},
+		"ValueSet/locationCondition":{
+			"base": "ValueSet-locationCondition.html"
+		},
+		"ValueSet/observationFindings":{
+			"base": "ValueSet-observationFindings.html"
+		},
+		"ValueSet/OrdinalLabCodes":{
+			"base": "ValueSet-OrdinalLabCodes.html"
+		},
+		"ValueSet/organizationtype":{
+			"base": "ValueSet-organizationtype.html"
+		},
+		"ValueSet/practitioner-providerPractitionerSpecialty":{
+			"base": "ValueSet-practitioner-providerPractitionerSpecialty.html"
+		},
+		"ValueSet/QuantitativeLabCodes":{
+			"base": "ValueSet-QuantitativeLabCodes.html"
+		},
+		"ValueSet/reasonCancelled":{
+			"base": "ValueSet-reasonCancelled.html"
+		},
+		"ValueSet/viplevel":{
+			"base": "ValueSet-viplevel.html"
+		},
+		"ValueSet/yesNo":{
+			"base": "ValueSet-yesNo.html"
+		},
+		"CodeSystem/admissionSource":{	
+			"base":"CodeSystem-admissionSource"
+		},	
+		"CodeSystem/arrivalStatus":{	
+			"base":"CodeSystem-arrivalStatus"
+		},	
+		"CodeSystem/LabNullFlavor":{	
+			"base":"CodeSystem-LabNullFlavor"
+		},	
+		"CodeSystem/locationCondition":{	
+			"base":"CodeSystem-locationCondition"
+		},	
+		"CodeSystem/nullValueReason":{	
+			"base":"CodeSystem-nullValueReason"
+		}
     }
 }
