@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="locationCondition"/>
-  <url value="http://hl7.org/fhir/hspc/CodeSystem/locationCondition"/>
+  <url value="http://hl7.org/fhir/fpar/CodeSystem/locationCondition"/>
   <name value="HSPC Service Delivery Location Condition code system"/>
   <status value="draft"/>
   <experimental value="false"/>

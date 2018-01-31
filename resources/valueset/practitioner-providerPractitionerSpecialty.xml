@@ -5,7 +5,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
   </meta>
-  <url value="http://hl7.org/fhir/hspc/ValueSet/practitioner-providerPractitionerSpecialty"/>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty"/>
   <name value="HSPC ProviderPractitioner Specialty"/>
   <status value="draft"/>
   <publisher value="HSPC"/>

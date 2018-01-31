@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="nullValueReason"/>
-  <url value="http://hl7.org/fhir/hspc/CodeSystem/nullValueReason"/>
+  <url value="http://hl7.org/fhir/fpar/CodeSystem/nullValueReason"/>
   <name value="HSPC Null Value Reason code system"/>
   <status value="draft"/>
   <experimental value="false"/>

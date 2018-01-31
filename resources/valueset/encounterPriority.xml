@@ -5,7 +5,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
   </meta>
-  <url value="http://hl7.org/fhir/hspc/ValueSet/encounterPriority"/>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/encounterPriority"/>
   <version value="0.01"/>
   <name value="HSPC Encounter Priority value set."/>
   <status value="draft"/>

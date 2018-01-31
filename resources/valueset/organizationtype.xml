@@ -5,7 +5,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
   </meta>
-  <url value="http://hl7.org/fhir/hspc/ValueSet/organizationtype"/>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/organizationtype"/>
   <version value="0.01"/>
   <name value="HSPC Organization Type"/>
   <status value="draft"/>

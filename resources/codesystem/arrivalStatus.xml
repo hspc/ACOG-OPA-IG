@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="arrivalStatus"/>
-  <url value="http://hl7.org/fhir/hspc/CodeSystem/arrivalStatus"/>
+  <url value="http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus"/>
   <name value="HSPC Patient Arrival Status"/>
   <status value="draft"/>
   <experimental value="false"/>
