@@ -1,1 +1,1 @@
-rm -rf output qa temp
+rm -rf output qa temp txCache
