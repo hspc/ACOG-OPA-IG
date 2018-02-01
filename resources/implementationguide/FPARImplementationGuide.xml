@@ -89,7 +89,7 @@
     <resource>
       <example value="false" />
       <sourceReference>
-        <reference value="StructureDefinition/FPAR-PractitionerRole" />
+        <reference value="StructureDefinition/fpar-practitionerRole" />
         <display value="The FPAR profile of the PractionerRole resource." />
       </sourceReference>
     </resource>
