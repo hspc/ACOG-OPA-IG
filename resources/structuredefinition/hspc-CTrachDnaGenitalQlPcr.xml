@@ -548,13 +548,6 @@
       </fixedCodeableConcept>	
       <mustSupport value="true"/>
       <isSummary value="true"/>
-      <binding>
-        <strength value="extensible"/>
-        <description value="LOINC codes"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/OrdinalLabCodes"/>
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>

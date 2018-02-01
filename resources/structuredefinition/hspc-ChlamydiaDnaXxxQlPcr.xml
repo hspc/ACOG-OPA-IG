@@ -540,21 +540,14 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
       <fixedCodeableConcept>	
-        <coding>	
-	  <system value="http://loinc.org"/>
-	  <code value="35729-3"/>
-	  <display value="Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+		<coding>	
+		  <system value="http://loinc.org"/>
+		  <code value="35729-3"/>
+		  <display value="Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
         </coding>	
       </fixedCodeableConcept>	
       <mustSupport value="true"/>
-      <isSummary value="true"/>
-      <binding>
-        <strength value="extensible"/>
-        <description value="LOINC codes"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/OrdinalLabCodes"/>
-        </valueSetReference>
-      </binding>
+      <isSummary value="true"/>      
       <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
