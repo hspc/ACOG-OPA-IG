@@ -577,7 +577,6 @@
         <map value="Observation.code"/>
       </mapping>
     </element>
-	
     <element id="Observation:fparlimitedEnglishProficiencyEval.subject">
       <path value="Observation.subject"/>
       <short value="Who and/or what this is about"/>

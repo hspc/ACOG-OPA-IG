@@ -660,13 +660,6 @@
       </fixedCodeableConcept>
       <mustSupport value="false"/>
       <isSummary value="false"/>
-      <binding>
-        <strength value="extensible"/>
-        <description value="LOINC codes"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-codes"/>
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
