@@ -3,10 +3,10 @@
   <meta> 
     <lastUpdated value="2017-04-19T07:44:43.294+10:00"/> 
   </meta> 
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+  <extension url="http://hl7.org/fhir/fpar/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/> 
   </extension> 
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+  <extension url="http://hl7.org/fhir/fpar/StructureDefinition/structuredefinition-wg">
     <valueCode value="pc"/> 
   </extension> 
   <url value="http://hl7.org/fhir/fpar/StructureDefinition/ReferralRequest"/> 
@@ -46,7 +46,7 @@
   <kind value="resource"/> 
   <abstract value="false"/> 
   <type value="ReferralRequest"/> 
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DomainResource"/> 
+  <baseDefinition value="http://hl7.org/fhir/fpar/StructureDefinition/DomainResource"/> 
   <derivation value="specialization"/> 
   <snapshot> 
     <element id="ReferralRequest">

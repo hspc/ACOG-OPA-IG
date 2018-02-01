@@ -17,7 +17,7 @@
   <mapping>
     <identity value="argonaut-dq-dstu2"/>
     <uri value="http://unknown.org/Argonaut_DQ_DSTU2"/>
-    <name value="Argonaut_DQ_DSTU2"/>
+    <name value="Argonaut DQ DSTU2"/>
   </mapping>
   <mapping>
     <identity value="workflow"/>
@@ -548,13 +548,6 @@
       </fixedCodeableConcept>		
       <mustSupport value="true"/>
       <isSummary value="true"/>
-      <binding>
-        <strength value="extensible"/>
-        <description value="LOINC codes"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/OrdinalLabCodes"/>
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
@@ -1045,7 +1038,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe test results that are ordinal"/>
         <valueSetReference>
-          <reference value="ValueSet/observation-findings"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/observationFindings"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1172,7 +1165,7 @@
         <strength value="preferred"/>
         <description value="The list of reasons a lab value may be missing"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-LabNullFlavor"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/hspc-LabNullFlavor"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1212,7 +1205,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe in what way a lab value is abnormal"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-abnInt-NumericNom"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/hspc-abnInt-NumericNom"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2200,7 +2193,7 @@
         <strength value="preferred"/>
         <description value="Standard LOINC ordinal codes"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/OrdinalLabCodes"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/OrdinalLabCodes"/>
         </valueSetReference>
       </binding>
       <mapping>

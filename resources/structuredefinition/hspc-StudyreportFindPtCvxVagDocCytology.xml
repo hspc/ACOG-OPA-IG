@@ -17,7 +17,7 @@
   <mapping>
     <identity value="argonaut-dq-dstu2"/>
     <uri value="http://unknown.org/Argonaut_DQ_DSTU2"/>
-    <name value="Argonaut_DQ_DSTU2"/>
+    <name value="Argonaut DQ DSTU2"/>
   </mapping>
   <mapping>
     <identity value="workflow"/>
@@ -555,7 +555,7 @@
         <strength value="preferred"/>
         <description value="The set of LOINC codes for narrative lab tests"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/NarrativeLabCodes"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/NarrativeLabCodes"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1911,7 +1911,7 @@
         <strength value="preferred"/>
         <description value="The set of LOINC codes for narrative lab tests"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/NarrativeLabCodes"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/NarrativeLabCodes"/>
         </valueSetReference>
       </binding>
       <mapping>

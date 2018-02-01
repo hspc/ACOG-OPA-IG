@@ -364,7 +364,7 @@
 		<strength value="preferred"/>
 		<description value="The reason why there is no data for the given element."/>
 		<valueSetReference>
-			<reference value="http://hl7.org/fhir/fpar/CodeSystem/nullValueReason"/>
+			<reference value="http://hl7.org/fhir/hspc/CodeSystem/nullValueReason"/>
 		</valueSetReference>
 	  </binding>
 	</element>

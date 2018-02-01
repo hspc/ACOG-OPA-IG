@@ -842,5 +842,152 @@
         <display value="The FPAR profile of the ReferalRequest resource." />
       </sourceReference>
     </resource>
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/abnInt-NumericNom"/>
+		<display value="Abnormal Interpretation Numeric Nom"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/arrivalTransportMode"/>
+		<display value="HSPC Arrival Transport Mode value set"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/bdVerificationMethod"/>
+		<display value="HSPC Verification Method Value Set"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/communicationMode"/>
+		<display value="HSPC Communication Mode"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/departureTransportMode"/>
+		<display value="HSPC Departure Transport Mode value set"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/dietType"/>
+		<display value="HSPC Diet Type value set"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/encounterPriority"/>
+		<display value="HSPC Encounter Priority value set"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/encounterReason"/>
+		<display value="HSPC Encounter Reason"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/observationFindings"/>
+		<display value="HSPC Findings Value Set Definition"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/OrdinalLabCodes"/>
+		<display value="HSPC Ordinal Labs"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/organizationtype"/>
+		<display value="HSPC Organization Type"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/practitioner-providerPractitionerSpecialty"/>
+		<display value="HSPC ProviderPractitioner Specialty"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/QuantitativeLabCodes"/>
+		<display value="HSPC Quantitative Labs"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/reasonCancelled"/>
+		<display value="HSPC Reason Cancelled value set"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/viplevel"/>
+		<display value="HSPC VIP Level"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/yesNo"/>
+		<display value="HSPC Yes/No Value Set"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/admissionSource"/>
+		<display value="HSPC Admission Source value set"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/arrivalStatus"/>
+		<display value="HSPC Patient Arrival Status"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/LabNullFlavor"/>
+		<display value="HSPC Lab Null Flavor"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/locationCondition"/>
+		<display value="HSPC Service Delivery Location Condition code system"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/nullValueReason"/>
+		<display value="HSPC Null Value Reason code system"/>
+		</sourceReference>
+	</resource>	
   </package>
 </ImplementationGuide> 

@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="fpar-practitionerRole"/> 
-  <extension url="http://hl7.org/fhir/fpar/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="2"/> 
-  </extension> 
-  <extension url="http://hl7.org/fhir/fpar/StructureDefinition/structuredefinition-wg">
-    <valueCode value="pa"/> 
-  </extension> 
+  <id value="fpar-practitionerRole"/>
   <url value="http://hl7.org/fhir/fpar/StructureDefinition/fpar-practitionerRole"/> 
   <name value="FPAR Practitioner Role"/> 
   <status value="draft"/> 
@@ -44,7 +38,7 @@
   <kind value="resource"/> 
   <abstract value="false"/> 
   <type value="PractitionerRole"/> 
-  <baseDefinition value="http://hl7.org/fhir/fpar/StructureDefinition/"/> 
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/> 
   <derivation value="specialization"/> 
   <snapshot> 
     <element id="PractitionerRole:fparPractitionerRole">
@@ -194,18 +188,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <type> 
         <code value="code"/> 
       </type> 
-      <binding> 
-        <extension url="http://hl7.org/fhir/fpar/StructureDefinition/elementdefinition-maxValueSet">
-          <valueReference> 
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/> 
-          </valueReference> 
-        </extension> 
-        <extension url="http://hl7.org/fhir/fpar/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Language"/> 
-        </extension> 
-        <extension url="http://hl7.org/fhir/fpar/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/> 
-        </extension> 
+      <binding>
         <strength value="extensible"/> 
         <description value="A human language."/> 
         <valueSetReference> 
@@ -490,10 +473,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <code value="CodeableConcept"/> 
       </type> 
       <isSummary value="true"/> 
-      <binding> 
-        <extension url="http://hl7.org/fhir/fpar/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="PractitionerSpecialty"/> 
-        </extension>
+      <binding>
 	    <strength value="preferred"/>
 		<valueSetReference>
 		  <reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.24"/>
@@ -691,9 +671,6 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <code value="code"/> 
       </type> 
       <binding> 
-        <extension url="http://hl7.org/fhir/fpar/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DaysOfWeek"/> 
-        </extension> 
         <strength value="required"/> 
         <description value="The days of the week."/> 
         <valueSetReference> 
@@ -930,9 +907,6 @@ So the endpoint satisfies the need to be able to define the technical connection
 	  <min value="0"/>
 	  <max value="1"/>
 	  <binding>
-        <extension url="http://hl7.org/fhir/fpar/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="PractitionerSpecialty"/> 
-        </extension>
 	    <strength value="preferred"/>
 		<valueSetReference>
 		  <reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.24"/>
