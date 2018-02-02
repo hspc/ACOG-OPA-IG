@@ -17,7 +17,7 @@
   <mapping>
     <identity value="argonaut-dq-dstu2"/>
     <uri value="http://unknown.org/Argonaut_DQ_DSTU2"/>
-    <name value="Argonaut_DQ_DSTU2"/>
+    <name value="Argonaut DQ DSTU2"/>
   </mapping>
   <mapping>
     <identity value="workflow"/>
@@ -541,13 +541,6 @@
       </type>
       <mustSupport value="true"/>
       <isSummary value="true"/>
-      <binding>
-        <strength value="extensible"/>
-        <description value="LOINC codes"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-codes"/>
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
@@ -815,7 +808,7 @@
       <binding>
       	<strength value="preferred"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-yesNo"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/hspc-yesNo"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2020,7 +2013,7 @@
       <binding>
       	<strength value="preferred"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-yesNo"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/hspc-yesNo"/>
         </valueSetReference>
       </binding>
       <mapping>

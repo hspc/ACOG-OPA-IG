@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nullValueReason"/>
+  <url value="http://hl7.org/fhir/fpar/CodeSystem/nullValueReason"/>
+  <name value="HSPC Null Value Reason code system"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <description value="Select codes from Intermountain Healthcare HDD code sytsem.  The codes that describe why data is missing in a given element."/>
+  <copyright value="This value set includes content from and copyrighted by Intermountain Healthcare HDD"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="112"/>	
+    <display value="Not Applicable"/>
+    <definition value="The data element is not applicable therefore no data is recorded."/>
+  </concept>
+  <concept>
+    <code value="528116898"/>
+    <display value="Missing Picklist Value"/>
+    <definition value="The desired value is not one of the options in the picklist."/>
+  </concept>
+  <concept>
+    <code value="528116900"/>
+    <display value="Data Not Available"/>
+    <definition value="Data is not available to populate the element."/>
+  </concept>
+</CodeSystem>

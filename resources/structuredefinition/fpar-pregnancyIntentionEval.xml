@@ -17,7 +17,7 @@
   <mapping>
     <identity value="argonaut-dq-dstu2"/>
     <uri value="http://unknown.org/Argonaut_DQ_DSTU2"/>
-    <name value="Argonaut_DQ_DSTU2"/>
+    <name value="Argonaut DQ DSTU2"/>
   </mapping>
   <mapping>
     <identity value="workflow"/>

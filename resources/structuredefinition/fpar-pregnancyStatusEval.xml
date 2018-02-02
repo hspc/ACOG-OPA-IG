@@ -17,7 +17,7 @@
   <mapping>
     <identity value="argonaut-dq-dstu2"/>
     <uri value="http://unknown.org/Argonaut_DQ_DSTU2"/>
-    <name value="Argonaut_DQ_DSTU2"/>
+    <name value="Argonaut DQ DSTU2"/>
   </mapping>
   <mapping>
     <identity value="workflow"/>
@@ -587,13 +587,6 @@
       </fixedCodeableConcept>
       <mustSupport value="true"/>
       <isSummary value="true"/>
-      <binding>
-        <strength value="extensible"/>
-        <description value="LOINC codes"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-codes"/>
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>

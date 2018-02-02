@@ -486,7 +486,7 @@
       </type>
       <example>
         <label value="General"/>
-        <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
+        <valueUri value="http://www.acme.com/identifiers/patient"/>
       </example>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -1599,7 +1599,7 @@
         <strength value="preferred"/>
         <description value="Codes that represent kinds of organizations."/>
         <valueSetReference>
-          <reference value="ValueSet/organization-organizationtype"/>
+          <reference value="http://hl7.org/fhir/hspc/ValueSet/organizationtype"/>
         </valueSetReference>
       </binding>
     </element>
