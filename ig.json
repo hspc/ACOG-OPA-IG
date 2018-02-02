@@ -454,19 +454,19 @@
       "base": "ValueSet-yesNo.html"
     },
     "CodeSystem/admissionSource":{
-      "base":"CodeSystem-admissionSource"
+      "base":"CodeSystem-admissionSource.html"
     },
     "CodeSystem/arrivalStatus":{
-      "base":"CodeSystem-arrivalStatus"
+      "base":"CodeSystem-arrivalStatus.html"
     },
     "CodeSystem/LabNullFlavor":{
-      "base":"CodeSystem-LabNullFlavor"
+      "base":"CodeSystem-LabNullFlavor.html"
     },
     "CodeSystem/locationCondition":{
-      "base":"CodeSystem-locationCondition"
+      "base":"CodeSystem-locationCondition.html"
     },
     "CodeSystem/nullValueReason":{
-      "base":"CodeSystem-nullValueReason"
+      "base":"CodeSystem-nullValueReason.html"
     }
   }
 }
