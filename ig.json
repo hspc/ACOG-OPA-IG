@@ -60,9 +60,6 @@
         "StructureDefinition/fpar-practitioner": {
             "base": "StructureDefinition-fpar-practitioner.html"
         },
-        "StructureDefinition/fpar-practitionerRole": {
-            "base": "StructureDefinition-fpar-practitionerRole.html"
-        },
         "StructureDefinition/fpar-pregnancyIntentionEval": {
             "base": "StructureDefinition-fpar-pregnancyIntentionEval.html"
         },
@@ -389,9 +386,6 @@
         },
         "StructureDefinition/hspc-ThinPrepCervix": {
             "base": "StructureDefinition-hspc-ThinPrepCervix.html"
-        },
-        "StructureDefinition/ReferralRequest": {
-            "base": "StructureDefinition-ReferralRequest.html"
         }
     }
 }

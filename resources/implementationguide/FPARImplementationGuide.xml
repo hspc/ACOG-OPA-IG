@@ -89,13 +89,6 @@
     <resource>
       <example value="false" />
       <sourceReference>
-        <reference value="StructureDefinition/fpar-practitionerRole" />
-        <display value="The FPAR profile of the PractionerRole resource." />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <sourceReference>
         <reference value="StructureDefinition/fpar-pregnancyIntentionEval" />
         <display value="An observation of an individual's intention to be or not be pregnant." />
       </sourceReference>
@@ -833,13 +826,6 @@
       <sourceReference>
         <reference value="StructureDefinition/hspc-ThinPrepCervix" />
         <display value="The observation Microscopic observation [Identifier] in Cervix by Cyto stain.thin prep based on the LOINC code 18500-9" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <sourceReference>
-        <reference value="StructureDefinition/ReferralRequest" />
-        <display value="The FPAR profile of the ReferalRequest resource." />
       </sourceReference>
     </resource>
   </package>
