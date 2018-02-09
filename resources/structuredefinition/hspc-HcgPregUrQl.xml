@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="HcgPregUrQl"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/HcgPregUrQl"/>
+<id value="hspc-HcgPregUrQl"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-HcgPregUrQl"/>
   <version value="2.0.0"/>
   <name value="HSPC HcgPregUrQl Profile"/>
   <status value="draft"/>

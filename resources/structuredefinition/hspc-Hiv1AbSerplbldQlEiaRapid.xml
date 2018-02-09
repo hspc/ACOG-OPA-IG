@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="Hiv1AbSerplbldQlEiaRapid"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/Hiv1AbSerplbldQlEiaRapid"/>
+<id value="hspc-Hiv1AbSerplbldQlEiaRapid"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1AbSerplbldQlEiaRapid"/>
   <version value="2.0.0"/>
   <name value="HSPC Hiv1AbSerplbldQlEiaRapid Profile"/>
   <status value="draft"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="CTrachL2DnaXxxQlPcr"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/CTrachL2DnaXxxQlPcr"/>
+<id value="hspc-CTrachL2DnaXxxQlPcr"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachL2DnaXxxQlPcr"/>
   <version value="2.0.0"/>
   <name value="HSPC CTrachL2DnaXxxQlPcr Profile"/>
   <status value="draft"/>

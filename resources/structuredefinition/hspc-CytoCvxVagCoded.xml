@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="CytoCvxVagCoded"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/CytoCvxVagCoded"/>
+<id value="hspc-CytoCvxVagCoded"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytoCvxVagCoded"/>
   <name value="HSPC CytoCvxVagCoded Profile"/>
   <status value="draft"/>
   <date value="2017-05-16"/>

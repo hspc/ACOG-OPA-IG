@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="NGonorrhoeaRrnaUrthQlPcr"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/NGonorrhoeaRrnaUrthQlPcr"/>
+<id value="hspc-NGonorrhoeaRrnaUrthQlPcr"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPcr"/>
   <version value="2.0.0"/>
   <name value="HSPC NGonorrhoeaRrnaUrthQlPcr Profile"/>
   <status value="draft"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="CTrachRrnaCervixQlPrb"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/CTrachRrnaCervixQlPrb"/>
+<id value="hspc-CTrachRrnaCervixQlPrb"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaCervixQlPrb"/>
   <version value="2.0.0"/>
   <name value="HSPC CTrachRrnaCervixQlPrb Profile"/>
   <status value="draft"/>

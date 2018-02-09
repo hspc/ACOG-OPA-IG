@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="CytologyCmntCvxVagCytoImp"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/CytologyCmntCvxVagCytoImp"/>
+<id value="hspc-CytologyCmntCvxVagCytoImp"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytologyCmntCvxVagCytoImp"/>
   <version value="1.0.0"/>
   <name value="HSPC CytologyCmntCvxVagCytoImp Profile"/>
   <status value="draft"/>

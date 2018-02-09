@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="CTrachRrnaUrthQlPrb"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/CTrachRrnaUrthQlPrb"/>
+<id value="hspc-CTrachRrnaUrthQlPrb"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaUrthQlPrb"/>
   <version value="2.0.0"/>
   <name value="HSPC CTrachRrnaUrthQlPrb Profile"/>
   <status value="draft"/>

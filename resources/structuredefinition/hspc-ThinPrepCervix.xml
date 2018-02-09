@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="ThinPrepCervix"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/ThinPrepCervix"/>
+<id value="hspc-ThinPrepCervix"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-ThinPrepCervix"/>
   <name value="HSPC ThinPrepCervix Profile"/>
   <status value="draft"/>
   <date value="2017-05-16"/>

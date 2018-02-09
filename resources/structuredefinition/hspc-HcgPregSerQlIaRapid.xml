@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="HcgPregSerQlIaRapid"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/HcgPregSerQlIaRapid"/>
+<id value="hspc-HcgPregSerQlIaRapid"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-HcgPregSerQlIaRapid"/>
   <version value="2.0.0"/>
   <name value="HSPC HcgPregSerQlIaRapid Profile"/>
   <status value="draft"/>

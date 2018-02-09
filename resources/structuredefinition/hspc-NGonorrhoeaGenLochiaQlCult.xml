@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="NGonorrhoeaGenLochiaQlCult"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/NGonorrhoeaGenLochiaQlCult"/>
+<id value="hspc-NGonorrhoeaGenLochiaQlCult"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaGenLochiaQlCult"/>
   <version value="2.0.0"/>
   <name value="HSPC NGonorrhoeaGenLochiaQlCult Profile"/>
   <status value="draft"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="ChlamydiaDnaXxxQlPcr"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/ChlamydiaDnaXxxQlPcr"/>
+<id value="hspc-ChlamydiaDnaXxxQlPcr"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-ChlamydiaDnaXxxQlPcr"/>
   <version value="2.0.0"/>
   <name value="HSPC ChlamydiaDnaXxxQlPcr Profile"/>
   <status value="draft"/>

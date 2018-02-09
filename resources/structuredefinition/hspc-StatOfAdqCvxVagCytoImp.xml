@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="StatOfAdqCvxVagCytoImp"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/StatOfAdqCvxVagCytoImp"/>
+<id value="hspc-StatOfAdqCvxVagCytoImp"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-StatOfAdqCvxVagCytoImp"/>
   <name value="HSPC StatOfAdqCvxVagCytoImp Profile"/>
   <status value="draft"/>
   <date value="2017-05-16"/>

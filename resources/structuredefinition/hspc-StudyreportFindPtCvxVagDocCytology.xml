@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="StudyreportFindPtCvxVagDocCytology"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/StudyreportFindPtCvxVagDocCytology"/>
+<id value="hspc-StudyreportFindPtCvxVagDocCytology"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-StudyreportFindPtCvxVagDocCytology"/>
   <version value="1.0.0"/>
   <name value="HSPC StudyreportFindPtCvxVagDocCytology Profile"/>
   <status value="draft"/>

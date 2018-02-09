@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="Hpv12HrTypesDnaTissQlPrb"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/Hpv12HrTypesDnaTissQlPrb"/>
+<id value="hspc-Hpv12HrTypesDnaTissQlPrb"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv12HrTypesDnaTissQlPrb"/>
   <version value="2.0.0"/>
   <name value="HSPC Hpv12HrTypesDnaTissQlPrb Profile"/>
   <status value="draft"/>

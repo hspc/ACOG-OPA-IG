@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="GenCategCvxVagCytoImp"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/GenCategCvxVagCytoImp"/>
+<id value="hspc-GenCategCvxVagCytoImp"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-GenCategCvxVagCytoImp"/>
   <name value="HSPC GenCategCvxVagCytoImp Profile"/>
   <status value="draft"/>
   <date value="2017-05-16"/>

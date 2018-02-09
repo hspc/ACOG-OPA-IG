@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="NGonorrhoeaDnaCervMucusQlPcr"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/NGonorrhoeaDnaCervMucusQlPcr"/>
+<id value="hspc-NGonorrhoeaDnaCervMucusQlPcr"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaCervMucusQlPcr"/>
   <version value="2.0.0"/>
   <name value="HSPC NGonorrhoeaDnaCervMucusQlPcr Profile"/>
   <status value="draft"/>

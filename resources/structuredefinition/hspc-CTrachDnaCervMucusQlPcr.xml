@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="CTrachDnaCervMucusQlPcr"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/CTrachDnaCervMucusQlPcr"/>
+<id value="hspc-CTrachDnaCervMucusQlPcr"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaCervMucusQlPcr"/>
   <version value="2.0.0"/>
   <name value="HSPC ChlamydiaDnaXxxQlPcr Profile"/>
   <status value="draft"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="HpvIHRisk4DnaCervixQlBdna"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/HpvIHRisk4DnaCervixQlBdna"/>
+<id value="hspc-HpvIHRisk4DnaCervixQlBdna"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvIHRisk4DnaCervixQlBdna"/>
   <version value="2.0.0"/>
   <name value="HSPC HpvIHRisk4DnaCervixQlBdna Profile"/>
   <status value="draft"/>

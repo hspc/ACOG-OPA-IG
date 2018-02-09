@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="NGonorrhoeaRrnaCervixQlPrb"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/NGonorrhoeaRrnaCervixQlPrb"/>
+<id value="hspc-NGonorrhoeaRrnaCervixQlPrb"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPrb"/>
   <version value="2.0.0"/>
   <name value="HSPC NGonorrhoeaRrnaCervixQlPrb Profile"/>
   <status value="draft"/>

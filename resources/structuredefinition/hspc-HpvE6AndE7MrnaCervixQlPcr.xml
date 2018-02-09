@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="HpvE6AndE7MrnaCervixQlPcr"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/HpvE6AndE7MrnaCervixQlPcr"/>
+<id value="hspc-HpvE6AndE7MrnaCervixQlPcr"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvE6AndE7MrnaCervixQlPcr"/>
   <version value="2.0.0"/>
   <name value="HSPC HpvE6AndE7MrnaCervixQlPcr Profile"/>
   <status value="draft"/>

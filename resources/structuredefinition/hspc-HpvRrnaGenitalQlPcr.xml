@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="HpvRrnaGenitalQlPcr"/>
-<url value="http://hl7.org/fhir/fpar/StructureDefinition/HpvRrnaGenitalQlPcr"/>
+<id value="hspc-HpvRrnaGenitalQlPcr"/>
+<url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvRrnaGenitalQlPcr"/>
   <version value="2.0.0"/>
   <name value="HSPC HpvRrnaGenitalQlPcr Profile"/>
   <status value="draft"/>
