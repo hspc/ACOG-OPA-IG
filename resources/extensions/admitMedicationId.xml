@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hspc-genencounter-AdmitMedicationId"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AdmitMedicationId"/>
+  <id value="hspc-genencounter-admitMedicationId"/>
+  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-admitMedicationId"/>
   <name value="Admission Medication Identifier"/>
   <title value="Admission Medication Identifier"/>
   <status value="draft"/>

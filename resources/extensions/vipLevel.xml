@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hspc-genencounter-VipLevel"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-VipLevel"/>
+  <id value="hspc-genencounter-vipLevel"/>
+  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-vipLevel"/>
   <version value="2.0.0"/>
   <name value="VIP Level"/>
   <title value="VIP Level"/>

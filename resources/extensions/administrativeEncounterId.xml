@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hspc-genencounter-AdministrativeEncounterId"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AdministrativeEncounterId"/>
+  <id value="hspc-genencounter-administrativeEncounterId"/>
+  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-administrativeEncounterId"/>
   <name value="Administrative Encounter Identifier"/>
   <title value="Administrative Encounter Identifier"/>
   <status value="draft"/>
