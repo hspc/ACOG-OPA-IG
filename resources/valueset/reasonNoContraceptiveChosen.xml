@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="reasonNoContraceptiveChosen"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/reasonNoContraceptiveChosen"/>
+    <version value="0.01"/>
+    <name value="FPAR Reason No Contraceptive Chosen value set"/>
+    <status value="draft"/>
+    <publisher value="Family Planning Annual Report"/>
+    <date value="2018-03-29"/>
+    <description value="Select SNOMED code system values.  A set of codes that describe why an individual did not choose to use contraception."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>	
+				<code value ="454361000124100"/>
+				<display value ="Has same sex partner (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="454731000124108"/>
+				<display value ="Sexually abstinent (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="74964007"/>
+				<display value ="Other (qualifier value)"/>
+			</concept>	
+			<concept>	
+				<code value ="15296000"/>
+				<display value ="Sterility (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="454411000124108"/>
+				<display value ="Wants to become pregnant (finding)"/>
+			</concept>	
+		</include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="contraceptiveChoice"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/contraceptiveChoice"/>
+    <version value="0.01"/>
+    <name value="FPAR Contraceptive Choice value set"/>
+    <status value="draft"/>
+    <publisher value="Family Planning Annual Report"/>
+    <date value="2018-03-29"/>
+    <description value="Select SNOMED code system values.  A set of codes that describe methods of contraception."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>	
+				<code value ="22523008"/>
+				<display value ="Vasectomy (procedure)"/>
+			</concept>	
+			<concept>	
+				<code value ="60890002"/>
+				<display value ="Female sterilization (procedure)"/>
+			</concept>	
+			<concept>	
+				<code value ="169450001"/>
+				<display value ="No contraceptive precautions (situation)"/>
+			</concept>	
+			<concept>	
+				<code value ="169467008"/>
+				<display value ="Progestogen only oral contraceptive (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="268461001"/>
+				<display value ="Sheath contraception (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="169513000"/>
+				<display value ="Withdrawal contraception (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="169530003"/>
+				<display value ="Uses contraceptive sponge (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="228479001"/>
+				<display value ="Uses a female condom (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="268458002"/>
+				<display value ="Combined oral contraceptive - use (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="268466006"/>
+				<display value ="Spermicidal contraception (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="275813002"/>
+				<display value ="Emergency contraception (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="312081001"/>
+				<display value ="Intrauterine device contraception (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="413116005"/>
+				<display value ="Transdermal contraception (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="428987008"/>
+				<display value ="Subcutaneous contraceptive implant present (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="448962006"/>
+				<display value ="Uses copper intrauterine device contraception (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="449038007"/>
+				<display value ="Uses hormone releasing intrauterine device contraception (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="450850003"/>
+				<display value ="Uses vaginal hormone releasing ring (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="450851004"/>
+				<display value ="Uses contraceptive diaphragm (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="454451000124109"/>
+				<display value ="Declines to state contraceptive method (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="268464009"/>
+				<display value ="Depot contraception (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="455501000124105"/>
+				<display value ="Contraception based on fertility awareness (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="454441000124107"/>
+				<display value ="Contraception using lactation amonorrhea method (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="455491000124102"/>
+				<display value ="Male relying on female contraception (finding)"/>
+			</concept>	
+		</include>
+    </compose>
+</ValueSet>

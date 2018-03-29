@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="fparHIVAbReactiveNonReactive"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/fparHIVAbReactiveNonReactive"/>
+    <version value="0.01"/>
+    <name value="FPAR HIV Ab Reactive Non Reactive value set"/>
+    <status value="draft"/>
+    <publisher value="Family Planning Annual Report"/>
+    <date value="2018-03-29"/>
+    <description value="Select SNOMED CT codes. A set of codes that describe results of laboratory HIV testing."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>	
+				<code value ="131194007"/>
+				<display value ="Non-Reactive (qualifier value)"/>
+			</concept>	
+			<concept>	
+				<code value ="11214006"/>
+				<display value ="Reactive (qualifier value)"/>
+			</concept>	
+			<concept>	
+				<code value ="82334004"/>
+				<display value ="Indeterminate (qualifier value)"/>
+			</concept>
+		</include>
+    </compose>
+</ValueSet>

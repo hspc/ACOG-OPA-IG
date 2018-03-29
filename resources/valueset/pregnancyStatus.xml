@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="pregnancyStatus"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/pregnancyStatus"/>
+    <version value="0.01"/>
+    <name value="FPAR Pregnancy Status value set"/>
+    <status value="draft"/>
+    <publisher value="Family Planning Annual Report"/>
+    <date value="2018-03-29"/>
+    <description value="Select SNOMED CT codes. A set of codes that describe an individual's pregnancy state."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>	
+				<code value ="77386006"/>
+				<display value ="Patient currently pregnant (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="60001007"/>
+				<display value ="Not pregnant (finding)"/>
+			</concept>
+		</include>
+    </compose>
+</ValueSet>

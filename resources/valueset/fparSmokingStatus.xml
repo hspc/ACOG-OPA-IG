@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="fparSmokingStatus"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/fparSmokingStatus"/>
+    <version value="0.01"/>
+    <name value="FPAR Smoking Status value set"/>
+    <status value="draft"/>
+    <publisher value="Family Planning Annual Report"/>
+    <date value="2018-03-29"/>
+    <description value="Select SNOMED CT codes. The set of codes that describe an individual's smoking status."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>	
+				<code value ="266919005"/>
+				<display value ="Never smoked tobacco (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="8517006"/>
+				<display value ="Ex-smoker (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="428041000124106"/>
+				<display value ="Occasional tobacco smoker (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="449868002"/>
+				<display value ="Smokes tobacco daily (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="77176002"/>
+				<display value ="Smoker (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="266927001"/>
+				<display value ="Tobacco smoking consumption unknown (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="428071000124103"/>
+				<display value ="Heavy tobacco smoker (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="428061000124105"/>
+				<display value ="Light tobacco smoker (finding)"/>
+			</concept>
+		</include>
+    </compose>
+</ValueSet>

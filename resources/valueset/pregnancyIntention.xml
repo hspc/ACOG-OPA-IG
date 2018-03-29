@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="pregnancyIntention"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/pregnancyIntention"/>
+    <version value="0.01"/>
+    <name value="FPAR Pregnancy Intention value set"/>
+    <status value="draft"/>
+    <publisher value="Family Planning Annual Report"/>
+    <date value="2018-03-29"/>
+    <description value="Select SNOMED CT codes. A set of codes that describe an individual's intent to become or not become pregnant."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>	
+				<code value ="454381000124105"/>
+				<display value ="Not sure of desire to become pregnant (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="454391000124108"/>
+				<display value ="Ambivalent about becoming pregnant (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="454401000124105"/>
+				<display value ="No desire to become pregnant (finding)"/>
+			</concept>	
+			<concept>	
+				<code value ="454411000124108"/>
+				<display value ="Wants to become pregnant (finding)"/>
+			</concept>	
+		</include>
+    </compose>
+</ValueSet>
