@@ -342,7 +342,7 @@
           <valueString value="ObservationCategory"/>
         </extension>
         <strength value="preferred"/>
-        <description value="Pregnancy statuses."/>
+        <description value="How a pregnancy status was reported."/>
         <valueSetReference>
           <reference value="http://hl7.org/fhir/fpar/ValueSet/pregnancyStatusReportingMethod"/>
         </valueSetReference>
@@ -1946,7 +1946,7 @@
           <valueString value="ObservationCategory"/>
         </extension>
         <strength value="preferred"/>
-        <description value="Pregnancy statuses."/>
+        <description value="How a pregnancy status was reported."/>
         <valueSetReference>
           <reference value="http://hl7.org/fhir/fpar/ValueSet/pregnancyStatusReportingMethod"/>
         </valueSetReference>
