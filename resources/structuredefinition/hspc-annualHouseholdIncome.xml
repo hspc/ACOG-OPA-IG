@@ -805,7 +805,7 @@
 		<strength value="preferred"/>
         <description value="A VSAC value set that describes household income ranges used by FPAR."/>
 		<valueSetReference>
-			<reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.25"/>
+			<reference value="http://hl7.org/fhir/fpar/ValueSet/fparAnnualHouseholdIncomeRanges"/>
 		</valueSetReference>
 	  </binding>
       <mapping>
@@ -1886,7 +1886,7 @@
 	  <binding>
 		<strength value="preferred"/>
 		<valueSetReference>
-			<reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.25"/>
+			<reference value="http://hl7.org/fhir/fpar/ValueSet/fparAnnualHouseholdIncomeRanges"/>
 		</valueSetReference>
 	  </binding>
     </element>

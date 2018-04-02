@@ -805,7 +805,7 @@
 		<strength value="preferred"/>
         <description value="A VSAC value set that describes one's intention for pregnancy used by FPAR."/>
 		<valueSetReference>
-			<reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.22"/>
+			<reference value="http://hl7.org/fhir/fpar/ValueSet/pregnancyIntention"/>
 		</valueSetReference>
 	  </binding>
       <mapping>
@@ -1880,7 +1880,7 @@
 		<strength value="preferred"/>
         <description value="A VSAC value set that describes one's intention for pregnancy used by FPAR."/>
 		<valueSetReference>
-			<reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.22"/>
+			<reference value="http://hl7.org/fhir/fpar/ValueSet/pregnancyIntention"/>
 		</valueSetReference>
 	  </binding>
     </element>

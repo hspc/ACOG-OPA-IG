@@ -334,7 +334,7 @@
         <strength value="required"/>
         <description value="Source of Payment Typology"/>
         <valueSetReference>
-          <reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/payorForVisit"/>
         </valueSetReference>
       </binding>
 	  <mapping>
@@ -1193,7 +1193,7 @@
         <strength value="required"/>
         <description value="Source of Payment Typology"/>
         <valueSetReference>
-          <reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/payorForVisit"/>
         </valueSetReference>
       </binding>
 	  <mapping>

@@ -398,7 +398,7 @@
         <strength value="preferred"/>
         <description value="Identifies the purpose for this identifier, if known ."/>
         <valueSetReference>
-          <reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.31"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/englishProficiency"/>
         </valueSetReference>
 	  </binding>
       <mapping>

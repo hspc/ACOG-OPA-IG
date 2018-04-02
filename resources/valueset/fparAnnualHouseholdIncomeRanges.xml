@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
+  <id value="fparAnnualHouseholdIncomeRanges"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/fparAnnualHouseholdIncomeRanges"/>
+    <version value="0.01"/>
+    <name value="FPAR Annual Household Income Ranges value set"/>
+    <status value="draft"/>
+    <publisher value="Family Planning Annual Report"/>
+    <date value="2018-03-29"/>
+    <description value="Select LOINC Answer codes. A set of LOINC answer codes that describe how much money is earned by an entire household in one calendar year."/>
+    <immutable value="true"/>
+    <copyright value="TBD"/>
+    <extensible value="true"/>
+    <compose>
+		<include>
+			<system value="http://loinc.org"/>
+			<concept>	
+				<code value ="LA22774-6"/>
+				<display value ="Less than 5,000"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22775-3"/>
+				<display value ="5,000 to 7,499"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22776-1"/>
+				<display value ="7,500 to 9,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22777-9"/>
+				<display value ="10,000 to 12,499"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22778-7"/>
+				<display value ="12,500 to 14,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22779-5"/>
+				<display value ="15,000 to 19,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22780-3"/>
+				<display value ="20,000 to 24,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22781-1"/>
+				<display value ="25,000 to 29,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22782-9"/>
+				<display value ="30,000 to 34,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22783-7"/>
+				<display value ="35,000 to 39,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22784-5"/>
+				<display value ="40,000 to 49,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22785-2"/>
+				<display value ="50,000 to 59,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22786-0"/>
+				<display value ="60,000 to 74,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22787-8"/>
+				<display value ="75,000 to 99,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22788-6"/>
+				<display value ="100,000 to 149,999"/>
+			</concept>	
+			<concept>	
+				<code value ="LA22789-4"/>
+				<display value ="150,000 or more"/>
+			</concept>
+		</include>
+    </compose>
+</ValueSet>

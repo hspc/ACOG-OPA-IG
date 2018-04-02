@@ -476,7 +476,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       <binding>
 	    <strength value="preferred"/>
 		<valueSetReference>
-		  <reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.24"/>
+		  <reference value="http://hl7.org/fhir/fpar/ValueSet/fparProviderRole"/>
 		</valueSetReference>
 	  </binding>
       <mapping> 
@@ -909,7 +909,7 @@ So the endpoint satisfies the need to be able to define the technical connection
 	  <binding>
 	    <strength value="preferred"/>
 		<valueSetReference>
-		  <reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1166.24"/>
+		  <reference value="http://hl7.org/fhir/fpar/ValueSet/fparProviderRole"/>
 		</valueSetReference>
 	  </binding>
 	</element>

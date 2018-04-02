@@ -815,7 +815,7 @@
       	<strength value="preferred"/>
 		<description value="A VSAC value set that describes an individual's current smoking state."/>
         <valueSetReference>
-          <reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.38"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/fparSmokingStatus"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1973,7 +1973,7 @@
       	<strength value="preferred"/>
 		<description value="A VSAC value set that describes an individual's current smoking state."/>
         <valueSetReference>
-          <reference value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.38"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/fparSmokingStatus"/>
         </valueSetReference>
       </binding>
     </element>
