@@ -1,831 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="FPARImplementationGuide"/> 
+  <id value="FPARImplementationGuide"/>
   <url value="http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide"/>
   <version value="1.0"/>
-  <name value="The Family Planning Annual Report (FPAR) Implementation Guide"/> 
-  <status value="draft"/> 
-  <date value="2017-11-30"/> 
+  <name value="The Family Planning Annual Report (FPAR) Implementation Guide"/>
+  <status value="draft"/>
+  <date value="2017-11-30"/>
   <publisher value="Health Services Platform Consortium on belalf of The Office of Population Affairs (OPA)"/>
   <copyright value="The Office of Population Affairs (OPA)"/>
   <contact> 
     <telecom> 
-      <system value="url"/> 
-      <value value="http://www.acog.org"/> 
+      <system value="url"/>
+      <value value="http://www.acog.org"/>
     </telecom> 
   </contact> 
-  <description value="The Implementation Guide resource profile for FPAR"/> 
+  <description value="The Implementation Guide resource profile for FPAR"/>
   <package>
-    <name value="Profiles and resources in this implementation guide."/>
+    <name value="base"/>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-contraceptiveChoiceAtExit" />
-        <display value="An observation of one's choice in contraception evaluated at the end of a visit." />
+        <reference value="StructureDefinition/fpar-contraceptiveChoiceAtExit"/>
+        <display value="An observation of one's choice in contraception evaluated at the end of a visit."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-contraceptiveChoiceInitial" />
-        <display value="An observation of one's choice in contraception at the beginning of a visit." />
+        <reference value="StructureDefinition/fpar-contraceptiveChoiceInitial"/>
+        <display value="An observation of one's choice in contraception at the beginning of a visit."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-contraceptiveCounseling" />
-        <display value="An education procedure that provides counseling in regards to contraception." />
+        <reference value="StructureDefinition/fpar-contraceptiveCounseling"/>
+        <display value="An education procedure that provides counseling in regards to contraception."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-counselingToAchievePregnancy" />
-        <display value="An education procedure that provides counseling to achieve pregnancy." />
+        <reference value="StructureDefinition/fpar-counselingToAchievePregnancy"/>
+        <display value="An education procedure that provides counseling to achieve pregnancy."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-coverage" />
-        <display value="The FPAR profile of the Coverage resource." />
+        <reference value="StructureDefinition/fpar-coverage"/>
+        <display value="The FPAR profile of the Coverage resource."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-genEncounter" />
-        <display value="The FPAR General Encounter profile of the Encounter resource." />
+        <reference value="StructureDefinition/fpar-genEncounter"/>
+        <display value="The FPAR General Encounter profile of the Encounter resource."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-limitedEnglishProficiencyEval" />
-        <display value="An observation about an individual's ability to communicate in English." />
+        <reference value="StructureDefinition/fpar-limitedEnglishProficiencyEval"/>
+        <display value="An observation about an individual's ability to communicate in English."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-organization" />
-        <display value="The FPAR profile of the Organization resource." />
+        <reference value="StructureDefinition/fpar-organization"/>
+        <display value="The FPAR profile of the Organization resource."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-patient" />
-        <display value="The FPAR profile of the Patient resource." />
+        <reference value="StructureDefinition/fpar-patient"/>
+        <display value="The FPAR profile of the Patient resource."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-practitioner" />
-        <display value="The FPAR profile of the Practitioner resource." />
+        <reference value="StructureDefinition/fpar-practitioner"/>
+        <display value="The FPAR profile of the Practitioner resource."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-pregnancyIntentionEval" />
-        <display value="An observation of an individual's intention to be or not be pregnant." />
+        <reference value="StructureDefinition/fpar-pregnancyIntentionEval"/>
+        <display value="An observation of an individual's intention to be or not be pregnant."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/fpar-pregnancyStatusEval" />
-        <display value="An observation of one's current state of pregnancy." />
+        <reference value="StructureDefinition/fpar-pregnancyStatusEval"/>
+        <display value="An observation of one's current state of pregnancy."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-annualHouseholdIncome" />
-        <display value="An observation of the income range for a household per year." />
+        <reference value="StructureDefinition/hspc-annualHouseholdIncome"/>
+        <display value="An observation of the income range for a household per year."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-BHcgPregSerplQl" />
-        <display value="The observation Choriogonadotropin.beta subunit (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2110-5" />
+        <reference value="StructureDefinition/hspc-BHcgPregSerplQl"/>
+        <display value="The observation Choriogonadotropin.beta subunit (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2110-5"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-BHcgSerplAcnc" />
-        <display value="The observation Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma based on the LOINC code 21198-7" />
+        <reference value="StructureDefinition/hspc-BHcgSerplAcnc"/>
+        <display value="The observation Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma based on the LOINC code 21198-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-bodyWeight" />
-        <display value="An observation of an individual's weight." />
+        <reference value="StructureDefinition/hspc-bodyWeight"/>
+        <display value="An observation of an individual's weight."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-ChlamydiaDnaXxxQlPcr" />
-        <display value="The observation Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 35729-3" />
+        <reference value="StructureDefinition/hspc-ChlamydiaDnaXxxQlPcr"/>
+        <display value="The observation Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 35729-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachAndGcDnaCervixQlPcr" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 45068-4" />
+        <reference value="StructureDefinition/hspc-CTrachAndGcDnaCervixQlPcr"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 45068-4"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachAndGcDnaGenitalQlPcr" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 44807-6" />
+        <reference value="StructureDefinition/hspc-CTrachAndGcDnaGenitalQlPcr"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 44807-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachAndGcDnaUrQlPcr" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 44806-8" />
+        <reference value="StructureDefinition/hspc-CTrachAndGcDnaUrQlPcr"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 44806-8"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachAndGcDnaXxxPcr" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36903-3" />
+        <reference value="StructureDefinition/hspc-CTrachAndGcDnaXxxPcr"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36903-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachAndGcDnaXxxQlBdna" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43406-8" />
+        <reference value="StructureDefinition/hspc-CTrachAndGcDnaXxxQlBdna"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43406-8"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CtrachAndGCDNAXXXQlPCR" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36902-5" />
+        <reference value="StructureDefinition/hspc-CtrachAndGCDNAXXXQlPCR"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36902-5"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaCervixQlPrb" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45067-6" />
+        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaCervixQlPrb"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45067-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaGenitalQlPrb" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 45069-2" />
+        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaGenitalQlPrb"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 45069-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaUrQlPrb" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Urine by DNA probe based on the LOINC code 45074-2" />
+        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaUrQlPrb"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Urine by DNA probe based on the LOINC code 45074-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaVagQlPrb" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45070-0" />
+        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaVagQlPrb"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45070-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaXxxQlPrb" />
-        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 45076-7" />
+        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaXxxQlPrb"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 45076-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachDnaCervMucusQlPcr" />
-        <display value="The observation Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21189-6" />
+        <reference value="StructureDefinition/hspc-CTrachDnaCervMucusQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21189-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachDnaGenitalQlPcr" />
-        <display value="The observation Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6356-0" />
+        <reference value="StructureDefinition/hspc-CTrachDnaGenitalQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6356-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachDnaUrQlPcr" />
-        <display value="The observation Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 6357-8" />
+        <reference value="StructureDefinition/hspc-CTrachDnaUrQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 6357-8"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachDnaUrthQlPcr" />
-        <display value="The observation Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21191-2" />
+        <reference value="StructureDefinition/hspc-CTrachDnaUrthQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21191-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachDnaVagQlPcr" />
-        <display value="The observation Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 45084-1" />
+        <reference value="StructureDefinition/hspc-CTrachDnaVagQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 45084-1"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachDnaXxxPcr" />
-        <display value="The observation Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47212-6" />
+        <reference value="StructureDefinition/hspc-CTrachDnaXxxPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47212-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachDnaXxxPcrAcnc" />
-        <display value="The observation Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49096-1" />
+        <reference value="StructureDefinition/hspc-CTrachDnaXxxPcrAcnc"/>
+        <display value="The observation Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49096-1"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachDnaXxxQlBdna" />
-        <display value="The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43404-3" />
+        <reference value="StructureDefinition/hspc-CTrachDnaXxxQlBdna"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43404-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachDnaXxxQlPcr" />
-        <display value="The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 21613-5" />
+        <reference value="StructureDefinition/hspc-CTrachDnaXxxQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 21613-5"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachL2DnaXxxQlPcr" />
-        <display value="The observation Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47211-8" />
+        <reference value="StructureDefinition/hspc-CTrachL2DnaXxxQlPcr"/>
+        <display value="The observation Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47211-8"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaCervixQlPcr" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50387-0" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaCervixQlPcr"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50387-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaCervixQlPrb" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45078-3" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaCervixQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45078-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaGenitalFlQlPrb" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Genital fluid by DNA probe based on the LOINC code 23838-6" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaGenitalFlQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Genital fluid by DNA probe based on the LOINC code 23838-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaGenitalQlPrb" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 16600-9" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaGenitalQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 16600-9"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaUrQlPcr" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 42931-6" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaUrQlPcr"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 42931-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaUrQlPrb" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urine by DNA probe based on the LOINC code 16601-7" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaUrQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urine by DNA probe based on the LOINC code 16601-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaUrthQlPcr" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53925-4" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaUrthQlPcr"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53925-4"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaUrthQlPrb" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urethra by DNA probe based on the LOINC code 21192-0" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaUrthQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urethra by DNA probe based on the LOINC code 21192-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaVagQlPcr" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53926-2" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaVagQlPcr"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53926-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaVagQlPrb" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45080-9" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaVagQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45080-9"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaXxxQlPcr" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43304-5" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaXxxQlPcr"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43304-5"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CTrachRrnaXxxQlPrb" />
-        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 4993-2" />
+        <reference value="StructureDefinition/hspc-CTrachRrnaXxxQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 4993-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CytoCervix" />
-        <display value="The observation Microscopic observation [Identifier] in Cervix by Cyto stain based on the LOINC code 10524-7" />
+        <reference value="StructureDefinition/hspc-CytoCervix"/>
+        <display value="The observation Microscopic observation [Identifier] in Cervix by Cyto stain based on the LOINC code 10524-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CytoCvxVag" />
-        <display value="The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain|Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain Narrative based on the LOINC code 19766-5" />
+        <reference value="StructureDefinition/hspc-CytoCvxVag"/>
+        <display value="The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain|Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain Narrative based on the LOINC code 19766-5"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CytoCvxVagCoded" />
-        <display value="The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19765-7" />
+        <reference value="StructureDefinition/hspc-CytoCvxVagCoded"/>
+        <display value="The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19765-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CytologyCmntCvxVagCytoImp" />
-        <display value="The observation Cytology study comment Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 19774-9" />
+        <reference value="StructureDefinition/hspc-CytologyCmntCvxVagCytoImp"/>
+        <display value="The observation Cytology study comment Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 19774-9"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CytologyCvxVagDocCyto" />
-        <display value="The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 47528-5" />
+        <reference value="StructureDefinition/hspc-CytologyCvxVagDocCyto"/>
+        <display value="The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 47528-5"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-CytologyCvxVagDocThinPrep" />
-        <display value="The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain.thin prep based on the LOINC code 47527-7" />
+        <reference value="StructureDefinition/hspc-CytologyCvxVagDocThinPrep"/>
+        <display value="The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain.thin prep based on the LOINC code 47527-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-diastolicbp" />
-        <display value="An observation of an individual's diastolic blood pressure based on the LOINC code 8462-4." />
+        <reference value="StructureDefinition/hspc-diastolicbp"/>
+        <display value="An observation of an individual's diastolic blood pressure based on the LOINC code 8462-4."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-GenCategCvxVagCytoImp" />
-        <display value="The observation General categories [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|General categories [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19762-4" />
+        <reference value="StructureDefinition/hspc-GenCategCvxVagCytoImp"/>
+        <display value="The observation General categories [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|General categories [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19762-4"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-gravidity" />
-        <display value="The observation [#] Pregnancies based on the LOINC code 11996-6" />
+        <reference value="StructureDefinition/hspc-gravidity"/>
+        <display value="The observation [#] Pregnancies based on the LOINC code 11996-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HcgPregSerplQl" />
-        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2118-8" />
+        <reference value="StructureDefinition/hspc-HcgPregSerplQl"/>
+        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2118-8"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HcgPregSerQlIaRapid" />
-        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Serum by Rapid immunoassay based on the LOINC code 80385-8" />
+        <reference value="StructureDefinition/hspc-HcgPregSerQlIaRapid"/>
+        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Serum by Rapid immunoassay based on the LOINC code 80385-8"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HcgPregUrQl" />
-        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Urine based on the LOINC code 2106-3" />
+        <reference value="StructureDefinition/hspc-HcgPregUrQl"/>
+        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Urine based on the LOINC code 2106-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HcgSerplAcnc" />
-        <display value="The observation Choriogonadotropin [Units/volume] in Serum or Plasma based on the LOINC code 19080-1" />
+        <reference value="StructureDefinition/hspc-HcgSerplAcnc"/>
+        <display value="The observation Choriogonadotropin [Units/volume] in Serum or Plasma based on the LOINC code 19080-1"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-height" />
-        <display value="An observation for a person's height.  Based on the LOINC code 8302-2." />
+        <reference value="StructureDefinition/hspc-height"/>
+        <display value="An observation for a person's height.  Based on the LOINC code 8302-2."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hiv1AbSerplbldQlEiaRapid" />
-        <display value="The observation HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test based on the LOINC code 68961-2" />
+        <reference value="StructureDefinition/hspc-Hiv1AbSerplbldQlEiaRapid"/>
+        <display value="The observation HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test based on the LOINC code 68961-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hiv1AbSerQlIb" />
-        <display value="The observation HIV 1 Ab [Presence] in Serum by Immunoblot (IB) based on the LOINC code 5221-7" />
+        <reference value="StructureDefinition/hspc-Hiv1AbSerQlIb"/>
+        <display value="The observation HIV 1 Ab [Presence] in Serum by Immunoblot (IB) based on the LOINC code 5221-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hiv1And2AbSerQlEia" />
-        <display value="The observation HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 31201-7" />
+        <reference value="StructureDefinition/hspc-Hiv1And2AbSerQlEia"/>
+        <display value="The observation HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 31201-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hiv1RnaSerplPcrDl17Log" />
-        <display value="The observation HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL based on the LOINC code 48510-2" />
+        <reference value="StructureDefinition/hspc-Hiv1RnaSerplPcrDl17Log"/>
+        <display value="The observation HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL based on the LOINC code 48510-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hiv1RnaSerplPcrDl50" />
-        <display value="The observation HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL based on the LOINC code 48511-0" />
+        <reference value="StructureDefinition/hspc-Hiv1RnaSerplPcrDl50"/>
+        <display value="The observation HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL based on the LOINC code 48511-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hiv1RnaXxxQlPcr" />
-        <display value="The observation HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 5018-7" />
+        <reference value="StructureDefinition/hspc-Hiv1RnaXxxQlPcr"/>
+        <display value="The observation HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 5018-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hiv2AbSerQlEia" />
-        <display value="The observation HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 30361-0" />
+        <reference value="StructureDefinition/hspc-Hiv2AbSerQlEia"/>
+        <display value="The observation HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 30361-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-householdSize" />
-        <display value="An observation of the number of individuals in a household." />
+        <reference value="StructureDefinition/hspc-householdSize"/>
+        <display value="An observation of the number of individuals in a household."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hpv12HrTypesDnaTissQlPrb" />
-        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+66 DNA [Presence] in Tissue by DNA probe based on the LOINC code 73959-9" />
+        <reference value="StructureDefinition/hspc-Hpv12HrTypesDnaTissQlPrb"/>
+        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+66 DNA [Presence] in Tissue by DNA probe based on the LOINC code 73959-9"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hpv16And18AgCervixQl" />
-        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Cervix based on the LOINC code 14503-7" />
+        <reference value="StructureDefinition/hspc-Hpv16And18AgCervixQl"/>
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Cervix based on the LOINC code 14503-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hpv16And18AgGenitalQl" />
-        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Genital specimen based on the LOINC code 12223-4" />
+        <reference value="StructureDefinition/hspc-Hpv16And18AgGenitalQl"/>
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Genital specimen based on the LOINC code 12223-4"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hpv16And18AgUrthQl" />
-        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Urethra based on the LOINC code 14506-0" />
+        <reference value="StructureDefinition/hspc-Hpv16And18AgUrthQl"/>
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Urethra based on the LOINC code 14506-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hpv16And18AgVagQl" />
-        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Vaginal fluid based on the LOINC code 14504-5" />
+        <reference value="StructureDefinition/hspc-Hpv16And18AgVagQl"/>
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Vaginal fluid based on the LOINC code 14504-5"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-Hpv16And18AgXxxQl" />
-        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Unspecified specimen based on the LOINC code 17400-3" />
+        <reference value="StructureDefinition/hspc-Hpv16And18AgXxxQl"/>
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Unspecified specimen based on the LOINC code 17400-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HpvCervix" />
-        <display value="The observation Human papilloma virus identified in Cervix based on the LOINC code 11083-3" />
+        <reference value="StructureDefinition/hspc-HpvCervix"/>
+        <display value="The observation Human papilloma virus identified in Cervix based on the LOINC code 11083-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HpvDnaCervixQlBdna" />
-        <display value="The observation Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 38372-9" />
+        <reference value="StructureDefinition/hspc-HpvDnaCervixQlBdna"/>
+        <display value="The observation Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 38372-9"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HpvDnaCervixQlPrb" />
-        <display value="The observation Human papilloma virus DNA [Presence] in Cervix by DNA probe based on the LOINC code 44550-2" />
+        <reference value="StructureDefinition/hspc-HpvDnaCervixQlPrb"/>
+        <display value="The observation Human papilloma virus DNA [Presence] in Cervix by DNA probe based on the LOINC code 44550-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HpvE6AndE7MrnaCervixQlPcr" />
-        <display value="The observation Human papilloma virus E6+E7 mRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 69002-4" />
+        <reference value="StructureDefinition/hspc-HpvE6AndE7MrnaCervixQlPcr"/>
+        <display value="The observation Human papilloma virus E6+E7 mRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 69002-4"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HpvIHRisk1DnaCervixQlBdna" />
-        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 30167-1" />
+        <reference value="StructureDefinition/hspc-HpvIHRisk1DnaCervixQlBdna"/>
+        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 30167-1"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HpvIHRisk1DnaXxxQlPcr" />
-        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49896-4" />
+        <reference value="StructureDefinition/hspc-HpvIHRisk1DnaXxxQlPcr"/>
+        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49896-4"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HpvIHRisk4DnaCervixQlBdna" />
-        <display value="The observation Human papilloma virus16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 59420-0" />
+        <reference value="StructureDefinition/hspc-HpvIHRisk4DnaCervixQlBdna"/>
+        <display value="The observation Human papilloma virus16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 59420-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HpvIHRiskDnaCervixQlPrb" />
-        <display value="The observation Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe based on the LOINC code 21440-3" />
+        <reference value="StructureDefinition/hspc-HpvIHRiskDnaCervixQlPrb"/>
+        <display value="The observation Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe based on the LOINC code 21440-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HpvRrnaGenitalQlPcr" />
-        <display value="The observation Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6514-4" />
+        <reference value="StructureDefinition/hspc-HpvRrnaGenitalQlPcr"/>
+        <display value="The observation Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6514-4"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-HpvRrnaXxxQlPcr" />
-        <display value="The observation Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 6516-9" />
+        <reference value="StructureDefinition/hspc-HpvRrnaXxxQlPcr"/>
+        <display value="The observation Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 6516-9"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaAgGenitalQlEia" />
-        <display value="The observation Neisseria gonorrhoeae Ag [Presence] in Genital specimen by Immunoassay based on the LOINC code 6487-3" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaAgGenitalQlEia"/>
+        <display value="The observation Neisseria gonorrhoeae Ag [Presence] in Genital specimen by Immunoassay based on the LOINC code 6487-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaCervixQlCult" />
-        <display value="The observation Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture based on the LOINC code 688-2" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaCervixQlCult"/>
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture based on the LOINC code 688-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaCervMucusQlPcr" />
-        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21414-8" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaCervMucusQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21414-8"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaGenitalQlPcr" />
-        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 47387-6" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaGenitalQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 47387-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaUrQlPcr" />
-        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 21416-3" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaUrQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 21416-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaUrthQlPcr" />
-        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21415-5" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaUrthQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21415-5"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaVagQlPcr" />
-        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 32705-6" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaVagQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 32705-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaXxxQlBdna" />
-        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43403-5" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaXxxQlBdna"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43403-5"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaXxxQlPcr" />
-        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 24111-7" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaXxxQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 24111-7"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaGenitalQlCult" />
-        <display value="The observation Neisseria gonorrhoeae [Presence] in Genital specimen by Organism specific culture based on the LOINC code 691-6" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaGenitalQlCult"/>
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Genital specimen by Organism specific culture based on the LOINC code 691-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaGenLochiaQlCult" />
-        <display value="The observation Neisseria gonorrhoeae [Presence] in Genital lochia by Organism specific culture based on the LOINC code 692-4" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaGenLochiaQlCult"/>
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Genital lochia by Organism specific culture based on the LOINC code 692-4"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPcr" />
-        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50388-8" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50388-8"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPrb" />
-        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 32198-4" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPrb"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 32198-4"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPcr" />
-        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53927-0" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53927-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPrb" />
-        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by DNA probe based on the LOINC code 32199-2" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPrb"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by DNA probe based on the LOINC code 32199-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaVagQlPcr" />
-        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53879-3" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaVagQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53879-3"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPcr" />
-        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43305-2" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43305-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPrb" />
-        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 5028-6" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPrb"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 5028-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaVagQlCult" />
-        <display value="The observation Neisseria gonorrhoeae [Presence] in Vaginal fluid by Organism specific culture based on the LOINC code 693-2" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaVagQlCult"/>
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Vaginal fluid by Organism specific culture based on the LOINC code 693-2"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-NGonorrhoeaXxxQlCult" />
+        <reference value="StructureDefinition/hspc-NGonorrhoeaXxxQlCult"/>
         <display value="The observation Neisseria gonorrhoeae [Presence] in Unspecified specimen by Organism specific culture based on the LOINC code 698-1"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-parity" />
-        <display value="The observation [#] Parity based on the LOINC code 11977-6" />
+        <reference value="StructureDefinition/hspc-parity"/>
+        <display value="The observation [#] Parity based on the LOINC code 11977-6"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-sexLastThreeMonths" />
-        <display value="An observation to determine if an individual has engaged in sexual activity within the last three months." />
+        <reference value="StructureDefinition/hspc-sexLastThreeMonths"/>
+        <display value="An observation to determine if an individual has engaged in sexual activity within the last three months."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-sexLastTwelveMonths" />
-        <display value="An observation to determine if an individual has engaged in sexual activity within the last twelve months." />
+        <reference value="StructureDefinition/hspc-sexLastTwelveMonths"/>
+        <display value="An observation to determine if an individual has engaged in sexual activity within the last twelve months."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-smokingStatus" />
-        <display value="An observation about how much an individual smokes." />
+        <reference value="StructureDefinition/hspc-smokingStatus"/>
+        <display value="An observation about how much an individual smokes."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-StatOfAdqCvxVagCytoImp" />
-        <display value="The observation Statement of adequacy [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|Statement of adequacy [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19764-0" />
+        <reference value="StructureDefinition/hspc-StatOfAdqCvxVagCytoImp"/>
+        <display value="The observation Statement of adequacy [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|Statement of adequacy [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19764-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-StudyreportFindPtCvxVagDocCytology" />
-        <display value="The observation Cytology Cervical or vaginal smear or scraping study based on the LOINC code 33717-0" />
+        <reference value="StructureDefinition/hspc-StudyreportFindPtCvxVagDocCytology"/>
+        <display value="The observation Cytology Cervical or vaginal smear or scraping study based on the LOINC code 33717-0"/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-systolicbp" />
-        <display value="The observation of an individual's systolic blood pressure." />
+        <reference value="StructureDefinition/hspc-systolicbp"/>
+        <display value="The observation of an individual's systolic blood pressure."/>
       </sourceReference>
     </resource>
     <resource>
-      <example value="false" />
+      <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/hspc-ThinPrepCervix" />
-        <display value="The observation Microscopic observation [Identifier] in Cervix by Cyto stain.thin prep based on the LOINC code 18500-9" />
+        <reference value="StructureDefinition/hspc-ThinPrepCervix"/>
+        <display value="The observation Microscopic observation [Identifier] in Cervix by Cyto stain.thin prep based on the LOINC code 18500-9"/>
       </sourceReference>
     </resource>
 	<resource>	
