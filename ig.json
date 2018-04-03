@@ -1,4 +1,5 @@
 {
+  "version": "3.2.0",
   "tool": "jekyll",
   "logging":["init","progress","context","html","tx"],
   "paths": {
@@ -16,11 +17,11 @@
   }],
   "defaults": {
     "Any": {
-      "template-format": "instance-template-format.html",
-      "template-base": "instance-template-base.html"
+      "template-base": "instance-template-base.html",
+      "template-format": "instance-template-fmt.html"
     },
     "StructureDefinition": {
-      "template-format": "instance-template-sd.html"
+      "template-defns": "instance-template-defns.html"
     }
   },
   "canonicalBase": "http://hl7.org/fhir/fpar",
