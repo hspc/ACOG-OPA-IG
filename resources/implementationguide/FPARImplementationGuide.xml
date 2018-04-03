@@ -16,7 +16,7 @@
   </contact> 
   <description value="The Implementation Guide resource profile for FPAR"/>
   <package>
-    <name value="base"/>
+    <name value="Profiles and resources in this implementation guide."/>
     <resource>
       <example value="false"/>
       <sourceReference>
