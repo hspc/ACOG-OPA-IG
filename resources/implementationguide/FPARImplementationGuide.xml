@@ -855,7 +855,20 @@
 		<reference value="ValueSet/communicationMode"/>
 		<display value="HSPC Communication Mode"/>
 		</sourceReference>
-	</resource>	
+	</resource>
+	<resource>
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/contraceptionProvisionMethod"/>
+		<display value="Contraception Provision Method"/>
+		</sourceReference>
+	</resource>
+	<resource>
+		<exmaple value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/contraceptiveChoice"/>
+		<display value="Contraceptive Choice"/>
+	</resource>
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
@@ -883,7 +896,14 @@
 		<reference value="ValueSet/encounterReason"/>
 		<display value="HSPC Encounter Reason"/>
 		</sourceReference>
-	</resource>	
+	</resource>
+	<resource>
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/englishProficiency"/>
+		<display value="English Proficiency"/>
+		</sourceReference>
+	</resource>
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
@@ -930,14 +950,119 @@
 		<example value="false"/>
 		<sourceReference>
 		<reference value="ValueSet/viplevel"/>
-		<display value="HSPC VIP Level"/>
+		<display value="HSPC VIP Level value set"/>
 		</sourceReference>
 	</resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
 		<reference value="ValueSet/yesNo"/>
-		<display value="HSPC Yes/No Value Set"/>
+		<display value="HSPC Yes/No value Set"/>
+		</sourceReference>
+	</resource>
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/fparAnnualHouseholdIncomeRanges"/>
+		<display value="FPAR Annual Household Income Ranges"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/fparDetectedNonDetectedEqInd"/>
+		<display value="FPAR Detected Non Detected Equivalent Indeterminate"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/fparDetectedNotDetected"/>
+		<display value="FPAR Detected/Not detected"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/fparHIVAbPosNegEqInd"/>
+		<display value="FPAR HIV Ab Positive Negative Equivalent Indeterminate"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/fparHIVAbReactiveNonReactive"/>
+		<display value="FPAR HIV Ab Reactive/Non reactive"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/fparProviderRole"/>
+		<display value="FPAR Provider Role"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/fparSmokingStatus"/>
+		<display value="FPAR Smoking Status"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/negativePositive"/>
+		<display value="Negative/Positive"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/organismDetectionOrdLabResult"/>
+		<display value="Organism Detection Ordianl Lab Result"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/payorForVisit"/>
+		<display value="Payor for Visit"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/pregnancyIntention"/>
+		<display value="Pregnancy Intention"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/pregnancyStatus"/>
+		<display value="Pregnancy Status"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/pregnancyStatusReportingMethod"/>
+		<display value="Pregnancy Status Reporting Method"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/reasonNoContraceptiveChosen"/>
+		<display value="Reason No Contraceptive Chosen"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/virginNonVirgin"/>
+		<display value="Virgin/Non Virgin"/>
 		</sourceReference>
 	</resource>	
 	<resource>	
