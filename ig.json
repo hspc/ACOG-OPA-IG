@@ -12,8 +12,6 @@
     "specification": "http://hl7.org/fhir/2017Jan/"
   },
   "dependencyList": [{
-    "name": "USCore",
-    "location": "http://hl7.org/fhir/us/core/"
   }],
   "defaults": {
     "Any": {
