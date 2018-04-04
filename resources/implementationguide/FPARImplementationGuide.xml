@@ -16,7 +16,8 @@
   <description value="The Implementation Guide resource profile for FPAR"/>
   <copyright value="The Office of Population Affairs (OPA)"/>
   <package>
-    <name value="Profiles and resources in this implementation guide."/>
+	<name value="FPAR Implementation Guide"/>
+    <description value="Profiles and resources in this implementation guide."/>
     <resource>
       <example value="false"/>
       <sourceReference>
