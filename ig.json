@@ -11,8 +11,6 @@
     "txCache": "txCache",
     "specification": "http://hl7.org/fhir/2017Jan/"
   },
-  "dependencyList": [{
-  }],
   "defaults": {
     "Any": {
       "template-base": "instance-template-base.html",
