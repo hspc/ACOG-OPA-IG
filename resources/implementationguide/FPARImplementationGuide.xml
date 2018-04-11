@@ -866,7 +866,7 @@
 		</sourceReference>
 	</resource>
 	<resource>
-		<exmaple value="false"/>
+		<example value="false"/>
 		<sourceReference>
 		<reference value="ValueSet/contraceptiveChoice"/>
 		<display value="Contraceptive Choice"/>
