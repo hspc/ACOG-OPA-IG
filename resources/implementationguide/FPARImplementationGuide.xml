@@ -1085,7 +1085,7 @@
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="CodeSystem/LabNullFlavor"/>
+		<reference value="ValueSet/LabNullFlavor"/>
 		<display value="HSPC Lab Null Flavor"/>
 		</sourceReference>
 	</resource>	
