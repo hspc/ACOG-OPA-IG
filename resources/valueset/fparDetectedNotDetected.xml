@@ -10,7 +10,7 @@
     <status value="draft"/>
     <publisher value="Family Planning Annual Report"/>
     <date value="2018-03-29"/>
-    <description value="Select SNOMED CT codes. A set of codes that describe the two results of &quotdetected&quot and &quotnot detected&quot."/>
+    <description value="Select SNOMED CT codes. A set of codes that describe the two results of &quot;detected&quot; and &quot;not detected&quot;."/>
     <immutable value="true"/>
     <copyright value="TBD"/>
     <extensible value="true"/>
