@@ -870,6 +870,7 @@
 		<sourceReference>
 		<reference value="ValueSet/contraceptiveChoice"/>
 		<display value="Contraceptive Choice"/>
+		</sourceReference>
 	</resource>
 	<resource>	
 		<example value="false"/>
