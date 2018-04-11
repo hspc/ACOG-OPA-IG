@@ -7,3 +7,9 @@ tar tf org.hl7.fhir.igpublisher.jar >/dev/null 2>&1
 if [ ! $? -eq 0 ]; then
   echo "Jar file is corrupt"
 fi
+
+#current fhir version
+echo "Current FHIR version:"
+curl -v --silent http://build.fhir.org 2>&1 \
+  | grep -E "<title>.*</title>" \
+  | sed -e 's/<\/*title>//g' -e 's/Index - //'
