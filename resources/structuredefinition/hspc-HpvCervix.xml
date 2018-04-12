@@ -549,13 +549,7 @@
       </fixedCodeableConcept>
       <mustSupport value="true"/>
       <isSummary value="true"/>	
-      <binding>
-        <strength value="preferred"/>
-        <description value="The list of LOINC codes that are used for coded lab tests"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/CodedLabCodes"/>
-        </valueSetReference>
-      </binding>
+
       <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
@@ -1877,13 +1871,7 @@
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <binding>
-        <strength value="preferred"/>
-        <description value="The list of LOINC codes that are used for coded lab tests"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/CodedLabCodes"/>
-        </valueSetReference>
-      </binding>
+
     </element>
     <element id="Observation:hspcHpvCervix.valueCodeableConcept">
       <path value="Observation.valueCodeableConcept"/>

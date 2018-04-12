@@ -417,7 +417,7 @@
         <strength value="preferred"/>
         <description value="The conditions during which an individual's height was measured"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-heightPrecond"/>
+          <reference value="http://hl7.org/fhir/hspc/CodeSystem/heightPrecond"/>
         </valueSetReference>
       </binding>
     </element>
@@ -1298,7 +1298,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method or device used to measure an individual's height"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-heightMeasMethodDevice"/>
+          <reference value="http://hl7.org/fhir/hspc/CodeSystem/heightMeasMethodDevice"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2209,7 +2209,7 @@
         <strength value="preferred"/>
         <description value="The conditions during which an individual's height was measured"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-heightPrecond"/>
+          <reference value="http://hl7.org/fhir/hspc/CodeSystem/heightPrecond"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2315,7 +2315,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method or device used to measure an individual's height"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-heightMeasMethodDevice"/>
+          <reference value="http://hl7.org/fhir/hspc/CodeSystem/heightMeasMethodDevice"/>
         </valueSetReference>
       </binding>
     </element>

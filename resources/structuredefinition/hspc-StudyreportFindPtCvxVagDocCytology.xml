@@ -551,13 +551,7 @@
       </fixedCodeableConcept>
       <mustSupport value="true"/>
       <isSummary value="true"/>
-      <binding>
-        <strength value="preferred"/>
-        <description value="The set of LOINC codes for narrative lab tests"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/NarrativeLabCodes"/>
-        </valueSetReference>
-      </binding>
+
       <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
@@ -1907,13 +1901,7 @@
       </fixedCodeableConcept>
       <mustSupport value="true"/>
       <isModifier value="false"/>
-      <binding>
-        <strength value="preferred"/>
-        <description value="The set of LOINC codes for narrative lab tests"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/NarrativeLabCodes"/>
-        </valueSetReference>
-      </binding>
+
       <mapping>
         <identity value="argonaut-dq-dstu2"/>
         <map value="Observation.code"/>

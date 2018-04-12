@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="abnInt-NumericNom"/>
+  <id value="deltaFlag-numericNom"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
   </meta>
-  <url value="http://hl7.org/fhir/hspc/ValueSet/abnInt-NumericNom"/>
+  <url value="http://hl7.org/fhir/hspc/ValueSet/deltaFlag-numericNom"/>
   <version value="0.01"/>
   <name value="Abnormal Interpretation Numeric Nom"/>
   <status value="draft"/>
@@ -16,39 +16,31 @@
       <value value="http://healtcaresoa.org"/>
     </telecom>
   </contact>
-  <date value="2015-04-14"/>
+  <date value="2014-06-25"/>
   <description value="HL7 V3:ObservationInterpretation OID: 2.16.840.1.113883.5.83 + SNOMED CT SNOMED CT concepts from the Degree findings (qualifier value)272520006, Presence findings (qualifier value)260411009, Absence findings (qualifier value)272519000"/>
   <copyright value="IHC"/>
   <compose>
     <include>
       <system value="http://hl7.org/fhir/v3/ObservationInterpretation"/>
       <concept>
-        <code value="H"/>
-        <display value="Higher Than Normal"/>
+        <code value="U"/>
+        <display value="Significant Change Up"/>
       </concept>
       <concept>
-        <code value="L"/>
-        <display value="Lower Than Normal"/>
+        <code value="D"/>
+        <display value="Significant Change Down"/>
       </concept>
       <concept>
-        <code value="A"/>
-        <display value="Abnormal"/>
+        <code value="B"/>
+        <display value="Better"/>
       </concept>
       <concept>
-        <code value="AA"/>
-        <display value="Very Abnormal"/>
-      </concept>
-      <concept>
-        <code value="HH"/>
-        <display value="Panic High"/>
-      </concept>
-      <concept>
-        <code value="LL"/>
-        <display value="Panic Low"/>
+        <code value="W"/>
+        <display value="Worse"/>
       </concept>
     </include>
     <include>
-      <system value="http://fhir.org/guides/fpar/CodeSystem/abnInt-NumericNom"/>
+      <system value="http://fhir.org/guides/hspc/CodeSystem/deltaFlag-numericNom"/>
     </include>
   </compose>
 </ValueSet>

@@ -28,6 +28,10 @@
     "CodeSystem/CodeSystem-arrivalStatus":{"base":"CodeSystem-arrivalStatus.html"},
     "CodeSystem/CodeSystem-locationCondition":{"base":"CodeSystem-locationCondition.html"},
     "CodeSystem/CodeSystem-nullValueReason":{"base":"CodeSystem-nullValueReason.html"},
+	"CodeSystem/weightMeasMethodDevice":{"base":"CodeSystem-weightMeasMethodDevice.html"},
+	"CodeSystem/bpmeasmethoddevice":{"base":"CodeSystem-bpmeasmethoddevice.html"},
+	"CodeSystem/heightMeasMethodDevice":{"base":"CodeSystem-heightMeasMethodDevice.html"},
+	"CodeSystem/heightPrecond":{"base":"CodeSystem-heightPrecond.html"},
     "Extension/administrativeEncounterId":{"base":"administrativeEncounterId.html"},
     "Extension/admitMedicationId":{"base":"Extension-admitMedicationId.html"},
     "Extension/ambulatoryStatus":{"base":"Extension-ambulatoryStatus.html"},
@@ -202,11 +206,18 @@
     "ValueSet/fparSmokingStatus":{"base":"ValueSet-fparSmokingStatus.html"},
     "ValueSet/negativePositive":{"base":"ValueSet-negativePositive.html"},
     "ValueSet/organismDetectionOrdLabResult":{"base":"ValueSet-organismDetectionOrdLabResult.html"},
-    "ValueSet/payorForVisit":{"base":"ValueSet-payorForVisit.html"},
+    "ValueSet/primaryInsuranceClassification":{"base":"ValueSet-primaryInsuranceClassification.html"},
     "ValueSet/pregnancyIntention":{"base":"ValueSet-pregnancyIntention.html"},
     "ValueSet/pregnancyStatus":{"base":"ValueSet-pregnancyStatus.html"},
     "ValueSet/pregnancyStatusReportingMethod":{"base":"ValueSet-pregnancyStatusReportingMethod.html"},
     "ValueSet/reasonNoContraceptiveChosen":{"base":"ValueSet-reasonNoContraceptiveChosen.html"},
-    "ValueSet/virginNonVirgin":{"base":"ValueSet-virginNonVirgin.html"}
+    "ValueSet/virginNonVirgin":{"base":"ValueSet-virginNonVirgin.html"},
+	"ValueSet/coverageType":{"base";"ValueSet-coverageType.html"},
+	"ValueSet/observation-weightPrecond":{"base":"ValueSet-observation-weightPrecond.html"},
+	"ValueSet/weightmassunits":{"base":"ValueSet-weightmassunits.html"},
+	"ValueSet/deltaFlag-numericNom":{"base":"ValueSet-deltaFlag-numericNom.html"},
+	"ValueSet/focalSubject":{"base":"ValueSet-focalSubject.html"},
+	"ValueSet/bpmeasbodylocationprecoord":{"base":"ValueSet-bpmeasbodylocationprecoord.hmtl"},
+	"ValueSet/fparHIV1RnaDetectedNotDetected":{"base":"ValueSet-fparHIV1RnaDetectedNotDetected.html"}
   }
 }

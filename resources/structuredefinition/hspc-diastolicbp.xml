@@ -1308,7 +1308,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method used to measure a systolic blood pressure"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/bpmeasmethoddevice"/>
+          <reference value="http://hl7.org/fhir/hspc/CodeSystemt/bpmeasmethoddevice"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2339,7 +2339,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method used to measure a blood pressure"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/bpmeasmethoddevice"/>
+          <reference value="http://hl7.org/fhir/hspc/CodeSystemt/bpmeasmethoddevice"/>
         </valueSetReference>
       </binding>
     </element>

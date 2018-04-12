@@ -1908,7 +1908,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Practitioner:fpar-practitioner.communication.extension:communicationmode$Extension">
+    <element id="Practitioner:fpar-practitioner.communication.extension:communicationMode">
       <path value="Practitioner.communication.extension"/>
       <sliceName value="CommunicationMode"/>
       <short value="Extension"/>
@@ -1938,7 +1938,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method by which an individual communicates"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/communicationMode"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/communicationMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2137,7 +2137,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Practitioner:hspcproviderpractitioner.communication.extension:communicationmode$Extension">
+    <element id="Practitioner:fpar-practitioner.communication.extension:communicationMde">
       <path value="Practitioner.communication.extension"/>
       <sliceName value="CommunicationMode"/>
       <definition value="The method by which an individual communicates."/>
@@ -2152,7 +2152,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method by which an individual communicates"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/communicationMode"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/communicationMode"/>
         </valueSetReference>
       </binding>
     </element>

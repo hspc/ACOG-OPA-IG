@@ -1187,7 +1187,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the kind of documentation used to validate a date of birth"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/bdverifiedmethod"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/bdverifiedmethod"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2764,7 +2764,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method by which an individual communicates"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/communicationMode"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/communicationMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3413,7 +3413,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method by which an individual communicates"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/communicationMode"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/communicationMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3472,7 +3472,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the kind of documentation used to validate a date of birth"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/bdverifiedmethod"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/bdverifiedmethod"/>
         </valueSetReference>
       </binding>
     </element>
