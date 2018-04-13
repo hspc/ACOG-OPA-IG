@@ -10,13 +10,13 @@
   <name value="Abnormal Interpretation Numeric Nom"/>
   <status value="draft"/>
   <publisher value="HSPC"/>
+  <date value="2015-04-14"/>
   <contact>
     <telecom>
       <system value="other"/>
       <value value="http://healtcaresoa.org"/>
     </telecom>
   </contact>
-  <date value="2015-04-14"/>
   <description value="HL7 V3:ObservationInterpretation OID: 2.16.840.1.113883.5.83 + SNOMED CT SNOMED CT concepts from the Degree findings (qualifier value)272520006, Presence findings (qualifier value)260411009, Absence findings (qualifier value)272519000"/>
   <copyright value="IHC"/>
   <compose>

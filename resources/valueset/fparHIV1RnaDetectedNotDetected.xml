@@ -10,7 +10,7 @@
     <status value="draft"/>
     <publisher value="Family Planning Annual Report"/>
     <date value="2018-03-29"/>
-    <description value="Select SNOMED CT codes. A set of codes that describe the HIV1 RNA results of &quot;detected&quot;, &quot;not detected&quot;, and &quot:indeterminate&quot;."/>
+    <description value="Select SNOMED CT codes. A set of codes that describe the HIV1 RNA results of &quot;detected&quot;, &quot;not detected&quot;, and &quot;indeterminate&quot;."/>
     <immutable value="true"/>
     <copyright value="TBD"/>
     <extensible value="true"/>
