@@ -1039,7 +1039,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe test results that are ordinal"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/observationFindings"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/negativePositive"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1166,7 +1166,7 @@
         <strength value="preferred"/>
         <description value="The list of reasons a lab value may be missing"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/LabNullFlavor"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/LabNullFlavor"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1206,7 +1206,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe in what way a lab value is abnormal"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/abnInt-NumericNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/abnInt-NumericNom"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2234,10 +2234,10 @@
       <isSummary value="true"/>
       <binding>
       	<strength value="preferred"/>
-	<description value="The codes used as result values"/>
-	<valueSetReference>
-	  <reference value="http://hl7.org/fhir/fpar/ValueSet/negativePositive"/>
-	</valueSetReference>
+		<description value="The codes used as result values"/>
+		<valueSetReference>
+		  <reference value="http://hl7.org/fhir/fpar/ValueSet/negativePositive"/>
+		</valueSetReference>
       </binding>
     </element>
   </differential>

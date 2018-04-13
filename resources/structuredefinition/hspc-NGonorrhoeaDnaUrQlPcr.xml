@@ -1038,7 +1038,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe test results that are ordinal"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/observationFindings"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/observationFindings"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1165,7 +1165,7 @@
         <strength value="preferred"/>
         <description value="The list of reasons a lab value may be missing"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/hspc-LabNullFlavor"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-LabNullFlavor"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1205,7 +1205,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe in what way a lab value is abnormal"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/hspc-abnInt-NumericNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-abnInt-NumericNom"/>
         </valueSetReference>
       </binding>
       <mapping>

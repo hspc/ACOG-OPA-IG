@@ -1083,7 +1083,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe in what way a lab value is abnormal"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/abnInt-NumericNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/abnInt-NumericNom"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2145,7 +2145,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe in what way a lab value is abnormal"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/abnInt-NumericNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/abnInt-NumericNom"/>
         </valueSetReference>
       </binding>
     </element>

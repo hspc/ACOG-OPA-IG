@@ -417,7 +417,7 @@
         <strength value="preferred"/>
         <description value="The conditions during which an individual's height was measured"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-weightPrecond"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/observation-weightPrecond"/>
         </valueSetReference>
       </binding>
     </element>
@@ -1115,7 +1115,7 @@
         <strength value="preferred"/>
         <description value="The list of codes that describe the mass units used for weight."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/weightmassunits"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/weightmassunits"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2215,7 +2215,7 @@
         <strength value="preferred"/>
         <description value="The conditions during which an individual's weight was measured"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-weightPrecond"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/observation-weightPrecond"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2299,7 +2299,7 @@
         <strength value="preferred"/>
         <description value="The list of codes that describe the mass units used for weight."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/weightmassunits"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/weightmassunits"/>
         </valueSetReference>
       </binding>
     </element>
