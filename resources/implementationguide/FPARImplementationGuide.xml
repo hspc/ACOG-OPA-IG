@@ -1067,7 +1067,56 @@
 		<reference value="ValueSet/virginNonVirgin"/>
 		<display value="Virgin/Non Virgin"/>
 		</sourceReference>
-	</resource>	
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/coverageType"/>
+		<display value="Coverage Type"/>
+		</sourceReference>
+	</resource>			
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/observation-weightPrecond"/>
+		<display value="Weight Precondition"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/weightmassunits"/>
+		<display value="Weight Mass Units"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/deltaFlag-numericNom"/>
+		<display value="Delta Flag Numeric Nom"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/focalSubject"/>
+		<display value="Focal Subject"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/bpmeasbodylocationprecoord"/>
+		<display value="Blood Pressure Measure Body Location Precoordinated"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/fparHIV1RnaDetectedNotDetected"/>
+		<display value="FPAR HIV1 RNA Detected Not Detected"/>
+		</sourceReference>
+	</resource>
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
@@ -1102,6 +1151,34 @@
 		<reference value="CodeSystem/nullValueReason"/>
 		<display value="HSPC Null Value Reason code system"/>
 		</sourceReference>
-	</resource>	
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/weightMeasMethodDevice"/>
+		<display value="Weight Measure Method Device"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/bpmeasmethoddevice"/>
+		<display value="Blood Pressure Measure Method Device"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/heightMeasMethodDevice"/>
+		<display value="Height Measure Method Device"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/heightPrecond"/>
+		<display value="Height Precondition"/>
+		</sourceReference>
+	</resource>
   </package>
 </ImplementationGuide> 
