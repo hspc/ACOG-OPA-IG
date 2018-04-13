@@ -844,7 +844,7 @@
         <strength value="preferred"/>
         <description value="The list of reasons a lab value may be missing"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/LabNullFlavor"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/LabNullFlavor"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -884,7 +884,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe in what way a lab value is abnormal"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/abnInt-CodedNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/abnInt-CodedNom"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1887,7 +1887,7 @@
         <strength value="preferred"/>
         <description value="The list of reasons a lab value may be missing"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/LabNullFlavor"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/LabNullFlavor"/>
         </valueSetReference>
       </binding>
     </element>
@@ -1902,7 +1902,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe in what way a lab value is abnormal"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/abnInt-CodedNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/abnInt-CodedNom"/>
         </valueSetReference>
       </binding>
     </element>

@@ -415,7 +415,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the manner in which a value has changed from a previous value"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/deltaFlag-numericNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/deltaFlag-numericNom"/>
         </valueSetReference>
       </binding>
     </element>
@@ -450,7 +450,7 @@
         <description
                      value="The set of codes that describe the subject of an observation when not the patient of record"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/focalSubject"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/focalSubject"/>
         </valueSetReference>
       </binding>
     </element>
@@ -1265,7 +1265,7 @@
         <strength value="example"/>
         <description value="Codes describing anatomical locations. May include laterality."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/bpmeasbodylocationprecoord"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/bpmeasbodylocationprecoord"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1308,7 +1308,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method used to measure a systolic blood pressure"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/CodeSystemt/bpmeasmethoddevice"/>
+          <reference value="http://hl7.org/fhir/fpar/CodeSystemt/bpmeasmethoddevice"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2203,7 +2203,7 @@
         <strength value="preferred"/>
         <description value="The codes that describe in what way a numeric result is significantly different from its predecesor"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/deltaFlag-numericNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/deltaFlag-numericNom"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2223,7 +2223,7 @@
         <strength value="preferred"/>
         <description value="The set of codes that describe the subject of an observation when not the patient of record"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/focalSubject"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/focalSubject"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2326,7 +2326,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe where on/in the body an observation or procedure took place"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/bpmeasbodylocationprecoord"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/bpmeasbodylocationprecoord"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2339,7 +2339,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the method used to measure a blood pressure"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/CodeSystemt/bpmeasmethoddevice"/>
+          <reference value="http://hl7.org/fhir/fpar/CodeSystemt/bpmeasmethoddevice"/>
         </valueSetReference>
       </binding>
     </element>

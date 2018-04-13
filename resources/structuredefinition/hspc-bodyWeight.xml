@@ -349,7 +349,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the manner in which a value has changed from a previous value"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/deltaFlag-numericNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/deltaFlag-numericNom"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2175,7 +2175,7 @@
         <strength value="preferred"/>
         <description value="A set of codes that describe the manner in which a value has changed from a previous value"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/deltaFlag-numericNom"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/deltaFlag-numericNom"/>
         </valueSetReference>
       </binding>
     </element>
