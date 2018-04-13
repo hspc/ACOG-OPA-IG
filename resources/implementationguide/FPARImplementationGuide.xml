@@ -1029,8 +1029,8 @@
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="ValueSet/payorForVisit"/>
-		<display value="Payor for Visit"/>
+		<reference value="ValueSet/primaryInsuranceClassification"/>
+		<display value="Primary Insurance Classification"/>
 		</sourceReference>
 	</resource>	
 	<resource>	
