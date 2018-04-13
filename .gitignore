@@ -6,4 +6,4 @@
 /txCache/
 *.swp
 *.zip
-/org.hl7.fhir.igpublisher.jar
+*.jar
