@@ -212,7 +212,7 @@
     "ValueSet/pregnancyStatusReportingMethod":{"base":"ValueSet-pregnancyStatusReportingMethod.html"},
     "ValueSet/reasonNoContraceptiveChosen":{"base":"ValueSet-reasonNoContraceptiveChosen.html"},
     "ValueSet/virginNonVirgin":{"base":"ValueSet-virginNonVirgin.html"},
-	"ValueSet/coverageType":{"base";"ValueSet-coverageType.html"},
+	"ValueSet/coverageType":{"base":"ValueSet-coverageType.html"},
 	"ValueSet/observation-weightPrecond":{"base":"ValueSet-observation-weightPrecond.html"},
 	"ValueSet/weightmassunits":{"base":"ValueSet-weightmassunits.html"},
 	"ValueSet/deltaFlag-numericNom":{"base":"ValueSet-deltaFlag-numericNom.html"},
