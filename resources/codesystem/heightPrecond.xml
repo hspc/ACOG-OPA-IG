@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="observation-heightPrecond"/>
-  <url value="http://hl7.org/fhir/hspc/CodeSystem/heightPrecond"/>
+  <id value="heightPrecond"/>
+  <url value="http://hl7.org/fhir/fpar/CodeSystem/heightPrecond"/>
   <version value="0.01"/>
   <name value="HSPC Height Meas Associated Precondition"/>
   <status value="draft"/>
