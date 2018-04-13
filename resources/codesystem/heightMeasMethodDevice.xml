@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="observation-heightMeasMethodDevice"/>
+  <id value="heightMeasMethodDevice"/>
   <url value="http://hl7.org/fhir/hspc/CodeSystem/heightMeasMethodDevice"/>
   <version value="0.01"/>
   <name value="HSPC Height Meas Method Device"/>
