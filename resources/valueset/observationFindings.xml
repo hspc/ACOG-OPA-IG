@@ -5,7 +5,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
   </meta>
-  <url value="http://hl7.org/fhir/hspc/ValueSet/observationFindings"/>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/observationFindings"/>
   <version value="0.01"/>
   <name value="HSPC Findings Value Set Definition"/>
   <status value="draft"/>
