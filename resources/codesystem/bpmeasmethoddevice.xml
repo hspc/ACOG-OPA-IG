@@ -2,7 +2,7 @@
 
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="bpmeasmethoddevice"/>
-  <url value="http://hl7.org/fhir/hspc/CodeSystem/bpmeasmethoddevice"/>
+  <url value="http://hl7.org/fhir/fpar/CodeSystem/bpmeasmethoddevice"/>
   <name value="HSPC Blood Pressure Measurement Method/Device Value Set"/>
   <status value="draft"/>
   <experimental value="false"/>
