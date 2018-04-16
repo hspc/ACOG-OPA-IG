@@ -808,7 +808,7 @@
       <binding>
       	<strength value="preferred"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-yesNo"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/yesNo"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -2013,7 +2013,7 @@
       <binding>
       	<strength value="preferred"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/fpar/ValueSet/hspc-yesNo"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/yesNo"/>
         </valueSetReference>
       </binding>
       <mapping>
