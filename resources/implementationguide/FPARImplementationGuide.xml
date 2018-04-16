@@ -1025,7 +1025,7 @@
 		<reference value="ValueSet/fparHIV1RnaDetectedNotDetected"/>
 		<display value="FPAR HIV1 RNA Detected Not Detected"/>
 		</sourceReference>
-	<resource>	
+	</resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
