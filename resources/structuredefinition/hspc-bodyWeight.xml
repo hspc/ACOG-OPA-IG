@@ -296,9 +296,9 @@
       <path value="Observation.extension"/>
       <slicing id="8">
         <discriminator>
-	  <type value="value"/>
-	  <path value="url"/>
-	</discriminator>
+		  <type value="value"/>
+		  <path value="url"/>
+		</discriminator>
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
@@ -319,7 +319,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Observation:hspc-bodyWeight.extension:deltaflag$Extension">
+    <element id="Observation:hspc-bodyWeight.extension:deltaflag">
       <path value="Observation.extension"/>
       <sliceName value="DeltaFlag"/>
       <short value="Extension"/>
@@ -353,7 +353,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Observation:hspc-bodyWeight.extension:dataoriginationmode$Extension">
+    <element id="Observation:hspc-bodyWeight.extension:dataoriginationmode">
       <path value="Observation.extension"/>
       <sliceName value="DataOriginationMode"/>
       <short value="Extension"/>
@@ -387,7 +387,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Observation:hspc-bodyWeight.extension:associatedprecondition$Extension">
+    <element id="Observation:hspc-bodyWeight.extension:associatedprecondition">
       <path value="Observation.extension"/>
       <sliceName value="AssociatedPrecondition"/>
       <short value="Extension"/>
@@ -2159,7 +2159,7 @@
         <map value="Observation"/>
       </mapping>
     </element>
-    <element id="Observation:hspc-bodyWeight.extension:deltaflag$Extension">
+    <element id="Observation:hspc-bodyWeight.extension:deltaflag">
       <path value="Observation.extension"/>
       <sliceName value="DeltaFlag"/>
       <min value="0"/>
@@ -2179,7 +2179,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Observation:hspc-bodyWeight.extension:dataoriginationmode$Extension">
+    <element id="Observation:hspc-bodyWeight.extension:dataoriginationmode">
       <path value="Observation.extension"/>
       <sliceName value="DataOriginationMode"/>
       <min value="0"/>
@@ -2199,7 +2199,7 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Observation:hspc-bodyWeight.extension:associatedprecondition$Extension">
+    <element id="Observation:hspc-bodyWeight.extension:associatedprecondition">
       <path value="Observation.extension"/>
       <sliceName value="AssociatedPrecondition"/>
       <min value="0"/>

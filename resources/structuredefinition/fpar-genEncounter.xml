@@ -3642,6 +3642,14 @@ The duration recorded in the period of this encounter covers the entire scope of
     </element>
     <element id="Encounter:fpargeneralencounter.location">
       <path value="Encounter.location"/> 
+      <slicing>
+        <discriminator>
+		  <type value="value"/>
+		  <path value="url"/>
+		</discriminator>
+		<ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
       <short value="List of locations where the patient has been"/> 
       <definition value="List of locations where  the patient has been during this encounter."/> 
       <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference
@@ -3660,14 +3668,6 @@ The duration recorded in the period of this encounter covers the entire scope of
     <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation">
       <path value="Encounter.location"/>
       <sliceName value="AssignedParticipatingLocation"/>
-      <slicing>
-        <discriminator>
-		  <type value="value"/>
-		  <path value="url"/>
-		</discriminator>
-		<ordered value="false"/>
-        <rules value="open"/>
-      </slicing>
       <alias value="AssignedParticipatingLocation"/>
       <min value="0"/>
       <max value="1"/>

@@ -342,7 +342,7 @@
 		<map value="76437-3"/>
 	  </mapping>
     </element>
-	<element id="Coverage:fpar-coverage.extension.extension:dataAbsendReason">
+	<element id="Coverage:fpar-coverage.extension:dataAbsendReason">
 	  <path value="Coverage.extension"/>
 	  <sliceName value="dataAbsentReason"/>
 	  <short value="Extension"/>
@@ -1201,7 +1201,7 @@
 		<map value="76437-3"/>
 	  </mapping>
     </element>
-	<element id="Coverage:fpar-coverage.extension.extension:dataAbsendReason">
+	<element id="Coverage:fpar-coverage.extension:dataAbsendReason">
 	  <path value="Coverage.extension"/>
 	  <sliceName value="dataAbsentReason"/>
 	  <short value="Extension"/>
