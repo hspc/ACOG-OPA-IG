@@ -1087,6 +1087,7 @@
 		<sourceReference>
 		<reference value="ValueSet/OrdinalLabCodes"/>
 		<display value="Ordinal Lab Codes"/>
+		</sourceReference>
 	</resource>	
 	<resource>	
 		<example value="false"/>
