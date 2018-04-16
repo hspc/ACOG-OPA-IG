@@ -17,7 +17,63 @@
   <copyright value="The Office of Population Affairs (OPA)"/>
   <package>
 	<name value="FPAR Implementation Guide"/>
-    <description value="Profiles and resources in this implementation guide."/>
+    <description value="Profiles and resources in this implementation guide."/>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/admissionSource"/>
+		<display value="HSPC Admission Source value set"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/arrivalStatus"/>
+		<display value="HSPC Patient Arrival Status"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/bpmeasmethoddevice"/>
+		<display value="Blood Pressure Measure Method Device"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/heightMeasMethodDevice"/>
+		<display value="Height Measure Method Device"/>
+		</sourceReference>
+	</resource>			
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/heightPrecond"/>
+		<display value="Height Precondition"/>
+		</sourceReference>
+	</resource>
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/locationCondition"/>
+		<display value="HSPC Service Delivery Location Condition code system"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/nullValueReason"/>
+		<display value="HSPC Null Value Reason code system"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="CodeSystem/weightMeasMethodDevice"/>
+		<display value="Weight Measure Method Device"/>
+		</sourceReference>
+	</resource>	
     <resource>
       <example value="false"/>
       <sourceReference>
@@ -829,19 +885,19 @@
         <reference value="StructureDefinition/hspc-ThinPrepCervix"/>
         <display value="The observation Microscopic observation [Identifier] in Cervix by Cyto stain.thin prep based on the LOINC code 18500-9"/>
       </sourceReference>
-    </resource>
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/abnInt-NumericNom"/>
-		<display value="Abnormal Interpretation Numeric Nom"/>
-		</sourceReference>
-	</resource>	
+    </resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
 		<reference value="ValueSet/abnInt-CodedNom"/>
 		<display value="Abnormal Interpretation Coded Nom"/>
+		</sourceReference>
+	</resource>
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/abnInt-NumericNom"/>
+		<display value="Abnormal Interpretation Numeric Nom"/>
 		</sourceReference>
 	</resource>
 	<resource>	
@@ -856,6 +912,13 @@
 		<sourceReference>
 		<reference value="ValueSet/bdVerificationMethod"/>
 		<display value="HSPC Verification Method Value Set"/>
+		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/bpmeasbodylocationprecoord"/>
+		<display value="Blood Pressure Measure Body Location Precoordinated"/>
 		</sourceReference>
 	</resource>	
 	<resource>	
@@ -878,6 +941,20 @@
 		<reference value="ValueSet/contraceptiveChoice"/>
 		<display value="Contraceptive Choice"/>
 		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/coverageType"/>
+		<display value="Coverage Type"/>
+		</sourceReference>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/deltaFlag-numericNom"/>
+		<display value="Delta Flag Numeric Nom"/>
+		</sourceReference>
+	</resource>
 	</resource>
 	<resource>	
 		<example value="false"/>
@@ -913,61 +990,12 @@
 		<reference value="ValueSet/englishProficiency"/>
 		<display value="English Proficiency"/>
 		</sourceReference>
-	</resource>
+	</resource>		
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="ValueSet/observationFindings"/>
-		<display value="HSPC Findings Value Set Definition"/>
-		</sourceReference>
-	</resource>	
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/OrdinalLabCodes"/>
-		<display value="HSPC Ordinal Labs"/>
-		</sourceReference>
-	</resource>	
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/organizationtype"/>
-		<display value="HSPC Organization Type"/>
-		</sourceReference>
-	</resource>	
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/practitioner-providerPractitionerSpecialty"/>
-		<display value="HSPC ProviderPractitioner Specialty"/>
-		</sourceReference>
-	</resource>	
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/QuantitativeLabCodes"/>
-		<display value="HSPC Quantitative Labs"/>
-		</sourceReference>
-	</resource>	
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/reasonCancelled"/>
-		<display value="HSPC Reason Cancelled value set"/>
-		</sourceReference>
-	</resource>	
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/viplevel"/>
-		<display value="HSPC VIP Level value set"/>
-		</sourceReference>
-	</resource>	
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/yesNo"/>
-		<display value="HSPC Yes/No value Set"/>
+		<reference value="ValueSet/focalSubject"/>
+		<display value="Focal Subject"/>
 		</sourceReference>
 	</resource>
 	<resource>	
@@ -990,7 +1018,14 @@
 		<reference value="ValueSet/fparDetectedNotDetected"/>
 		<display value="FPAR Detected/Not detected"/>
 		</sourceReference>
-	</resource>	
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/fparHIV1RnaDetectedNotDetected"/>
+		<display value="FPAR HIV1 RNA Detected Not Detected"/>
+		</sourceReference>
+	<resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
@@ -1018,6 +1053,13 @@
 		<reference value="ValueSet/fparSmokingStatus"/>
 		<display value="FPAR Smoking Status"/>
 		</sourceReference>
+	</resource>
+	<resource>
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/LabNullFlavor"/>
+		<display value="HSPC Lab Null Flavor"/>
+		</sourceReference>
 	</resource>	
 	<resource>	
 		<example value="false"/>
@@ -1025,19 +1067,46 @@
 		<reference value="ValueSet/negativePositive"/>
 		<display value="Negative/Positive"/>
 		</sourceReference>
+	</resource>
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/observationFindings"/>
+		<display value="HSPC Findings Value Set Definition"/>
+		</sourceReference>
+	</resource>			
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/observation-weightPrecond"/>
+		<display value="Weight Precondition"/>
+		</sourceReference>
+	</resource>
+	<resource>
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/OrdinalLabCodes"/>
+		<display value="Ordinal Lab Codes"/>
 	</resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
 		<reference value="ValueSet/organismDetectionOrdLabResult"/>
-		<display value="Organism Detection Ordianl Lab Result"/>
+		<display value="Organism Detection Ordinal Lab Result"/>
+		</sourceReference>
+	</resource>
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/organizationtype"/>
+		<display value="HSPC Organization Type"/>
 		</sourceReference>
 	</resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="ValueSet/primaryInsuranceClassification"/>
-		<display value="Primary Insurance Classification"/>
+		<reference value="ValueSet/practitioner-providerPractitionerSpecialty"/>
+		<display value="HSPC ProviderPractitioner Specialty"/>
 		</sourceReference>
 	</resource>	
 	<resource>	
@@ -1060,12 +1129,40 @@
 		<reference value="ValueSet/pregnancyStatusReportingMethod"/>
 		<display value="Pregnancy Status Reporting Method"/>
 		</sourceReference>
+	</resource>		
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/primaryInsuranceClassification"/>
+		<display value="Primary Insurance Classification"/>
+		</sourceReference>
+	</resource>
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/QuantitativeLabCodes"/>
+		<display value="HSPC Quantitative Labs"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/reasonCancelled"/>
+		<display value="HSPC Reason Cancelled value set"/>
+		</sourceReference>
 	</resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
 		<reference value="ValueSet/reasonNoContraceptiveChosen"/>
 		<display value="Reason No Contraceptive Chosen"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/viplevel"/>
+		<display value="HSPC VIP Level value set"/>
 		</sourceReference>
 	</resource>	
 	<resource>	
@@ -1078,113 +1175,15 @@
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="ValueSet/coverageType"/>
-		<display value="Coverage Type"/>
-		</sourceReference>
-	</resource>			
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/observation-weightPrecond"/>
-		<display value="Weight Precondition"/>
-		</sourceReference>
-	</resource>		
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
 		<reference value="ValueSet/weightmassunits"/>
 		<display value="Weight Mass Units"/>
 		</sourceReference>
-	</resource>		
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/deltaFlag-numericNom"/>
-		<display value="Delta Flag Numeric Nom"/>
-		</sourceReference>
-	</resource>		
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/focalSubject"/>
-		<display value="Focal Subject"/>
-		</sourceReference>
-	</resource>		
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/bpmeasbodylocationprecoord"/>
-		<display value="Blood Pressure Measure Body Location Precoordinated"/>
-		</sourceReference>
-	</resource>		
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/fparHIV1RnaDetectedNotDetected"/>
-		<display value="FPAR HIV1 RNA Detected Not Detected"/>
-		</sourceReference>
-	</resource>
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="CodeSystem/admissionSource"/>
-		<display value="HSPC Admission Source value set"/>
-		</sourceReference>
 	</resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="CodeSystem/arrivalStatus"/>
-		<display value="HSPC Patient Arrival Status"/>
-		</sourceReference>
-	</resource>	
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="ValueSet/LabNullFlavor"/>
-		<display value="HSPC Lab Null Flavor"/>
-		</sourceReference>
-	</resource>	
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="CodeSystem/locationCondition"/>
-		<display value="HSPC Service Delivery Location Condition code system"/>
-		</sourceReference>
-	</resource>	
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="CodeSystem/nullValueReason"/>
-		<display value="HSPC Null Value Reason code system"/>
-		</sourceReference>
-	</resource>		
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="CodeSystem/weightMeasMethodDevice"/>
-		<display value="Weight Measure Method Device"/>
-		</sourceReference>
-	</resource>		
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="CodeSystem/bpmeasmethoddevice"/>
-		<display value="Blood Pressure Measure Method Device"/>
-		</sourceReference>
-	</resource>		
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="CodeSystem/heightMeasMethodDevice"/>
-		<display value="Height Measure Method Device"/>
-		</sourceReference>
-	</resource>		
-	<resource>	
-		<example value="false"/>
-		<sourceReference>
-		<reference value="CodeSystem/heightPrecond"/>
-		<display value="Height Precondition"/>
+		<reference value="ValueSet/yesNo"/>
+		<display value="HSPC Yes/No value Set"/>
 		</sourceReference>
 	</resource>
   </package>
