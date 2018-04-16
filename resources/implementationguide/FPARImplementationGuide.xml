@@ -840,6 +840,13 @@
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
+		<reference value="ValueSet/abnInt-CodedNom"/>
+		<display value="Abnormal Interpretation Coded Nom"/>
+		</sourceReference>
+	</resource>
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
 		<reference value="ValueSet/arrivalTransportMode"/>
 		<display value="HSPC Arrival Transport Mode value set"/>
 		</sourceReference>
