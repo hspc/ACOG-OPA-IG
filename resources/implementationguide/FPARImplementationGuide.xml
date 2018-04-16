@@ -947,14 +947,14 @@
 		<sourceReference>
 		<reference value="ValueSet/coverageType"/>
 		<display value="Coverage Type"/>
-		</sourceReference>		
+		</sourceReference>
+	</resource>		
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
 		<reference value="ValueSet/deltaFlag-numericNom"/>
 		<display value="Delta Flag Numeric Nom"/>
 		</sourceReference>
-	</resource>
 	</resource>
 	<resource>	
 		<example value="false"/>
