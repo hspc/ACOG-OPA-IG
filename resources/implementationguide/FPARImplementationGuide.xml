@@ -920,6 +920,20 @@
 		<reference value="ValueSet/bpmeasbodylocationprecoord"/>
 		<display value="Blood Pressure Measure Body Location Precoordinated"/>
 		</sourceReference>
+	</resource>			
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests"/>
+		<display value="Chlamydia Trachomatis And Neisseria Gonorrhoeae Combined Tests"/>
+		</sourceReference>
+	</resource>			
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/chlamydiaTrachomatisTests"/>
+		<display value="Chlamydia Trachomatis Tests"/>
+		</sourceReference>
 	</resource>	
 	<resource>	
 		<example value="false"/>
@@ -1053,6 +1067,20 @@
 		<reference value="ValueSet/fparSmokingStatus"/>
 		<display value="FPAR Smoking Status"/>
 		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/hivTests"/>
+		<display value="HIV Tests"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/humanPapillomaVirusTests"/>
+		<display value="Human Papilloma Virus Tests"/>
+		</sourceReference>
 	</resource>
 	<resource>
 		<example value="false"/>
@@ -1066,6 +1094,13 @@
 		<sourceReference>
 		<reference value="ValueSet/negativePositive"/>
 		<display value="Negative/Positive"/>
+		</sourceReference>
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/neisseriaGonorrhoeaeTests"/>
+		<display value="Neisseria Gonorrhoeae Tests"/>
 		</sourceReference>
 	</resource>
 	<resource>	
@@ -1130,7 +1165,14 @@
 		<reference value="ValueSet/pregnancyStatusReportingMethod"/>
 		<display value="Pregnancy Status Reporting Method"/>
 		</sourceReference>
-	</resource>		
+	</resource>	
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
+		<reference value="ValueSet/pregnancyTests"/>
+		<display value="Pregnancy Tests"/>
+		</sourceReference>
+	</resource>			
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
