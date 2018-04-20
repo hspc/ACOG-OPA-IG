@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests"/>
+  <name value="FPAR Chlamydia Trachomatis and Neisseria Gonorrhoeae Combined Tests"/>
+  <status value="draft"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <date value="2015-02-20T13:44:49+11:00"/>
+  <description value="Chlamydia Trachomatis and Neisseria Gonorrhoeae test LOINC codes used by FPAR"/>
+  <copyright value="This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+		<concept>	
+			<code value="36902-5"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="36903-3"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="43406-8"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe & signal amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="44806-8"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="44807-6"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="45067-6"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe"/>
+		</concept>	
+		<concept>	
+			<code value="45068-4"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="45069-2"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Genital specimen by DNA probe"/>
+		</concept>	
+		<concept>	
+			<code value="45070-0"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by DNA probe"/>
+		</concept>	
+		<concept>	
+			<code value="45074-2"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Urine by DNA probe"/>
+		</concept>	
+		<concept>	
+			<code value="45076-7"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe"/>
+		</concept>
+    </include>
+  </compose>
+</ValueSet>

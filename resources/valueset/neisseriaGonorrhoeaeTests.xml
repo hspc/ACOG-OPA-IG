@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="neisseriaGonorrhoeaeTests"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/neisseriaGonorrhoeaeTests"/>
+  <name value="FPAR Neisseria Gonorrhoeae Tests"/>
+  <status value="draft"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <date value="2015-02-20T13:44:49+11:00"/>
+  <description value="Neisseria Gonorrhoeae test LOINC codes used by FPAR"/>
+  <copyright value="This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+		<concept>	
+			<code value="43305-2"/>
+			<display value="Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe & target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="21415-5"/>
+			<display value="Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="47387-6"/>
+			<display value="Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="50388-8"/>
+			<display value="Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe & target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="21414-8"/>
+			<display value="Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="21416-3"/>
+			<display value="Neisseria gonorrhoeae DNA [Presence] in Urine by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="24111-7"/>
+			<display value="Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="32198-4"/>
+			<display value="Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe"/>
+		</concept>	
+		<concept>	
+			<code value="32199-2"/>
+			<display value="Neisseria gonorrhoeae rRNA [Presence] in Urethra by DNA probe"/>
+		</concept>	
+		<concept>	
+			<code value="32705-6"/>
+			<display value="Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe & target amplification method|Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="43403-5"/>
+			<display value="Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe & signal amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="5028-6"/>
+			<display value="Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe"/>
+		</concept>	
+		<concept>	
+			<code value="53879-3"/>
+			<display value="Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe & target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="53927-0"/>
+			<display value="Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe & target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="6487-3"/>
+			<display value="Neisseria gonorrhoeae Ag [Presence] in Genital specimen by Immunoassay"/>
+		</concept>	
+		<concept>	
+			<code value="688-2"/>
+			<display value="Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture"/>
+		</concept>	
+		<concept>	
+			<code value="691-6"/>
+			<display value="Neisseria gonorrhoeae [Presence] in Genital specimen by Organism specific culture"/>
+		</concept>	
+		<concept>	
+			<code value="692-4"/>
+			<display value="Neisseria gonorrhoeae [Presence] in Genital lochia by Organism specific culture"/>
+		</concept>	
+		<concept>	
+			<code value="693-2"/>
+			<display value="Neisseria gonorrhoeae [Presence] in Vaginal fluid by Organism specific culture"/>
+		</concept>	
+		<concept>	
+			<code value="698-1"/>
+			<display value="Neisseria gonorrhoeae [Presence] in Unspecified specimen by Organism specific culture"/>
+		</concept>
+    </include>
+  </compose>
+</ValueSet>

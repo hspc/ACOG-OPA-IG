@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="humanPapillomaVirusTests"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/humanPapillomaVirusTests"/>
+  <name value="FPAR Human Papilloma Virus Tests"/>
+  <status value="draft"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <date value="2015-02-20T13:44:49+11:00"/>
+  <description value="Human Papilloma Virus test LOINC codes used by FPAR"/>
+  <copyright value="This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+		<concept>	
+			<code value="59420-0"/>
+			<display value="Human papilloma virus16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe & signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="21440-3"/>
+			<display value="Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe"/>
+		</concept>	
+		<concept>	
+			<code value="30167-1"/>
+			<display value="Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe & signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="38372-9"/>
+			<display value="Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe & signal amplification method|Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="49896-4"/>
+			<display value="Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe & target amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="69002-4"/>
+			<display value="Human papilloma virus E6+E7 mRNA [Presence] in Cervix by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="73959-9"/>
+			<display value="Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+66 DNA [Presence] in Tissue by DNA probe"/>
+		</concept>	
+		<concept>	
+			<code value="11083-3"/>
+			<display value="Human papilloma virus identified in Cervix"/>
+		</concept>	
+		<concept>	
+			<code value="12223-4"/>
+			<display value="Human papilloma virus 16+18 Ag [Presence] in Genital specimen"/>
+		</concept>	
+		<concept>	
+			<code value="14503-7"/>
+			<display value="Human papilloma virus 16+18 Ag [Presence] in Cervix"/>
+		</concept>	
+		<concept>	
+			<code value="14504-5"/>
+			<display value="Human papilloma virus 16+18 Ag [Presence] in Vaginal fluid"/>
+		</concept>	
+		<concept>	
+			<code value="14506-0"/>
+			<display value="Human papilloma virus 16+18 Ag [Presence] in Urethra"/>
+		</concept>	
+		<concept>	
+			<code value="17400-3"/>
+			<display value="Human papilloma virus 16+18 Ag [Presence] in Unspecified specimen"/>
+		</concept>	
+		<concept>	
+			<code value="44550-2"/>
+			<display value="Human papilloma virus DNA [Presence] in Cervix by DNA probe"/>
+		</concept>	
+		<concept>	
+			<code value="6514-4"/>
+			<display value="Human papilloma virus rRNA [Presence] in Genital specimen by Probe & target amplification method|Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="6516-9"/>
+			<display value="Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe & target amplification method|Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+		</concept>
+    </include>
+  </compose>
+</ValueSet>

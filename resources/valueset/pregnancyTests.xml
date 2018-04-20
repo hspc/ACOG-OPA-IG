@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pregnancyTests"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/pregnancyTests"/>
+  <name value="FPAR Pregnancy Tests"/>
+  <status value="draft"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <date value="2015-02-20T13:44:49+11:00"/>
+  <description value="Pregnancy test LOINC codes used by FPAR"/>
+  <copyright value="This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+		<concept>	
+			<code value="2110-5"/>
+			<display value="Choriogonadotropin.beta subunit (pregnancy test) [Presence] in Serum or Plasma"/>
+		</concept>	
+		<concept>	
+			<code value="2118-8"/>
+			<display value="Choriogonadotropin (pregnancy test) [Presence] in Serum or Plasma"/>
+		</concept>	
+		<concept>	
+			<code value="2106-3"/>
+			<display value="Choriogonadotropin (pregnancy test) [Presence] in Urine"/>
+		</concept>	
+		<concept>	
+			<code value="80385-8"/>
+			<display value="Choriogonadotropin (pregnancy test) [Presence] in Serum by Rapid immunoassay"/>
+		</concept>	
+		<concept>	
+			<code value="21198-7"/>
+			<display value="Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma"/>
+		</concept>	
+		<concept>	
+			<code value="19080-1"/>
+			<display value="Choriogonadotropin [Units/volume] in Serum or Plasma"/>
+		</concept>
+    </include>
+  </compose>
+</ValueSet>

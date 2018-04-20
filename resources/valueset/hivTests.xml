@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hivTests"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/hivTests"/>
+  <name value="FPAR HIV Tests"/>
+  <status value="draft"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <date value="2015-02-20T13:44:49+11:00"/>
+  <description value="HIV test LOINC codes used by FPAR"/>
+  <copyright value="This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+		<concept>	
+			<code value="5018-7"/>
+			<display value="HIV 1 RNA [Presence] in Unspecified specimen by Probe & target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+		</concept>	
+		<concept>	
+			<code value="5221-7"/>
+			<display value="HIV 1 Ab [Presence] in Serum by Immunoblot (IB)"/>
+		</concept>	
+		<concept>	
+			<code value="68961-2"/>
+			<display value="HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test"/>
+		</concept>	
+		<concept>	
+			<code value="30361-0"/>
+			<display value="HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay"/>
+		</concept>	
+		<concept>	
+			<code value="31201-7"/>
+			<display value="HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay"/>
+		</concept>	
+		<concept>	
+			<code value="48510-2"/>
+			<display value="HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe & target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL"/>
+		</concept>	
+		<concept>	
+			<code value="48511-0"/>
+			<display value="HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe & target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL"/>
+		</concept>
+    </include>
+  </compose>
+</ValueSet>

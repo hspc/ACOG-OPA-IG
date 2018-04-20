@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="papSmearTests"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/papSmearTests"/>
+  <name value="FPAR Pap Smear Tests"/>
+  <status value="draft"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <date value="2015-02-20T13:44:49+11:00"/>
+  <description value="Pap Smear test LOINC codes used by FPAR"/>
+  <copyright value="This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+		<concept>	
+			<code value="10524-7"/>
+			<display value="Microscopic observation [Identifier] in Cervix by Cyto stain"/>
+		</concept>	
+		<concept>	
+			<code value="19766-5"/>
+			<display value="Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain|Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain Narrative"/>
+		</concept>	
+		<concept>	
+			<code value="19765-7"/>
+			<display value="Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain"/>
+		</concept>	
+		<concept>	
+			<code value="19774-9"/>
+			<display value="Cytology study comment Cervical or vaginal smear or scraping Cyto stain"/>
+		</concept>	
+		<concept>	
+			<code value="47528-5"/>
+			<display value="Cytology report of Cervical or vaginal smear or scraping Cyto stain"/>
+		</concept>	
+		<concept>	
+			<code value="47527-7"/>
+			<display value="Cytology report of Cervical or vaginal smear or scraping Cyto stain.thin prep"/>
+		</concept>	
+		<concept>	
+			<code value="19762-4"/>
+			<display value="General categories [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|General categories [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain"/>
+		</concept>	
+		<concept>	
+			<code value="19764-0"/>
+			<display value="Statement of adequacy [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|Statement of adequacy [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain"/>
+		</concept>	
+		<concept>	
+			<code value="33717-0"/>
+			<display value="Cytology Cervical or vaginal smear or scraping study"/>
+		</concept>	
+		<concept>	
+			<code value="18500-9"/>
+			<display value="Microscopic observation [Identifier] in Cervix by Cyto stain.thin prep"/>
+		</concept>
+    </include>
+  </compose>
+</ValueSet>
