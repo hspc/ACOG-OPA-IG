@@ -23,23 +23,23 @@
       <system value="http://loinc.org"/>
 		<concept>	
 			<code value="36902-5"/>
-			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="36903-3"/>
-			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="43406-8"/>
-			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe & signal amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="44806-8"/>
-			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="44807-6"/>
-			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="45067-6"/>
@@ -47,7 +47,7 @@
 		</concept>	
 		<concept>	
 			<code value="45068-4"/>
-			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe & target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="45069-2"/>

@@ -23,15 +23,15 @@
       <system value="http://loinc.org"/>
 		<concept>	
 			<code value="49096-1"/>
-			<display value="Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="43304-5"/>
-			<display value="Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="21191-2"/>
-			<display value="Chlamydia trachomatis DNA [Presence] in Urethra by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="4993-2"/>
@@ -47,11 +47,11 @@
 		</concept>	
 		<concept>	
 			<code value="21189-6"/>
-			<display value="Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="21190-4"/>
-			<display value="Chlamydia trachomatis DNA [Presence] in Cervix by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Cervix by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis DNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervix by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="21192-0"/>
@@ -59,7 +59,7 @@
 		</concept>	
 		<concept>	
 			<code value="21613-5"/>
-			<display value="Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="23838-6"/>
@@ -67,15 +67,15 @@
 		</concept>	
 		<concept>	
 			<code value="35729-3"/>
-			<display value="Chlamydia sp DNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+			<display value="Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="42931-6"/>
-			<display value="Chlamydia trachomatis rRNA [Presence] in Urine by Probe & target amplification method|Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="43404-3"/>
-			<display value="Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe & signal amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method"/>
+			<display value="Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="45078-3"/>
@@ -87,35 +87,35 @@
 		</concept>	
 		<concept>	
 			<code value="45084-1"/>
-			<display value="Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="47211-8"/>
-			<display value="Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="47212-6"/>
-			<display value="Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe & target amplification method|Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="50387-0"/>
-			<display value="Chlamydia trachomatis rRNA [Presence] in Cervix by Probe & target amplification method|Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="53925-4"/>
-			<display value="Chlamydia trachomatis rRNA [Presence] in Urethra by Probe & target amplification method|Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="53926-2"/>
-			<display value="Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe & target amplification method|Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="6356-0"/>
-			<display value="Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="6357-8"/>
-			<display value="Chlamydia trachomatis DNA [Presence] in Urine by Probe & target amplification method|Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method"/>
+			<display value="Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method"/>
 		</concept>
     </include>
   </compose>

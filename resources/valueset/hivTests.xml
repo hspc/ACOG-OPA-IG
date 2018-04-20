@@ -23,7 +23,7 @@
       <system value="http://loinc.org"/>
 		<concept>	
 			<code value="5018-7"/>
-			<display value="HIV 1 RNA [Presence] in Unspecified specimen by Probe & target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
+			<display value="HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method"/>
 		</concept>	
 		<concept>	
 			<code value="5221-7"/>
@@ -43,11 +43,11 @@
 		</concept>	
 		<concept>	
 			<code value="48510-2"/>
-			<display value="HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe & target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL"/>
+			<display value="HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL"/>
 		</concept>	
 		<concept>	
 			<code value="48511-0"/>
-			<display value="HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe & target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL"/>
+			<display value="HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL"/>
 		</concept>
     </include>
   </compose>
