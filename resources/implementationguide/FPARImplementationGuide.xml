@@ -21,59 +21,241 @@
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="CodeSystem/admissionSource"/>
-		<display value="HSPC Admission Source value set"/>
+			<reference value="CodeSystem/admissionSource"/>
+			<display value="HSPC Admission Source value set"/>
 		</sourceReference>
 	</resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="CodeSystem/arrivalStatus"/>
-		<display value="HSPC Patient Arrival Status"/>
+			<reference value="CodeSystem/arrivalStatus"/>
+			<display value="HSPC Patient Arrival Status"/>
 		</sourceReference>
 	</resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="CodeSystem/bpmeasmethoddevice"/>
-		<display value="Blood Pressure Measure Method Device"/>
+			<reference value="CodeSystem/bpmeasmethoddevice"/>
+			<display value="Blood Pressure Measure Method Device"/>
 		</sourceReference>
 	</resource>		
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="CodeSystem/heightMeasMethodDevice"/>
-		<display value="Height Measure Method Device"/>
+			<reference value="CodeSystem/heightMeasMethodDevice"/>
+			<display value="Height Measure Method Device"/>
 		</sourceReference>
 	</resource>			
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="CodeSystem/heightPrecond"/>
-		<display value="Height Precondition"/>
+			<reference value="CodeSystem/heightPrecond"/>
+			<display value="Height Precondition"/>
 		</sourceReference>
 	</resource>
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="CodeSystem/locationCondition"/>
-		<display value="HSPC Service Delivery Location Condition code system"/>
+			<reference value="CodeSystem/locationCondition"/>
+			<display value="HSPC Service Delivery Location Condition code system"/>
 		</sourceReference>
 	</resource>	
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="CodeSystem/nullValueReason"/>
-		<display value="HSPC Null Value Reason code system"/>
+			<reference value="CodeSystem/nullValueReason"/>
+			<display value="HSPC Null Value Reason code system"/>
 		</sourceReference>
 	</resource>		
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
-		<reference value="CodeSystem/weightMeasMethodDevice"/>
-		<display value="Weight Measure Method Device"/>
+			<reference value="CodeSystem/weightMeasMethodDevice"/>
+			<display value="Weight Measure Method Device"/>
 		</sourceReference>
-	</resource>	
+	</resource>
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/administrativeEncounterId"/>
+			<display value="Administrative encounter id"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/admitMedicationId"/>
+			<display value="Admit medication id"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/ambulatoryStatus"/>
+			<display value="Ambulatory status"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/arrivedByTransportation"/>
+			<display value="Arrived by transportation"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/associatedPrecondition"/>
+			<display value="Associated precondition"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/bodyPosition"/>
+			<display value="Body position"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/chiefComplaintId"/>
+			<display value="Chief complaint indicator"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/communicationMode"/>
+			<display value="Communication mode"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/confidentiality"/>
+			<display value="Confidentiality"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/contactPeriod"/>
+			<display value="Contact period"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/contraceptionProvisionMethod"/>
+			<display value="Contraception provision method"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/dataAbsentReason"/>
+			<display value="Data absent reason"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/dataOriginationMode"/>
+			<display value="Data origination mode"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/deltaFlag"/>
+			<display value="Delta flag"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/departedByTransportation"/>
+			<display value="Departed by transportation"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/dischargeMedicationId"/>
+			<display value="Discharge medication id"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/focalSubject"/>
+			<display value="Focal subject"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/hospitalService"/>
+			<display value="Hospital service"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/organizationPeriod"/>
+			<display value="Organization period"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/preferenceInd"/>
+			<display value="Preference indicator"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/primaryInd"/>
+			<display value="Primary indicator"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/primaryInsuranceClassification"/>
+			<display value="Primary insurance classification"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/primaryLanguage"/>
+			<display value="Primary language"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/reasonCancelled"/>
+			<display value="Reason cancelled"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/reportingMethod"/>
+			<display value="Reporting method"/>
+		</sourceReference>	
+	</resource>		
+	<resource>		
+		<example value="false"/>	
+		<sourceReference>	
+			<reference value="Extension/vipLevel"/>
+			<display value="VIP level"/>
+		</sourceReference>	
+	</resource>		
     <resource>
       <example value="false"/>
       <sourceReference>
