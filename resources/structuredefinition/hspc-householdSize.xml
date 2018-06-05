@@ -538,13 +538,13 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <!--fixedCodeableConcept>
+      <fixedCodeableConcept>
         <coding>
           <system value="http://loinc.org"/>
-          <code value=""/>
-          <display value=""/>
+          <code value="86639-2"/>
+          <display value="Household size"/>
         </coding>
-      </fixedCodeableConcept-->
+      </fixedCodeableConcept>
       <mustSupport value="true"/>
       <isSummary value="true"/>
       <mapping>
