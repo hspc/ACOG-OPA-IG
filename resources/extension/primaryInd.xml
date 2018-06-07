@@ -28,7 +28,6 @@
   <snapshot>
     <element id="Extension:primaryindicator">
       <path value="Extension"/>
-      <name value="primaryIndicator"/>
       <short value="Extension"/>
       <definition value="This indicatest that this is the principal address."/>
       <min value="0"/>
@@ -144,7 +143,6 @@
   <differential>
     <element id="Extension:primaryindicator">
       <path value="Extension"/>
-      <name value="primaryIndicator"/>
       <definition value="This indicatest that this is the principal address."/>
       <min value="0"/>
       <max value="1"/>

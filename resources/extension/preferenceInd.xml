@@ -28,7 +28,6 @@
   <snapshot>
     <element id="Extension:preferenceindicator">
       <path value="Extension"/>
-      <name value="preferenceIndicator"/>
       <short value="Extension"/>
       <definition value="An indication that the stated value is the preferred value, i.e. address, phone number, etc."/>
       <min value="0"/>
@@ -144,7 +143,6 @@
   <differential>
     <element id="Extension:preferenceindicator">
       <path value="Extension"/>
-      <name value="preferenceIndicator"/>
       <definition value="An indication that the stated value is the preferred value, i.e. address, phone number, etc."/>
       <min value="0"/>
       <max value="1"/>
