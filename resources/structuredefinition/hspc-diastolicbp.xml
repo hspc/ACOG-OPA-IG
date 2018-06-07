@@ -347,7 +347,7 @@
         <strength value="preferred"/>
         <description value="The position that a patient is in when a heart rate measurement is taken."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/bpbodyposition"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/bpbodyposition"/>
         </valueSetReference>
       </binding>
     </element>
@@ -381,7 +381,7 @@
         <strength value="preferred"/>
         <description value="The conditions during which an individual's vital signs were measured"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/vitalsignassociatedprecond"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/vitalsignassociatedprecond"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2163,7 +2163,7 @@
         <strength value="preferred"/>
         <description value="The position that a patient is in when a heart rate measurement is taken."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/bpbodyposition"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/bpbodyposition"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2183,7 +2183,7 @@
         <strength value="preferred"/>
         <description value="The conditions during which an individual's vital signs were measured"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/vitalsignassociatedprecond"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/vitalsignassociatedprecond"/>
         </valueSetReference>
       </binding>
     </element>

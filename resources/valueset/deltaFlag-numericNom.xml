@@ -40,7 +40,7 @@
       </concept>
     </include>
     <include>
-      <system value="http://fhir.org/guides/hspc/CodeSystem/deltaFlag-numericNom"/>
+      <system value="http://hl7.org/fhir/fpar/CodeSystem/deltaFlag-numericNom"/>
     </include>
   </compose>
 </ValueSet>

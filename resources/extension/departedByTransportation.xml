@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hspc-genencounter-departedByTransportation"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-departedByTransportation"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-departedByTransportation"/>
   <version value="2.0.0"/>
   <name value="Departed by Transportation"/>
   <title value="Departed by Transportation"/>
@@ -556,7 +556,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-departedByTransportation"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-departedByTransportation"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -687,7 +687,7 @@
     </element>
     <element id="Extension:departedbytransportation.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-departedByTransportation"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-departedByTransportation"/>
     </element>
     <element id="Extension:departedbytransportation.value[x]">
       <path value="Extension.value[x]"/>

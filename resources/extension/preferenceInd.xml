@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extensions-preferenceIndicator"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/extensions-preferenceIndicator"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-preferenceIndicator"/>
   <name value="Preference Indicator"/>
   <display value="Preference Indicator"/>
   <status value="draft"/>
@@ -106,7 +106,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-preferenceIndicator"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-preferenceIndicator"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -153,7 +153,7 @@
     </element>
     <element id="Extension:preferenceindicator.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-preferenceIndicator"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-preferenceIndicator"/>
     </element>
     <element id="Extension:preferenceindicator.value[x]">
       <path value="Extension.value[x]"/>

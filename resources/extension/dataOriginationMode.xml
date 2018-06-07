@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extensions-dataOriginationMode"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/extensions-dataOriginationMode"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-dataOriginationMode"/>
   <version value="2.0.0"/>
   <name value="DataOriginationMode"/>
   <title value="DataOriginationMode"/>
@@ -109,7 +109,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-dataOriginationMode"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-dataOriginationMode"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -156,7 +156,7 @@
     </element>
     <element id="Extension:dataoriginationmode.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-dataOriginationMode"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-dataOriginationMode"/>
     </element>
     <element id="Extension:dataoriginationmode.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

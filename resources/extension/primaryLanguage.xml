@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="primaryLanguage"/>
-  <url value="http://hl7.org/fhir/hspc/StructureDefinition/primaryLanguage"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/primaryLanguage"/>
   <name value="PrimaryLanguage"/>
   <display value="Primary Language"/>
   <status value="draft"/>
@@ -107,7 +107,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/primaryLanguage"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/primaryLanguage"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -154,7 +154,7 @@
     </element>
     <element id="Extension:primaryLanguage.url">
       <path value="Extension.url"/>
-      <fixedUri value="hhttp://hl7.org/fhir/hspc/StructureDefinition/primaryLanguage"/>
+      <fixedUri value="hhttp://hl7.org/fhir/fpar/StructureDefinition/primaryLanguage"/>
     </element>
     <element id="Extension:primaryLanguage.value[x]">
       <path value="Extension.value[x]"/>

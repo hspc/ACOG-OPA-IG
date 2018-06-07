@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="contactPeriod"/>
-  <url value="http://hl7.org/fhir/hspc/StructureDefinition/contactPeriod"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/contactPeriod"/>
   <name value="Contact Period"/>
   <title value="Contact Period"/>
   <status value="draft"/>
@@ -107,7 +107,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/contactPeriod"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/contactPeriod"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -157,7 +157,7 @@
     </element>
     <element id="Extension:contactPeriod.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/contactPeriod"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/contactPeriod"/>
     </element>
     <element id="Extension:contactPeriod.valuePeriod">
       <path value="Extension.valuePeriod"/>

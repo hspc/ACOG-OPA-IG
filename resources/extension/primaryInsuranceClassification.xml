@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extensions-primaryInsuranceClassification"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/extensions-primaryInsuranceClassification"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryInsuranceClassification"/>
   <version value="1.0.0"/>
   <name value="Primary Insurance Classification"/>
   <title value="Primary Insurance Classification"/>
@@ -105,7 +105,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-primaryInsuranceClassification"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryInsuranceClassification"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -152,7 +152,7 @@
     </element>
     <element id="Extension:primaryInsuranceClassification.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-primaryInsuranceClassification"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryInsuranceClassification"/>
     </element>
     <element id="Extension:primaryInsuranceClassification.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
