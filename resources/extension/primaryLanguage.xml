@@ -3,7 +3,6 @@
   <id value="primaryLanguage"/>
   <url value="http://hl7.org/fhir/fpar/StructureDefinition/primaryLanguage"/>
   <name value="PrimaryLanguage"/>
-  <display value="Primary Language"/>
   <status value="draft"/>
   <publisher value="HSPC"/>
   <contact>

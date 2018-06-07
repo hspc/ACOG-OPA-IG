@@ -2,7 +2,6 @@
   <id value="extensions-primaryIndicator"/>
   <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryIndicator"/>
   <name value="PrimaryInd"/>
-  <display value="PrimaryInd"/>
   <status value="draft"/>
   <publisher value="HSPC"/>
   <contact>

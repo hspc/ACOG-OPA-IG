@@ -2,7 +2,6 @@
   <id value="extensions-preferenceIndicator"/>
   <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-preferenceIndicator"/>
   <name value="Preference Indicator"/>
-  <display value="Preference Indicator"/>
   <status value="draft"/>
   <publisher value="HSPC"/>
   <contact>
