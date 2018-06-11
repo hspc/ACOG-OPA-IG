@@ -2757,7 +2757,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="The codes that describe whether or not the patient has arrived at the specified location for the encounter"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/CodeSystem/arrivalStatus"/>
+          <reference value="http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus"/>
         </valueSetReference>
       </binding>
     </element>
@@ -3636,7 +3636,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <strength value="preferred"/>
         <description value="A set of codes that describe any particular needs for a patient regarding this encounter."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/specialArrangement"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/specialArrangement"/>
         </valueSetReference>
       </binding>
     </element>

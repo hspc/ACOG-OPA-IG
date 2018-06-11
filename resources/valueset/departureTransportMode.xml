@@ -62,7 +62,7 @@
       </concept>
     </include>
     <include>
-      <system value="http://fhir.org/guides/fpar/CodeSystem/departureTransportationMode"/>
+      <system value="http://hl7.org/fhir/fpar/CodeSystem/departureTransportationMode"/>
     </include>
   </compose>
 </ValueSet>

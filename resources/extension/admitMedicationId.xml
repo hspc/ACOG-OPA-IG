@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hspc-genencounter-admitMedicationId"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-admitMedicationId"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-admitMedicationId"/>
   <name value="Admission Medication Identifier"/>
   <title value="Admission Medication Identifier"/>
   <status value="draft"/>
@@ -107,7 +107,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AdmitMedicationId"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-AdmitMedicationId"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -153,7 +153,7 @@
     </element>
     <element id="Extension:admitmedicationid.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AdmitMedicationId"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-AdmitMedicationId"/>
     </element>
     <element id="Extension:admitmedicationid.valueIdentifier">
       <path value="Extension.valueIdentifier"/>

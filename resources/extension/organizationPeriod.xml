@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="organizationPeriod"/>
-  <url value="http://hl7.org/fhir/hspc/StructureDefinition/organizationPeriod"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/organizationPeriod"/>
   <name value="Organization Period"/>
   <title value="Organization Period"/>
   <status value="draft"/>
@@ -107,7 +107,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/organizationPeriod"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/organizationPeriod"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -157,7 +157,7 @@
     </element>
     <element id="Extension:organizationPeriod.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/organizationPeriod"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/organizationPeriod"/>
     </element>
     <element id="Extension:organizationPeriod.valuePeriod">
       <path value="Extension.valuePeriod"/>

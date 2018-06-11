@@ -1,8 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extensions-primaryIndicator"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/extensions-primaryIndicator"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryIndicator"/>
   <name value="PrimaryInd"/>
-  <display value="PrimaryInd"/>
   <status value="draft"/>
   <publisher value="HSPC"/>
   <contact>
@@ -29,7 +28,6 @@
   <snapshot>
     <element id="Extension:primaryindicator">
       <path value="Extension"/>
-      <name value="primaryIndicator"/>
       <short value="Extension"/>
       <definition value="This indicatest that this is the principal address."/>
       <min value="0"/>
@@ -106,7 +104,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-primaryIndicator"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryIndicator"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -145,7 +143,6 @@
   <differential>
     <element id="Extension:primaryindicator">
       <path value="Extension"/>
-      <name value="primaryIndicator"/>
       <definition value="This indicatest that this is the principal address."/>
       <min value="0"/>
       <max value="1"/>
@@ -153,7 +150,7 @@
     </element>
     <element id="Extension:primaryindicator.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-primaryIndicator"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryIndicator"/>
     </element>
     <element id="Extension:primaryindicator.value[x]">
       <path value="Extension.value[x]"/>

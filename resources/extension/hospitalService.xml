@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hspc-genencounter-hospitalService"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-hospitalService"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-hospitalService"/>
   <version value="2.0.0"/>
   <name value="Hospital Service"/>
   <title value="Hospital Service"/>
@@ -108,7 +108,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-hospitalService"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-hospitalService"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -155,7 +155,7 @@
     </element>
     <element id="Extension:hospitalservice.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-hospitalService"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-hospitalService"/>
     </element>
     <element id="Extension:hospitalservice.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

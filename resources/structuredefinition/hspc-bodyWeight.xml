@@ -383,7 +383,7 @@
         <strength value="preferred"/>
         <description value="The description of how the data came into being"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-dataOriginationMode"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/observation-dataOriginationMode"/>
         </valueSetReference>
       </binding>
     </element>
@@ -2195,7 +2195,7 @@
         <strength value="preferred"/>
         <description value="The description of how the data came into being"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/observation-dataOriginationMode"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/observation-dataOriginationMode"/>
         </valueSetReference>
       </binding>
     </element>

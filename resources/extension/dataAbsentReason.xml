@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extensions-dataAbsentReason"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/extensions-dataAbsentReason"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-dataAbsentReason"/>
   <name value="DataAbsentReason"/>
   <status value="draft"/>
   <date value="2017-05-23"/>
@@ -101,7 +101,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-dataAbsentReason"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-dataAbsentReason"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -148,7 +148,7 @@
     </element>
     <element id="Extension:dataAbsentReason.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-dataAbsentReason"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-dataAbsentReason"/>
     </element>
     <element id="Extension:dataAbsentReason.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

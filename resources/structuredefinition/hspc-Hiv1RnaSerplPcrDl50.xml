@@ -2067,7 +2067,7 @@
         <strength value="preferred"/>
         <description value="Standard LOINC codes"/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/QuantitativeLabCodes"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/QuantitativeLabCodes"/>
         </valueSetReference>
       </binding>
       <mapping>

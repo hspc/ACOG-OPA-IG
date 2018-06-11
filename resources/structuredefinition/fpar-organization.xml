@@ -1599,7 +1599,7 @@
         <strength value="preferred"/>
         <description value="Codes that represent kinds of organizations."/>
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/hspc/ValueSet/organizationtype"/>
+          <reference value="http://hl7.org/fhir/fpar/ValueSet/organizationtype"/>
         </valueSetReference>
       </binding>
     </element>

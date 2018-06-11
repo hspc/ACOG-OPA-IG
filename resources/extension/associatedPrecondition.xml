@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extensions-associatedPrecondition"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/extensions-associatedPrecondition"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-associatedPrecondition"/>
   <version value="2.0.0"/>
   <name value="associatedPrecondition"/>
   <title value="associatedPrecondition"/>
@@ -109,7 +109,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-associatedPrecondition"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-associatedPrecondition"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -156,7 +156,7 @@
     </element>
     <element id="Extension:associatedprecondition.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-associatedPrecondition"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-associatedPrecondition"/>
     </element>
     <element id="Extension:associatedprecondition.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

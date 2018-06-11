@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hspc-genencounter-ambulatoryStatus"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-ambulatoryStatus"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-ambulatoryStatus"/>
   <version value="2.0.0"/>
   <name value="Ambulatory Status"/>
   <title value="Ambulatory Status"/>
@@ -109,7 +109,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AmbulatoryStatus"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-AmbulatoryStatus"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -156,7 +156,7 @@
     </element>
     <element id="Extension:ambulatorystatus.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AmbulatoryStatus"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-AmbulatoryStatus"/>
     </element>
     <element id="Extension:ambulatorystatus.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

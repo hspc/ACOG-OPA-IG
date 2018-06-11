@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extensions-reportingMethod"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/extensions-reportingMethod"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-reportingMethod"/>
   <version value="1.0.0"/>
   <name value="Reporting Method"/>
   <title value="Reporting Method"/>
@@ -105,7 +105,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-reportingMethod"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-reportingMethod"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -152,7 +152,7 @@
     </element>
     <element id="Extension:reportingMethod.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-reportingMethod"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-reportingMethod"/>
     </element>
     <element id="Extension:reportingMethod.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

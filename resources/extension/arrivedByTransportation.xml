@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hspc-genencounter-arrivedByTransportation"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-arrivedByTransportation"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-arrivedByTransportation"/>
   <version value="2.0.0"/>
   <name value="Arrived by transportation"/>
   <title value="Arrived by transportation"/>
@@ -556,7 +556,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-arrivedByTransportation"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-arrivedByTransportation"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -687,7 +687,7 @@
     </element>
     <element id="Extension:arrivedbytransportation.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-arrivedByTransportation"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-arrivedByTransportation"/>
     </element>
     <element id="Extension:arrivedbytransportation.value[x]">
       <path value="Extension.value[x]"/>

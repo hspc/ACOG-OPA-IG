@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hspc-genencounter-vipLevel"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-vipLevel"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-vipLevel"/>
   <version value="2.0.0"/>
   <name value="VIP Level"/>
   <title value="VIP Level"/>
@@ -108,7 +108,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-VipLevel"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-VipLevel"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -155,7 +155,7 @@
     </element>
     <element id="Extension:viplevel.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-VipLevel"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-VipLevel"/>
     </element>
     <element id="Extension:viplevel.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

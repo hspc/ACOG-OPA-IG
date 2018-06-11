@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="primaryLanguage"/>
-  <url value="http://hl7.org/fhir/hspc/StructureDefinition/primaryLanguage"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/primaryLanguage"/>
   <name value="PrimaryLanguage"/>
-  <display value="Primary Language"/>
   <status value="draft"/>
   <publisher value="HSPC"/>
   <contact>
@@ -30,7 +29,6 @@
   <snapshot>
     <element id="Extension:primaryLanguage">
       <path value="Extension"/>
-      <name value="primaryLanguage"/>
       <short value="Extension"/>
       <definition value="This indicatest that this is the principal language of communication."/>
       <min value="0"/>
@@ -107,7 +105,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/hspc/StructureDefinition/primaryLanguage"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/primaryLanguage"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -146,7 +144,6 @@
   <differential>
     <element id="Extension:primaryLanguage">
       <path value="Extension"/>
-      <name value="primaryLanguage"/>
       <definition value="This indicatest that this is the principal language of communication."/>
       <min value="0"/>
       <max value="1"/>
@@ -154,7 +151,7 @@
     </element>
     <element id="Extension:primaryLanguage.url">
       <path value="Extension.url"/>
-      <fixedUri value="hhttp://hl7.org/fhir/hspc/StructureDefinition/primaryLanguage"/>
+      <fixedUri value="hhttp://hl7.org/fhir/fpar/StructureDefinition/primaryLanguage"/>
     </element>
     <element id="Extension:primaryLanguage.value[x]">
       <path value="Extension.value[x]"/>

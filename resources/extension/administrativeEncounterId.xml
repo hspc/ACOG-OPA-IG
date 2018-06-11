@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hspc-genencounter-administrativeEncounterId"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-administrativeEncounterId"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-administrativeEncounterId"/>
   <name value="Administrative Encounter Identifier"/>
   <title value="Administrative Encounter Identifier"/>
   <status value="draft"/>
@@ -107,7 +107,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AdministrativeEncounterId"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-AdministrativeEncounterId"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -152,7 +152,7 @@
     </element>
     <element id="Extension:administrativeencounterid.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-AdministrativeEncounterId"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-AdministrativeEncounterId"/>
     </element>
     <element id="Extension:administrativeencounterid.valueIdentifier">
       <path value="Extension.valueIdentifier"/>

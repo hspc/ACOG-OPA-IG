@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hspc-genencounter-communicationMode"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-communicationMode"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-communicationMode"/>
   <version value="2.0.0"/>
   <name value="Communication Mode"/>
   <title value="Communication Mode"/>
@@ -108,7 +108,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-CommunicationMode"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-CommunicationMode"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -155,7 +155,7 @@
     </element>
     <element id="Extension:communicationmode.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/hspc-genencounter-CommunicationMode"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-CommunicationMode"/>
     </element>
     <element id="Extension:communicationmode.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

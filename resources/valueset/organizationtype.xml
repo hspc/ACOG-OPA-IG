@@ -23,7 +23,7 @@
   <extensible value="true"/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/organization-hspc-organizationtype"/>
+      <system value="http://hl7.org/hl7.organization-hspc-organizationtype"/>
     </include>
   </compose>
 </ValueSet>

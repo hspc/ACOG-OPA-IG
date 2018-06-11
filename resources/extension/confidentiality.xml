@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extensions-confidentiality"/>
-  <url value="http://fhir.org/guides/hspc/StructureDefinition/extensions-confidentiality"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-confidentiality"/>
   <version value="2.0.0"/>
   <name value="Confidentiality"/>
   <title value="Confidentiality"/>
@@ -108,7 +108,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-confidentiality"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-confidentiality"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -155,7 +155,7 @@
     </element>
     <element id="Extension:confidentiality.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/hspc/StructureDefinition/extensions-confidentiality"/>
+      <fixedUri value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-confidentiality"/>
     </element>
     <element id="Extension:confidentiality.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
