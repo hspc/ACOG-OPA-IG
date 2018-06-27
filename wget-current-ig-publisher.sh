@@ -1,11 +1,17 @@
 #!/usr/bin/env bash
 mv org.hl7.fhir.igpublisher.jar org.hl7.fhir.igpublisher.$(date +%Y%m%d).jar  >/dev/null 2>&1
-wget -q http://build.fhir.org/org.hl7.fhir.igpublisher.jar
+curl -H "Accept: application/zip" \
+  http://build.fhir.org/org.hl7.fhir.igpublisher.jar \
+  -o org.hl7.fhir.igpublisher.jar
+
 
 #check jar file
 tar tf org.hl7.fhir.igpublisher.jar >/dev/null 2>&1
 if [ ! $? -eq 0 ]; then
   echo "Jar file is corrupt"
+else
+  # get the ig version
+  #java -Xss1g -Xms2g -Xmx4g -jar org.hl7.fhir.igpublisher.jar -version
 fi
 
 #current fhir version
