@@ -9,9 +9,6 @@ curl -H "Accept: application/zip" \
 tar tf org.hl7.fhir.igpublisher.jar >/dev/null 2>&1
 if [ ! $? -eq 0 ]; then
   echo "Jar file is corrupt"
-else
-  # get the ig version
-  #java -Xss1g -Xms2g -Xmx4g -jar org.hl7.fhir.igpublisher.jar -version
 fi
 
 #current fhir version
