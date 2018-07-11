@@ -16,3 +16,7 @@ echo "Current FHIR version:"
 curl -v --silent http://build.fhir.org 2>&1 \
   | grep -E "<title>.*</title>" \
   | sed -e 's/<\/*title>//g' -e 's/Index - //'
+
+echo "Noting changes:"
+sum *.jar
+
