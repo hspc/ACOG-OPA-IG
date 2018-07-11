@@ -230,6 +230,7 @@
     "ValueSet/QuantitativeLabCodes":{"base":"ValueSet-QuantitativeLabCodes.html"},
     "ValueSet/reasonCancelled":{"base":"ValueSet-reasonCancelled.html"},
     "ValueSet/reasonNoContraceptiveChosen":{"base":"ValueSet-reasonNoContraceptiveChosen.html"},
+	"ValueSet/transportPriority":{"base":"ValueSet-transportPriority.html"},
     "ValueSet/viplevel":{"base":"ValueSet-viplevel.html"},
     "ValueSet/virginNonVirgin":{"base":"ValueSet-virginNonVirgin.html"},
     "ValueSet/weightmassunits":{"base":"ValueSet-weightmassunits.html"},

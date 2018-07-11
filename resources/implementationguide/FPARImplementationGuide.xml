@@ -1386,6 +1386,13 @@
 	<resource>	
 		<example value="false"/>
 		<sourceReference>
+		<reference value="ValueSet/transportPriority"/>
+		<display value="Transport Priority"/>
+		</sourceReference>
+	</resource>
+	<resource>	
+		<example value="false"/>
+		<sourceReference>
 		<reference value="ValueSet/viplevel"/>
 		<display value="HSPC VIP Level value set"/>
 		</sourceReference>
