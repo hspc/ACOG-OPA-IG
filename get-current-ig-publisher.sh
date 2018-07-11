@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 mv org.hl7.fhir.igpublisher.jar org.hl7.fhir.igpublisher.$(date +%Y%m%d).jar  >/dev/null 2>&1
-wget -q http://build.fhir.org/org.hl7.fhir.igpublisher.jar
+curl -H "Accept: application/zip" \
+  http://build.fhir.org/org.hl7.fhir.igpublisher.jar \
+  -o org.hl7.fhir.igpublisher.jar
+
 
 #check jar file
 tar tf org.hl7.fhir.igpublisher.jar >/dev/null 2>&1
