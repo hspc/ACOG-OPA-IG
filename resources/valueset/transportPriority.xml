@@ -5,7 +5,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
   </meta>
-  <url value="http://hl7.org/fhir/hspc/ValueSet/transportPriority"/>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/transportPriority"/>
   <name value="HSPC Transport Priority value set"/>
   <status value="draft"/>
   <publisher value="HSPC"/>
