@@ -18,22 +18,22 @@
   <description value="A set of codes that describe the kind of documentation used to validate a date of birth."/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/v3/ActPriority"/>
+      <system value="http://snomed.info/sct"/>
       <concept>
-        <code value="A"/>
-        <display value="ASAP"/>
+        <code value="709122007"/>
+        <display value="ASAP-As soon as possible"/>
       </concept>
       <concept>
-        <code value="S"/>
-        <display value="stat"/>
+        <code value="49499008"/>
+        <display value="Stat"/>
       </concept>
       <concept>
-        <code value="R"/>
-        <display value="routine"/>
+        <code value="50811001"/>
+        <display value="Routine"/>
       </concept>
       <concept>
-        <code value="UR"/>
-        <display value="urgent"/>
+        <code value="103391001"/>
+        <display value="Urgent"/>
       </concept>
     </include>
   </compose>
