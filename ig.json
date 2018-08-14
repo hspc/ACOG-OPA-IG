@@ -214,7 +214,7 @@
     "ValueSet/humanPapillomaVirusTests":{"base":"ValueSet-humanPapillomaVirusTests.html"},
     "ValueSet/LabNullFlavor":{"base":"ValueSet-LabNullFlavor.html"},
     "ValueSet/negativePositive":{"base":"ValueSet-negativePositive.html"},
-    "ValueSet/neisseriaGonorrhoeaeTests":{"base":"ValueSet-neisseriaGonorrhoeaeTests/html"},
+    "ValueSet/neisseriaGonorrhoeaeTests":{"base":"ValueSet-neisseriaGonorrhoeaeTests.html"},
     "ValueSet/observationFindings":{"base":"ValueSet-observationFindings.html"},
     "ValueSet/observation-weightPrecond":{"base":"ValueSet-observation-weightPrecond.html"},
     "ValueSet/OrdinalLabCodes":{"base":"ValueSet-OrdinalLabCodes.html"},
