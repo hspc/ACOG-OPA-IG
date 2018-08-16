@@ -8,8 +8,8 @@
     <version value="0.01"/>
     <name value="FPAR Reason No Contraceptive Chosen value set"/>
     <status value="draft"/>
-    <publisher value="Family Planning Annual Report"/>
     <date value="2018-03-29"/>
+    <publisher value="Family Planning Annual Report"/>
     <description value="Select SNOMED code system values.  A set of codes that describe why an individual did not choose to use contraception."/>
     <immutable value="true"/>
     <copyright value="TBD"/>

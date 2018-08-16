@@ -8,8 +8,8 @@
     <version value="0.01"/>
     <name value="FPAR Pirmary Insurance Classification value set"/>
     <status value="draft"/>
-    <publisher value="Family Planning Annual Report"/>
     <date value="2018-03-29"/>
+    <publisher value="Family Planning Annual Report"/>
     <description value="Select SOP (Source Of Payment Typology) codes.  A set of codes that describe how the primary insurance is classified."/>
     <immutable value="true"/>
     <copyright value="TBD"/>

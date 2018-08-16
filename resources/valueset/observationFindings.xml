@@ -9,8 +9,8 @@
   <version value="0.01"/>
   <name value="HSPC Findings Value Set Definition"/>
   <status value="draft"/>
-  <publisher value="Health Services Platform Consortium (HSPC)"/>
   <date value="2015-02-09"/>
+  <publisher value="Health Services Platform Consortium (HSPC)"/>
   <description value="SELECT SNOMED CT code system values descending from &#39;change values&#39; (288533004)."/>
   <immutable value="true"/>
   <copyright value="TBD"/>

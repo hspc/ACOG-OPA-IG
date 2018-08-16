@@ -8,8 +8,8 @@
     <version value="0.01"/>
     <name value="FPAR English Proficiency value set"/>
     <status value="draft"/>
-    <publisher value="Family Planning Annual Report"/>
     <date value="2018-03-29"/>
+    <publisher value="Family Planning Annual Report"/>
     <description value="Select SNOMED CT codes.  A set of codes that describe if an individual is proficient or not in speaking English."/>
     <immutable value="true"/>
     <copyright value="TBD"/>

@@ -8,8 +8,8 @@
     <version value="0.01"/>
     <name value="FPAR Annual Household Income Ranges value set"/>
     <status value="draft"/>
-    <publisher value="Family Planning Annual Report"/>
     <date value="2018-03-29"/>
+    <publisher value="Family Planning Annual Report"/>
     <description value="Select LOINC Answer codes. A set of LOINC answer codes that describe how much money is earned by an entire household in one calendar year."/>
     <immutable value="true"/>
     <copyright value="TBD"/>

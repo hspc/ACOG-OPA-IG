@@ -8,8 +8,8 @@
   <version value="0.01"/>
   <name value="HSPC Reason Cancelled value set."/>
   <status value="draft"/>
-  <publisher value="Health Services Platform Consortium (HSPC)"/>
   <date value="2015-08-06"/>
+  <publisher value="Health Services Platform Consortium (HSPC)"/>
   <description value="Select HL7 Act Reason and SNOMED codes."/>
   <immutable value="true"/>
   <copyright value="TBD"/>

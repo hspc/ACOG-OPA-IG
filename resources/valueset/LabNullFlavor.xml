@@ -8,6 +8,7 @@
   <version value="0.01"/>
   <name value="HSPC Lab Null Flavor"/>
   <status value="draft"/>
+  <date value="2014-06-25"/>
   <publisher value="Intermountain Healthcare"/>
   <contact>
     <telecom>
@@ -15,7 +16,6 @@
       <value value="http://www.clinicaleleement.com"/>
     </telecom>
   </contact>
-  <date value="2014-06-25"/>
   <description value="A list of reasons why a lab result may have no value"/>
   <copyright value="IHC"/>
   <compose>

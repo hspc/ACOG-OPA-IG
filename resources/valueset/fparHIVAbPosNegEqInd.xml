@@ -8,8 +8,8 @@
     <version value="0.01"/>
     <name value="FPAR HIV Ab Positive Negative Equivocal Indeterminate value set"/>
     <status value="draft"/>
-    <publisher value="Family Planning Annual Report"/>
     <date value="2018-03-29"/>
+    <publisher value="Family Planning Annual Report"/>
     <description value="Select SNOMED CT codes. A set of codes for the positive, negative, equivocal, and indeterminate results of laboratory HIV antibody testing."/>
     <immutable value="true"/>
     <copyright value="TBD"/>

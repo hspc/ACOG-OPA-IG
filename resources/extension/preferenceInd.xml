@@ -3,6 +3,7 @@
   <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-preferenceIndicator"/>
   <name value="Preference Indicator"/>
   <status value="draft"/>
+  <date value="2015-07-29"/>
   <publisher value="HSPC"/>
   <contact>
     <telecom>
@@ -10,7 +11,6 @@
       <value value="http://healthcaresoa.org"/>
     </telecom>
   </contact>
-  <date value="2015-07-29"/>
   <description value="An indication that the stated value is the preferred value, i.e. address, phone number, etc."/>
   <fhirVersion value="1.5.0"/>
   <mapping>

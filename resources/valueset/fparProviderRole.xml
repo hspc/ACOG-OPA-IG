@@ -8,8 +8,8 @@
     <version value="0.01"/>
     <name value="FPAR Provider Role value set"/>
     <status value="draft"/>
-    <publisher value="Family Planning Annual Report"/>
     <date value="2018-03-29"/>
+    <publisher value="Family Planning Annual Report"/>
     <description value="Select SNOMED CT codes.  A set of codes that describe the role played by the provider for the FPAR encounter."/>
     <immutable value="true"/>
     <copyright value="TBD"/>

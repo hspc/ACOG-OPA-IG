@@ -8,6 +8,7 @@
   <version value="0.01"/>
   <name value="HSPC Body Weight Associated Precondition"/>
   <status value="draft"/>
+  <date value="2015-05-19"/>
   <publisher value="HSPC"/>
   <contact>
     <telecom>
@@ -15,7 +16,6 @@
       <value value="http://healthcaresoa.org"/>
     </telecom>
   </contact>
-  <date value="2015-05-19"/>
   <description value="SNOMED CT code system values descending from the following:&#39;body position finding&#39; 9851009"/>
   <extensible value="true"/>
   <compose>

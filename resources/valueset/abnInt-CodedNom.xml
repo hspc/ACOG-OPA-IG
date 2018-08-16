@@ -9,8 +9,8 @@
   <version value="0.01"/>
   <name value="Abnormal Interpretation Numeric Nom"/>
   <status value="draft"/>
-  <publisher value="HSPC"/>
   <date value="2014-06-25"/>
+  <publisher value="HSPC"/>
   <contact>
     <telecom>
       <system value="other"/>

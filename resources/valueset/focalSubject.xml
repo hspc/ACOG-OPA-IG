@@ -9,6 +9,7 @@
   <version value="0.01"/>
   <name value="HSPC FocalSubject"/>
   <status value="draft"/>
+  <date value="2015-05-26"/>
   <publisher value="HSPC"/>
   <contact>
     <telecom>
@@ -16,7 +17,6 @@
       <value value="http://healthcaresoa.org"/>
     </telecom>
   </contact>
-  <date value="2015-05-26"/>
   <description value="The set of codes that describe the subject of an obsevation when not the patient of record."/>
   <immutable value="true"/>
   <extensible value="true"/>

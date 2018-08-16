@@ -8,8 +8,8 @@
     <version value="0.01"/>
     <name value="FPAR Detected Not Detected Equivocal Indeterminate value set"/>
     <status value="draft"/>
-    <publisher value="Family Planning Annual Report"/>
     <date value="2018-03-29"/>
+    <publisher value="Family Planning Annual Report"/>
     <description value="Select SNOMED CT codes. A set of codes that describe results of detection, equivication, or indetermination."/>
     <immutable value="true"/>
     <copyright value="TBD"/>
