@@ -8,6 +8,7 @@
   <url value="http://hl7.org/fhir/fpar/ValueSet/chlamydiaTrachomatisTests"/>
   <name value="FPAR Chlamydia Trachomatis Tests"/>
   <status value="draft"/>
+  <date value="2015-02-20T13:44:49+11:00"/>
   <publisher value="HSPC"/>
   <contact>
     <telecom>
@@ -15,7 +16,6 @@
       <value value="http://healthcaresoa.org"/>
     </telecom>
   </contact>
-  <date value="2015-02-20T13:44:49+11:00"/>
   <description value="Chlamydia Trachomatis test LOINC codes used by FPAR"/>
   <copyright value="This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
   <compose>
