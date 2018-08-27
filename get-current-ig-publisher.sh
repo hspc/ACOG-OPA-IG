@@ -17,6 +17,10 @@ curl -v --silent http://build.fhir.org 2>&1 \
   | grep -E "<title>.*</title>" \
   | sed -e 's/<\/*title>//g' -e 's/Index - //'
 
+#current ig tool version
+echo "IG tool version:"
+java -Xss1g -Xms2g -Xmx4g -jar org.hl7.fhir.igpublisher.jar --version 2>&1 | head -1
+
 echo "Noting changes:"
 sum *.jar
 
