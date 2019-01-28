@@ -120,11 +120,6 @@
       <comment value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. 'the patient was an inpatient of the hospital for this time range') or one value from the range applies (e.g. 'give to the patient between these two times'). If duration is required, specify the type as Interval|Duration."/>
       <min value="0"/>
       <max value="1"/>
-      <base>
-        <path value="Extension.value[x]"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="Period"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/Period"/>

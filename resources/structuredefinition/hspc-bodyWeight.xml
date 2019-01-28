@@ -332,8 +332,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/deltaFlag"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -366,8 +366,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/dataOriginationMode"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -400,8 +400,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/associatedPrecondition"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2165,8 +2165,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/deltaFlag"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2185,8 +2185,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/dataOriginationMode"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2205,8 +2205,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/associatedPrecondition"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>

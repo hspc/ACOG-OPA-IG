@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hspc-genencounter-ambulatoryStatus"/>
-  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-ambulatoryStatus"/>
+  <id value="ambulatoryStatus"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/ambulatoryStatus"/>
   <version value="2.0.0"/>
   <name value="Ambulatory Status"/>
   <title value="Ambulatory Status"/>

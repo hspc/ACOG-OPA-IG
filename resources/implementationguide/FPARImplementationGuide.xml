@@ -329,6 +329,13 @@
     <resource>
       <example value="false"/>
       <sourceReference>
+        <reference value="StructureDefinition/fpar-practitionerRole"/>
+        <display value="The FPAR profile of the Practitioner resource."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/fpar-pregnancyIntentionEval"/>
         <display value="An observation of an individual's intention to be or not be pregnant."/>
       </sourceReference>

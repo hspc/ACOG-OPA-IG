@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extensions-bodyPosition"/>
-  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-bodyPosition"/>
+  <id value="bodyPosition"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/bodyPosition"/>
   <version value="2.0.0"/>
   <name value="Body Position"/>
   <title value="Body Position"/>

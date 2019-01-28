@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extensions-associatedPrecondition"/>
-  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-associatedPrecondition"/>
+  <id value="associatedPrecondition"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/associatedPrecondition"/>
   <version value="2.0.0"/>
   <name value="associatedPrecondition"/>
   <title value="associatedPrecondition"/>

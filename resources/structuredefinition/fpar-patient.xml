@@ -1170,8 +1170,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="CodeableConcept"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1289,8 +1288,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/primaryIndicator"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1738,22 +1737,15 @@
       </mapping>
     </element>
     <element id="Patient:fpar-patient.contact">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Contact"/>
-      </extension>
       <path value="Patient.contact"/>
       <slicing>
         <discriminator>
-	  <type value="value"/>
-	  <path value="contact.name"/>
-	</discriminator>
-	<ordered value="false"/>
+	      <type value="value"/>
+	      <path value="contact.name"/>
+	    </discriminator>
+	    <ordered value="false"/>
         <rules value="openAtEnd"/>
       </slicing>
-      <short value="A contact party (e.g. guardian, partner, friend) for the patient"/>
-      <definition value="A contact party (e.g. guardian, partner, friend) for the patient."/>
-      <comment value="Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact."/>
-      <requirements value="Need to track people you can contact about the patient."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1764,41 +1756,11 @@
       <type>
         <code value="BackboneElement"/>
       </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="children().count() &gt; id.count()"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="Element"/>
-      </constraint>
-      <constraint>
-        <key value="pat-1"/>
-        <severity value="error"/>
-        <human value="SHALL at least contain a contact&#39;s details or a reference to an organization"/>
-        <expression value="name.exists() or telecom.exists() or address.exists() or organization.exists()"/>
-        <xpath value="exists(f:name) or exists(f:telecom) or exists(f:address) or exists(f:organization)"/>
-      </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="player[classCode=PSN|ANM and determinerCode=INSTANCE]/scopedRole[classCode=CON]"/>
-      </mapping>
-      <mapping>
-        <identity value="cda"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Patient:fpar-patient.contact:emergencycontact">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Contact"/>
-      </extension>
       <path value="Patient.contact"/>
       <sliceName value="EmergencyContact"/>
-      <short value="A contact party (e.g. guardian, partner, friend) for the patient"/>
-      <definition value="A contact party (e.g. guardian, partner, friend) for the patient."/>
-      <comment value="Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact."/>
-      <requirements value="Need to track people you can contact about the patient."/>
-      <alias value="Emergency Contact"/>
+      <short value="Emergency Contact"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1851,7 +1813,7 @@
     <element id="Patient:fpar-patient.contact:emergencycontact.extension:contactpartyid">
       <path value="Patient.contact.extension"/>
       <sliceName value="contactPartyId"/>
-      <short value="Extension"/>
+      <short value="Contact Party Id"/>
       <definition value="An Extension"/>
       <min value="0"/>
       <max value="1"/>
@@ -1861,8 +1823,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="Identifier"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2119,9 +2080,6 @@
       </mapping>
     </element>
     <element id="Patient:fpar-patient.contact:contact">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Contact"/>
-      </extension>
       <path value="Patient.contact"/>
       <sliceName value="Contact"/>
       <short value="A contact party (e.g. guardian, partner, friend) for the patient"/>
@@ -2191,7 +2149,6 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2747,8 +2704,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/communicationMode"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -3305,8 +3262,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/primaryIndicator"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3319,15 +3276,14 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Patient:fpar-patient.contact:emergencycontact">
+    <element id="Patient:fpar-patient.contact">
       <path value="Patient.contact"/>
-      <sliceName value="EmergencyContact"/>
       <slicing>
         <discriminator>
-	  <type value="value"/>
-	  <path value="contact.name"/>
-	</discriminator>
-	<ordered value="false"/>
+		  <type value="value"/>
+		  <path value="contact.name"/>
+		</discriminator>
+		<ordered value="false"/>
         <rules value="openAtEnd"/>
       </slicing>
       <alias value="Emergency Contact"/>
@@ -3337,14 +3293,18 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
+	<element id="Patient:fpar-patient.contact:emergencycontact">
+	  <path value="Patient.contact"/>
+      <sliceName value="EmergencyContact"/>
+	  <short value="Emergency Contact"/>
+	</element>
     <element id="Patient:fpar-patient.contact:emergencycontact.extension:contactpartyid">
       <path value="Patient.contact.extension"/>
       <sliceName value="contactPartyId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="Identifier"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3383,8 +3343,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="Identifier"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3403,8 +3362,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/communicationMode"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3462,8 +3421,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="CodeableConcept"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>

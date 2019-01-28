@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hspc-genencounter-chiefComplaintId"/>
-  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-chiefComplaintId"/>
+  <id value="chiefComplaintId"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/chiefComplaintId"/>
   <name value="Chief Complaint Identifier"/>
   <title value="Chief Complaint Identifier"/>
   <status value="draft"/>

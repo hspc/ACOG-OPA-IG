@@ -58,6 +58,7 @@
     "Extension/focalSubject":{"base":"Extension-focalSubject.html"},
     "Extension/hospitalService":{"base":"Extension-hospitalService.html"},
     "Extension/organizationPeriod":{"base":"Extension-organizationPeriod.html"},
+    "Extension/primaryIndicator":{"base":"Extension-primaryIndicator.html"},
     "Extension/primaryInsuranceClassification":{"base":"Extension-primaryInsuranceClassification.html"},
     "Extension/primaryLanguage":{"base":"Extension-primaryLanguage.html"},
     "Extension/reasonCancelled":{"base":"Extension-reasonCancelled.html"},

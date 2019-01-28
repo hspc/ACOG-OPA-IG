@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hspc-genencounter-departedByTransportation"/>
-  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-departedByTransportation"/>
+  <id value="departedByTransportation"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/departedByTransportation"/>
   <version value="2.0.0"/>
   <name value="Departed by Transportation"/>
   <title value="Departed by Transportation"/>

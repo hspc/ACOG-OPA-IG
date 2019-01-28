@@ -956,8 +956,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-preferenceIndicator"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1190,8 +1190,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryIndicator"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1698,8 +1698,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="CodeableConcept"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1921,8 +1920,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-communicationMode"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2076,8 +2075,8 @@
       <path value="Practitioner.telecom.extension"/>
       <sliceName value="PreferenceIndicator"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-preferenceIndicator"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2093,8 +2092,8 @@
       <path value="Practitioner.address.extension"/>
       <sliceName value="PrimaryIndicator"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryIndicator"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2117,8 +2116,7 @@
       <path value="Practitioner.qualification.extension"/>
       <sliceName value="CredentialEligibiltyIndicator"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="CodeableConcept"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2142,8 +2140,8 @@
       <sliceName value="CommunicationMode"/>
       <definition value="The method by which an individual communicates."/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-communicationMode"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>

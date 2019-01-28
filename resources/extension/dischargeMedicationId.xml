@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hspc-genencounter-dischargeMedicationId"/>
-  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-dischargeMedicationId"/>
+  <id value="dischargeMedicationId"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/dischargeMedicationId"/>
   <name value="Dishcarge Medication Identifier"/>
   <title value="Dishcarge Medication Identifier"/>
   <status value="draft"/>

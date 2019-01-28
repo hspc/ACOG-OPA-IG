@@ -263,7 +263,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
+        <code value="extension"/>
+		<profile value="http://hl7.org/fhir/fpar/StructureDefinition/organizationPeriod"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1368,8 +1369,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/contactPeriod"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1395,8 +1396,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/primaryLanguage"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1577,8 +1578,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/organizationPeriod"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -1738,11 +1739,12 @@
     <element id="Organization:organization.contact.extension:contactperiod$Extension">
       <path value="Organization.contact.extension"/>
       <sliceName value="ContactPeriod"/>
+	  <short value="Contact Period"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+		<profile value="http://hl7.org/fhir/fpar/StructureDefinition/contactPeriod"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -1751,11 +1753,12 @@
     <element id="Organization:organization.contact.extension:primarylanguage$Extension">
       <path value="Organization.contact.extension"/>
       <sliceName value="PrimaryLanguage"/>
+	  <short value="Primary Language"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+		<profile value="http://hl7.org/fhir/fpar/StructureDefinition/primaryLanguage"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>

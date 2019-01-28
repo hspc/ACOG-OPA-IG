@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extensions-primaryIndicator"/>
-  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryIndicator"/>
+  <id value="primaryIndicator"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/primaryIndicator"/>
   <name value="PrimaryInd"/>
   <status value="draft"/>
   <date value="2015-07-29"/>

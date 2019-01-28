@@ -289,8 +289,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/confidentiality"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -323,8 +323,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/reasonCancelled"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -357,8 +357,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/hospitalService"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -391,8 +391,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/vipLevel"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -425,8 +425,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/ambulatoryStatus"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -460,8 +460,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/departedByTransportation"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -495,8 +495,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/arrivedByTransportation"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -529,8 +529,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/chiefComplaintId"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -556,8 +556,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/admitMedicationId"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -583,8 +583,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/dischargeMedicationId"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -610,8 +610,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/communicationMode"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -644,8 +644,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/administrativeEncounterId"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1585,7 +1585,7 @@ This would be used for a case where an admission starts of as an emergency encou
     <element id="Encounter:fpargeneralencounter.length:lengthofstay">
       <path value="Encounter.length"/>
       <sliceName value="LengthOfStay"/>
-      <short value="Quantity of time the encounter lasted (less time absent)"/>
+	  <short value="Length of Stay"/>
       <definition value="Quantity of time the encounter lasted. This excludes the time during leaves of absence."/>
       <comment value="May differ from the time the Encounter.period lasted because of leave of absence."/>
       <alias value="Length of stay"/>
@@ -1780,7 +1780,7 @@ This would be used for a case where an admission starts of as an emergency encou
     <element id="Encounter:fpargeneralencounter.length:encounterlength">
       <path value="Encounter.length"/>
       <sliceName value="EncounterLength"/>
-      <short value="Quantity of time the encounter lasted (less time absent)"/>
+	  <short value="Encounter Length"/>
       <definition value="Quantity of time the encounter lasted. This excludes the time during leaves of absence."/>
       <comment value="May differ from the time the Encounter.period lasted because of leave of absence."/>
       <alias value="EncounterLength"/>
@@ -2275,40 +2275,10 @@ The duration recorded in the period of this encounter covers the entire scope of
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Encounter:fpargeneralencounter.hospitalization.extension">
-      <path value="Encounter.hospitalization.extension"/>
-      <slicing id="26">
-        <discriminator>
-		  <type value="value"/>
-		  <path value="url"/>
-		</discriminator>
-        <ordered value="false"/>
-        <rules value="open"/>
-      </slicing>
-      <short value="Additional Content defined by implementations"/> 
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/> 
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/> 
-      <alias value="extensions"/> 
-      <alias value="user content"/> 
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-      </type>
-      <mapping> 
-        <identity value="rim"/> 
-        <map value="n/a"/> 
-      </mapping> 
-    </element>
     <element id="Encounter:fpargeneralencounter.hospitalization.extension:preadmittestindicator">
       <path value="Encounter.hospitalization.extension"/>
       <sliceName value="PreAdmitTestIndicator"/>
-      <short value="Extension"/>
+      <short value="Preadmit test indicator"/>
       <definition value="An Extension"/>
       <min value="0"/>
       <max value="1"/>
@@ -2318,8 +2288,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="CodeableConcept"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2352,8 +2321,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <max value="*"/>
       </base>
       <type>
-        <code value="Reference"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <code value="CodeableConcept"/>
       </type>      
       <constraint>
         <key value="ext-1"/>
@@ -2686,7 +2654,7 @@ The duration recorded in the period of this encounter covers the entire scope of
     <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation">
       <path value="Encounter.location"/>
       <sliceName value="AssignedParticipatingLocation"/>
-      <short value="List of locations where the patient has been"/>
+      <short value="Assigned Participating Location"/>
       <definition value="List of locations where  the patient has been during this encounter."/>
       <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type 'kind' such as 'client's home' and an encounter.class = 'virtual'."/>
       <alias value="AssignedParticipatingLocation"/>
@@ -2740,8 +2708,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="CodeableConcept"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2853,7 +2820,7 @@ The duration recorded in the period of this encounter covers the entire scope of
     <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation">
       <path value="Encounter.location"/>
       <sliceName value="ServiceDeliveryLocation"/>
-      <short value="List of locations where the patient has been"/>
+	  <short value="Service Delivery Location"/>
       <definition value="List of locations where  the patient has been during this encounter."/>
       <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type 'kind' such as 'client's home' and an encounter.class = 'virtual'."/>
       <alias value="ServiceDeliveryLocationCondition"/>
@@ -2907,8 +2874,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <max value="*"/>
       </base>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="CodeableConcept"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -3037,36 +3003,7 @@ The duration recorded in the period of this encounter covers the entire scope of
         <identity value="rim"/> 
         <map value="n/a"/> 
       </mapping> 
-    </element> 
-    <element id="Encounter:fpargeneralencounter.location.extension">
-      <path value="Encounter.location.extension"/> 
-      <short value="Additional Content defined by implementations"/> 
-      <definition value="May be used to represent additional information that is not part of the basic definition
-       of the element. In order to make the use of extensions safe and manageable, there is a
-       strict set of governance  applied to the definition and use of extensions. Though any
-       implementer is allowed to define an extension, there is a set of requirements that SHALL
-       be met as part of the definition of the extension."/> 
-      <comment value="There can be no stigma associated with the use of extensions by any application, project,
-       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
-        The use of extensions is what allows the FHIR specification to retain a core level of
-       simplicity for everyone."/> 
-      <alias value="extensions"/> 
-      <alias value="user content"/> 
-      <min value="0"/> 
-      <max value="*"/> 
-      <base> 
-        <path value="Element.extension"/> 
-        <min value="0"/> 
-        <max value="*"/> 
-      </base> 
-      <type> 
-        <code value="Extension"/> 
-      </type> 
-      <mapping> 
-        <identity value="rim"/> 
-        <map value="n/a"/> 
-      </mapping> 
-    </element> 
+    </element>
     <element id="Encounter:fpargeneralencounter.location.modifierExtension">
       <path value="Encounter.location.modifierExtension"/> 
       <short value="Extensions that cannot be ignored"/> 
@@ -3231,6 +3168,10 @@ The duration recorded in the period of this encounter covers the entire scope of
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
+	  <type>
+		<code value="extension"/>
+		<profile value="http://hl7.org/fhir/fpar/StructureDefinition/reasonCancelled"/>
+	  </type>
       <binding>
         <strength value="preferred"/>
         <description value="A set of codes that describe why an individual's encounter has been done away with."/>
@@ -3245,8 +3186,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/confidentiality"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3265,8 +3206,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/hospitalService"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3285,8 +3226,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/vipLevel"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3305,8 +3246,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/ambulatoryStatus"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3326,8 +3267,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/departedByTransportation"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3347,8 +3288,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/arrivedByTransportation"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3367,8 +3308,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/chiefComplaintId"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3380,8 +3321,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/admitMedicationId"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3393,8 +3334,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/dischargeMedicationId"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3406,8 +3347,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="hhttp://hl7.org/fhir/fpar/StructureDefinition/communicationMode"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3426,8 +3367,8 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="extension"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/administrativeEncounterId"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3509,9 +3450,9 @@ The duration recorded in the period of this encounter covers the entire scope of
 		<map value="76427-4"/>
 	  </mapping>
 	</element>
-    <element id="Encounter:fpargeneralencounter.length:lengthofstay">
+    <element id="Encounter:fpargeneralencounter.length">
       <path value="Encounter.length"/>
-      <sliceName value="LengthOfStay"/>
+      <sliceName value="length"/>
       <slicing>
         <discriminator>
 		  <type value="value"/>
@@ -3527,6 +3468,13 @@ The duration recorded in the period of this encounter covers the entire scope of
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
+	<element id="Encounter:fpargeneralencounter.length:lengthofstay">
+	  <path value="Encounter.length"/>
+	  <sliceName value="lengthOfStay"/>
+	  <short value="Length of Stay"/>
+	  <min value="0"/>
+	  <max value="0"/>
+	</element>
     <element id="Encounter:fpargeneralencounter.length:lengthofstay.system">
       <path value="Encounter.length.system"/>
       <type>
@@ -3552,6 +3500,7 @@ The duration recorded in the period of this encounter covers the entire scope of
     <element id="Encounter:fpargeneralencounter.length:encounterlength">
       <path value="Encounter.length"/>
       <sliceName value="EncounterLength"/>
+	  <short value="Encoutner Length"/>
       <alias value="EncounterLength"/>
       <min value="0"/>
       <max value="1"/>
@@ -3584,11 +3533,11 @@ The duration recorded in the period of this encounter covers the entire scope of
     <element id="Encounter:fpargeneralencounter.hospitalization.extension:preadmittestindicator">
       <path value="Encounter.hospitalization.extension"/>
       <sliceName value="PreAdmitTestIndicator"/>
+	  <short value="Preadmit teset indicator"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="CodeableConcept"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3601,6 +3550,16 @@ The duration recorded in the period of this encounter covers the entire scope of
         </valueSetReference>
       </binding>
     </element>
+	<element id="Encounter:fpargeneralencounter.hospitalization.extension:admittingDiagnosis">
+	  <path value="Encounter.hospitalization.extension"/>
+	  <sliceName value="admittingDiagnosis"/>
+	  <short value="AdmittingDiagnosis"/>
+	  <min value="0"/>
+	  <max value="1"/>
+	  <type>
+		<code value="CodeableConcept"/>
+	  </type>
+	</element>
     <element id="Encounter:fpargeneralencounter.hospitalization.admitSource">
       <path value="Encounter.hospitalization.admitSource"/>
       <mustSupport value="false"/>
@@ -3668,6 +3627,7 @@ The duration recorded in the period of this encounter covers the entire scope of
     <element id="Encounter:fpargeneralencounter.location:assignedparticipatinglocation">
       <path value="Encounter.location"/>
       <sliceName value="AssignedParticipatingLocation"/>
+	  <short value="Assigned Participating Location"/>
       <alias value="AssignedParticipatingLocation"/>
       <min value="0"/>
       <max value="1"/>
@@ -3681,8 +3641,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="CodeableConcept"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -3708,6 +3667,7 @@ The duration recorded in the period of this encounter covers the entire scope of
     <element id="Encounter:fpargeneralencounter.location:servicedeliverylocation">
       <path value="Encounter.location"/>
       <sliceName value="ServiceDeliveryLocation"/>
+	  <short value="Service Delivery Location"/>
       <alias value="ServiceDeliveryLocationCondition"/>
       <min value="0"/>
       <max value="1"/>
@@ -3721,8 +3681,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <code value="CodeableConcept"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>

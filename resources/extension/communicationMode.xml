@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hspc-genencounter-communicationMode"/>
-  <url value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-communicationMode"/>
+  <id value="communicationMode"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/communicationMode"/>
   <version value="2.0.0"/>
   <name value="Communication Mode"/>
   <title value="Communication Mode"/>
