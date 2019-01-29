@@ -753,15 +753,15 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/fpar-practitioner"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-organization"/>
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/fpar-organization"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-patient"/>
+        <targetProfile value="http://hl7.org/fhir/fpar/StructureDefinition/fpar-patient"/>
       </type>
       <type>
         <code value="Reference"/>

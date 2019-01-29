@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extensions-dataAbsentReason"/>
-  <url value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-dataAbsentReason"/>
+  <id value="dataAbsentReason"/>
+  <url value="http://hl7.org/fhir/fpar/StructureDefinition/dataAbsentReason"/>
   <name value="DataAbsentReason"/>
   <status value="draft"/>
   <date value="2017-05-23"/>

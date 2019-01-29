@@ -1191,7 +1191,7 @@
       </base>
       <type>
         <code value="extension"/>
-        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryIndicator"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/primaryIndicator"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -1688,7 +1688,7 @@
     <element id="Practitioner:fpar-practitioner.qualification.extension:credentialeligibiltyindicator$Extension">
       <path value="Practitioner.qualification.extension"/>
       <sliceName value="CredentialEligibiltyIndicator"/>
-      <short value="Extension"/>
+      <short value="Credential Eligibility Indicator"/>
       <definition value="An Extension"/>
       <min value="0"/>
       <max value="*"/>
@@ -1921,7 +1921,7 @@
       </base>
       <type>
         <code value="extension"/>
-        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-communicationMode"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/communicationMode"/>
       </type>
       <constraint>
         <key value="ext-1"/>
@@ -2093,7 +2093,7 @@
       <sliceName value="PrimaryIndicator"/>
       <type>
         <code value="extension"/>
-        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/extensions-primaryIndicator"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/primaryIndicator"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -2115,6 +2115,7 @@
     <element id="Practitioner:fpar-practitioner.qualification.extension:credentialeligibiltyindicator$Extension">
       <path value="Practitioner.qualification.extension"/>
       <sliceName value="CredentialEligibiltyIndicator"/>
+	  <short value="Credential Eligibility Indicator"/>
       <type>
         <code value="CodeableConcept"/>
       </type>
@@ -2135,13 +2136,13 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Practitioner:fpar-practitioner.communication.extension:communicationMde">
+    <element id="Practitioner:fpar-practitioner.communication.extension:communicationMode">
       <path value="Practitioner.communication.extension"/>
       <sliceName value="CommunicationMode"/>
       <definition value="The method by which an individual communicates."/>
       <type>
         <code value="extension"/>
-        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/hspc-genencounter-communicationMode"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/communicationMode"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>

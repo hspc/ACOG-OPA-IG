@@ -3348,7 +3348,7 @@ The duration recorded in the period of this encounter covers the entire scope of
       <max value="1"/>
       <type>
         <code value="extension"/>
-        <profile value="hhttp://hl7.org/fhir/fpar/StructureDefinition/communicationMode"/>
+        <profile value="http://hl7.org/fhir/fpar/StructureDefinition/communicationMode"/>
       </type>
       <mustSupport value="false"/>
       <isModifier value="false"/>
