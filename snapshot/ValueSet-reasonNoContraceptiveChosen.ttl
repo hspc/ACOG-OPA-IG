@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/reasonNoContraceptiveChosen> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "reasonNoContraceptiveChosen"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR Reason No Contraceptive Chosen value set</h2><div><p>Select SNOMED code system values.  A set of codes that describe why an individual did not choose to use contraception.</p>\n</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454361000124100\">454361000124100</a></td><td>Has same sex partner (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454731000124108\">454731000124108</a></td><td>Sexually abstinent (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15296000\">15296000</a></td><td>Sterility (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454411000124108\">454411000124108</a></td><td>Wants to become pregnant (finding)</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-extensible" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/fpar/ValueSet/reasonNoContraceptiveChosen"];
+  fhir:ValueSet.version [ fhir:value "0.01"];
+  fhir:ValueSet.name [ fhir:value "FPAR Reason No Contraceptive Chosen value set"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2018-03-29T00:00:00-04:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Family Planning Annual Report"];
+  fhir:ValueSet.description [ fhir:value "Select SNOMED code system values.  A set of codes that describe why an individual did not choose to use contraception."];
+  fhir:ValueSet.immutable [ fhir:value "true"^^xsd:boolean];
+  fhir:ValueSet.copyright [ fhir:value "TBD"];
+  fhir:ValueSet.extensible [ fhir:value "true"^^xsd:boolean];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "454361000124100" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Has same sex partner (finding)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "454731000124108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sexually abstinent (finding)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "74964007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other (qualifier value)" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15296000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sterility (finding)" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "454411000124108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wants to become pregnant (finding)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/reasonNoContraceptiveChosen.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ValueSet/reasonNoContraceptiveChosen.ttl> .
+
+# -------------------------------------------------------------------------------------
+

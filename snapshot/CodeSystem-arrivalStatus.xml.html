@@ -1,0 +1,255 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>The Family Planning Annual Report (FPAR) Implementation Guide</title>
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap-3.0.0.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+  <link href="assets/js/jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+    href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"
+    href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+
+
+    
+    <style type="text/css">
+      pre{
+          width: auto !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!--status-bar-->
+<div>
+ <div id="segment-header" class="segment">
+  <!-- segment-header -->
+  <div class="container">
+   <!-- container -->
+   <a id="logo" no-external="true" href="http://hl7.org/fhir">
+    <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
+   </a>
+   <div id="hl7-status">
+    <b>Current Build</b>
+   </div>
+
+   <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+     <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
+    </a>
+   </div>
+   <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm">
+     <img alt="Search FHIR" src="assets/images/search.png"/>
+    </a>
+   </div>
+  </div>
+  <div class="container">
+   <!-- container -->
+  </div>
+ </div>
+ <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">
+  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">
+   <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse"
+      type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/2017Jan/index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/index.html">Home</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/documentation.html">Documentation</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/modules.html">Modules</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/resourcelist.html">Resources</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/profilelist.html">Profiles</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/extensibility-registry.html">Extensions</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/operationslist.html">Operations</a>
+       </li>
+
+      </ul>
+     </div>
+     <!-- /.nav-collapse -->
+    </div>
+    <!-- /.container -->
+   </nav>
+   <!-- /.navbar -->
+
+   <!-- /HEADER CONTENT -->
+  </div>
+  <!-- /container -->
+ </div>
+ <!-- /segment-navbar -->
+</div>
+
+    
+    <div id="segment-breadcrumb" class="segmnt">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li title="The Family Planning Annual Report (FPAR) Implementation Guide"><a href="index.html"><b>The Family Planning Annual Report (FPAR) Implementation Guide</b></a></li>
+          
+          
+          <li><b>arrivalStatus Details</b></li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div id="segment-content" class="segment">
+      <div class="container">
+        <div class="row">
+          <div class="inner-wrapper">
+            <div class="col-12">
+              <ul class="nav nav-tabs">
+                <li><a href="CodeSystem-arrivalStatus.html">Content</a></li>
+                <li class="active"><a href="CodeSystem-arrivalStatus.xml.html">XML</a></li>
+                <li class=""><a href="CodeSystem-arrivalStatus.json.html">JSON</a></li>
+              </ul>
+              
+              <br/>
+              <pre class="xml">
+
+&lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#id">value</a>=&quot;arrivalStatus&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;HSPC Patient Arrival Status&lt;/h2&gt;&lt;div&gt;&lt;p&gt;The codes that describe whether or not the patient has arrived at the specified location for the encounter.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;b&gt;Copyright Statement:&lt;/b&gt; This value set includes content from and copyrighted by Intermountain Healthcare HDD&lt;/p&gt;&lt;p&gt;This code system http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;2000000339&lt;a name=&quot;arrivalStatus-2000000339&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arrived&lt;/td&gt;&lt;td&gt;The patient is present at the service delivery location.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;51084650&lt;a name=&quot;arrivalStatus-51084650&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;In transit&lt;/td&gt;&lt;td&gt;The patient is currently travelling to the service delivery location.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;HSPC Patient Arrival Status&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#dateTime">value</a>=&quot;2019-02-15T12:55:20-05:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/2017Jan/datatypes.html#markdown">value</a>=&quot;The codes that describe whether or not the patient has arrived at the specified location for the encounter.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.copyright">copyright</a>
+             <a href="http://hl7.org/fhir/2017Jan/datatypes.html#markdown">value</a>=&quot;This value set includes content from and copyrighted by Intermountain Healthcare HDD&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;2000000339&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Arrived&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;The patient is present at the service delivery location.&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;51084650&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;In transit&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;The patient is currently travelling to the service delivery location.&quot;/&gt;
+  &lt;/concept&gt;
+&lt;/CodeSystem&gt;</pre>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  <div id="segment-footer" class="segment" igtool="footer">
+    <!-- segment-footer -->
+    <div class="container">
+      <!-- container -->
+      <div class="inner-wrapper">
+        <p> &#169; HL7.org 2011+. FHIR STU3 Candidate (v3.0.1-11917) generated on
+          Fri, Feb 15, 2019 12:55-0500. <a href="qa.html">QA Page</a>
+          <br/>
+          <span style="color: #FFFF77"> Links: <a style="color: #81BEF7"
+              href="http://hl7.org/fhir/search.cfm">Search <img style="text-align: baseline"
+                src="external.png"/></a> | <a style="color: #81BEF7"
+              href="http://hl7.org/fhir/2017Jan/history.html">Version History</a> | <a
+              style="color: #81BEF7" href="http://hl7.org/fhir/2017Jan/toc.html">Table of Contents</a>
+            | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/2017Jan/license.html"
+                ><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | <a
+              style="color: #81BEF7" target="_blank"
+              href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677"
+              >Propose a change <img style="text-align: baseline" src="external.png"/></a>
+          </span>
+        </p>
+      </div>
+      <!-- /inner-wrapper -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+  <div id="segment-post-footer" class="segment hidden">
+    <!-- segment-post-footer -->
+    <div class="container">
+      <!-- container -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery-3.2.1.min.js"> </script>
+  <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js"> </script>
+  <script src="dist/js/bootstrap-3.0.0.min.js"> </script>
+  <script src="assets/js/respond.min.js"> </script>
+
+  <script src="assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+ 
+  </body>
+</html>

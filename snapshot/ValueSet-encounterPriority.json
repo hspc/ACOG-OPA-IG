@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "encounterPriority",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Encounter Priority value set.</h2><div><p>SELECT SNOMED CT code system values descending from 'Priorities' (272125009).</p>\n</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  272125009 (Priorities)</li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-extensible",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/fpar/ValueSet/encounterPriority",
+  "version": "0.01",
+  "name": "HSPC Encounter Priority value set.",
+  "status": "draft",
+  "date": "2015-12-03T00:00:00-05:00",
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "description": "SELECT SNOMED CT code system values descending from 'Priorities' (272125009).",
+  "immutable": true,
+  "copyright": "TBD",
+  "extensible": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "272125009"
+          }
+        ]
+      }
+    ]
+  }
+}

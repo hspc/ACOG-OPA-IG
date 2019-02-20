@@ -1,0 +1,360 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>The Family Planning Annual Report (FPAR) Implementation Guide</title>
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap-3.0.0.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+  <link href="assets/js/jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+    href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"
+    href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+
+
+    
+    <style type="text/css">
+      pre{
+          width: auto !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!--status-bar-->
+<div>
+ <div id="segment-header" class="segment">
+  <!-- segment-header -->
+  <div class="container">
+   <!-- container -->
+   <a id="logo" no-external="true" href="http://hl7.org/fhir">
+    <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
+   </a>
+   <div id="hl7-status">
+    <b>Current Build</b>
+   </div>
+
+   <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+     <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
+    </a>
+   </div>
+   <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm">
+     <img alt="Search FHIR" src="assets/images/search.png"/>
+    </a>
+   </div>
+  </div>
+  <div class="container">
+   <!-- container -->
+  </div>
+ </div>
+ <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">
+  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">
+   <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse"
+      type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/2017Jan/index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/index.html">Home</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/documentation.html">Documentation</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/modules.html">Modules</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/resourcelist.html">Resources</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/profilelist.html">Profiles</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/extensibility-registry.html">Extensions</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/operationslist.html">Operations</a>
+       </li>
+
+      </ul>
+     </div>
+     <!-- /.nav-collapse -->
+    </div>
+    <!-- /.container -->
+   </nav>
+   <!-- /.navbar -->
+
+   <!-- /HEADER CONTENT -->
+  </div>
+  <!-- /container -->
+ </div>
+ <!-- /segment-navbar -->
+</div>
+
+    
+    <div id="segment-breadcrumb" class="segmnt">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li title="The Family Planning Annual Report (FPAR) Implementation Guide"><a href="index.html"><b>The Family Planning Annual Report (FPAR) Implementation Guide</b></a></li>
+          
+          
+          <li><b>chlamydiaTrachomatisTests Details</b></li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div id="segment-content" class="segment">
+      <div class="container">
+        <div class="row">
+          <div class="inner-wrapper">
+            <div class="col-12">
+              <ul class="nav nav-tabs">
+                <li><a href="ValueSet-chlamydiaTrachomatisTests.html">Content</a></li>
+                <li class=""><a href="ValueSet-chlamydiaTrachomatisTests.xml.html">XML</a></li>
+                <li class="active"><a href="ValueSet-chlamydiaTrachomatisTests.json.html">JSON</a></li>
+              </ul>
+              
+              <br/>
+              <pre class="json">
+{
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.id">id</a>" : "chlamydiaTrachomatisTests",
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/2017Jan/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/2017Jan/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/2017Jan/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;FPAR Chlamydia Trachomatis Tests&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Chlamydia Trachomatis test LOINC codes used by FPAR&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;b&gt;Copyright Statement:&lt;/b&gt; This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use&lt;/p&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://loinc.org&quot;&gt;&lt;code&gt;http://loinc.org&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/49096-1.html&quot;&gt;49096-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/43304-5.html&quot;&gt;43304-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/21191-2.html&quot;&gt;21191-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/4993-2.html&quot;&gt;4993-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/16600-9.html&quot;&gt;16600-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Genital specimen by DNA probe&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/16601-7.html&quot;&gt;16601-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Urine by DNA probe&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/21189-6.html&quot;&gt;21189-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/21190-4.html&quot;&gt;21190-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis DNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervix by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/21192-0.html&quot;&gt;21192-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Urethra by DNA probe&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/21613-5.html&quot;&gt;21613-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/23838-6.html&quot;&gt;23838-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Genital fluid by DNA probe&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/35729-3.html&quot;&gt;35729-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/42931-6.html&quot;&gt;42931-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/43404-3.html&quot;&gt;43404-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/45078-3.html&quot;&gt;45078-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Cervix by DNA probe&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/45080-9.html&quot;&gt;45080-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by DNA probe&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/45084-1.html&quot;&gt;45084-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/47211-8.html&quot;&gt;47211-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/47212-6.html&quot;&gt;47212-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/50387-0.html&quot;&gt;50387-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/53925-4.html&quot;&gt;53925-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/53926-2.html&quot;&gt;53926-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/6356-0.html&quot;&gt;6356-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://details.loinc.org/LOINC/6357-8.html&quot;&gt;6357-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/fpar/ValueSet/chlamydiaTrachomatisTests",
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.name">name</a>" : "FPAR Chlamydia Trachomatis Tests",
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.date">date</a>" : "2015-02-19T21:44:49-05:00",
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.publisher">publisher</a>" : "HSPC",
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/2017Jan/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/2017Jan/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "other",
+          "<a href="http://hl7.org/fhir/2017Jan/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.description">description</a>" : "Chlamydia Trachomatis test LOINC codes used by FPAR",
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.copyright">copyright</a>" : "This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+  "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.system">system</a>" : "http://loinc.org",
+        "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "49096-1",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "43304-5",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "21191-2",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "4993-2",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "16600-9",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Genital specimen by DNA probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "16601-7",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Urine by DNA probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "21189-6",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "21190-4",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis DNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervix by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "21192-0",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Urethra by DNA probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "21613-5",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "23838-6",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Genital fluid by DNA probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "35729-3",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "42931-6",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "43404-3",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "45078-3",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Cervix by DNA probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "45080-9",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by DNA probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "45084-1",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "47211-8",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "47212-6",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "50387-0",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "53925-4",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "53926-2",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "6356-0",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method"
+          },
+          {
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "6357-8",
+            "<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method"
+          }
+        ]
+      }
+    ]
+  }
+}</pre>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  <div id="segment-footer" class="segment" igtool="footer">
+    <!-- segment-footer -->
+    <div class="container">
+      <!-- container -->
+      <div class="inner-wrapper">
+        <p> &#169; HL7.org 2011+. FHIR STU3 Candidate (v3.0.1-11917) generated on
+          Fri, Feb 15, 2019 12:55-0500. <a href="qa.html">QA Page</a>
+          <br/>
+          <span style="color: #FFFF77"> Links: <a style="color: #81BEF7"
+              href="http://hl7.org/fhir/search.cfm">Search <img style="text-align: baseline"
+                src="external.png"/></a> | <a style="color: #81BEF7"
+              href="http://hl7.org/fhir/2017Jan/history.html">Version History</a> | <a
+              style="color: #81BEF7" href="http://hl7.org/fhir/2017Jan/toc.html">Table of Contents</a>
+            | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/2017Jan/license.html"
+                ><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | <a
+              style="color: #81BEF7" target="_blank"
+              href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677"
+              >Propose a change <img style="text-align: baseline" src="external.png"/></a>
+          </span>
+        </p>
+      </div>
+      <!-- /inner-wrapper -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+  <div id="segment-post-footer" class="segment hidden">
+    <!-- segment-post-footer -->
+    <div class="container">
+      <!-- container -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery-3.2.1.min.js"> </script>
+  <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js"> </script>
+  <script src="dist/js/bootstrap-3.0.0.min.js"> </script>
+  <script src="assets/js/respond.min.js"> </script>
+
+  <script src="assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+ 
+  </body>
+</html>

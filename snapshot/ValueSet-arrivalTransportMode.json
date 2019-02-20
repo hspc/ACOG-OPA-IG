@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "id": "arrivalTransportMode",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Arrival Transport Mode value set</h2><div><p>The list of codes that describe how the data came into being.</p>\n</div><p><b>Copyright Statement:</b> Intermountain Healthcare HDD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49122002\">49122002</a></td><td>Ambulance, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52387005\">52387005</a></td><td>Taxi, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73957001\">73957001</a></td><td>Air transport ambulance, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=469233002\">469233002</a></td><td>Helicopter ambulance (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=257250006\">257250006</a></td><td>Pedestrian conveyance (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=44613004\">44613004</a></td><td>Ground transport ambulance, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71783008\">71783008</a></td><td>Automobile, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=58938008\">58938008</a></td><td>Wheel chair, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91537007\">91537007</a></td><td>Hospital bed, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49890001\">49890001</a></td><td>Hospital cart, device (physical object)</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/fpar/ValueSet/arrivalTransportMode",
+  "name": "HSPC Arrival Transport Mode value set",
+  "status": "draft",
+  "date": "2019-02-15T12:55:20-05:00",
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "The list of codes that describe how the data came into being.",
+  "copyright": "Intermountain Healthcare HDD",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "49122002",
+            "display": "Ambulance, device (physical object)"
+          },
+          {
+            "code": "52387005",
+            "display": "Taxi, device (physical object)"
+          },
+          {
+            "code": "73957001",
+            "display": "Air transport ambulance, device (physical object)"
+          },
+          {
+            "code": "469233002",
+            "display": "Helicopter ambulance (physical object)"
+          },
+          {
+            "code": "257250006",
+            "display": "Pedestrian conveyance (physical object)"
+          },
+          {
+            "code": "44613004",
+            "display": "Ground transport ambulance, device (physical object)"
+          },
+          {
+            "code": "71783008",
+            "display": "Automobile, device (physical object)"
+          },
+          {
+            "code": "58938008",
+            "display": "Wheel chair, device (physical object)"
+          },
+          {
+            "code": "91537007",
+            "display": "Hospital bed, device (physical object)"
+          },
+          {
+            "code": "49890001",
+            "display": "Hospital cart, device (physical object)"
+          }
+        ]
+      }
+    ]
+  }
+}

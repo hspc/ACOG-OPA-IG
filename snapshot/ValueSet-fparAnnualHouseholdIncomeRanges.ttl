@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/fparAnnualHouseholdIncomeRanges> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fparAnnualHouseholdIncomeRanges"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR Annual Household Income Ranges value set</h2><div><p>Select LOINC Answer codes. A set of LOINC answer codes that describe how much money is earned by an entire household in one calendar year.</p>\n</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22774-6.html\">LA22774-6</a></td><td>Less than 5,000</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22775-3.html\">LA22775-3</a></td><td>5,000 to 7,499</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22776-1.html\">LA22776-1</a></td><td>7,500 to 9,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22777-9.html\">LA22777-9</a></td><td>10,000 to 12,499</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22778-7.html\">LA22778-7</a></td><td>12,500 to 14,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22779-5.html\">LA22779-5</a></td><td>15,000 to 19,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22780-3.html\">LA22780-3</a></td><td>20,000 to 24,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22781-1.html\">LA22781-1</a></td><td>25,000 to 29,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22782-9.html\">LA22782-9</a></td><td>30,000 to 34,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22783-7.html\">LA22783-7</a></td><td>35,000 to 39,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22784-5.html\">LA22784-5</a></td><td>40,000 to 49,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22785-2.html\">LA22785-2</a></td><td>50,000 to 59,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22786-0.html\">LA22786-0</a></td><td>60,000 to 74,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22787-8.html\">LA22787-8</a></td><td>75,000 to 99,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22788-6.html\">LA22788-6</a></td><td>100,000 to 149,999</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA22789-4.html\">LA22789-4</a></td><td>150,000 or more</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-extensible" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/fpar/ValueSet/fparAnnualHouseholdIncomeRanges"];
+  fhir:ValueSet.version [ fhir:value "0.01"];
+  fhir:ValueSet.name [ fhir:value "FPAR Annual Household Income Ranges value set"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2018-03-29T00:00:00-04:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Family Planning Annual Report"];
+  fhir:ValueSet.description [ fhir:value "Select LOINC Answer codes. A set of LOINC answer codes that describe how much money is earned by an entire household in one calendar year."];
+  fhir:ValueSet.immutable [ fhir:value "true"^^xsd:boolean];
+  fhir:ValueSet.copyright [ fhir:value "TBD"];
+  fhir:ValueSet.extensible [ fhir:value "true"^^xsd:boolean];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22774-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Less than 5,000" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22775-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "5,000 to 7,499" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22776-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "7,500 to 9,999" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22777-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "10,000 to 12,499" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22778-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "12,500 to 14,999" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22779-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "15,000 to 19,999" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22780-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "20,000 to 24,999" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22781-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "25,000 to 29,999" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22782-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "30,000 to 34,999" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22783-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "35,000 to 39,999" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22784-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "40,000 to 49,999" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22785-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "50,000 to 59,999" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22786-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "60,000 to 74,999" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22787-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "75,000 to 99,999" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22788-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "100,000 to 149,999" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA22789-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "150,000 or more" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/fparAnnualHouseholdIncomeRanges.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ValueSet/fparAnnualHouseholdIncomeRanges.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pregnancyStatusReportingMethod"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FPAR Pregnancy Status Reporting Method value set</h2><div><p>Select SNOMED CT codes. A set of codes that describe how an individual's pregnancy state was reported.</p>
+</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15220000">15220000</a></td><td>Laboratory test (procedure)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=405262001">405262001</a></td><td>Point of care testing (procedure)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=456801000124104">456801000124104</a></td><td>Self-reported (qualifier value)</td><td/></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-extensible">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/pregnancyStatusReportingMethod"/>
+  <version value="0.01"/>
+  <name value="FPAR Pregnancy Status Reporting Method value set"/>
+  <status value="draft"/>
+  <date value="2018-03-29T00:00:00-04:00"/>
+  <publisher value="Family Planning Annual Report"/>
+  <description value="Select SNOMED CT codes. A set of codes that describe how an individual&#39;s pregnancy state was reported."/>
+  <immutable value="true"/>
+  <copyright value="TBD"/>
+  <extensible value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="15220000"/>
+        <display value="Laboratory test (procedure)"/>
+      </concept>
+      <concept>
+        <code value="405262001"/>
+        <display value="Point of care testing (procedure)"/>
+      </concept>
+      <concept>
+        <code value="456801000124104"/>
+        <display value="Self-reported (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

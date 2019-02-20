@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "heightPrecond",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Height Meas Associated Precondition</h2><div><p>The conditions during which an individual's height was measured.</p>\n</div><p><b>Copyright Statement:</b> Intermountain Healthcare</p><p>This code system http://hl7.org/fhir/fpar/CodeSystem/heightPrecond defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">84138<a name=\"heightPrecond-84138\"> </a></td><td>Height (body length) with shoes</td><td>The individual's height was measured while the individual was wearing shoes</td></tr><tr><td style=\"white-space:nowrap\">84139<a name=\"heightPrecond-84139\"> </a></td><td>Height (body length) without shoes</td><td>The individual's height was measured without the individual wearing shoes.</td></tr><tr><td style=\"white-space:nowrap\">84140<a name=\"heightPrecond-84140\"> </a></td><td>Height (body length) with patient reclining</td><td>The individual's height was measured while the individual was lying down.</td></tr><tr><td style=\"white-space:nowrap\">84141<a name=\"heightPrecond-84141\"> </a></td><td>Height (body length) with patient standing</td><td>The individual's height was measured while the individual was standing up.</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/fpar/CodeSystem/heightPrecond",
+  "version": "0.01",
+  "name": "HSPC Height Meas Associated Precondition",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-05-19T02:00:00-04:00",
+  "description": "The conditions during which an individual's height was measured.",
+  "copyright": "Intermountain Healthcare",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "84138",
+      "display": "Height (body length) with shoes",
+      "definition": "The individual's height was measured while the individual was wearing shoes"
+    },
+    {
+      "code": "84139",
+      "display": "Height (body length) without shoes",
+      "definition": "The individual's height was measured without the individual wearing shoes."
+    },
+    {
+      "code": "84140",
+      "display": "Height (body length) with patient reclining",
+      "definition": "The individual's height was measured while the individual was lying down."
+    },
+    {
+      "code": "84141",
+      "display": "Height (body length) with patient standing",
+      "definition": "The individual's height was measured while the individual was standing up."
+    }
+  ]
+}

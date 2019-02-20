@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fparHIVAbReactiveNonReactive",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR HIV Ab Reactive Non Reactive value set</h2><div><p>Select SNOMED CT codes. A set of codes that describe results of laboratory HIV testing.</p>\n</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=131194007\">131194007</a></td><td>Non-Reactive (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11214006\">11214006</a></td><td>Reactive (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=82334004\">82334004</a></td><td>Indeterminate (qualifier value)</td><td/></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-extensible",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/fpar/ValueSet/fparHIVAbReactiveNonReactive",
+  "version": "0.01",
+  "name": "FPAR HIV Ab Reactive Non Reactive value set",
+  "status": "draft",
+  "date": "2018-03-29T00:00:00-04:00",
+  "publisher": "Family Planning Annual Report",
+  "description": "Select SNOMED CT codes. A set of codes that describe results of laboratory HIV testing.",
+  "immutable": true,
+  "copyright": "TBD",
+  "extensible": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "131194007",
+            "display": "Non-Reactive (qualifier value)"
+          },
+          {
+            "code": "11214006",
+            "display": "Reactive (qualifier value)"
+          },
+          {
+            "code": "82334004",
+            "display": "Indeterminate (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

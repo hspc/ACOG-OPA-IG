@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "weightMeasMethodDevice",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Weight Meas Method Device</h2><div><p>The set of codes that describe the methods or devices used to measure an individual's weight.</p>\n</div><p><b>Copyright Statement:</b> Intermountain Healthcare</p><p>This code system http://hl7.org/fhir/fpar/CodeSystem/weightMeasMethodDevice defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1964<a name=\"weightMeasMethodDevice-1964\"> </a></td><td>Bed scale</td><td>A scale that measures the weight of a patient by measuring the total mass of a bed and patient, then subtracts the known mass of the bed.</td></tr><tr><td style=\"white-space:nowrap\">2007<a name=\"weightMeasMethodDevice-2007\"> </a></td><td>Chair scale</td><td>A scale that measures the weight of a patient by measuring the total mass of a chair and patient, then subtracts the known mass of the chair.</td></tr><tr><td style=\"white-space:nowrap\">2139<a name=\"weightMeasMethodDevice-2139\"> </a></td><td>Sling scale</td><td>A scale for patients that are unable to stand, patients sit in a sling attached to a boom.</td></tr><tr><td style=\"white-space:nowrap\">2142<a name=\"weightMeasMethodDevice-2142\"> </a></td><td>Standing scale</td><td>A scale upon which an individual will stand to measure body weight</td></tr><tr><td style=\"white-space:nowrap\">2180<a name=\"weightMeasMethodDevice-2180\"> </a></td><td>Weight, lean; immersion</td><td>A measurement of lean body weight made by immersing an individual in water and then measuring the mass of the displacement.</td></tr><tr><td style=\"white-space:nowrap\">2181<a name=\"weightMeasMethodDevice-2181\"> </a></td><td>Weight, lean; skin fold</td><td>A measurement of lean body weight made by measuring the thickness of a fold of skin.</td></tr><tr><td style=\"white-space:nowrap\">2185<a name=\"weightMeasMethodDevice-2185\"> </a></td><td>Weight, percentile</td><td>A body weight based on other measurements plotted on a percentile chart.</td></tr><tr><td style=\"white-space:nowrap\">50550851<a name=\"weightMeasMethodDevice-50550851\"> </a></td><td>Infant Scale</td><td>A scale designed for use with infants only</td></tr><tr><td style=\"white-space:nowrap\">521443011<a name=\"weightMeasMethodDevice-521443011\"> </a></td><td>Broselow tape</td><td>A measuring tape created to relate a child's height, as measured by the tape to the child's weight</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/fpar/CodeSystem/weightMeasMethodDevice",
+  "version": "0.01",
+  "name": "HSPC Weight Meas Method Device",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-06-01T02:00:00-04:00",
+  "description": "The set of codes that describe the methods or devices used to measure an individual's weight.",
+  "copyright": "Intermountain Healthcare",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1964",
+      "display": "Bed scale",
+      "definition": "A scale that measures the weight of a patient by measuring the total mass of a bed and patient, then subtracts the known mass of the bed."
+    },
+    {
+      "code": "2007",
+      "display": "Chair scale",
+      "definition": "A scale that measures the weight of a patient by measuring the total mass of a chair and patient, then subtracts the known mass of the chair."
+    },
+    {
+      "code": "2139",
+      "display": "Sling scale",
+      "definition": "A scale for patients that are unable to stand, patients sit in a sling attached to a boom."
+    },
+    {
+      "code": "2142",
+      "display": "Standing scale",
+      "definition": "A scale upon which an individual will stand to measure body weight"
+    },
+    {
+      "code": "2180",
+      "display": "Weight, lean; immersion",
+      "definition": "A measurement of lean body weight made by immersing an individual in water and then measuring the mass of the displacement."
+    },
+    {
+      "code": "2181",
+      "display": "Weight, lean; skin fold",
+      "definition": "A measurement of lean body weight made by measuring the thickness of a fold of skin."
+    },
+    {
+      "code": "2185",
+      "display": "Weight, percentile",
+      "definition": "A body weight based on other measurements plotted on a percentile chart."
+    },
+    {
+      "code": "50550851",
+      "display": "Infant Scale",
+      "definition": "A scale designed for use with infants only"
+    },
+    {
+      "code": "521443011",
+      "display": "Broselow tape",
+      "definition": "A measuring tape created to relate a child's height, as measured by the tape to the child's weight"
+    }
+  ]
+}

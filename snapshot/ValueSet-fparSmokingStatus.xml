@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fparSmokingStatus"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FPAR Smoking Status value set</h2><div><p>Select SNOMED CT codes. The set of codes that describe an individual's smoking status.</p>
+</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=266919005">266919005</a></td><td>Never smoked tobacco (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8517006">8517006</a></td><td>Ex-smoker (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428041000124106">428041000124106</a></td><td>Occasional tobacco smoker (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449868002">449868002</a></td><td>Smokes tobacco daily (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=77176002">77176002</a></td><td>Smoker (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=266927001">266927001</a></td><td>Tobacco smoking consumption unknown (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428071000124103">428071000124103</a></td><td>Heavy tobacco smoker (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428061000124105">428061000124105</a></td><td>Light tobacco smoker (finding)</td><td/></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-extensible">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/fparSmokingStatus"/>
+  <version value="0.01"/>
+  <name value="FPAR Smoking Status value set"/>
+  <status value="draft"/>
+  <date value="2018-03-29T00:00:00-04:00"/>
+  <publisher value="Family Planning Annual Report"/>
+  <description value="Select SNOMED CT codes. The set of codes that describe an individual&#39;s smoking status."/>
+  <immutable value="true"/>
+  <copyright value="TBD"/>
+  <extensible value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="266919005"/>
+        <display value="Never smoked tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="8517006"/>
+        <display value="Ex-smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="428041000124106"/>
+        <display value="Occasional tobacco smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="449868002"/>
+        <display value="Smokes tobacco daily (finding)"/>
+      </concept>
+      <concept>
+        <code value="77176002"/>
+        <display value="Smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="266927001"/>
+        <display value="Tobacco smoking consumption unknown (finding)"/>
+      </concept>
+      <concept>
+        <code value="428071000124103"/>
+        <display value="Heavy tobacco smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="428061000124105"/>
+        <display value="Light tobacco smoker (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

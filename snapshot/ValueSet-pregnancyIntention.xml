@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pregnancyIntention"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FPAR Pregnancy Intention value set</h2><div><p>Select SNOMED CT codes. A set of codes that describe an individual's intent to become or not become pregnant.</p>
+</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454381000124105">454381000124105</a></td><td>Not sure of desire to become pregnant (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454391000124108">454391000124108</a></td><td>Ambivalent about becoming pregnant (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454401000124105">454401000124105</a></td><td>No desire to become pregnant (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454411000124108">454411000124108</a></td><td>Wants to become pregnant (finding)</td><td/></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-extensible">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/pregnancyIntention"/>
+  <version value="0.01"/>
+  <name value="FPAR Pregnancy Intention value set"/>
+  <status value="draft"/>
+  <date value="2018-03-29T00:00:00-04:00"/>
+  <publisher value="Family Planning Annual Report"/>
+  <description value="Select SNOMED CT codes. A set of codes that describe an individual&#39;s intent to become or not become pregnant."/>
+  <immutable value="true"/>
+  <copyright value="TBD"/>
+  <extensible value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="454381000124105"/>
+        <display value="Not sure of desire to become pregnant (finding)"/>
+      </concept>
+      <concept>
+        <code value="454391000124108"/>
+        <display value="Ambivalent about becoming pregnant (finding)"/>
+      </concept>
+      <concept>
+        <code value="454401000124105"/>
+        <display value="No desire to become pregnant (finding)"/>
+      </concept>
+      <concept>
+        <code value="454411000124108"/>
+        <display value="Wants to become pregnant (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

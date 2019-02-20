@@ -1,0 +1,130 @@
+{
+  "resourceType": "ValueSet",
+  "id": "contraceptiveChoice",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR Contraceptive Choice value set</h2><div><p>Select SNOMED code system values.  A set of codes that describe methods of contraception.</p>\n</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22523008\">22523008</a></td><td>Vasectomy (procedure)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60890002\">60890002</a></td><td>Female sterilization (procedure)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169450001\">169450001</a></td><td>No contraceptive precautions (situation)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169467008\">169467008</a></td><td>Progestogen only oral contraceptive (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268461001\">268461001</a></td><td>Sheath contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169513000\">169513000</a></td><td>Withdrawal contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169530003\">169530003</a></td><td>Uses contraceptive sponge (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=228479001\">228479001</a></td><td>Uses a female condom (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268458002\">268458002</a></td><td>Combined oral contraceptive - use (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268466006\">268466006</a></td><td>Spermicidal contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=275813002\">275813002</a></td><td>Emergency contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=312081001\">312081001</a></td><td>Intrauterine device contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=413116005\">413116005</a></td><td>Transdermal contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428987008\">428987008</a></td><td>Subcutaneous contraceptive implant present (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=448962006\">448962006</a></td><td>Uses copper intrauterine device contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449038007\">449038007</a></td><td>Uses hormone releasing intrauterine device contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=450850003\">450850003</a></td><td>Uses vaginal hormone releasing ring (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=450851004\">450851004</a></td><td>Uses contraceptive diaphragm (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454451000124109\">454451000124109</a></td><td>Declines to state contraceptive method (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268464009\">268464009</a></td><td>Depot contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=455501000124105\">455501000124105</a></td><td>Contraception based on fertility awareness (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454441000124107\">454441000124107</a></td><td>Contraception using lactation amonorrhea method (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=455491000124102\">455491000124102</a></td><td>Male relying on female contraception (finding)</td><td/></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-extensible",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/fpar/ValueSet/contraceptiveChoice",
+  "version": "0.01",
+  "name": "FPAR Contraceptive Choice value set",
+  "status": "draft",
+  "date": "2018-03-29T00:00:00-04:00",
+  "publisher": "Family Planning Annual Report",
+  "description": "Select SNOMED code system values.  A set of codes that describe methods of contraception.",
+  "immutable": true,
+  "copyright": "TBD",
+  "extensible": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "22523008",
+            "display": "Vasectomy (procedure)"
+          },
+          {
+            "code": "60890002",
+            "display": "Female sterilization (procedure)"
+          },
+          {
+            "code": "169450001",
+            "display": "No contraceptive precautions (situation)"
+          },
+          {
+            "code": "169467008",
+            "display": "Progestogen only oral contraceptive (finding)"
+          },
+          {
+            "code": "268461001",
+            "display": "Sheath contraception (finding)"
+          },
+          {
+            "code": "169513000",
+            "display": "Withdrawal contraception (finding)"
+          },
+          {
+            "code": "169530003",
+            "display": "Uses contraceptive sponge (finding)"
+          },
+          {
+            "code": "228479001",
+            "display": "Uses a female condom (finding)"
+          },
+          {
+            "code": "268458002",
+            "display": "Combined oral contraceptive - use (finding)"
+          },
+          {
+            "code": "268466006",
+            "display": "Spermicidal contraception (finding)"
+          },
+          {
+            "code": "275813002",
+            "display": "Emergency contraception (finding)"
+          },
+          {
+            "code": "312081001",
+            "display": "Intrauterine device contraception (finding)"
+          },
+          {
+            "code": "413116005",
+            "display": "Transdermal contraception (finding)"
+          },
+          {
+            "code": "428987008",
+            "display": "Subcutaneous contraceptive implant present (finding)"
+          },
+          {
+            "code": "448962006",
+            "display": "Uses copper intrauterine device contraception (finding)"
+          },
+          {
+            "code": "449038007",
+            "display": "Uses hormone releasing intrauterine device contraception (finding)"
+          },
+          {
+            "code": "450850003",
+            "display": "Uses vaginal hormone releasing ring (finding)"
+          },
+          {
+            "code": "450851004",
+            "display": "Uses contraceptive diaphragm (finding)"
+          },
+          {
+            "code": "454451000124109",
+            "display": "Declines to state contraceptive method (finding)"
+          },
+          {
+            "code": "268464009",
+            "display": "Depot contraception (finding)"
+          },
+          {
+            "code": "455501000124105",
+            "display": "Contraception based on fertility awareness (finding)"
+          },
+          {
+            "code": "454441000124107",
+            "display": "Contraception using lactation amonorrhea method (finding)"
+          },
+          {
+            "code": "455491000124102",
+            "display": "Male relying on female contraception (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

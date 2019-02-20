@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="observationFindings"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HSPC Findings Value Set Definition</h2><div><p>SELECT SNOMED CT code system values descending from 'change values' (288533004).</p>
+</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  260245000 (Findings values)</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-extensible">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/observationFindings"/>
+  <version value="0.01"/>
+  <name value="HSPC Findings Value Set Definition"/>
+  <status value="draft"/>
+  <date value="2015-02-09T00:00:00-05:00"/>
+  <publisher value="Health Services Platform Consortium (HSPC)"/>
+  <description value="SELECT SNOMED CT code system values descending from &#39;change values&#39; (288533004)."/>
+  <immutable value="true"/>
+  <copyright value="TBD"/>
+  <extensible value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="260245000"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

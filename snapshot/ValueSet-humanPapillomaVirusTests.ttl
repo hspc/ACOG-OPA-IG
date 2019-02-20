@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/humanPapillomaVirusTests> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "humanPapillomaVirusTests"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR Human Papilloma Virus Tests</h2><div><p>Human Papilloma Virus test LOINC codes used by FPAR</p>\n</div><p><b>Copyright Statement:</b> This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/59420-0.html\">59420-0</a></td><td>Human papilloma virus16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/21440-3.html\">21440-3</a></td><td>Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30167-1.html\">30167-1</a></td><td>Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38372-9.html\">38372-9</a></td><td>Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/49896-4.html\">49896-4</a></td><td>Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/69002-4.html\">69002-4</a></td><td>Human papilloma virus E6+E7 mRNA [Presence] in Cervix by Probe and target amplification method</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/73959-9.html\">73959-9</a></td><td>Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+66 DNA [Presence] in Tissue by DNA probe</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11083-3.html\">11083-3</a></td><td>Human papilloma virus identified in Cervix</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/12223-4.html\">12223-4</a></td><td>Human papilloma virus 16+18 Ag [Presence] in Genital specimen</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14503-7.html\">14503-7</a></td><td>Human papilloma virus 16+18 Ag [Presence] in Cervix</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14504-5.html\">14504-5</a></td><td>Human papilloma virus 16+18 Ag [Presence] in Vaginal fluid</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14506-0.html\">14506-0</a></td><td>Human papilloma virus 16+18 Ag [Presence] in Urethra</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/17400-3.html\">17400-3</a></td><td>Human papilloma virus 16+18 Ag [Presence] in Unspecified specimen</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/44550-2.html\">44550-2</a></td><td>Human papilloma virus DNA [Presence] in Cervix by DNA probe</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6514-4.html\">6514-4</a></td><td>Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6516-9.html\">6516-9</a></td><td>Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/fpar/ValueSet/humanPapillomaVirusTests"];
+  fhir:ValueSet.name [ fhir:value "FPAR Human Papilloma Virus Tests"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2015-02-19T21:44:49-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HSPC"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://healthcaresoa.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Human Papilloma Virus test LOINC codes used by FPAR"];
+  fhir:ValueSet.copyright [ fhir:value "This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59420-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21440-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30167-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "38372-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49896-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69002-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus E6+E7 mRNA [Presence] in Cervix by Probe and target amplification method" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73959-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+66 DNA [Presence] in Tissue by DNA probe" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11083-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus identified in Cervix" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12223-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus 16+18 Ag [Presence] in Genital specimen" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14503-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus 16+18 Ag [Presence] in Cervix" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14504-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus 16+18 Ag [Presence] in Vaginal fluid" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14506-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus 16+18 Ag [Presence] in Urethra" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17400-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus 16+18 Ag [Presence] in Unspecified specimen" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44550-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus DNA [Presence] in Cervix by DNA probe" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6514-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6516-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/humanPapillomaVirusTests.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ValueSet/humanPapillomaVirusTests.ttl> .
+
+# -------------------------------------------------------------------------------------
+

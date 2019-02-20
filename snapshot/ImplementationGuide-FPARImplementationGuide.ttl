@@ -1,0 +1,2917 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "FPARImplementationGuide"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>The Family Planning Annual Report (FPAR) Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide</pre><div><p>The Implementation Guide resource profile for FPAR</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide"];
+  fhir:ImplementationGuide.version [ fhir:value "1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "The Family Planning Annual Report (FPAR) Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2017-11-30T00:00:00-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "Health Services Platform Consortium on behalf of The Office of Population Affairs (OPA)"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.acog.org" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "The Implementation Guide resource profile for FPAR"];
+  fhir:ImplementationGuide.copyright [ fhir:value "The Office of Population Affairs (OPA)"];
+  fhir:ImplementationGuide.fhirVersion [ fhir:value "3.0.1"];
+  fhir:ImplementationGuide.package [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "p1" ];
+     fhir:ImplementationGuide.package.name [ fhir:value "FPAR Implementation Guide" ];
+     fhir:ImplementationGuide.package.description [ fhir:value "Profiles and resources in this implementation guide." ];
+     fhir:ImplementationGuide.package.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-admissionSource.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/CodeSystem/admissionSource>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/admissionSource" ];
+         fhir:Reference.display [ fhir:value "HSPC Admission Source value set" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-arrivalStatus.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/arrivalStatus" ];
+         fhir:Reference.display [ fhir:value "HSPC Patient Arrival Status" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-bpmeasmethoddevice.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/CodeSystem/bpmeasmethoddevice>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/bpmeasmethoddevice" ];
+         fhir:Reference.display [ fhir:value "Blood Pressure Measure Method Device" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-heightMeasMethodDevice.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/CodeSystem/heightMeasMethodDevice>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/heightMeasMethodDevice" ];
+         fhir:Reference.display [ fhir:value "Height Measure Method Device" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-heightPrecond.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/CodeSystem/heightPrecond>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/heightPrecond" ];
+         fhir:Reference.display [ fhir:value "Height Precondition" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-locationCondition.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/CodeSystem/locationCondition>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/locationCondition" ];
+         fhir:Reference.display [ fhir:value "HSPC Service Delivery Location Condition code system" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-nullValueReason.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/CodeSystem/nullValueReason>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nullValueReason" ];
+         fhir:Reference.display [ fhir:value "HSPC Null Value Reason code system" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-weightMeasMethodDevice.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/CodeSystem/weightMeasMethodDevice>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/weightMeasMethodDevice" ];
+         fhir:Reference.display [ fhir:value "Weight Measure Method Device" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/administrativeEncounterId>;
+         fhir:Reference.reference [ fhir:value "Extension/administrativeEncounterId" ];
+         fhir:Reference.display [ fhir:value "Administrative encounter id" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/admitMedicationId>;
+         fhir:Reference.reference [ fhir:value "Extension/admitMedicationId" ];
+         fhir:Reference.display [ fhir:value "Admit medication id" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/ambulatoryStatus>;
+         fhir:Reference.reference [ fhir:value "Extension/ambulatoryStatus" ];
+         fhir:Reference.display [ fhir:value "Ambulatory status" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/arrivedByTransportation>;
+         fhir:Reference.reference [ fhir:value "Extension/arrivedByTransportation" ];
+         fhir:Reference.display [ fhir:value "Arrived by transportation" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/associatedPrecondition>;
+         fhir:Reference.reference [ fhir:value "Extension/associatedPrecondition" ];
+         fhir:Reference.display [ fhir:value "Associated precondition" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/bodyPosition>;
+         fhir:Reference.reference [ fhir:value "Extension/bodyPosition" ];
+         fhir:Reference.display [ fhir:value "Body position" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/chiefComplaintId>;
+         fhir:Reference.reference [ fhir:value "Extension/chiefComplaintId" ];
+         fhir:Reference.display [ fhir:value "Chief complaint indicator" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/communicationMode>;
+         fhir:Reference.reference [ fhir:value "Extension/communicationMode" ];
+         fhir:Reference.display [ fhir:value "Communication mode" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/confidentiality>;
+         fhir:Reference.reference [ fhir:value "Extension/confidentiality" ];
+         fhir:Reference.display [ fhir:value "Confidentiality" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/contactPeriod>;
+         fhir:Reference.reference [ fhir:value "Extension/contactPeriod" ];
+         fhir:Reference.display [ fhir:value "Contact period" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/contraceptionProvisionMethod>;
+         fhir:Reference.reference [ fhir:value "Extension/contraceptionProvisionMethod" ];
+         fhir:Reference.display [ fhir:value "Contraception provision method" ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/dataAbsentReason>;
+         fhir:Reference.reference [ fhir:value "Extension/dataAbsentReason" ];
+         fhir:Reference.display [ fhir:value "Data absent reason" ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/dataOriginationMode>;
+         fhir:Reference.reference [ fhir:value "Extension/dataOriginationMode" ];
+         fhir:Reference.display [ fhir:value "Data origination mode" ]
+       ]
+     ], [
+       fhir:index 21;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/deltaFlag>;
+         fhir:Reference.reference [ fhir:value "Extension/deltaFlag" ];
+         fhir:Reference.display [ fhir:value "Delta flag" ]
+       ]
+     ], [
+       fhir:index 22;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/departedByTransportation>;
+         fhir:Reference.reference [ fhir:value "Extension/departedByTransportation" ];
+         fhir:Reference.display [ fhir:value "Departed by transportation" ]
+       ]
+     ], [
+       fhir:index 23;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/dischargeMedicationId>;
+         fhir:Reference.reference [ fhir:value "Extension/dischargeMedicationId" ];
+         fhir:Reference.display [ fhir:value "Discharge medication id" ]
+       ]
+     ], [
+       fhir:index 24;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/focalSubject>;
+         fhir:Reference.reference [ fhir:value "Extension/focalSubject" ];
+         fhir:Reference.display [ fhir:value "Focal subject" ]
+       ]
+     ], [
+       fhir:index 25;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/hospitalService>;
+         fhir:Reference.reference [ fhir:value "Extension/hospitalService" ];
+         fhir:Reference.display [ fhir:value "Hospital service" ]
+       ]
+     ], [
+       fhir:index 26;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/organizationPeriod>;
+         fhir:Reference.reference [ fhir:value "Extension/organizationPeriod" ];
+         fhir:Reference.display [ fhir:value "Organization period" ]
+       ]
+     ], [
+       fhir:index 27;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/preferenceInd>;
+         fhir:Reference.reference [ fhir:value "Extension/preferenceInd" ];
+         fhir:Reference.display [ fhir:value "Preference indicator" ]
+       ]
+     ], [
+       fhir:index 28;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/primaryInd>;
+         fhir:Reference.reference [ fhir:value "Extension/primaryInd" ];
+         fhir:Reference.display [ fhir:value "Primary indicator" ]
+       ]
+     ], [
+       fhir:index 29;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/primaryInsuranceClassification>;
+         fhir:Reference.reference [ fhir:value "Extension/primaryInsuranceClassification" ];
+         fhir:Reference.display [ fhir:value "Primary insurance classification" ]
+       ]
+     ], [
+       fhir:index 30;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/primaryLanguage>;
+         fhir:Reference.reference [ fhir:value "Extension/primaryLanguage" ];
+         fhir:Reference.display [ fhir:value "Primary language" ]
+       ]
+     ], [
+       fhir:index 31;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/reasonCancelled>;
+         fhir:Reference.reference [ fhir:value "Extension/reasonCancelled" ];
+         fhir:Reference.display [ fhir:value "Reason cancelled" ]
+       ]
+     ], [
+       fhir:index 32;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/reportingMethod>;
+         fhir:Reference.reference [ fhir:value "Extension/reportingMethod" ];
+         fhir:Reference.display [ fhir:value "Reporting method" ]
+       ]
+     ], [
+       fhir:index 33;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/Extension/vipLevel>;
+         fhir:Reference.reference [ fhir:value "Extension/vipLevel" ];
+         fhir:Reference.display [ fhir:value "VIP level" ]
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-contraceptiveChoiceAtExit.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-contraceptiveChoiceAtExit>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-contraceptiveChoiceAtExit" ];
+         fhir:Reference.display [ fhir:value "An observation of one's choice in contraception evaluated at the end of a visit." ]
+       ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-contraceptiveChoiceInitial.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-contraceptiveChoiceInitial>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-contraceptiveChoiceInitial" ];
+         fhir:Reference.display [ fhir:value "An observation of one's choice in contraception at the beginning of a visit." ]
+       ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-contraceptiveCounseling.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-contraceptiveCounseling>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-contraceptiveCounseling" ];
+         fhir:Reference.display [ fhir:value "An education procedure that provides counseling in regards to contraception." ]
+       ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-counselingToAchievePregnancy.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-counselingToAchievePregnancy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-counselingToAchievePregnancy" ];
+         fhir:Reference.display [ fhir:value "An education procedure that provides counseling to achieve pregnancy." ]
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-coverage.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-coverage>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-coverage" ];
+         fhir:Reference.display [ fhir:value "The FPAR profile of the Coverage resource." ]
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-genEncounter.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-genEncounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-genEncounter" ];
+         fhir:Reference.display [ fhir:value "The FPAR General Encounter profile of the Encounter resource." ]
+       ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-limitedEnglishProficiencyEval.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-limitedEnglishProficiencyEval>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-limitedEnglishProficiencyEval" ];
+         fhir:Reference.display [ fhir:value "An observation about an individual's ability to communicate in English." ]
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-organization.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-organization" ];
+         fhir:Reference.display [ fhir:value "The FPAR profile of the Organization resource." ]
+       ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-patient.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-patient" ];
+         fhir:Reference.display [ fhir:value "The FPAR profile of the Patient resource." ]
+       ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-practitioner.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-practitioner" ];
+         fhir:Reference.display [ fhir:value "The FPAR profile of the Practitioner resource." ]
+       ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-practitionerRole.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-practitionerRole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-practitionerRole" ];
+         fhir:Reference.display [ fhir:value "The FPAR profile of the Practitioner resource." ]
+       ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-pregnancyIntentionEval.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-pregnancyIntentionEval>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-pregnancyIntentionEval" ];
+         fhir:Reference.display [ fhir:value "An observation of an individual's intention to be or not be pregnant." ]
+       ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-fpar-pregnancyStatusEval.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/fpar-pregnancyStatusEval>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fpar-pregnancyStatusEval" ];
+         fhir:Reference.display [ fhir:value "An observation of one's current state of pregnancy." ]
+       ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-annualHouseholdIncome.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-annualHouseholdIncome>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-annualHouseholdIncome" ];
+         fhir:Reference.display [ fhir:value "An observation of the income range for a household per year." ]
+       ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-BHcgPregSerplQl.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-BHcgPregSerplQl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-BHcgPregSerplQl" ];
+         fhir:Reference.display [ fhir:value "The observation Choriogonadotropin.beta subunit (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2110-5" ]
+       ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-BHcgSerplAcnc.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-BHcgSerplAcnc>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-BHcgSerplAcnc" ];
+         fhir:Reference.display [ fhir:value "The observation Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma based on the LOINC code 21198-7" ]
+       ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-bodyWeight.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-bodyWeight>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-bodyWeight" ];
+         fhir:Reference.display [ fhir:value "An observation of an individual's weight." ]
+       ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-ChlamydiaDnaXxxQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-ChlamydiaDnaXxxQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-ChlamydiaDnaXxxQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 35729-3" ]
+       ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachAndGcDnaCervixQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcDnaCervixQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachAndGcDnaCervixQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 45068-4" ]
+       ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachAndGcDnaGenitalQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcDnaGenitalQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachAndGcDnaGenitalQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 44807-6" ]
+       ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachAndGcDnaUrQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcDnaUrQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachAndGcDnaUrQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 44806-8" ]
+       ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachAndGcDnaXxxPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcDnaXxxPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachAndGcDnaXxxPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36903-3" ]
+       ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachAndGcDnaXxxQlBdna.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcDnaXxxQlBdna>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachAndGcDnaXxxQlBdna" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43406-8" ]
+       ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CtrachAndGCDNAXXXQlPCR.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CtrachAndGCDNAXXXQlPCR>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CtrachAndGCDNAXXXQlPCR" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36902-5" ]
+       ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachAndGcRrnaCervixQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcRrnaCervixQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachAndGcRrnaCervixQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45067-6" ]
+       ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachAndGcRrnaGenitalQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcRrnaGenitalQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachAndGcRrnaGenitalQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 45069-2" ]
+       ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachAndGcRrnaUrQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcRrnaUrQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachAndGcRrnaUrQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Urine by DNA probe based on the LOINC code 45074-2" ]
+       ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachAndGcRrnaVagQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcRrnaVagQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachAndGcRrnaVagQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45070-0" ]
+       ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachAndGcRrnaXxxQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcRrnaXxxQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachAndGcRrnaXxxQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 45076-7" ]
+       ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachDnaCervMucusQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaCervMucusQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachDnaCervMucusQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21189-6" ]
+       ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachDnaGenitalQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaGenitalQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachDnaGenitalQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6356-0" ]
+       ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachDnaUrQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaUrQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachDnaUrQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 6357-8" ]
+       ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachDnaUrthQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaUrthQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachDnaUrthQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21191-2" ]
+       ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachDnaVagQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaVagQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachDnaVagQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 45084-1" ]
+       ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachDnaXxxPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaXxxPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachDnaXxxPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47212-6" ]
+       ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachDnaXxxPcrAcnc.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaXxxPcrAcnc>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachDnaXxxPcrAcnc" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49096-1" ]
+       ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachDnaXxxQlBdna.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaXxxQlBdna>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachDnaXxxQlBdna" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43404-3" ]
+       ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachDnaXxxQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaXxxQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachDnaXxxQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 21613-5" ]
+       ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachL2DnaXxxQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachL2DnaXxxQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachL2DnaXxxQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47211-8" ]
+       ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaCervixQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaCervixQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaCervixQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50387-0" ]
+       ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaCervixQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaCervixQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaCervixQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45078-3" ]
+       ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaGenitalFlQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaGenitalFlQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaGenitalFlQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Genital fluid by DNA probe based on the LOINC code 23838-6" ]
+       ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaGenitalQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaGenitalQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaGenitalQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 16600-9" ]
+       ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaUrQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaUrQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaUrQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 42931-6" ]
+       ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaUrQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaUrQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaUrQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Urine by DNA probe based on the LOINC code 16601-7" ]
+       ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaUrthQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaUrthQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaUrthQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53925-4" ]
+       ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaUrthQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaUrthQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaUrthQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Urethra by DNA probe based on the LOINC code 21192-0" ]
+       ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaVagQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaVagQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaVagQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53926-2" ]
+       ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaVagQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaVagQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaVagQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45080-9" ]
+       ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaXxxQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaXxxQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaXxxQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43304-5" ]
+       ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CTrachRrnaXxxQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaXxxQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CTrachRrnaXxxQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 4993-2" ]
+       ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CytoCervix.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytoCervix>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CytoCervix" ];
+         fhir:Reference.display [ fhir:value "The observation Microscopic observation [Identifier] in Cervix by Cyto stain based on the LOINC code 10524-7" ]
+       ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CytoCvxVag.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytoCvxVag>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CytoCvxVag" ];
+         fhir:Reference.display [ fhir:value "The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain|Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain Narrative based on the LOINC code 19766-5" ]
+       ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CytoCvxVagCoded.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytoCvxVagCoded>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CytoCvxVagCoded" ];
+         fhir:Reference.display [ fhir:value "The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19765-7" ]
+       ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CytologyCmntCvxVagCytoImp.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytologyCmntCvxVagCytoImp>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CytologyCmntCvxVagCytoImp" ];
+         fhir:Reference.display [ fhir:value "The observation Cytology study comment Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 19774-9" ]
+       ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CytologyCvxVagDocCyto.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytologyCvxVagDocCyto>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CytologyCvxVagDocCyto" ];
+         fhir:Reference.display [ fhir:value "The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 47528-5" ]
+       ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-CytologyCvxVagDocThinPrep.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytologyCvxVagDocThinPrep>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-CytologyCvxVagDocThinPrep" ];
+         fhir:Reference.display [ fhir:value "The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain.thin prep based on the LOINC code 47527-7" ]
+       ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-diastolicbp.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-diastolicbp>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-diastolicbp" ];
+         fhir:Reference.display [ fhir:value "An observation of an individual's diastolic blood pressure based on the LOINC code 8462-4." ]
+       ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-GenCategCvxVagCytoImp.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-GenCategCvxVagCytoImp>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-GenCategCvxVagCytoImp" ];
+         fhir:Reference.display [ fhir:value "The observation General categories [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|General categories [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19762-4" ]
+       ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-gravidity.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-gravidity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-gravidity" ];
+         fhir:Reference.display [ fhir:value "The observation [#] Pregnancies based on the LOINC code 11996-6" ]
+       ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HcgPregSerplQl.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HcgPregSerplQl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HcgPregSerplQl" ];
+         fhir:Reference.display [ fhir:value "The observation Choriogonadotropin (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2118-8" ]
+       ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HcgPregSerQlIaRapid.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HcgPregSerQlIaRapid>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HcgPregSerQlIaRapid" ];
+         fhir:Reference.display [ fhir:value "The observation Choriogonadotropin (pregnancy test) [Presence] in Serum by Rapid immunoassay based on the LOINC code 80385-8" ]
+       ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HcgPregUrQl.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HcgPregUrQl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HcgPregUrQl" ];
+         fhir:Reference.display [ fhir:value "The observation Choriogonadotropin (pregnancy test) [Presence] in Urine based on the LOINC code 2106-3" ]
+       ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HcgSerplAcnc.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HcgSerplAcnc>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HcgSerplAcnc" ];
+         fhir:Reference.display [ fhir:value "The observation Choriogonadotropin [Units/volume] in Serum or Plasma based on the LOINC code 19080-1" ]
+       ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-height.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-height>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-height" ];
+         fhir:Reference.display [ fhir:value "An observation for a person's height.  Based on the LOINC code 8302-2." ]
+       ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hiv1AbSerplbldQlEiaRapid.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1AbSerplbldQlEiaRapid>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hiv1AbSerplbldQlEiaRapid" ];
+         fhir:Reference.display [ fhir:value "The observation HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test based on the LOINC code 68961-2" ]
+       ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hiv1AbSerQlIb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1AbSerQlIb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hiv1AbSerQlIb" ];
+         fhir:Reference.display [ fhir:value "The observation HIV 1 Ab [Presence] in Serum by Immunoblot (IB) based on the LOINC code 5221-7" ]
+       ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hiv1And2AbSerQlEia.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1And2AbSerQlEia>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hiv1And2AbSerQlEia" ];
+         fhir:Reference.display [ fhir:value "The observation HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 31201-7" ]
+       ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hiv1RnaSerplPcrDl17Log.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1RnaSerplPcrDl17Log>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hiv1RnaSerplPcrDl17Log" ];
+         fhir:Reference.display [ fhir:value "The observation HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL based on the LOINC code 48510-2" ]
+       ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hiv1RnaSerplPcrDl50.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1RnaSerplPcrDl50>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hiv1RnaSerplPcrDl50" ];
+         fhir:Reference.display [ fhir:value "The observation HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL based on the LOINC code 48511-0" ]
+       ]
+     ], [
+       fhir:index 104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hiv1RnaXxxQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1RnaXxxQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hiv1RnaXxxQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 5018-7" ]
+       ]
+     ], [
+       fhir:index 105;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hiv2AbSerQlEia.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv2AbSerQlEia>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hiv2AbSerQlEia" ];
+         fhir:Reference.display [ fhir:value "The observation HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 30361-0" ]
+       ]
+     ], [
+       fhir:index 106;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-householdSize.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-householdSize>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-householdSize" ];
+         fhir:Reference.display [ fhir:value "An observation of the number of individuals in a household." ]
+       ]
+     ], [
+       fhir:index 107;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hpv12HrTypesDnaTissQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv12HrTypesDnaTissQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hpv12HrTypesDnaTissQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+66 DNA [Presence] in Tissue by DNA probe based on the LOINC code 73959-9" ]
+       ]
+     ], [
+       fhir:index 108;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hpv16And18AgCervixQl.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv16And18AgCervixQl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hpv16And18AgCervixQl" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus 16+18 Ag [Presence] in Cervix based on the LOINC code 14503-7" ]
+       ]
+     ], [
+       fhir:index 109;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hpv16And18AgGenitalQl.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv16And18AgGenitalQl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hpv16And18AgGenitalQl" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus 16+18 Ag [Presence] in Genital specimen based on the LOINC code 12223-4" ]
+       ]
+     ], [
+       fhir:index 110;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hpv16And18AgUrthQl.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv16And18AgUrthQl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hpv16And18AgUrthQl" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus 16+18 Ag [Presence] in Urethra based on the LOINC code 14506-0" ]
+       ]
+     ], [
+       fhir:index 111;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hpv16And18AgVagQl.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv16And18AgVagQl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hpv16And18AgVagQl" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus 16+18 Ag [Presence] in Vaginal fluid based on the LOINC code 14504-5" ]
+       ]
+     ], [
+       fhir:index 112;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-Hpv16And18AgXxxQl.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv16And18AgXxxQl>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-Hpv16And18AgXxxQl" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus 16+18 Ag [Presence] in Unspecified specimen based on the LOINC code 17400-3" ]
+       ]
+     ], [
+       fhir:index 113;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HpvCervix.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvCervix>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HpvCervix" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus identified in Cervix based on the LOINC code 11083-3" ]
+       ]
+     ], [
+       fhir:index 114;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HpvDnaCervixQlBdna.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvDnaCervixQlBdna>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HpvDnaCervixQlBdna" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 38372-9" ]
+       ]
+     ], [
+       fhir:index 115;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HpvDnaCervixQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvDnaCervixQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HpvDnaCervixQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus DNA [Presence] in Cervix by DNA probe based on the LOINC code 44550-2" ]
+       ]
+     ], [
+       fhir:index 116;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HpvE6AndE7MrnaCervixQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvE6AndE7MrnaCervixQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HpvE6AndE7MrnaCervixQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus E6+E7 mRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 69002-4" ]
+       ]
+     ], [
+       fhir:index 117;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HpvIHRisk1DnaCervixQlBdna.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvIHRisk1DnaCervixQlBdna>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HpvIHRisk1DnaCervixQlBdna" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 30167-1" ]
+       ]
+     ], [
+       fhir:index 118;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HpvIHRisk1DnaXxxQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvIHRisk1DnaXxxQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HpvIHRisk1DnaXxxQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49896-4" ]
+       ]
+     ], [
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HpvIHRisk4DnaCervixQlBdna.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvIHRisk4DnaCervixQlBdna>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HpvIHRisk4DnaCervixQlBdna" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 59420-0" ]
+       ]
+     ], [
+       fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HpvIHRiskDnaCervixQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvIHRiskDnaCervixQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HpvIHRiskDnaCervixQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe based on the LOINC code 21440-3" ]
+       ]
+     ], [
+       fhir:index 121;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HpvRrnaGenitalQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvRrnaGenitalQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HpvRrnaGenitalQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6514-4" ]
+       ]
+     ], [
+       fhir:index 122;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-HpvRrnaXxxQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvRrnaXxxQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-HpvRrnaXxxQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 6516-9" ]
+       ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaAgGenitalQlEia.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaAgGenitalQlEia>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaAgGenitalQlEia" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae Ag [Presence] in Genital specimen by Immunoassay based on the LOINC code 6487-3" ]
+       ]
+     ], [
+       fhir:index 124;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaCervixQlCult.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaCervixQlCult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaCervixQlCult" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture based on the LOINC code 688-2" ]
+       ]
+     ], [
+       fhir:index 125;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaDnaCervMucusQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaCervMucusQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaDnaCervMucusQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21414-8" ]
+       ]
+     ], [
+       fhir:index 126;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaDnaGenitalQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaGenitalQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaDnaGenitalQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 47387-6" ]
+       ]
+     ], [
+       fhir:index 127;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaDnaUrQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaUrQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaDnaUrQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 21416-3" ]
+       ]
+     ], [
+       fhir:index 128;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaDnaUrthQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaUrthQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaDnaUrthQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21415-5" ]
+       ]
+     ], [
+       fhir:index 129;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaDnaVagQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaVagQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaDnaVagQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 32705-6" ]
+       ]
+     ], [
+       fhir:index 130;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaDnaXxxQlBdna.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaXxxQlBdna>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaDnaXxxQlBdna" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43403-5" ]
+       ]
+     ], [
+       fhir:index 131;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaDnaXxxQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaXxxQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaDnaXxxQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 24111-7" ]
+       ]
+     ], [
+       fhir:index 132;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaGenitalQlCult.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaGenitalQlCult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaGenitalQlCult" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae [Presence] in Genital specimen by Organism specific culture based on the LOINC code 691-6" ]
+       ]
+     ], [
+       fhir:index 133;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaGenLochiaQlCult.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaGenLochiaQlCult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaGenLochiaQlCult" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae [Presence] in Genital lochia by Organism specific culture based on the LOINC code 692-4" ]
+       ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaRrnaCervixQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50388-8" ]
+       ]
+     ], [
+       fhir:index 135;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaRrnaCervixQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 32198-4" ]
+       ]
+     ], [
+       fhir:index 136;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaRrnaUrthQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53927-0" ]
+       ]
+     ], [
+       fhir:index 137;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaRrnaUrthQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by DNA probe based on the LOINC code 32199-2" ]
+       ]
+     ], [
+       fhir:index 138;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaRrnaVagQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaVagQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaRrnaVagQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53879-3" ]
+       ]
+     ], [
+       fhir:index 139;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaRrnaXxxQlPcr.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPcr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPcr" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43305-2" ]
+       ]
+     ], [
+       fhir:index 140;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaRrnaXxxQlPrb.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPrb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPrb" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 5028-6" ]
+       ]
+     ], [
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaVagQlCult.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaVagQlCult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaVagQlCult" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae [Presence] in Vaginal fluid by Organism specific culture based on the LOINC code 693-2" ]
+       ]
+     ], [
+       fhir:index 142;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-NGonorrhoeaXxxQlCult.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaXxxQlCult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-NGonorrhoeaXxxQlCult" ];
+         fhir:Reference.display [ fhir:value "The observation Neisseria gonorrhoeae [Presence] in Unspecified specimen by Organism specific culture based on the LOINC code 698-1" ]
+       ]
+     ], [
+       fhir:index 143;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-parity.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-parity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-parity" ];
+         fhir:Reference.display [ fhir:value "The observation [#] Parity based on the LOINC code 11977-6" ]
+       ]
+     ], [
+       fhir:index 144;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-sexLastThreeMonths.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-sexLastThreeMonths>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-sexLastThreeMonths" ];
+         fhir:Reference.display [ fhir:value "An observation to determine if an individual has engaged in sexual activity within the last three months." ]
+       ]
+     ], [
+       fhir:index 145;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-sexLastTwelveMonths.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-sexLastTwelveMonths>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-sexLastTwelveMonths" ];
+         fhir:Reference.display [ fhir:value "An observation to determine if an individual has engaged in sexual activity within the last twelve months." ]
+       ]
+     ], [
+       fhir:index 146;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-smokingStatus.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-smokingStatus>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-smokingStatus" ];
+         fhir:Reference.display [ fhir:value "An observation about how much an individual smokes." ]
+       ]
+     ], [
+       fhir:index 147;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-StatOfAdqCvxVagCytoImp.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-StatOfAdqCvxVagCytoImp>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-StatOfAdqCvxVagCytoImp" ];
+         fhir:Reference.display [ fhir:value "The observation Statement of adequacy [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|Statement of adequacy [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19764-0" ]
+       ]
+     ], [
+       fhir:index 148;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-StudyreportFindPtCvxVagDocCytology.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-StudyreportFindPtCvxVagDocCytology>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-StudyreportFindPtCvxVagDocCytology" ];
+         fhir:Reference.display [ fhir:value "The observation Cytology Cervical or vaginal smear or scraping study based on the LOINC code 33717-0" ]
+       ]
+     ], [
+       fhir:index 149;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-systolicbp.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-systolicbp>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-systolicbp" ];
+         fhir:Reference.display [ fhir:value "The observation of an individual's systolic blood pressure." ]
+       ]
+     ], [
+       fhir:index 150;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hspc-ThinPrepCervix.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/StructureDefinition/hspc-ThinPrepCervix>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hspc-ThinPrepCervix" ];
+         fhir:Reference.display [ fhir:value "The observation Microscopic observation [Identifier] in Cervix by Cyto stain.thin prep based on the LOINC code 18500-9" ]
+       ]
+     ], [
+       fhir:index 151;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-abnInt-CodedNom.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/abnInt-CodedNom>;
+         fhir:Reference.reference [ fhir:value "ValueSet/abnInt-CodedNom" ];
+         fhir:Reference.display [ fhir:value "Abnormal Interpretation Coded Nom" ]
+       ]
+     ], [
+       fhir:index 152;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-abnInt-NumericNom.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/abnInt-NumericNom>;
+         fhir:Reference.reference [ fhir:value "ValueSet/abnInt-NumericNom" ];
+         fhir:Reference.display [ fhir:value "Abnormal Interpretation Numeric Nom" ]
+       ]
+     ], [
+       fhir:index 153;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-arrivalTransportMode.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/arrivalTransportMode>;
+         fhir:Reference.reference [ fhir:value "ValueSet/arrivalTransportMode" ];
+         fhir:Reference.display [ fhir:value "HSPC Arrival Transport Mode value set" ]
+       ]
+     ], [
+       fhir:index 154;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/bdVerificationMethod>;
+         fhir:Reference.reference [ fhir:value "ValueSet/bdVerificationMethod" ];
+         fhir:Reference.display [ fhir:value "HSPC Verification Method Value Set" ]
+       ]
+     ], [
+       fhir:index 155;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-bpmeasbodylocationprecoord.hmtl" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/bpmeasbodylocationprecoord>;
+         fhir:Reference.reference [ fhir:value "ValueSet/bpmeasbodylocationprecoord" ];
+         fhir:Reference.display [ fhir:value "Blood Pressure Measure Body Location Precoordinated" ]
+       ]
+     ], [
+       fhir:index 156;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests>;
+         fhir:Reference.reference [ fhir:value "ValueSet/chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests" ];
+         fhir:Reference.display [ fhir:value "Chlamydia Trachomatis And Neisseria Gonorrhoeae Combined Tests" ]
+       ]
+     ], [
+       fhir:index 157;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-chlamydiaTrachomatisTests.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/chlamydiaTrachomatisTests>;
+         fhir:Reference.reference [ fhir:value "ValueSet/chlamydiaTrachomatisTests" ];
+         fhir:Reference.display [ fhir:value "Chlamydia Trachomatis Tests" ]
+       ]
+     ], [
+       fhir:index 158;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-communicationMode.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/communicationMode>;
+         fhir:Reference.reference [ fhir:value "ValueSet/communicationMode" ];
+         fhir:Reference.display [ fhir:value "HSPC Communication Mode" ]
+       ]
+     ], [
+       fhir:index 159;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/contraceptionProvisionMethod>;
+         fhir:Reference.reference [ fhir:value "ValueSet/contraceptionProvisionMethod" ];
+         fhir:Reference.display [ fhir:value "Contraception Provision Method" ]
+       ]
+     ], [
+       fhir:index 160;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-contraceptiveChoice.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/contraceptiveChoice>;
+         fhir:Reference.reference [ fhir:value "ValueSet/contraceptiveChoice" ];
+         fhir:Reference.display [ fhir:value "Contraceptive Choice" ]
+       ]
+     ], [
+       fhir:index 161;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-coverageType.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/coverageType>;
+         fhir:Reference.reference [ fhir:value "ValueSet/coverageType" ];
+         fhir:Reference.display [ fhir:value "Coverage Type" ]
+       ]
+     ], [
+       fhir:index 162;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-deltaFlag-numericNom.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/deltaFlag-numericNom>;
+         fhir:Reference.reference [ fhir:value "ValueSet/deltaFlag-numericNom" ];
+         fhir:Reference.display [ fhir:value "Delta Flag Numeric Nom" ]
+       ]
+     ], [
+       fhir:index 163;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-departureTransportMode.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/departureTransportMode>;
+         fhir:Reference.reference [ fhir:value "ValueSet/departureTransportMode" ];
+         fhir:Reference.display [ fhir:value "HSPC Departure Transport Mode value set" ]
+       ]
+     ], [
+       fhir:index 164;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-dietType.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/dietType>;
+         fhir:Reference.reference [ fhir:value "ValueSet/dietType" ];
+         fhir:Reference.display [ fhir:value "HSPC Diet Type value set" ]
+       ]
+     ], [
+       fhir:index 165;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-encounterPriority.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/encounterPriority>;
+         fhir:Reference.reference [ fhir:value "ValueSet/encounterPriority" ];
+         fhir:Reference.display [ fhir:value "HSPC Encounter Priority value set" ]
+       ]
+     ], [
+       fhir:index 166;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-encounterReason.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/encounterReason>;
+         fhir:Reference.reference [ fhir:value "ValueSet/encounterReason" ];
+         fhir:Reference.display [ fhir:value "HSPC Encounter Reason" ]
+       ]
+     ], [
+       fhir:index 167;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-englishProficiency.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/englishProficiency>;
+         fhir:Reference.reference [ fhir:value "ValueSet/englishProficiency" ];
+         fhir:Reference.display [ fhir:value "English Proficiency" ]
+       ]
+     ], [
+       fhir:index 168;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-focalSubject.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/focalSubject>;
+         fhir:Reference.reference [ fhir:value "ValueSet/focalSubject" ];
+         fhir:Reference.display [ fhir:value "Focal Subject" ]
+       ]
+     ], [
+       fhir:index 169;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-fparAnnualHouseholdIncomeRanges.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/fparAnnualHouseholdIncomeRanges>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fparAnnualHouseholdIncomeRanges" ];
+         fhir:Reference.display [ fhir:value "FPAR Annual Household Income Ranges" ]
+       ]
+     ], [
+       fhir:index 170;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/fparDetectedNonDetectedEqInd>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fparDetectedNonDetectedEqInd" ];
+         fhir:Reference.display [ fhir:value "FPAR Detected Non Detected Equivalent Indeterminate" ]
+       ]
+     ], [
+       fhir:index 171;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-fparDetectedNotDetected.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/fparDetectedNotDetected>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fparDetectedNotDetected" ];
+         fhir:Reference.display [ fhir:value "FPAR Detected/Not detected" ]
+       ]
+     ], [
+       fhir:index 172;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-fparHIV1RnaDetectedNotDetected.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/fparHIV1RnaDetectedNotDetected>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fparHIV1RnaDetectedNotDetected" ];
+         fhir:Reference.display [ fhir:value "FPAR HIV1 RNA Detected Not Detected" ]
+       ]
+     ], [
+       fhir:index 173;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-fparHIVAbPosNegEqInd.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/fparHIVAbPosNegEqInd>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fparHIVAbPosNegEqInd" ];
+         fhir:Reference.display [ fhir:value "FPAR HIV Ab Positive Negative Equivalent Indeterminate" ]
+       ]
+     ], [
+       fhir:index 174;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-fparHIVAbReactiveNonReactive.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/fparHIVAbReactiveNonReactive>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fparHIVAbReactiveNonReactive" ];
+         fhir:Reference.display [ fhir:value "FPAR HIV Ab Reactive/Non reactive" ]
+       ]
+     ], [
+       fhir:index 175;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-fparProviderRole.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/fparProviderRole>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fparProviderRole" ];
+         fhir:Reference.display [ fhir:value "FPAR Provider Role" ]
+       ]
+     ], [
+       fhir:index 176;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-fparSmokingStatus.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/fparSmokingStatus>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fparSmokingStatus" ];
+         fhir:Reference.display [ fhir:value "FPAR Smoking Status" ]
+       ]
+     ], [
+       fhir:index 177;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-hivTests.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/hivTests>;
+         fhir:Reference.reference [ fhir:value "ValueSet/hivTests" ];
+         fhir:Reference.display [ fhir:value "HIV Tests" ]
+       ]
+     ], [
+       fhir:index 178;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-humanPapillomaVirusTests.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/humanPapillomaVirusTests>;
+         fhir:Reference.reference [ fhir:value "ValueSet/humanPapillomaVirusTests" ];
+         fhir:Reference.display [ fhir:value "Human Papilloma Virus Tests" ]
+       ]
+     ], [
+       fhir:index 179;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-LabNullFlavor.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/LabNullFlavor>;
+         fhir:Reference.reference [ fhir:value "ValueSet/LabNullFlavor" ];
+         fhir:Reference.display [ fhir:value "HSPC Lab Null Flavor" ]
+       ]
+     ], [
+       fhir:index 180;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-negativePositive.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/negativePositive>;
+         fhir:Reference.reference [ fhir:value "ValueSet/negativePositive" ];
+         fhir:Reference.display [ fhir:value "Negative/Positive" ]
+       ]
+     ], [
+       fhir:index 181;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-neisseriaGonorrhoeaeTests.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/neisseriaGonorrhoeaeTests>;
+         fhir:Reference.reference [ fhir:value "ValueSet/neisseriaGonorrhoeaeTests" ];
+         fhir:Reference.display [ fhir:value "Neisseria Gonorrhoeae Tests" ]
+       ]
+     ], [
+       fhir:index 182;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-observationFindings.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/observationFindings>;
+         fhir:Reference.reference [ fhir:value "ValueSet/observationFindings" ];
+         fhir:Reference.display [ fhir:value "HSPC Findings Value Set Definition" ]
+       ]
+     ], [
+       fhir:index 183;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-observation-weightPrecond.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/observation-weightPrecond>;
+         fhir:Reference.reference [ fhir:value "ValueSet/observation-weightPrecond" ];
+         fhir:Reference.display [ fhir:value "Weight Precondition" ]
+       ]
+     ], [
+       fhir:index 184;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-OrdinalLabCodes.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/OrdinalLabCodes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/OrdinalLabCodes" ];
+         fhir:Reference.display [ fhir:value "Ordinal Lab Codes" ]
+       ]
+     ], [
+       fhir:index 185;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-organismDetectionOrdLabResult.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/organismDetectionOrdLabResult>;
+         fhir:Reference.reference [ fhir:value "ValueSet/organismDetectionOrdLabResult" ];
+         fhir:Reference.display [ fhir:value "Organism Detection Ordinal Lab Result" ]
+       ]
+     ], [
+       fhir:index 186;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-organizationtype.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/organizationtype>;
+         fhir:Reference.reference [ fhir:value "ValueSet/organizationtype" ];
+         fhir:Reference.display [ fhir:value "HSPC Organization Type" ]
+       ]
+     ], [
+       fhir:index 187;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-practitioner-providerPractitionerSpecialty.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty>;
+         fhir:Reference.reference [ fhir:value "ValueSet/practitioner-providerPractitionerSpecialty" ];
+         fhir:Reference.display [ fhir:value "HSPC ProviderPractitioner Specialty" ]
+       ]
+     ], [
+       fhir:index 188;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-pregnancyIntention.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/pregnancyIntention>;
+         fhir:Reference.reference [ fhir:value "ValueSet/pregnancyIntention" ];
+         fhir:Reference.display [ fhir:value "Pregnancy Intention" ]
+       ]
+     ], [
+       fhir:index 189;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-pregnancyStatus.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/pregnancyStatus>;
+         fhir:Reference.reference [ fhir:value "ValueSet/pregnancyStatus" ];
+         fhir:Reference.display [ fhir:value "Pregnancy Status" ]
+       ]
+     ], [
+       fhir:index 190;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-pregnancyStatusReportingMethod.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/pregnancyStatusReportingMethod>;
+         fhir:Reference.reference [ fhir:value "ValueSet/pregnancyStatusReportingMethod" ];
+         fhir:Reference.display [ fhir:value "Pregnancy Status Reporting Method" ]
+       ]
+     ], [
+       fhir:index 191;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-papSmearTests.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/pregnancyTests>;
+         fhir:Reference.reference [ fhir:value "ValueSet/pregnancyTests" ];
+         fhir:Reference.display [ fhir:value "Pregnancy Tests" ]
+       ]
+     ], [
+       fhir:index 192;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-primaryInsuranceClassification.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/primaryInsuranceClassification>;
+         fhir:Reference.reference [ fhir:value "ValueSet/primaryInsuranceClassification" ];
+         fhir:Reference.display [ fhir:value "Primary Insurance Classification" ]
+       ]
+     ], [
+       fhir:index 193;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-QuantitativeLabCodes.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/QuantitativeLabCodes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/QuantitativeLabCodes" ];
+         fhir:Reference.display [ fhir:value "HSPC Quantitative Labs" ]
+       ]
+     ], [
+       fhir:index 194;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-reasonCancelled.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/reasonCancelled>;
+         fhir:Reference.reference [ fhir:value "ValueSet/reasonCancelled" ];
+         fhir:Reference.display [ fhir:value "HSPC Reason Cancelled value set" ]
+       ]
+     ], [
+       fhir:index 195;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-reasonNoContraceptiveChosen.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/reasonNoContraceptiveChosen>;
+         fhir:Reference.reference [ fhir:value "ValueSet/reasonNoContraceptiveChosen" ];
+         fhir:Reference.display [ fhir:value "Reason No Contraceptive Chosen" ]
+       ]
+     ], [
+       fhir:index 196;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-transportPriority.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/transportPriority>;
+         fhir:Reference.reference [ fhir:value "ValueSet/transportPriority" ];
+         fhir:Reference.display [ fhir:value "Transport Priority" ]
+       ]
+     ], [
+       fhir:index 197;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-viplevel.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/viplevel>;
+         fhir:Reference.reference [ fhir:value "ValueSet/viplevel" ];
+         fhir:Reference.display [ fhir:value "HSPC VIP Level value set" ]
+       ]
+     ], [
+       fhir:index 198;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-virginNonVirgin.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/virginNonVirgin>;
+         fhir:Reference.reference [ fhir:value "ValueSet/virginNonVirgin" ];
+         fhir:Reference.display [ fhir:value "Virgin/Non Virgin" ]
+       ]
+     ], [
+       fhir:index 199;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-weightmassunits.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/weightmassunits>;
+         fhir:Reference.reference [ fhir:value "ValueSet/weightmassunits" ];
+         fhir:Reference.display [ fhir:value "Weight Mass Units" ]
+       ]
+     ], [
+       fhir:index 200;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-yesNo.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/fpar/ValueSet/yesNo>;
+         fhir:Reference.reference [ fhir:value "ValueSet/yesNo" ];
+         fhir:Reference.display [ fhir:value "HSPC Yes/No value Set" ]
+       ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/fpar/CodeSystem/admissionSource> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/CodeSystem/bpmeasmethoddevice> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/CodeSystem/heightMeasMethodDevice> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/CodeSystem/heightPrecond> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/CodeSystem/locationCondition> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/CodeSystem/nullValueReason> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/CodeSystem/weightMeasMethodDevice> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/administrativeEncounterId> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/admitMedicationId> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/ambulatoryStatus> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/arrivedByTransportation> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/associatedPrecondition> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/bodyPosition> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/chiefComplaintId> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/communicationMode> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/confidentiality> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/contactPeriod> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/contraceptionProvisionMethod> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/dataAbsentReason> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/dataOriginationMode> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/deltaFlag> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/departedByTransportation> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/dischargeMedicationId> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/focalSubject> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/hospitalService> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/organizationPeriod> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/preferenceInd> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/primaryInd> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/primaryInsuranceClassification> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/primaryLanguage> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/reasonCancelled> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/reportingMethod> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/Extension/vipLevel> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-contraceptiveChoiceAtExit> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-contraceptiveChoiceInitial> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-contraceptiveCounseling> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-counselingToAchievePregnancy> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-coverage> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-genEncounter> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-limitedEnglishProficiencyEval> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-organization> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-patient> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-practitioner> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-practitionerRole> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-pregnancyIntentionEval> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/fpar-pregnancyStatusEval> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-annualHouseholdIncome> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-BHcgPregSerplQl> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-BHcgSerplAcnc> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-bodyWeight> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-ChlamydiaDnaXxxQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcDnaCervixQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcDnaGenitalQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcDnaUrQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcDnaXxxPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcDnaXxxQlBdna> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CtrachAndGCDNAXXXQlPCR> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcRrnaCervixQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcRrnaGenitalQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcRrnaUrQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcRrnaVagQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachAndGcRrnaXxxQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaCervMucusQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaGenitalQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaUrQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaUrthQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaVagQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaXxxPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaXxxPcrAcnc> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaXxxQlBdna> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachDnaXxxQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachL2DnaXxxQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaCervixQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaCervixQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaGenitalFlQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaGenitalQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaUrQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaUrQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaUrthQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaUrthQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaVagQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaVagQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaXxxQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CTrachRrnaXxxQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytoCervix> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytoCvxVag> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytoCvxVagCoded> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytologyCmntCvxVagCytoImp> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytologyCvxVagDocCyto> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-CytologyCvxVagDocThinPrep> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-diastolicbp> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-GenCategCvxVagCytoImp> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-gravidity> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HcgPregSerplQl> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HcgPregSerQlIaRapid> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HcgPregUrQl> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HcgSerplAcnc> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-height> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1AbSerplbldQlEiaRapid> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1AbSerQlIb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1And2AbSerQlEia> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1RnaSerplPcrDl17Log> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1RnaSerplPcrDl50> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv1RnaXxxQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hiv2AbSerQlEia> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-householdSize> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv12HrTypesDnaTissQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv16And18AgCervixQl> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv16And18AgGenitalQl> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv16And18AgUrthQl> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv16And18AgVagQl> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-Hpv16And18AgXxxQl> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvCervix> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvDnaCervixQlBdna> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvDnaCervixQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvE6AndE7MrnaCervixQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvIHRisk1DnaCervixQlBdna> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvIHRisk1DnaXxxQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvIHRisk4DnaCervixQlBdna> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvIHRiskDnaCervixQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvRrnaGenitalQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-HpvRrnaXxxQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaAgGenitalQlEia> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaCervixQlCult> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaCervMucusQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaGenitalQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaUrQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaUrthQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaVagQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaXxxQlBdna> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaDnaXxxQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaGenitalQlCult> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaGenLochiaQlCult> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaVagQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPcr> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPrb> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaVagQlCult> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-NGonorrhoeaXxxQlCult> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-parity> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-sexLastThreeMonths> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-sexLastTwelveMonths> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-smokingStatus> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-StatOfAdqCvxVagCytoImp> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-StudyreportFindPtCvxVagDocCytology> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-systolicbp> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/StructureDefinition/hspc-ThinPrepCervix> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/abnInt-CodedNom> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/abnInt-NumericNom> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/arrivalTransportMode> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/bdVerificationMethod> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/bpmeasbodylocationprecoord> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/chlamydiaTrachomatisTests> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/communicationMode> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/contraceptionProvisionMethod> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/contraceptiveChoice> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/coverageType> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/deltaFlag-numericNom> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/departureTransportMode> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/dietType> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/encounterPriority> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/encounterReason> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/englishProficiency> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/focalSubject> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/fparAnnualHouseholdIncomeRanges> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/fparDetectedNonDetectedEqInd> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/fparDetectedNotDetected> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/fparHIV1RnaDetectedNotDetected> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/fparHIVAbPosNegEqInd> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/fparHIVAbReactiveNonReactive> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/fparProviderRole> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/fparSmokingStatus> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/hivTests> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/humanPapillomaVirusTests> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/LabNullFlavor> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/negativePositive> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/neisseriaGonorrhoeaeTests> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/observationFindings> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/observation-weightPrecond> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/OrdinalLabCodes> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/organismDetectionOrdLabResult> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/organizationtype> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/practitioner-providerPractitionerSpecialty> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/pregnancyIntention> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/pregnancyStatus> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/pregnancyStatusReportingMethod> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/pregnancyTests> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/primaryInsuranceClassification> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/QuantitativeLabCodes> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/reasonCancelled> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/reasonNoContraceptiveChosen> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/transportPriority> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/viplevel> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/virginNonVirgin> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/weightmassunits> a fhir:fpar .
+
+<http://hl7.org/fhir/fpar/ValueSet/yesNo> a fhir:fpar .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ImplementationGuide/FPARImplementationGuide.ttl> .
+
+# -------------------------------------------------------------------------------------
+

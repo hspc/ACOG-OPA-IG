@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/hivTests> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hivTests"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR HIV Tests</h2><div><p>HIV test LOINC codes used by FPAR</p>\n</div><p><b>Copyright Statement:</b> This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5018-7.html\">5018-7</a></td><td>HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5221-7.html\">5221-7</a></td><td>HIV 1 Ab [Presence] in Serum by Immunoblot (IB)</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/68961-2.html\">68961-2</a></td><td>HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30361-0.html\">30361-0</a></td><td>HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/31201-7.html\">31201-7</a></td><td>HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48510-2.html\">48510-2</a></td><td>HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48511-0.html\">48511-0</a></td><td>HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/fpar/ValueSet/hivTests"];
+  fhir:ValueSet.name [ fhir:value "FPAR HIV Tests"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2015-02-19T21:44:49-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HSPC"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://healthcaresoa.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "HIV test LOINC codes used by FPAR"];
+  fhir:ValueSet.copyright [ fhir:value "This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5018-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5221-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HIV 1 Ab [Presence] in Serum by Immunoblot (IB)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "68961-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30361-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31201-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48510-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48511-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/hivTests.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ValueSet/hivTests.ttl> .
+
+# -------------------------------------------------------------------------------------
+

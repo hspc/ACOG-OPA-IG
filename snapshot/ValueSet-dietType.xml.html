@@ -1,0 +1,327 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>The Family Planning Annual Report (FPAR) Implementation Guide</title>
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap-3.0.0.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+  <link href="assets/js/jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+    href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"
+    href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+
+
+    
+    <style type="text/css">
+      pre{
+          width: auto !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!--status-bar-->
+<div>
+ <div id="segment-header" class="segment">
+  <!-- segment-header -->
+  <div class="container">
+   <!-- container -->
+   <a id="logo" no-external="true" href="http://hl7.org/fhir">
+    <img alt="logo fhir" src="assets/images/fhir-logo-www.png"/>
+   </a>
+   <div id="hl7-status">
+    <b>Current Build</b>
+   </div>
+
+   <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+     <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
+    </a>
+   </div>
+   <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm">
+     <img alt="Search FHIR" src="assets/images/search.png"/>
+    </a>
+   </div>
+  </div>
+  <div class="container">
+   <!-- container -->
+  </div>
+ </div>
+ <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">
+  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">
+   <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse"
+      type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/2017Jan/index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/index.html">Home</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/documentation.html">Documentation</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/modules.html">Modules</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/resourcelist.html">Resources</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/profilelist.html">Profiles</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/extensibility-registry.html">Extensions</a>
+       </li>
+       <li>
+        <a href="http://hl7.org/fhir/2017Jan/operationslist.html">Operations</a>
+       </li>
+
+      </ul>
+     </div>
+     <!-- /.nav-collapse -->
+    </div>
+    <!-- /.container -->
+   </nav>
+   <!-- /.navbar -->
+
+   <!-- /HEADER CONTENT -->
+  </div>
+  <!-- /container -->
+ </div>
+ <!-- /segment-navbar -->
+</div>
+
+    
+    <div id="segment-breadcrumb" class="segmnt">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li title="The Family Planning Annual Report (FPAR) Implementation Guide"><a href="index.html"><b>The Family Planning Annual Report (FPAR) Implementation Guide</b></a></li>
+          
+          
+          <li><b>dietType Details</b></li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div id="segment-content" class="segment">
+      <div class="container">
+        <div class="row">
+          <div class="inner-wrapper">
+            <div class="col-12">
+              <ul class="nav nav-tabs">
+                <li><a href="ValueSet-dietType.html">Content</a></li>
+                <li class="active"><a href="ValueSet-dietType.xml.html">XML</a></li>
+                <li class=""><a href="ValueSet-dietType.json.html">JSON</a></li>
+              </ul>
+              
+              <br/>
+              <pre class="xml">
+
+&lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#id">value</a>=&quot;dietType&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/2017Jan/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition&quot;/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;HSPC Diet Type value set.&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Select HL7 ActCode codes.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;b&gt;Copyright Statement:&lt;/b&gt; TBD&lt;/p&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html&quot;&gt;&lt;code&gt;http://hl7.org/fhir/v3/ActCode&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-BR&quot;&gt;BR&lt;/a&gt;&lt;/td&gt;&lt;td&gt;breikost(GE)&lt;/td&gt;&lt;td&gt;A diet exclusively composed of oatmeal, semolina, or rice, to be extremely easy to eat and digest.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-DM&quot;&gt;DM&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diabetes mellitus diet&lt;/td&gt;&lt;td&gt;A diet that uses carbohydrates sparingly.  Typically with a restriction in daily energy content (e.g. 1600-2000 kcal).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-FAST&quot;&gt;FAST&lt;/a&gt;&lt;/td&gt;&lt;td&gt;fasting&lt;/td&gt;&lt;td&gt;No enteral intake of foot or liquids  whatsoever, no smoking.  Typically 6 to 8 hours before anesthesia.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-FORMULA&quot;&gt;FORMULA&lt;/a&gt;&lt;/td&gt;&lt;td&gt;formula diet&lt;/td&gt;&lt;td&gt;A diet consisting of a formula feeding, either for an infant or an adult, to provide nutrition either orally or through the gastrointestinal tract via tube, catheter or stoma.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-GF&quot;&gt;GF&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gluten Free&lt;/td&gt;&lt;td&gt;Gluten free diet for celiac disease.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-LF&quot;&gt;LF&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low Fat&lt;/td&gt;&lt;td&gt;A diet low in fat, particularly to patients with hepatic diseases.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-LP&quot;&gt;LP&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low Protein&lt;/td&gt;&lt;td&gt;A low protein diet for patients with renal failure.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-LQ&quot;&gt;LQ&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Liquid&lt;/td&gt;&lt;td&gt;A strictly liquid diet, that can be fully absorbed in the intestine, and therefore may not contain fiber.  Used before enteral surgeries.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-LS&quot;&gt;LS&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low Sodium&lt;/td&gt;&lt;td&gt;A diet low in sodium for patients with congestive heart failure and/or renal failure.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-N&quot;&gt;N&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normal Diet&lt;/td&gt;&lt;td&gt;A normal diet, i.e. no special preparations or restrictions for medical reasons. This is notwithstanding any preferences the patient might have regarding special foods, such as vegetarian, kosher, etc.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-NF&quot;&gt;NF&lt;/a&gt;&lt;/td&gt;&lt;td&gt;No Fat&lt;/td&gt;&lt;td&gt;A no fat diet for acute hepatic diseases.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-PAF&quot;&gt;PAF&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Phenylalanine Free&lt;/td&gt;&lt;td&gt;Phenylketonuria diet.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-PAR&quot;&gt;PAR&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Parenteral&lt;/td&gt;&lt;td&gt;Patient is supplied with parenteral nutrition, typically described in terms of i.v. medications.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-RD&quot;&gt;RD&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reduction Diet&lt;/td&gt;&lt;td&gt;A diet that seeks to reduce body fat, typically low energy content (800-1600 kcal).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-SCH&quot;&gt;SCH&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schonkost (GE)&lt;/td&gt;&lt;td&gt;A diet that avoids ingredients that might cause digestion problems, e.g., avoid excessive fat, avoid too much fiber (cabbage, peas, beans).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-SUPPLEMENT&quot;&gt;SUPPLEMENT&lt;/a&gt;&lt;/td&gt;&lt;td&gt;nutritional supplement&lt;/td&gt;&lt;td&gt;A diet that is not intended to be complete but is added to other diets.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-T&quot;&gt;T&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tea only&lt;/td&gt;&lt;td&gt;This is not really a diet, since it contains little nutritional value, but is essentially just water.  Used before coloscopy examinations.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/2017Jan/v3/ActCode/cs.html#v3-ActCode-VLI&quot;&gt;VLI&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low Valin, Leucine, Isoleucine&lt;/td&gt;&lt;td&gt;Diet with low content of the amino-acids valin, leucin, and isoleucin, for &amp;quot;maple syrup disease.&amp;quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.extension">extension</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/valueset-extensible&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/datatypes.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/fpar/ValueSet/dietType&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;0.01&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;HSPC Diet Type value set.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#dateTime">value</a>=&quot;2015-08-06T00:00:00-04:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Health Services Platform Consortium (HSPC)&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.description">description</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#markdown">value</a>=&quot;Select HL7 ActCode codes.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.immutable">immutable</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.copyright">copyright</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#markdown">value</a>=&quot;TBD&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.extensible">extensible</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose">compose</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/v3/ActCode&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;BR&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;breikost(GE)&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;DM&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Diabetes mellitus diet&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;FAST&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;fasting&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;FORMULA&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;formula diet&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;GF&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Gluten Free&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;LF&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Low Fat&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;LP&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Low Protein&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;LQ&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Liquid&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;LS&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Low Sodium&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Normal Diet&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;NF&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;No Fat&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;PAF&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Phenylalanine Free&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;PAR&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Parenteral&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;RD&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Reduction Diet&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;SCH&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Schonkost (GE)&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;SUPPLEMENT&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;nutritional supplement&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;T&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Tea only&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#code">value</a>=&quot;VLI&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/2017Jan/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/2017Jan/datatypes.html#string">value</a>=&quot;Low Valin, Leucine, Isoleucine&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/include&gt;
+  &lt;/compose&gt;
+&lt;/ValueSet&gt;</pre>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  <div id="segment-footer" class="segment" igtool="footer">
+    <!-- segment-footer -->
+    <div class="container">
+      <!-- container -->
+      <div class="inner-wrapper">
+        <p> &#169; HL7.org 2011+. FHIR STU3 Candidate (v3.0.1-11917) generated on
+          Fri, Feb 15, 2019 12:55-0500. <a href="qa.html">QA Page</a>
+          <br/>
+          <span style="color: #FFFF77"> Links: <a style="color: #81BEF7"
+              href="http://hl7.org/fhir/search.cfm">Search <img style="text-align: baseline"
+                src="external.png"/></a> | <a style="color: #81BEF7"
+              href="http://hl7.org/fhir/2017Jan/history.html">Version History</a> | <a
+              style="color: #81BEF7" href="http://hl7.org/fhir/2017Jan/toc.html">Table of Contents</a>
+            | <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/2017Jan/license.html"
+                ><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | <a
+              style="color: #81BEF7" target="_blank"
+              href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677"
+              >Propose a change <img style="text-align: baseline" src="external.png"/></a>
+          </span>
+        </p>
+      </div>
+      <!-- /inner-wrapper -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+  <div id="segment-post-footer" class="segment hidden">
+    <!-- segment-post-footer -->
+    <div class="container">
+      <!-- container -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery-3.2.1.min.js"> </script>
+  <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js"> </script>
+  <script src="dist/js/bootstrap-3.0.0.min.js"> </script>
+  <script src="assets/js/respond.min.js"> </script>
+
+  <script src="assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+ 
+  </body>
+</html>

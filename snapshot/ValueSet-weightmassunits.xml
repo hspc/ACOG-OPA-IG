@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="weightmassunits"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HSPC Weight Units of Measure Value Set</h2><div><p>The list of codes that describe the mass units used for weight.</p>
+</div><p><b>Copyright Statement:</b> This value set includes content from UCUM. Implementer use of UCUM is not covered by this agreement</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://unitsofmeasure.org"><code>http://unitsofmeasure.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>[lb_av]</td><td>Pound [mass]</td><td/></tr><tr><td>[oz_av]</td><td>Ounce [mass]</td><td/></tr><tr><td>kg</td><td>Kilogram [SI Mass Units]</td><td/></tr><tr><td>g</td><td>Gram [mass]</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/weightmassunits"/>
+  <name value="HSPC Weight Units of Measure Value Set"/>
+  <status value="draft"/>
+  <date value="2019-02-15T12:55:20-05:00"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <description value="The list of codes that describe the mass units used for weight."/>
+  <copyright value="This value set includes content from UCUM. Implementer use of UCUM is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://unitsofmeasure.org"/>
+      <concept>
+        <code value="[lb_av]"/>
+        <display value="Pound [mass]"/>
+      </concept>
+      <concept>
+        <code value="[oz_av]"/>
+        <display value="Ounce [mass]"/>
+      </concept>
+      <concept>
+        <code value="kg"/>
+        <display value="Kilogram [SI Mass Units]"/>
+      </concept>
+      <concept>
+        <code value="g"/>
+        <display value="Gram [mass]"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

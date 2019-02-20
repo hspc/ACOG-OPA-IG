@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="contraceptiveChoice"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FPAR Contraceptive Choice value set</h2><div><p>Select SNOMED code system values.  A set of codes that describe methods of contraception.</p>
+</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22523008">22523008</a></td><td>Vasectomy (procedure)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60890002">60890002</a></td><td>Female sterilization (procedure)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169450001">169450001</a></td><td>No contraceptive precautions (situation)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169467008">169467008</a></td><td>Progestogen only oral contraceptive (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268461001">268461001</a></td><td>Sheath contraception (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169513000">169513000</a></td><td>Withdrawal contraception (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169530003">169530003</a></td><td>Uses contraceptive sponge (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=228479001">228479001</a></td><td>Uses a female condom (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268458002">268458002</a></td><td>Combined oral contraceptive - use (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268466006">268466006</a></td><td>Spermicidal contraception (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=275813002">275813002</a></td><td>Emergency contraception (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=312081001">312081001</a></td><td>Intrauterine device contraception (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=413116005">413116005</a></td><td>Transdermal contraception (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428987008">428987008</a></td><td>Subcutaneous contraceptive implant present (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=448962006">448962006</a></td><td>Uses copper intrauterine device contraception (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449038007">449038007</a></td><td>Uses hormone releasing intrauterine device contraception (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=450850003">450850003</a></td><td>Uses vaginal hormone releasing ring (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=450851004">450851004</a></td><td>Uses contraceptive diaphragm (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454451000124109">454451000124109</a></td><td>Declines to state contraceptive method (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268464009">268464009</a></td><td>Depot contraception (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=455501000124105">455501000124105</a></td><td>Contraception based on fertility awareness (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454441000124107">454441000124107</a></td><td>Contraception using lactation amonorrhea method (finding)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=455491000124102">455491000124102</a></td><td>Male relying on female contraception (finding)</td><td/></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-extensible">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/contraceptiveChoice"/>
+  <version value="0.01"/>
+  <name value="FPAR Contraceptive Choice value set"/>
+  <status value="draft"/>
+  <date value="2018-03-29T00:00:00-04:00"/>
+  <publisher value="Family Planning Annual Report"/>
+  <description value="Select SNOMED code system values.  A set of codes that describe methods of contraception."/>
+  <immutable value="true"/>
+  <copyright value="TBD"/>
+  <extensible value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="22523008"/>
+        <display value="Vasectomy (procedure)"/>
+      </concept>
+      <concept>
+        <code value="60890002"/>
+        <display value="Female sterilization (procedure)"/>
+      </concept>
+      <concept>
+        <code value="169450001"/>
+        <display value="No contraceptive precautions (situation)"/>
+      </concept>
+      <concept>
+        <code value="169467008"/>
+        <display value="Progestogen only oral contraceptive (finding)"/>
+      </concept>
+      <concept>
+        <code value="268461001"/>
+        <display value="Sheath contraception (finding)"/>
+      </concept>
+      <concept>
+        <code value="169513000"/>
+        <display value="Withdrawal contraception (finding)"/>
+      </concept>
+      <concept>
+        <code value="169530003"/>
+        <display value="Uses contraceptive sponge (finding)"/>
+      </concept>
+      <concept>
+        <code value="228479001"/>
+        <display value="Uses a female condom (finding)"/>
+      </concept>
+      <concept>
+        <code value="268458002"/>
+        <display value="Combined oral contraceptive - use (finding)"/>
+      </concept>
+      <concept>
+        <code value="268466006"/>
+        <display value="Spermicidal contraception (finding)"/>
+      </concept>
+      <concept>
+        <code value="275813002"/>
+        <display value="Emergency contraception (finding)"/>
+      </concept>
+      <concept>
+        <code value="312081001"/>
+        <display value="Intrauterine device contraception (finding)"/>
+      </concept>
+      <concept>
+        <code value="413116005"/>
+        <display value="Transdermal contraception (finding)"/>
+      </concept>
+      <concept>
+        <code value="428987008"/>
+        <display value="Subcutaneous contraceptive implant present (finding)"/>
+      </concept>
+      <concept>
+        <code value="448962006"/>
+        <display value="Uses copper intrauterine device contraception (finding)"/>
+      </concept>
+      <concept>
+        <code value="449038007"/>
+        <display value="Uses hormone releasing intrauterine device contraception (finding)"/>
+      </concept>
+      <concept>
+        <code value="450850003"/>
+        <display value="Uses vaginal hormone releasing ring (finding)"/>
+      </concept>
+      <concept>
+        <code value="450851004"/>
+        <display value="Uses contraceptive diaphragm (finding)"/>
+      </concept>
+      <concept>
+        <code value="454451000124109"/>
+        <display value="Declines to state contraceptive method (finding)"/>
+      </concept>
+      <concept>
+        <code value="268464009"/>
+        <display value="Depot contraception (finding)"/>
+      </concept>
+      <concept>
+        <code value="455501000124105"/>
+        <display value="Contraception based on fertility awareness (finding)"/>
+      </concept>
+      <concept>
+        <code value="454441000124107"/>
+        <display value="Contraception using lactation amonorrhea method (finding)"/>
+      </concept>
+      <concept>
+        <code value="455491000124102"/>
+        <display value="Male relying on female contraception (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

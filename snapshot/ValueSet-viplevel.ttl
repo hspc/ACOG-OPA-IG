@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/viplevel> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "viplevel"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC VIP Level</h2><div><p>A set of codes that describe the kind of documentation used to validate a date of birth.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/2017Jan/v3/PatientImportance/cs.html\"><code>http://hl7.org/fhir/v3/PatientImportance</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/PatientImportance/cs.html#v3-PatientImportance-BM\">BM</a></td><td>Board member</td><td>Board member of health care organization</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/PatientImportance/cs.html#v3-PatientImportance-FD\">FD</a></td><td>Financial donor</td><td>Financial donor to the health care organization</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/PatientImportance/cs.html#v3-PatientImportance-FOR\">FOR</a></td><td>Foreign dignitary</td><td>Foreign citizen dignitary of interest to the health care organization</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/PatientImportance/cs.html#v3-PatientImportance-GOVT\">GOVT</a></td><td>Government dignitary</td><td>Government dignitary of interest to the organization</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/PatientImportance/cs.html#v3-PatientImportance-DFM\">DFM</a></td><td>Physician family member</td><td>Family member of staff physician</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/PatientImportance/cs.html#v3-PatientImportance-SFM\">SFM</a></td><td>Staff family member</td><td>Family member of staff member</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/PatientImportance/cs.html#v3-PatientImportance-STF\">STF</a></td><td>Staff memeber</td><td>Staff member of the health care organization</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/PatientImportance/cs.html#v3-PatientImportance-DR\">DR</a></td><td>Staff physician</td><td>Member of the health care organization physician staff</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/PatientImportance/cs.html#v3-PatientImportance-VIP\">VIP</a></td><td>Very important person</td><td>Very important person of interest to the health care organization</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/fpar/ValueSet/viplevel"];
+  fhir:ValueSet.name [ fhir:value "HSPC VIP Level"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2019-02-15T12:55:20-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HSPC"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://healthcaresoa.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "A set of codes that describe the kind of documentation used to validate a date of birth."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/v3/PatientImportance" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "BM" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Board member" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "FD" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Financial donor" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "FOR" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Foreign dignitary" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "GOVT" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Government dignitary" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DFM" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physician family member" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "SFM" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Staff family member" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "STF" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Staff memeber" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DR" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Staff physician" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "VIP" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Very important person" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/viplevel.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ValueSet/viplevel.ttl> .
+
+# -------------------------------------------------------------------------------------
+

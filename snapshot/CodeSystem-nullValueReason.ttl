@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/CodeSystem/nullValueReason> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nullValueReason"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Null Value Reason code system</h2><div><p>Select codes from Intermountain Healthcare HDD code sytsem.  The codes that describe why data is missing in a given element.</p>\n</div><p><b>Copyright Statement:</b> This value set includes content from and copyrighted by Intermountain Healthcare HDD</p><p>This code system http://hl7.org/fhir/fpar/CodeSystem/nullValueReason defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"nullValueReason-112\"> </a></td><td>Not Applicable</td><td>The data element is not applicable therefore no data is recorded.</td></tr><tr><td style=\"white-space:nowrap\">528116898<a name=\"nullValueReason-528116898\"> </a></td><td>Missing Picklist Value</td><td>The desired value is not one of the options in the picklist.</td></tr><tr><td style=\"white-space:nowrap\">528116900<a name=\"nullValueReason-528116900\"> </a></td><td>Data Not Available</td><td>Data is not available to populate the element.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/fpar/CodeSystem/nullValueReason"];
+  fhir:CodeSystem.name [ fhir:value "HSPC Null Value Reason code system"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2019-02-15T12:55:20-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "Select codes from Intermountain Healthcare HDD code sytsem.  The codes that describe why data is missing in a given element."];
+  fhir:CodeSystem.copyright [ fhir:value "This value set includes content from and copyrighted by Intermountain Healthcare HDD"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not Applicable" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The data element is not applicable therefore no data is recorded." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "528116898" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Missing Picklist Value" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The desired value is not one of the options in the picklist." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "528116900" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Data Not Available" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Data is not available to populate the element." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/CodeSystem/nullValueReason.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/CodeSystem/nullValueReason.ttl> .
+
+# -------------------------------------------------------------------------------------
+

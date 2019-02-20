@@ -1,0 +1,2475 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "FPARImplementationGuide",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>The Family Planning Annual Report (FPAR) Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide</pre><div><p>The Implementation Guide resource profile for FPAR</p>\n</div></div>"
+  },
+  "url": "http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide",
+  "version": "1.0",
+  "name": "The Family Planning Annual Report (FPAR) Implementation Guide",
+  "status": "draft",
+  "date": "2017-11-30T00:00:00-05:00",
+  "publisher": "Health Services Platform Consortium on behalf of The Office of Population Affairs (OPA)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.acog.org"
+        }
+      ]
+    }
+  ],
+  "description": "The Implementation Guide resource profile for FPAR",
+  "copyright": "The Office of Population Affairs (OPA)",
+  "fhirVersion": "3.0.1",
+  "package": [
+    {
+      "id": "p1",
+      "name": "FPAR Implementation Guide",
+      "description": "Profiles and resources in this implementation guide.",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-admissionSource.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/admissionSource",
+            "display": "HSPC Admission Source value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-arrivalStatus.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/arrivalStatus",
+            "display": "HSPC Patient Arrival Status"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-bpmeasmethoddevice.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/bpmeasmethoddevice",
+            "display": "Blood Pressure Measure Method Device"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-heightMeasMethodDevice.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/heightMeasMethodDevice",
+            "display": "Height Measure Method Device"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-heightPrecond.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/heightPrecond",
+            "display": "Height Precondition"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-locationCondition.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/locationCondition",
+            "display": "HSPC Service Delivery Location Condition code system"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-nullValueReason.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/nullValueReason",
+            "display": "HSPC Null Value Reason code system"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-weightMeasMethodDevice.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/weightMeasMethodDevice",
+            "display": "Weight Measure Method Device"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/administrativeEncounterId",
+            "display": "Administrative encounter id"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/admitMedicationId",
+            "display": "Admit medication id"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/ambulatoryStatus",
+            "display": "Ambulatory status"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/arrivedByTransportation",
+            "display": "Arrived by transportation"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/associatedPrecondition",
+            "display": "Associated precondition"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/bodyPosition",
+            "display": "Body position"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/chiefComplaintId",
+            "display": "Chief complaint indicator"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/communicationMode",
+            "display": "Communication mode"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/confidentiality",
+            "display": "Confidentiality"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/contactPeriod",
+            "display": "Contact period"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/contraceptionProvisionMethod",
+            "display": "Contraception provision method"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/dataAbsentReason",
+            "display": "Data absent reason"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/dataOriginationMode",
+            "display": "Data origination mode"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/deltaFlag",
+            "display": "Delta flag"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/departedByTransportation",
+            "display": "Departed by transportation"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/dischargeMedicationId",
+            "display": "Discharge medication id"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/focalSubject",
+            "display": "Focal subject"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/hospitalService",
+            "display": "Hospital service"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/organizationPeriod",
+            "display": "Organization period"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/preferenceInd",
+            "display": "Preference indicator"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/primaryInd",
+            "display": "Primary indicator"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/primaryInsuranceClassification",
+            "display": "Primary insurance classification"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/primaryLanguage",
+            "display": "Primary language"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/reasonCancelled",
+            "display": "Reason cancelled"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/reportingMethod",
+            "display": "Reporting method"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "Extension/vipLevel",
+            "display": "VIP level"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-contraceptiveChoiceAtExit.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-contraceptiveChoiceAtExit",
+            "display": "An observation of one's choice in contraception evaluated at the end of a visit."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-contraceptiveChoiceInitial.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-contraceptiveChoiceInitial",
+            "display": "An observation of one's choice in contraception at the beginning of a visit."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-contraceptiveCounseling.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-contraceptiveCounseling",
+            "display": "An education procedure that provides counseling in regards to contraception."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-counselingToAchievePregnancy.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-counselingToAchievePregnancy",
+            "display": "An education procedure that provides counseling to achieve pregnancy."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-coverage.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-coverage",
+            "display": "The FPAR profile of the Coverage resource."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-genEncounter.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-genEncounter",
+            "display": "The FPAR General Encounter profile of the Encounter resource."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-limitedEnglishProficiencyEval.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-limitedEnglishProficiencyEval",
+            "display": "An observation about an individual's ability to communicate in English."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-organization.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-organization",
+            "display": "The FPAR profile of the Organization resource."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-patient.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-patient",
+            "display": "The FPAR profile of the Patient resource."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-practitioner.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-practitioner",
+            "display": "The FPAR profile of the Practitioner resource."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-practitionerRole.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-practitionerRole",
+            "display": "The FPAR profile of the Practitioner resource."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-pregnancyIntentionEval.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-pregnancyIntentionEval",
+            "display": "An observation of an individual's intention to be or not be pregnant."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-fpar-pregnancyStatusEval.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/fpar-pregnancyStatusEval",
+            "display": "An observation of one's current state of pregnancy."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-annualHouseholdIncome.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-annualHouseholdIncome",
+            "display": "An observation of the income range for a household per year."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-BHcgPregSerplQl.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-BHcgPregSerplQl",
+            "display": "The observation Choriogonadotropin.beta subunit (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2110-5"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-BHcgSerplAcnc.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-BHcgSerplAcnc",
+            "display": "The observation Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma based on the LOINC code 21198-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-bodyWeight.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-bodyWeight",
+            "display": "An observation of an individual's weight."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-ChlamydiaDnaXxxQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-ChlamydiaDnaXxxQlPcr",
+            "display": "The observation Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 35729-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachAndGcDnaCervixQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachAndGcDnaCervixQlPcr",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 45068-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachAndGcDnaGenitalQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachAndGcDnaGenitalQlPcr",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 44807-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachAndGcDnaUrQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachAndGcDnaUrQlPcr",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 44806-8"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachAndGcDnaXxxPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachAndGcDnaXxxPcr",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36903-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachAndGcDnaXxxQlBdna.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachAndGcDnaXxxQlBdna",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43406-8"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CtrachAndGCDNAXXXQlPCR.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CtrachAndGCDNAXXXQlPCR",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36902-5"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachAndGcRrnaCervixQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachAndGcRrnaCervixQlPrb",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45067-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachAndGcRrnaGenitalQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachAndGcRrnaGenitalQlPrb",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 45069-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachAndGcRrnaUrQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachAndGcRrnaUrQlPrb",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Urine by DNA probe based on the LOINC code 45074-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachAndGcRrnaVagQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachAndGcRrnaVagQlPrb",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45070-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachAndGcRrnaXxxQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachAndGcRrnaXxxQlPrb",
+            "display": "The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 45076-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachDnaCervMucusQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachDnaCervMucusQlPcr",
+            "display": "The observation Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21189-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachDnaGenitalQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachDnaGenitalQlPcr",
+            "display": "The observation Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6356-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachDnaUrQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachDnaUrQlPcr",
+            "display": "The observation Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 6357-8"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachDnaUrthQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachDnaUrthQlPcr",
+            "display": "The observation Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21191-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachDnaVagQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachDnaVagQlPcr",
+            "display": "The observation Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 45084-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachDnaXxxPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachDnaXxxPcr",
+            "display": "The observation Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47212-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachDnaXxxPcrAcnc.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachDnaXxxPcrAcnc",
+            "display": "The observation Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49096-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachDnaXxxQlBdna.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachDnaXxxQlBdna",
+            "display": "The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43404-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachDnaXxxQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachDnaXxxQlPcr",
+            "display": "The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 21613-5"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachL2DnaXxxQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachL2DnaXxxQlPcr",
+            "display": "The observation Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47211-8"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaCervixQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaCervixQlPcr",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50387-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaCervixQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaCervixQlPrb",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45078-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaGenitalFlQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaGenitalFlQlPrb",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Genital fluid by DNA probe based on the LOINC code 23838-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaGenitalQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaGenitalQlPrb",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 16600-9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaUrQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaUrQlPcr",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 42931-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaUrQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaUrQlPrb",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Urine by DNA probe based on the LOINC code 16601-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaUrthQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaUrthQlPcr",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53925-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaUrthQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaUrthQlPrb",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Urethra by DNA probe based on the LOINC code 21192-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaVagQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaVagQlPcr",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53926-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaVagQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaVagQlPrb",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45080-9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaXxxQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaXxxQlPcr",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43304-5"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CTrachRrnaXxxQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CTrachRrnaXxxQlPrb",
+            "display": "The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 4993-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CytoCervix.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CytoCervix",
+            "display": "The observation Microscopic observation [Identifier] in Cervix by Cyto stain based on the LOINC code 10524-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CytoCvxVag.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CytoCvxVag",
+            "display": "The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain|Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain Narrative based on the LOINC code 19766-5"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CytoCvxVagCoded.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CytoCvxVagCoded",
+            "display": "The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19765-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CytologyCmntCvxVagCytoImp.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CytologyCmntCvxVagCytoImp",
+            "display": "The observation Cytology study comment Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 19774-9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CytologyCvxVagDocCyto.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CytologyCvxVagDocCyto",
+            "display": "The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 47528-5"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-CytologyCvxVagDocThinPrep.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-CytologyCvxVagDocThinPrep",
+            "display": "The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain.thin prep based on the LOINC code 47527-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-diastolicbp.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-diastolicbp",
+            "display": "An observation of an individual's diastolic blood pressure based on the LOINC code 8462-4."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-GenCategCvxVagCytoImp.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-GenCategCvxVagCytoImp",
+            "display": "The observation General categories [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|General categories [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19762-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-gravidity.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-gravidity",
+            "display": "The observation [#] Pregnancies based on the LOINC code 11996-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HcgPregSerplQl.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HcgPregSerplQl",
+            "display": "The observation Choriogonadotropin (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2118-8"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HcgPregSerQlIaRapid.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HcgPregSerQlIaRapid",
+            "display": "The observation Choriogonadotropin (pregnancy test) [Presence] in Serum by Rapid immunoassay based on the LOINC code 80385-8"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HcgPregUrQl.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HcgPregUrQl",
+            "display": "The observation Choriogonadotropin (pregnancy test) [Presence] in Urine based on the LOINC code 2106-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HcgSerplAcnc.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HcgSerplAcnc",
+            "display": "The observation Choriogonadotropin [Units/volume] in Serum or Plasma based on the LOINC code 19080-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-height.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-height",
+            "display": "An observation for a person's height.  Based on the LOINC code 8302-2."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hiv1AbSerplbldQlEiaRapid.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hiv1AbSerplbldQlEiaRapid",
+            "display": "The observation HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test based on the LOINC code 68961-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hiv1AbSerQlIb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hiv1AbSerQlIb",
+            "display": "The observation HIV 1 Ab [Presence] in Serum by Immunoblot (IB) based on the LOINC code 5221-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hiv1And2AbSerQlEia.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hiv1And2AbSerQlEia",
+            "display": "The observation HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 31201-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hiv1RnaSerplPcrDl17Log.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hiv1RnaSerplPcrDl17Log",
+            "display": "The observation HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL based on the LOINC code 48510-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hiv1RnaSerplPcrDl50.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hiv1RnaSerplPcrDl50",
+            "display": "The observation HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL based on the LOINC code 48511-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hiv1RnaXxxQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hiv1RnaXxxQlPcr",
+            "display": "The observation HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 5018-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hiv2AbSerQlEia.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hiv2AbSerQlEia",
+            "display": "The observation HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 30361-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-householdSize.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-householdSize",
+            "display": "An observation of the number of individuals in a household."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hpv12HrTypesDnaTissQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hpv12HrTypesDnaTissQlPrb",
+            "display": "The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+66 DNA [Presence] in Tissue by DNA probe based on the LOINC code 73959-9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hpv16And18AgCervixQl.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hpv16And18AgCervixQl",
+            "display": "The observation Human papilloma virus 16+18 Ag [Presence] in Cervix based on the LOINC code 14503-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hpv16And18AgGenitalQl.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hpv16And18AgGenitalQl",
+            "display": "The observation Human papilloma virus 16+18 Ag [Presence] in Genital specimen based on the LOINC code 12223-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hpv16And18AgUrthQl.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hpv16And18AgUrthQl",
+            "display": "The observation Human papilloma virus 16+18 Ag [Presence] in Urethra based on the LOINC code 14506-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hpv16And18AgVagQl.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hpv16And18AgVagQl",
+            "display": "The observation Human papilloma virus 16+18 Ag [Presence] in Vaginal fluid based on the LOINC code 14504-5"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-Hpv16And18AgXxxQl.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-Hpv16And18AgXxxQl",
+            "display": "The observation Human papilloma virus 16+18 Ag [Presence] in Unspecified specimen based on the LOINC code 17400-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HpvCervix.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HpvCervix",
+            "display": "The observation Human papilloma virus identified in Cervix based on the LOINC code 11083-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HpvDnaCervixQlBdna.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HpvDnaCervixQlBdna",
+            "display": "The observation Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 38372-9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HpvDnaCervixQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HpvDnaCervixQlPrb",
+            "display": "The observation Human papilloma virus DNA [Presence] in Cervix by DNA probe based on the LOINC code 44550-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HpvE6AndE7MrnaCervixQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HpvE6AndE7MrnaCervixQlPcr",
+            "display": "The observation Human papilloma virus E6+E7 mRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 69002-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HpvIHRisk1DnaCervixQlBdna.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HpvIHRisk1DnaCervixQlBdna",
+            "display": "The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 30167-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HpvIHRisk1DnaXxxQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HpvIHRisk1DnaXxxQlPcr",
+            "display": "The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49896-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HpvIHRisk4DnaCervixQlBdna.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HpvIHRisk4DnaCervixQlBdna",
+            "display": "The observation Human papilloma virus16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 59420-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HpvIHRiskDnaCervixQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HpvIHRiskDnaCervixQlPrb",
+            "display": "The observation Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe based on the LOINC code 21440-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HpvRrnaGenitalQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HpvRrnaGenitalQlPcr",
+            "display": "The observation Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6514-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-HpvRrnaXxxQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-HpvRrnaXxxQlPcr",
+            "display": "The observation Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 6516-9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaAgGenitalQlEia.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaAgGenitalQlEia",
+            "display": "The observation Neisseria gonorrhoeae Ag [Presence] in Genital specimen by Immunoassay based on the LOINC code 6487-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaCervixQlCult.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaCervixQlCult",
+            "display": "The observation Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture based on the LOINC code 688-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaDnaCervMucusQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaDnaCervMucusQlPcr",
+            "display": "The observation Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21414-8"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaDnaGenitalQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaDnaGenitalQlPcr",
+            "display": "The observation Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 47387-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaDnaUrQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaDnaUrQlPcr",
+            "display": "The observation Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 21416-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaDnaUrthQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaDnaUrthQlPcr",
+            "display": "The observation Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21415-5"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaDnaVagQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaDnaVagQlPcr",
+            "display": "The observation Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 32705-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaDnaXxxQlBdna.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaDnaXxxQlBdna",
+            "display": "The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43403-5"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaDnaXxxQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaDnaXxxQlPcr",
+            "display": "The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 24111-7"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaGenitalQlCult.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaGenitalQlCult",
+            "display": "The observation Neisseria gonorrhoeae [Presence] in Genital specimen by Organism specific culture based on the LOINC code 691-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaGenLochiaQlCult.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaGenLochiaQlCult",
+            "display": "The observation Neisseria gonorrhoeae [Presence] in Genital lochia by Organism specific culture based on the LOINC code 692-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaRrnaCervixQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPcr",
+            "display": "The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50388-8"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaRrnaCervixQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPrb",
+            "display": "The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 32198-4"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaRrnaUrthQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPcr",
+            "display": "The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53927-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaRrnaUrthQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPrb",
+            "display": "The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by DNA probe based on the LOINC code 32199-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaRrnaVagQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaRrnaVagQlPcr",
+            "display": "The observation Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53879-3"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaRrnaXxxQlPcr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPcr",
+            "display": "The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43305-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaRrnaXxxQlPrb.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPrb",
+            "display": "The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 5028-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaVagQlCult.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaVagQlCult",
+            "display": "The observation Neisseria gonorrhoeae [Presence] in Vaginal fluid by Organism specific culture based on the LOINC code 693-2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-NGonorrhoeaXxxQlCult.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-NGonorrhoeaXxxQlCult",
+            "display": "The observation Neisseria gonorrhoeae [Presence] in Unspecified specimen by Organism specific culture based on the LOINC code 698-1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-parity.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-parity",
+            "display": "The observation [#] Parity based on the LOINC code 11977-6"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-sexLastThreeMonths.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-sexLastThreeMonths",
+            "display": "An observation to determine if an individual has engaged in sexual activity within the last three months."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-sexLastTwelveMonths.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-sexLastTwelveMonths",
+            "display": "An observation to determine if an individual has engaged in sexual activity within the last twelve months."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-smokingStatus.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-smokingStatus",
+            "display": "An observation about how much an individual smokes."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-StatOfAdqCvxVagCytoImp.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-StatOfAdqCvxVagCytoImp",
+            "display": "The observation Statement of adequacy [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|Statement of adequacy [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19764-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-StudyreportFindPtCvxVagDocCytology.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-StudyreportFindPtCvxVagDocCytology",
+            "display": "The observation Cytology Cervical or vaginal smear or scraping study based on the LOINC code 33717-0"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-systolicbp.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-systolicbp",
+            "display": "The observation of an individual's systolic blood pressure."
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hspc-ThinPrepCervix.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hspc-ThinPrepCervix",
+            "display": "The observation Microscopic observation [Identifier] in Cervix by Cyto stain.thin prep based on the LOINC code 18500-9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-abnInt-CodedNom.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/abnInt-CodedNom",
+            "display": "Abnormal Interpretation Coded Nom"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-abnInt-NumericNom.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/abnInt-NumericNom",
+            "display": "Abnormal Interpretation Numeric Nom"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-arrivalTransportMode.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/arrivalTransportMode",
+            "display": "HSPC Arrival Transport Mode value set"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/bdVerificationMethod",
+            "display": "HSPC Verification Method Value Set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-bpmeasbodylocationprecoord.hmtl"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/bpmeasbodylocationprecoord",
+            "display": "Blood Pressure Measure Body Location Precoordinated"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests",
+            "display": "Chlamydia Trachomatis And Neisseria Gonorrhoeae Combined Tests"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-chlamydiaTrachomatisTests.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/chlamydiaTrachomatisTests",
+            "display": "Chlamydia Trachomatis Tests"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-communicationMode.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/communicationMode",
+            "display": "HSPC Communication Mode"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/contraceptionProvisionMethod",
+            "display": "Contraception Provision Method"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-contraceptiveChoice.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/contraceptiveChoice",
+            "display": "Contraceptive Choice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-coverageType.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/coverageType",
+            "display": "Coverage Type"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-deltaFlag-numericNom.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/deltaFlag-numericNom",
+            "display": "Delta Flag Numeric Nom"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-departureTransportMode.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/departureTransportMode",
+            "display": "HSPC Departure Transport Mode value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-dietType.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/dietType",
+            "display": "HSPC Diet Type value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-encounterPriority.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/encounterPriority",
+            "display": "HSPC Encounter Priority value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-encounterReason.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/encounterReason",
+            "display": "HSPC Encounter Reason"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-englishProficiency.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/englishProficiency",
+            "display": "English Proficiency"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-focalSubject.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/focalSubject",
+            "display": "Focal Subject"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-fparAnnualHouseholdIncomeRanges.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/fparAnnualHouseholdIncomeRanges",
+            "display": "FPAR Annual Household Income Ranges"
+          }
+        },
+        {
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/fparDetectedNonDetectedEqInd",
+            "display": "FPAR Detected Non Detected Equivalent Indeterminate"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-fparDetectedNotDetected.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/fparDetectedNotDetected",
+            "display": "FPAR Detected/Not detected"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-fparHIV1RnaDetectedNotDetected.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/fparHIV1RnaDetectedNotDetected",
+            "display": "FPAR HIV1 RNA Detected Not Detected"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-fparHIVAbPosNegEqInd.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/fparHIVAbPosNegEqInd",
+            "display": "FPAR HIV Ab Positive Negative Equivalent Indeterminate"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-fparHIVAbReactiveNonReactive.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/fparHIVAbReactiveNonReactive",
+            "display": "FPAR HIV Ab Reactive/Non reactive"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-fparProviderRole.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/fparProviderRole",
+            "display": "FPAR Provider Role"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-fparSmokingStatus.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/fparSmokingStatus",
+            "display": "FPAR Smoking Status"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-hivTests.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/hivTests",
+            "display": "HIV Tests"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-humanPapillomaVirusTests.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/humanPapillomaVirusTests",
+            "display": "Human Papilloma Virus Tests"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-LabNullFlavor.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/LabNullFlavor",
+            "display": "HSPC Lab Null Flavor"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-negativePositive.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/negativePositive",
+            "display": "Negative/Positive"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-neisseriaGonorrhoeaeTests.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/neisseriaGonorrhoeaeTests",
+            "display": "Neisseria Gonorrhoeae Tests"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-observationFindings.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/observationFindings",
+            "display": "HSPC Findings Value Set Definition"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-observation-weightPrecond.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/observation-weightPrecond",
+            "display": "Weight Precondition"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-OrdinalLabCodes.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/OrdinalLabCodes",
+            "display": "Ordinal Lab Codes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-organismDetectionOrdLabResult.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/organismDetectionOrdLabResult",
+            "display": "Organism Detection Ordinal Lab Result"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-organizationtype.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/organizationtype",
+            "display": "HSPC Organization Type"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-practitioner-providerPractitionerSpecialty.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/practitioner-providerPractitionerSpecialty",
+            "display": "HSPC ProviderPractitioner Specialty"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-pregnancyIntention.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/pregnancyIntention",
+            "display": "Pregnancy Intention"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-pregnancyStatus.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/pregnancyStatus",
+            "display": "Pregnancy Status"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-pregnancyStatusReportingMethod.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/pregnancyStatusReportingMethod",
+            "display": "Pregnancy Status Reporting Method"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-papSmearTests.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/pregnancyTests",
+            "display": "Pregnancy Tests"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-primaryInsuranceClassification.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/primaryInsuranceClassification",
+            "display": "Primary Insurance Classification"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-QuantitativeLabCodes.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/QuantitativeLabCodes",
+            "display": "HSPC Quantitative Labs"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-reasonCancelled.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/reasonCancelled",
+            "display": "HSPC Reason Cancelled value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-reasonNoContraceptiveChosen.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/reasonNoContraceptiveChosen",
+            "display": "Reason No Contraceptive Chosen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-transportPriority.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/transportPriority",
+            "display": "Transport Priority"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-viplevel.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/viplevel",
+            "display": "HSPC VIP Level value set"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-virginNonVirgin.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/virginNonVirgin",
+            "display": "Virgin/Non Virgin"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-weightmassunits.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/weightmassunits",
+            "display": "Weight Mass Units"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-yesNo.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/yesNo",
+            "display": "HSPC Yes/No value Set"
+          }
+        }
+      ]
+    }
+  ]
+}

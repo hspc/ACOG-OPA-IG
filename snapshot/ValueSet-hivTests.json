@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hivTests",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR HIV Tests</h2><div><p>HIV test LOINC codes used by FPAR</p>\n</div><p><b>Copyright Statement:</b> This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5018-7.html\">5018-7</a></td><td>HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5221-7.html\">5221-7</a></td><td>HIV 1 Ab [Presence] in Serum by Immunoblot (IB)</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/68961-2.html\">68961-2</a></td><td>HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30361-0.html\">30361-0</a></td><td>HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/31201-7.html\">31201-7</a></td><td>HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48510-2.html\">48510-2</a></td><td>HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL</td><td/></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48511-0.html\">48511-0</a></td><td>HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/fpar/ValueSet/hivTests",
+  "name": "FPAR HIV Tests",
+  "status": "draft",
+  "date": "2015-02-19T21:44:49-05:00",
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "HIV test LOINC codes used by FPAR",
+  "copyright": "This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "5018-7",
+            "display": "HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method"
+          },
+          {
+            "code": "5221-7",
+            "display": "HIV 1 Ab [Presence] in Serum by Immunoblot (IB)"
+          },
+          {
+            "code": "68961-2",
+            "display": "HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test"
+          },
+          {
+            "code": "30361-0",
+            "display": "HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "31201-7",
+            "display": "HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "48510-2",
+            "display": "HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL"
+          },
+          {
+            "code": "48511-0",
+            "display": "HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="bdverifiedmethod"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HSPC Verification Method Value Set</h2><div><p>A set of codes that describe the kind of documentation used to validate a date of birth.</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/2017Jan/v3/ObservationValue/cs.html"><code>http://hl7.org/fhir/v3/ObservationValue</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://hl7.org/fhir/2017Jan/v3/ObservationValue/cs.html#v3-ObservationValue-BTHCERT">BTHCERT</a></td><td>Birth Certificate</td><td>Indicator of birth.</td></tr><tr><td><a href="http://hl7.org/fhir/2017Jan/v3/ObservationValue/cs.html#v3-ObservationValue-DRLIC">DRLIC</a></td><td>Driver's License</td><td>Indicator of driving status.</td></tr><tr><td><a href="http://hl7.org/fhir/2017Jan/v3/ObservationValue/cs.html#v3-ObservationValue-PASSPORT">PASSPORT</a></td><td>Passport</td><td>Indicator of citizenship.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/bdverifiedmethod"/>
+  <name value="HSPC Verification Method Value Set"/>
+  <status value="draft"/>
+  <date value="2019-02-15T12:55:20-05:00"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <description value="A set of codes that describe the kind of documentation used to validate a date of birth."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ObservationValue"/>
+      <concept>
+        <code value="BTHCERT"/>
+        <display value="Birth Certificate"/>
+      </concept>
+      <concept>
+        <code value="DRLIC"/>
+        <display value="Driver&#39;s License"/>
+      </concept>
+      <concept>
+        <code value="PASSPORT"/>
+        <display value="Passport"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

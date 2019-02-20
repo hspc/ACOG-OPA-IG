@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/arrivalTransportMode> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "arrivalTransportMode"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Arrival Transport Mode value set</h2><div><p>The list of codes that describe how the data came into being.</p>\n</div><p><b>Copyright Statement:</b> Intermountain Healthcare HDD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49122002\">49122002</a></td><td>Ambulance, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52387005\">52387005</a></td><td>Taxi, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73957001\">73957001</a></td><td>Air transport ambulance, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=469233002\">469233002</a></td><td>Helicopter ambulance (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=257250006\">257250006</a></td><td>Pedestrian conveyance (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=44613004\">44613004</a></td><td>Ground transport ambulance, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71783008\">71783008</a></td><td>Automobile, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=58938008\">58938008</a></td><td>Wheel chair, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91537007\">91537007</a></td><td>Hospital bed, device (physical object)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49890001\">49890001</a></td><td>Hospital cart, device (physical object)</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/fpar/ValueSet/arrivalTransportMode"];
+  fhir:ValueSet.name [ fhir:value "HSPC Arrival Transport Mode value set"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2019-02-15T12:55:20-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HSPC"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://healthcaresoa.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "The list of codes that describe how the data came into being."];
+  fhir:ValueSet.copyright [ fhir:value "Intermountain Healthcare HDD"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49122002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ambulance, device (physical object)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "52387005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Taxi, device (physical object)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73957001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Air transport ambulance, device (physical object)" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "469233002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helicopter ambulance (physical object)" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "257250006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pedestrian conveyance (physical object)" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44613004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ground transport ambulance, device (physical object)" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71783008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Automobile, device (physical object)" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "58938008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wheel chair, device (physical object)" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "91537007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hospital bed, device (physical object)" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49890001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hospital cart, device (physical object)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/arrivalTransportMode.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ValueSet/arrivalTransportMode.ttl> .
+
+# -------------------------------------------------------------------------------------
+

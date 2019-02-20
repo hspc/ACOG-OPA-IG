@@ -1,0 +1,699 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/primaryInsuranceClassification> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "primaryInsuranceClassification"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR Pirmary Insurance Classification value set</h2><div><p>Select SOP (Source Of Payment Typology) codes.  A set of codes that describe how the primary insurance is classified.</p>\n</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>SOP (Source of Payment Typology)</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>MEDICARE</td><td/></tr><tr><td>11</td><td>Medicare (Managed Care)</td><td/></tr><tr><td>111</td><td>Medicare HMO</td><td/></tr><tr><td>112</td><td>Medicare PPO</td><td/></tr><tr><td>113</td><td>Medicare POS</td><td/></tr><tr><td>119</td><td>Medicare Managed Care Other</td><td/></tr><tr><td>12</td><td>Medicare (Non-managed Care)</td><td/></tr><tr><td>121</td><td>Medicare FFS</td><td/></tr><tr><td>122</td><td>Medicare Drug Benefit</td><td/></tr><tr><td>123</td><td>Medicare Medical Savings Account (MSA)</td><td/></tr><tr><td>129</td><td>Medicare Non-managed Care Other</td><td/></tr><tr><td>13</td><td>Medicare Hospice</td><td/></tr><tr><td>14</td><td>Dual Eligibility Medicare/Medicaid Organization</td><td/></tr><tr><td>19</td><td>Medicare Other</td><td/></tr><tr><td>191</td><td>Medicare Pharmacy Benefit Manager</td><td/></tr><tr><td>2</td><td>MEDICAID</td><td/></tr><tr><td>21</td><td>Medicaid (Managed Care)</td><td/></tr><tr><td>211</td><td>Medicaid HMO</td><td/></tr><tr><td>212</td><td>Medicaid PPO</td><td/></tr><tr><td>213</td><td>Medicaid PCCM (Primary Care Case Management)</td><td/></tr><tr><td>219</td><td>Medicaid Managed Care Other</td><td/></tr><tr><td>22</td><td>Medicaid (Non-managed Care Plan)</td><td/></tr><tr><td>23</td><td>Medicaid/SCHIP</td><td/></tr><tr><td>25</td><td>Medicaid - Out of State</td><td/></tr><tr><td>26</td><td>Medicaid -- Long Term Care</td><td/></tr><tr><td>29</td><td>Medicaid Other</td><td/></tr><tr><td>291</td><td>Medicaid Pharmacy Benefit Manager</td><td/></tr><tr><td>299</td><td>Medicaid - Dental</td><td/></tr><tr><td>3</td><td>OTHER GOVERNMENT (Federal/State/Local) (excluding Department of Corrections)</td><td/></tr><tr><td>31</td><td>Department of Defense</td><td/></tr><tr><td>311</td><td>TRICARE (CHAMPUS)</td><td/></tr><tr><td>3111</td><td>TRICARE Prime--HMO</td><td/></tr><tr><td>3112</td><td>TRICARE Extra--PPO</td><td/></tr><tr><td>3113</td><td>TRICARE Standard - Fee For Service</td><td/></tr><tr><td>3114</td><td>TRICARE For Life--Medicare Supplement</td><td/></tr><tr><td>3115</td><td>TRICARE Reserve Select</td><td/></tr><tr><td>3116</td><td>Uniformed Services Family Health Plan (USFHP) -- HMO</td><td/></tr><tr><td>3119</td><td>Department of Defense - (other)</td><td/></tr><tr><td>312</td><td>Military Treatment Facility</td><td/></tr><tr><td>3121</td><td>Enrolled Prime--HMO</td><td/></tr><tr><td>3122</td><td>Non-enrolled Space Available</td><td/></tr><tr><td>3123</td><td>TRICARE For Life (TFL)</td><td/></tr><tr><td>313</td><td>Dental --Stand Alone</td><td/></tr><tr><td>32</td><td>Department of Veterans Affairs</td><td/></tr><tr><td>321</td><td>Veteran care--Care provided to Veterans</td><td/></tr><tr><td>3211</td><td>Direct Care--Care provided in VA facilities</td><td/></tr><tr><td>3212</td><td>Indirect Care--Care provided outside VA facilities</td><td/></tr><tr><td>32121</td><td>Fee Basis</td><td/></tr><tr><td>32122</td><td>Foreign Fee/Foreign Medical Program (FMP)</td><td/></tr><tr><td>32123</td><td>Contract Nursing Home/Community Nursing Home</td><td/></tr><tr><td>32124</td><td>State Veterans Home</td><td/></tr><tr><td>32125</td><td>Sharing Agreements</td><td/></tr><tr><td>32126</td><td>Other Federal Agency</td><td/></tr><tr><td>32127</td><td>Dental Care</td><td/></tr><tr><td>32128</td><td>Vision Care</td><td/></tr><tr><td>322</td><td>Non-veteran care</td><td/></tr><tr><td>3221</td><td>Civilian Health and Medical Program for the VA (CHAMPVA)</td><td/></tr><tr><td>3222</td><td>Spina Bifida Health Care Program (SB)</td><td/></tr><tr><td>3223</td><td>Children of Women Vietnam Veterans (CWVV)</td><td/></tr><tr><td>3229</td><td>Other non-veteran care</td><td/></tr><tr><td>33</td><td>Indian Health Service or Tribe</td><td/></tr><tr><td>331</td><td>Indian Health Service -- Regular</td><td/></tr><tr><td>332</td><td>Indian Health Service -- Contract</td><td/></tr><tr><td>333</td><td>Indian Health Service - Managed Care</td><td/></tr><tr><td>334</td><td>Indian Tribe - Sponsored Coverage</td><td/></tr><tr><td>34</td><td>HRSA Program</td><td/></tr><tr><td>341</td><td>Title V (MCH Block Grant)</td><td/></tr><tr><td>342</td><td>Migrant Health Program</td><td/></tr><tr><td>343</td><td>Ryan White Act</td><td/></tr><tr><td>349</td><td>Other</td><td/></tr><tr><td>35</td><td>Black Lung</td><td/></tr><tr><td>36</td><td>State Government</td><td/></tr><tr><td>361</td><td>State SCHIP program (codes for individual states)</td><td/></tr><tr><td>362</td><td>Specific state programs (list/ local code)</td><td/></tr><tr><td>369</td><td>State, not otherwise specified (other state)</td><td/></tr><tr><td>37</td><td>Local Government</td><td/></tr><tr><td>371</td><td>Local - Managed care</td><td/></tr><tr><td>3711</td><td>HMO</td><td/></tr><tr><td>3712</td><td>PPO</td><td/></tr><tr><td>3713</td><td>POS</td><td/></tr><tr><td>372</td><td>FFS/Indemnity</td><td/></tr><tr><td>379</td><td>Local, not otherwise specified (other local, county)</td><td/></tr><tr><td>38</td><td>Other Government (Federal, State, Local not specified)</td><td/></tr><tr><td>381</td><td>Federal, State, Local not specified managed care</td><td/></tr><tr><td>3811</td><td>Federal, State, Local not specified - HMO</td><td/></tr><tr><td>3812</td><td>Federal, State, Local not specified - PPO</td><td/></tr><tr><td>3813</td><td>Federal, State, Local not specified - POS</td><td/></tr><tr><td>3819</td><td>Federal, State, Local not specified - not specified managed care</td><td/></tr><tr><td>382</td><td>Federal, State, Local not specified - FFS</td><td/></tr><tr><td>389</td><td>Federal, State, Local not specified - Other</td><td/></tr><tr><td>39</td><td>Other Federal</td><td/></tr><tr><td>391</td><td>Federal Employee Health Plan - Use when known</td><td/></tr><tr><td>4</td><td>DEPARTMENTS OF CORRECTIONS</td><td/></tr><tr><td>41</td><td>Corrections Federal</td><td/></tr><tr><td>42</td><td>Corrections State</td><td/></tr><tr><td>43</td><td>Corrections Local</td><td/></tr><tr><td>44</td><td>Corrections Unknown Level</td><td/></tr><tr><td>5</td><td>PRIVATE HEALTH INSURANCE</td><td/></tr><tr><td>51</td><td>Managed Care (Private)</td><td/></tr><tr><td>511</td><td>Commercial Managed Care - HMO</td><td/></tr><tr><td>512</td><td>Commercial Managed Care - PPO</td><td/></tr><tr><td>513</td><td>Commercial Managed Care - POS</td><td/></tr><tr><td>514</td><td>Exclusive Provider Organization</td><td/></tr><tr><td>515</td><td>Gatekeeper PPO (GPPO)</td><td/></tr><tr><td>516</td><td>Commercial Managed Care - Pharmacy Benefit Manager</td><td/></tr><tr><td>517</td><td>Commercial Managed Care - Dental</td><td/></tr><tr><td>519</td><td>Managed Care, Other (non HMO)</td><td/></tr><tr><td>52</td><td>Private Health Insurance - Indemnity</td><td/></tr><tr><td>521</td><td>Commercial Indemnity</td><td/></tr><tr><td>522</td><td>Self-insured (ERISA) Administrative Services Only (ASO) plan</td><td/></tr><tr><td>523</td><td>Medicare supplemental policy (as second payer)</td><td/></tr><tr><td>524</td><td>Indemnity Insurance - Dental</td><td/></tr><tr><td>529</td><td>Private health insurance--other commercial Indemnity</td><td/></tr><tr><td>53</td><td>Managed Care (private) or private health insurance (indemnity), not otherwise specified</td><td/></tr><tr><td>54</td><td>Organized Delivery System</td><td/></tr><tr><td>55</td><td>Small Employer Purchasing Group</td><td/></tr><tr><td>56</td><td>Specialized Stand Alone Plan</td><td/></tr><tr><td>561</td><td>Dental</td><td/></tr><tr><td>562</td><td>Vision</td><td/></tr><tr><td>59</td><td>Other Private Insurance</td><td/></tr><tr><td>6</td><td>BLUE CROSS/BLUE SHIELD</td><td/></tr><tr><td>61</td><td>BC Managed Care</td><td/></tr><tr><td>611</td><td>BC Managed Care -- HMO</td><td/></tr><tr><td>612</td><td>BC Managed Care -- PPO</td><td/></tr><tr><td>613</td><td>BC Managed Care -- POS</td><td/></tr><tr><td>614</td><td>BC Managed Care - Dental</td><td/></tr><tr><td>619</td><td>BC Managed Care -- Other</td><td/></tr><tr><td>62</td><td>BC Insurance Indemnity</td><td/></tr><tr><td>621</td><td>BC Indemnity</td><td/></tr><tr><td>622</td><td>BC Self-insured (ERISA) Administrative Services Only (ASO)Plan</td><td/></tr><tr><td>623</td><td>BC Medicare Supplemental Plan</td><td/></tr><tr><td>629</td><td>BC Indemnity - Dental</td><td/></tr><tr><td>7</td><td>MANAGED CARE, UNSPECIFIED (to be used only if one can't distinguish public from private)</td><td/></tr><tr><td>71</td><td>HMO</td><td/></tr><tr><td>72</td><td>PPO</td><td/></tr><tr><td>73</td><td>POS</td><td/></tr><tr><td>79</td><td>Other Managed Care</td><td/></tr><tr><td>8</td><td>NO PAYMENT from an Organization/Agency/Program/Private Payer Listed</td><td/></tr><tr><td>81</td><td>Self-pay (Includes applicants for insurance and Medicaid applicants)</td><td/></tr><tr><td>82</td><td>No Charge</td><td/></tr><tr><td>821</td><td>Charity</td><td/></tr><tr><td>822</td><td>Professional Courtesy</td><td/></tr><tr><td>823</td><td>Research/Clinical Trial</td><td/></tr><tr><td>83</td><td>Refusal to Pay/Bad Debt</td><td/></tr><tr><td>84</td><td>Hill Burton Free Care</td><td/></tr><tr><td>85</td><td>Research/Donor</td><td/></tr><tr><td>89</td><td>No Payment, Other</td><td/></tr><tr><td>9</td><td>MISCELLANEOUS/OTHER</td><td/></tr><tr><td>91</td><td>Foreign National</td><td/></tr><tr><td>92</td><td>Other (Non-government)</td><td/></tr><tr><td>93</td><td>Disability Insurance</td><td/></tr><tr><td>94</td><td>Long-term Care Insurance</td><td/></tr><tr><td>95</td><td>Worker's Compensation</td><td/></tr><tr><td>951</td><td>Worker's Comp HMO</td><td/></tr><tr><td>953</td><td>Worker's Comp Fee-for-Service</td><td/></tr><tr><td>954</td><td>Worker's Comp Other Managed Care</td><td/></tr><tr><td>959</td><td>Worker's Comp, Other unspecified</td><td/></tr><tr><td>96</td><td>Auto Insurance (includes no fault)</td><td/></tr><tr><td>97</td><td>Legal Liability / Liability Insurance</td><td/></tr><tr><td>98</td><td>Other specified but not otherwise classifiable (includes Hospice - Unspecified plan)</td><td/></tr><tr><td>99</td><td>No Typology Code available for payment source</td><td/></tr><tr><td>9999</td><td>Unavailable / No Payer Specified / Blank</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-extensible" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/fpar/ValueSet/primaryInsuranceClassification"];
+  fhir:ValueSet.version [ fhir:value "0.01"];
+  fhir:ValueSet.name [ fhir:value "FPAR Pirmary Insurance Classification value set"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2018-03-29T00:00:00-04:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Family Planning Annual Report"];
+  fhir:ValueSet.description [ fhir:value "Select SOP (Source Of Payment Typology) codes.  A set of codes that describe how the primary insurance is classified."];
+  fhir:ValueSet.immutable [ fhir:value "true"^^xsd:boolean];
+  fhir:ValueSet.copyright [ fhir:value "TBD"];
+  fhir:ValueSet.extensible [ fhir:value "true"^^xsd:boolean];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "SOP (Source of Payment Typology)" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MEDICARE" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare (Managed Care)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "111" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare HMO" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "112" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare PPO" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "113" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare POS" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "119" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare Managed Care Other" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare (Non-managed Care)" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare FFS" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare Drug Benefit" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "123" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare Medical Savings Account (MSA)" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "129" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare Non-managed Care Other" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare Hospice" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dual Eligibility Medicare/Medicaid Organization" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare Other" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "191" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare Pharmacy Benefit Manager" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MEDICAID" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid (Managed Care)" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "211" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid HMO" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "212" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid PPO" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "213" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid PCCM (Primary Care Case Management)" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "219" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid Managed Care Other" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid (Non-managed Care Plan)" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "23" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid/SCHIP" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "25" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid - Out of State" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid -- Long Term Care" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "29" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid Other" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "291" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid Pharmacy Benefit Manager" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "299" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid - Dental" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "OTHER GOVERNMENT (Federal/State/Local) (excluding Department of Corrections)" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Department of Defense" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "311" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TRICARE (CHAMPUS)" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3111" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TRICARE Prime--HMO" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3112" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TRICARE Extra--PPO" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3113" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TRICARE Standard - Fee For Service" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3114" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TRICARE For Life--Medicare Supplement" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3115" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TRICARE Reserve Select" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3116" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uniformed Services Family Health Plan (USFHP) -- HMO" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3119" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Department of Defense - (other)" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "312" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Military Treatment Facility" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3121" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Enrolled Prime--HMO" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3122" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-enrolled Space Available" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3123" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TRICARE For Life (TFL)" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "313" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dental --Stand Alone" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Department of Veterans Affairs" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "321" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Veteran care--Care provided to Veterans" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3211" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Direct Care--Care provided in VA facilities" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3212" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indirect Care--Care provided outside VA facilities" ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32121" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fee Basis" ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32122" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Foreign Fee/Foreign Medical Program (FMP)" ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32123" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Contract Nursing Home/Community Nursing Home" ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32124" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "State Veterans Home" ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32125" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sharing Agreements" ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32126" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Federal Agency" ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32127" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dental Care" ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32128" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vision Care" ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "322" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-veteran care" ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3221" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Civilian Health and Medical Program for the VA (CHAMPVA)" ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3222" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spina Bifida Health Care Program (SB)" ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3223" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Children of Women Vietnam Veterans (CWVV)" ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3229" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other non-veteran care" ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indian Health Service or Tribe" ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "331" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indian Health Service -- Regular" ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "332" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indian Health Service -- Contract" ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "333" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indian Health Service - Managed Care" ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "334" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indian Tribe - Sponsored Coverage" ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HRSA Program" ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "341" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Title V (MCH Block Grant)" ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "342" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Migrant Health Program" ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "343" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ryan White Act" ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "349" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Black Lung" ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "36" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "State Government" ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "361" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "State SCHIP program (codes for individual states)" ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "362" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specific state programs (list/ local code)" ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "369" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "State, not otherwise specified (other state)" ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "37" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Local Government" ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "371" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Local - Managed care" ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3711" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HMO" ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3712" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PPO" ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3713" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "POS" ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "372" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "FFS/Indemnity" ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "379" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Local, not otherwise specified (other local, county)" ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "38" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Government (Federal, State, Local not specified)" ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "381" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Federal, State, Local not specified managed care" ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3811" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Federal, State, Local not specified - HMO" ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3812" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Federal, State, Local not specified - PPO" ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3813" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Federal, State, Local not specified - POS" ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3819" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Federal, State, Local not specified - not specified managed care" ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "382" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Federal, State, Local not specified - FFS" ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "389" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Federal, State, Local not specified - Other" ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "39" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Federal" ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "391" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Federal Employee Health Plan - Use when known" ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DEPARTMENTS OF CORRECTIONS" ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "41" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Corrections Federal" ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Corrections State" ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Corrections Local" ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Corrections Unknown Level" ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PRIVATE HEALTH INSURANCE" ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Managed Care (Private)" ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "511" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Commercial Managed Care - HMO" ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "512" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Commercial Managed Care - PPO" ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "513" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Commercial Managed Care - POS" ]
+       ], [
+         fhir:index 102;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "514" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exclusive Provider Organization" ]
+       ], [
+         fhir:index 103;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "515" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gatekeeper PPO (GPPO)" ]
+       ], [
+         fhir:index 104;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "516" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Commercial Managed Care - Pharmacy Benefit Manager" ]
+       ], [
+         fhir:index 105;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "517" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Commercial Managed Care - Dental" ]
+       ], [
+         fhir:index 106;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "519" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Managed Care, Other (non HMO)" ]
+       ], [
+         fhir:index 107;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "52" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Private Health Insurance - Indemnity" ]
+       ], [
+         fhir:index 108;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "521" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Commercial Indemnity" ]
+       ], [
+         fhir:index 109;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "522" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Self-insured (ERISA) Administrative Services Only (ASO) plan" ]
+       ], [
+         fhir:index 110;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "523" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare supplemental policy (as second payer)" ]
+       ], [
+         fhir:index 111;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "524" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indemnity Insurance - Dental" ]
+       ], [
+         fhir:index 112;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "529" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Private health insurance--other commercial Indemnity" ]
+       ], [
+         fhir:index 113;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Managed Care (private) or private health insurance (indemnity), not otherwise specified" ]
+       ], [
+         fhir:index 114;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Organized Delivery System" ]
+       ], [
+         fhir:index 115;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Small Employer Purchasing Group" ]
+       ], [
+         fhir:index 116;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "56" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specialized Stand Alone Plan" ]
+       ], [
+         fhir:index 117;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "561" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dental" ]
+       ], [
+         fhir:index 118;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "562" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vision" ]
+       ], [
+         fhir:index 119;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Private Insurance" ]
+       ], [
+         fhir:index 120;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BLUE CROSS/BLUE SHIELD" ]
+       ], [
+         fhir:index 121;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "61" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Managed Care" ]
+       ], [
+         fhir:index 122;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "611" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Managed Care -- HMO" ]
+       ], [
+         fhir:index 123;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "612" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Managed Care -- PPO" ]
+       ], [
+         fhir:index 124;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "613" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Managed Care -- POS" ]
+       ], [
+         fhir:index 125;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "614" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Managed Care - Dental" ]
+       ], [
+         fhir:index 126;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "619" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Managed Care -- Other" ]
+       ], [
+         fhir:index 127;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "62" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Insurance Indemnity" ]
+       ], [
+         fhir:index 128;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "621" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Indemnity" ]
+       ], [
+         fhir:index 129;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "622" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Self-insured (ERISA) Administrative Services Only (ASO)Plan" ]
+       ], [
+         fhir:index 130;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "623" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Medicare Supplemental Plan" ]
+       ], [
+         fhir:index 131;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "629" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BC Indemnity - Dental" ]
+       ], [
+         fhir:index 132;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MANAGED CARE, UNSPECIFIED (to be used only if one can't distinguish public from private)" ]
+       ], [
+         fhir:index 133;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HMO" ]
+       ], [
+         fhir:index 134;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PPO" ]
+       ], [
+         fhir:index 135;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "POS" ]
+       ], [
+         fhir:index 136;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "79" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Managed Care" ]
+       ], [
+         fhir:index 137;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "NO PAYMENT from an Organization/Agency/Program/Private Payer Listed" ]
+       ], [
+         fhir:index 138;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "81" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Self-pay (Includes applicants for insurance and Medicaid applicants)" ]
+       ], [
+         fhir:index 139;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No Charge" ]
+       ], [
+         fhir:index 140;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "821" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Charity" ]
+       ], [
+         fhir:index 141;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "822" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Professional Courtesy" ]
+       ], [
+         fhir:index 142;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "823" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Research/Clinical Trial" ]
+       ], [
+         fhir:index 143;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refusal to Pay/Bad Debt" ]
+       ], [
+         fhir:index 144;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "84" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hill Burton Free Care" ]
+       ], [
+         fhir:index 145;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "85" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Research/Donor" ]
+       ], [
+         fhir:index 146;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No Payment, Other" ]
+       ], [
+         fhir:index 147;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MISCELLANEOUS/OTHER" ]
+       ], [
+         fhir:index 148;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "91" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Foreign National" ]
+       ], [
+         fhir:index 149;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "92" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other (Non-government)" ]
+       ], [
+         fhir:index 150;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "93" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Disability Insurance" ]
+       ], [
+         fhir:index 151;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "94" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Long-term Care Insurance" ]
+       ], [
+         fhir:index 152;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "95" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Worker's Compensation" ]
+       ], [
+         fhir:index 153;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "951" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Worker's Comp HMO" ]
+       ], [
+         fhir:index 154;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "953" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Worker's Comp Fee-for-Service" ]
+       ], [
+         fhir:index 155;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "954" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Worker's Comp Other Managed Care" ]
+       ], [
+         fhir:index 156;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "959" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Worker's Comp, Other unspecified" ]
+       ], [
+         fhir:index 157;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "96" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auto Insurance (includes no fault)" ]
+       ], [
+         fhir:index 158;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "97" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Legal Liability / Liability Insurance" ]
+       ], [
+         fhir:index 159;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "98" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other specified but not otherwise classifiable (includes Hospice - Unspecified plan)" ]
+       ], [
+         fhir:index 160;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "99" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No Typology Code available for payment source" ]
+       ], [
+         fhir:index 161;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9999" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unavailable / No Payer Specified / Blank" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/primaryInsuranceClassification.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ValueSet/primaryInsuranceClassification.ttl> .
+
+# -------------------------------------------------------------------------------------
+

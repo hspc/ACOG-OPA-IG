@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/reasonCancelled> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "reasonCancelled"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Reason Cancelled value set.</h2><div><p>Select HL7 Act Reason and SNOMED codes.</p>\n</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/2017Jan/v3/ActReason/cs.html\"><code>http://hl7.org/fhir/v3/ActReason</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/ActReason/cs.html#v3-ActReason-BLK\">BLK</a></td><td>Unexpected Block (of Schedule)</td><td>The time slots previously allocated are now blocked and no longer available for booking Appointments</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/ActReason/cs.html#v3-ActReason-DEC\">DEC</a></td><td>Patient Deceased</td><td>The Patient is deceased</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/ActReason/cs.html#v3-ActReason-FIN\">FIN</a></td><td>No Financial Backing</td><td>Patient unable to pay and not covered by insurance</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/ActReason/cs.html#v3-ActReason-MED\">MED</a></td><td>Medical Status Altered</td><td>The medical condition of the Patient has changed</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/ActReason/cs.html#v3-ActReason-ALTD\">ALTD</a></td><td>altered decision</td><td>Description:The decision on which the recorded information was based was changed before the decision had an effect.<br/>\n                        \n                           Example:Aborted prescription before patient left office, released prescription before suspend took effect.</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/ActReason/cs.html#v3-ActReason-PAT\">PAT</a></td><td>Patient request</td><td>The Patient requested the action</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/ActReason/cs.html#v3-ActReason-PHY\">PHY</a></td><td>Physician request</td><td>The Physician requested the action</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89925002\">89925002</a></td><td>Canceled (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=385647007\">385647007</a></td><td>Rejected by performer (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=385648002\">385648002</a></td><td>Rejected by recipient (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410528005\">410528005</a></td><td>Not wanted (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410529002\">410529002</a></td><td>Not needed (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410530007\">410530007</a></td><td>Not offered (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=441889009\">441889009</a></td><td>Denied (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=443390004\">443390004</a></td><td>Refused (qualifier value)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=609589008\">609589008</a></td><td>Refused by parents of subject (qualifier value)</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-extensible" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/fpar/ValueSet/reasonCancelled"];
+  fhir:ValueSet.version [ fhir:value "0.01"];
+  fhir:ValueSet.name [ fhir:value "HSPC Reason Cancelled value set."];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2015-08-06T00:00:00-04:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Health Services Platform Consortium (HSPC)"];
+  fhir:ValueSet.description [ fhir:value "Select HL7 Act Reason and SNOMED codes."];
+  fhir:ValueSet.immutable [ fhir:value "true"^^xsd:boolean];
+  fhir:ValueSet.copyright [ fhir:value "TBD"];
+  fhir:ValueSet.extensible [ fhir:value "true"^^xsd:boolean];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/v3/ActReason" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "BLK" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unexpected Block (of Schedule)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DEC" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient Deceased" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "FIN" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No Financial Backing" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "MED" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical Status Altered" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ALTD" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "altered decision" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PAT" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient request" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PHY" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physician request" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89925002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Canceled (qualifier value)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "385647007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rejected by performer (qualifier value)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "385648002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rejected by recipient (qualifier value)" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "410528005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not wanted (qualifier value)" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "410529002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not needed (qualifier value)" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "410530007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not offered (qualifier value)" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "441889009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Denied (qualifier value)" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "443390004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refused (qualifier value)" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "609589008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refused by parents of subject (qualifier value)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/reasonCancelled.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ValueSet/reasonCancelled.ttl> .
+
+# -------------------------------------------------------------------------------------
+

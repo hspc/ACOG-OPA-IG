@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/CodeSystem/heightMeasMethodDevice> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "heightMeasMethodDevice"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Height Meas Method Device</h2><div><p>The set of codes that describe the methods or devices used to measure an individual's height.</p>\n</div><p><b>Copyright Statement:</b> Intermountain Healthcare</p><p>This code system http://hl7.org/fhir/fpar/CodeSystem/heightMeasMethodDevice defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">2057<a name=\"heightMeasMethodDevice-2057\"> </a></td><td>Height, estimated by provider</td><td>The method of determining body length or height where it is guessed at by the health care provider</td></tr><tr><td style=\"white-space:nowrap\">2058<a name=\"heightMeasMethodDevice-2058\"> </a></td><td>Height, measured</td><td>A method of determining body length or height by utilizing a device to measure it.</td></tr><tr><td style=\"white-space:nowrap\">2061<a name=\"heightMeasMethodDevice-2061\"> </a></td><td>Height, percentile</td><td>A method of determining body length or height by using a growth percentile chart</td></tr><tr><td style=\"white-space:nowrap\">2063<a name=\"heightMeasMethodDevice-2063\"> </a></td><td>Height, stated (reported)</td><td>The body length or height was given verbally rather than measured.</td></tr><tr><td style=\"white-space:nowrap\">521363688<a name=\"heightMeasMethodDevice-521363688\"> </a></td><td>Stadiometer</td><td>A device for measuring body length or height.  Usually constructed of a ruler and a sliding headpiece that, when placed on an individual's head will give a reading of the body length or height.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/fpar/CodeSystem/heightMeasMethodDevice"];
+  fhir:CodeSystem.version [ fhir:value "0.01"];
+  fhir:CodeSystem.name [ fhir:value "HSPC Height Meas Method Device"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2015-05-19T02:00:00-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "The set of codes that describe the methods or devices used to measure an individual's height."];
+  fhir:CodeSystem.copyright [ fhir:value "Intermountain Healthcare"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "2057" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Height, estimated by provider" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The method of determining body length or height where it is guessed at by the health care provider" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2058" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Height, measured" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A method of determining body length or height by utilizing a device to measure it." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "2061" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Height, percentile" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A method of determining body length or height by using a growth percentile chart" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "2063" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Height, stated (reported)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The body length or height was given verbally rather than measured." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "521363688" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stadiometer" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A device for measuring body length or height.  Usually constructed of a ruler and a sliding headpiece that, when placed on an individual's head will give a reading of the body length or height." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/CodeSystem/heightMeasMethodDevice.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/CodeSystem/heightMeasMethodDevice.ttl> .
+
+# -------------------------------------------------------------------------------------
+

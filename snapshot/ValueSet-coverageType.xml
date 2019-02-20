@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="coverageType"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FPAR Coverage Type value set</h2><div><p>Select SOP (Source Of Payment Typology) codes.  A set of codes that describe the kind of insurance used for the encounter.</p>
+</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>SOP (Source of Payment Typology)</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>3</td><td>OTHER GOVERNMENT (Federal/State/Local) (excluding Department of Corrections)</td><td/></tr><tr><td>5</td><td>PRIVATE HEALTH INSURANCE</td><td/></tr><tr><td>8</td><td>NO PAYMENT from an Organization/Agency/Program/Private Payer Listed</td><td/></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-extensible">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/coverageType"/>
+  <version value="0.01"/>
+  <name value="FPAR Coverage Type value set"/>
+  <status value="draft"/>
+  <date value="2018-03-29T00:00:00-04:00"/>
+  <publisher value="Family Planning Annual Report"/>
+  <description value="Select SOP (Source Of Payment Typology) codes.  A set of codes that describe the kind of insurance used for the encounter."/>
+  <immutable value="true"/>
+  <copyright value="TBD"/>
+  <extensible value="true"/>
+  <compose>
+    <include>
+      <system value="SOP (Source of Payment Typology)"/>
+      <concept>
+        <code value="3"/>
+        <display value="OTHER GOVERNMENT (Federal/State/Local) (excluding Department of Corrections)"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="PRIVATE HEALTH INSURANCE"/>
+      </concept>
+      <concept>
+        <code value="8"/>
+        <display value="NO PAYMENT from an Organization/Agency/Program/Private Payer Listed"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

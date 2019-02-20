@@ -1,0 +1,12 @@
+﻿{
+  "url": "http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide",
+  "name": "The Family Planning Annual Report (FPAR) Implementation Guide",
+  "package-id": "hl7.fhir.fpar",
+  "ig-ver": "1.0",
+  "date": "Fri, 15 Feb, 2019 12:55:20 -0500",
+  "errs": 158,
+  "warnings": 410,
+  "hints": 0,
+  "version": "3.0.1",
+  "tool": "4.0.0 (3)"
+}

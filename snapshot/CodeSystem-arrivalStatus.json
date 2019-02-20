@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "arrivalStatus",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Patient Arrival Status</h2><div><p>The codes that describe whether or not the patient has arrived at the specified location for the encounter.</p>\n</div><p><b>Copyright Statement:</b> This value set includes content from and copyrighted by Intermountain Healthcare HDD</p><p>This code system http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">2000000339<a name=\"arrivalStatus-2000000339\"> </a></td><td>Arrived</td><td>The patient is present at the service delivery location.</td></tr><tr><td style=\"white-space:nowrap\">51084650<a name=\"arrivalStatus-51084650\"> </a></td><td>In transit</td><td>The patient is currently travelling to the service delivery location.</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus",
+  "name": "HSPC Patient Arrival Status",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-02-15T12:55:20-05:00",
+  "description": "The codes that describe whether or not the patient has arrived at the specified location for the encounter.",
+  "copyright": "This value set includes content from and copyrighted by Intermountain Healthcare HDD",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "2000000339",
+      "display": "Arrived",
+      "definition": "The patient is present at the service delivery location."
+    },
+    {
+      "code": "51084650",
+      "display": "In transit",
+      "definition": "The patient is currently travelling to the service delivery location."
+    }
+  ]
+}

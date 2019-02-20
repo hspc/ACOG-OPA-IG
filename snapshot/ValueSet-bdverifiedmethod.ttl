@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/bdverifiedmethod> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "bdverifiedmethod"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Verification Method Value Set</h2><div><p>A set of codes that describe the kind of documentation used to validate a date of birth.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationValue/cs.html\"><code>http://hl7.org/fhir/v3/ObservationValue</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationValue/cs.html#v3-ObservationValue-BTHCERT\">BTHCERT</a></td><td>Birth Certificate</td><td>Indicator of birth.</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationValue/cs.html#v3-ObservationValue-DRLIC\">DRLIC</a></td><td>Driver's License</td><td>Indicator of driving status.</td></tr><tr><td><a href=\"http://hl7.org/fhir/2017Jan/v3/ObservationValue/cs.html#v3-ObservationValue-PASSPORT\">PASSPORT</a></td><td>Passport</td><td>Indicator of citizenship.</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/fpar/ValueSet/bdverifiedmethod"];
+  fhir:ValueSet.name [ fhir:value "HSPC Verification Method Value Set"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2019-02-15T12:55:20-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HSPC"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "other" ];
+       fhir:ContactPoint.value [ fhir:value "http://healthcaresoa.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "A set of codes that describe the kind of documentation used to validate a date of birth."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/v3/ObservationValue" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "BTHCERT" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Birth Certificate" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DRLIC" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Driver's License" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PASSPORT" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Passport" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/bdverifiedmethod.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ValueSet/bdverifiedmethod.ttl> .
+
+# -------------------------------------------------------------------------------------
+

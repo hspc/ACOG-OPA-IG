@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "coverageType",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR Coverage Type value set</h2><div><p>Select SOP (Source Of Payment Typology) codes.  A set of codes that describe the kind of insurance used for the encounter.</p>\n</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>SOP (Source of Payment Typology)</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>3</td><td>OTHER GOVERNMENT (Federal/State/Local) (excluding Department of Corrections)</td><td/></tr><tr><td>5</td><td>PRIVATE HEALTH INSURANCE</td><td/></tr><tr><td>8</td><td>NO PAYMENT from an Organization/Agency/Program/Private Payer Listed</td><td/></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-extensible",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/fpar/ValueSet/coverageType",
+  "version": "0.01",
+  "name": "FPAR Coverage Type value set",
+  "status": "draft",
+  "date": "2018-03-29T00:00:00-04:00",
+  "publisher": "Family Planning Annual Report",
+  "description": "Select SOP (Source Of Payment Typology) codes.  A set of codes that describe the kind of insurance used for the encounter.",
+  "immutable": true,
+  "copyright": "TBD",
+  "extensible": true,
+  "compose": {
+    "include": [
+      {
+        "system": "SOP (Source of Payment Typology)",
+        "concept": [
+          {
+            "code": "3",
+            "display": "OTHER GOVERNMENT (Federal/State/Local) (excluding Department of Corrections)"
+          },
+          {
+            "code": "5",
+            "display": "PRIVATE HEALTH INSURANCE"
+          },
+          {
+            "code": "8",
+            "display": "NO PAYMENT from an Organization/Agency/Program/Private Payer Listed"
+          }
+        ]
+      }
+    ]
+  }
+}

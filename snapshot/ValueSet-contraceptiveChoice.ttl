@@ -1,0 +1,143 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/contraceptiveChoice> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "contraceptiveChoice"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR Contraceptive Choice value set</h2><div><p>Select SNOMED code system values.  A set of codes that describe methods of contraception.</p>\n</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22523008\">22523008</a></td><td>Vasectomy (procedure)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60890002\">60890002</a></td><td>Female sterilization (procedure)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169450001\">169450001</a></td><td>No contraceptive precautions (situation)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169467008\">169467008</a></td><td>Progestogen only oral contraceptive (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268461001\">268461001</a></td><td>Sheath contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169513000\">169513000</a></td><td>Withdrawal contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169530003\">169530003</a></td><td>Uses contraceptive sponge (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=228479001\">228479001</a></td><td>Uses a female condom (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268458002\">268458002</a></td><td>Combined oral contraceptive - use (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268466006\">268466006</a></td><td>Spermicidal contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=275813002\">275813002</a></td><td>Emergency contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=312081001\">312081001</a></td><td>Intrauterine device contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=413116005\">413116005</a></td><td>Transdermal contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428987008\">428987008</a></td><td>Subcutaneous contraceptive implant present (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=448962006\">448962006</a></td><td>Uses copper intrauterine device contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449038007\">449038007</a></td><td>Uses hormone releasing intrauterine device contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=450850003\">450850003</a></td><td>Uses vaginal hormone releasing ring (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=450851004\">450851004</a></td><td>Uses contraceptive diaphragm (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454451000124109\">454451000124109</a></td><td>Declines to state contraceptive method (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268464009\">268464009</a></td><td>Depot contraception (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=455501000124105\">455501000124105</a></td><td>Contraception based on fertility awareness (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454441000124107\">454441000124107</a></td><td>Contraception using lactation amonorrhea method (finding)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=455491000124102\">455491000124102</a></td><td>Male relying on female contraception (finding)</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/valueset-extensible" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/fpar/ValueSet/contraceptiveChoice"];
+  fhir:ValueSet.version [ fhir:value "0.01"];
+  fhir:ValueSet.name [ fhir:value "FPAR Contraceptive Choice value set"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2018-03-29T00:00:00-04:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Family Planning Annual Report"];
+  fhir:ValueSet.description [ fhir:value "Select SNOMED code system values.  A set of codes that describe methods of contraception."];
+  fhir:ValueSet.immutable [ fhir:value "true"^^xsd:boolean];
+  fhir:ValueSet.copyright [ fhir:value "TBD"];
+  fhir:ValueSet.extensible [ fhir:value "true"^^xsd:boolean];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22523008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vasectomy (procedure)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "60890002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Female sterilization (procedure)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "169450001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No contraceptive precautions (situation)" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "169467008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Progestogen only oral contraceptive (finding)" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "268461001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sheath contraception (finding)" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "169513000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Withdrawal contraception (finding)" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "169530003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uses contraceptive sponge (finding)" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "228479001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uses a female condom (finding)" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "268458002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Combined oral contraceptive - use (finding)" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "268466006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spermicidal contraception (finding)" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "275813002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Emergency contraception (finding)" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "312081001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrauterine device contraception (finding)" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "413116005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transdermal contraception (finding)" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "428987008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Subcutaneous contraceptive implant present (finding)" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "448962006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uses copper intrauterine device contraception (finding)" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "449038007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uses hormone releasing intrauterine device contraception (finding)" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "450850003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uses vaginal hormone releasing ring (finding)" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "450851004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uses contraceptive diaphragm (finding)" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "454451000124109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Declines to state contraceptive method (finding)" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "268464009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depot contraception (finding)" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "455501000124105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Contraception based on fertility awareness (finding)" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "454441000124107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Contraception using lactation amonorrhea method (finding)" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "455491000124102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Male relying on female contraception (finding)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/ValueSet/contraceptiveChoice.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/ValueSet/contraceptiveChoice.ttl> .
+
+# -------------------------------------------------------------------------------------
+

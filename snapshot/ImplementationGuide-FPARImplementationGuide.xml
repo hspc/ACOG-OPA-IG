@@ -1,0 +1,1951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="FPARImplementationGuide"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>The Family Planning Annual Report (FPAR) Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide</pre><div><p>The Implementation Guide resource profile for FPAR</p>
+</div></div>
+  </text>
+  <url value="http://hl7.org/fhir/fpar/ImplementationGuide/FPARImplementationGuide"/>
+  <version value="1.0"/>
+  <name value="The Family Planning Annual Report (FPAR) Implementation Guide"/>
+  <status value="draft"/>
+  <date value="2017-11-30T00:00:00-05:00"/>
+  <publisher value="Health Services Platform Consortium on behalf of The Office of Population Affairs (OPA)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.acog.org"/>
+    </telecom>
+  </contact>
+  <description value="The Implementation Guide resource profile for FPAR"/>
+  <copyright value="The Office of Population Affairs (OPA)"/>
+  <fhirVersion value="3.0.1"/>
+  <package id="p1">
+    <name value="FPAR Implementation Guide"/>
+    <description value="Profiles and resources in this implementation guide."/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-admissionSource.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/admissionSource"/>
+        <display value="HSPC Admission Source value set"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-arrivalStatus.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/arrivalStatus"/>
+        <display value="HSPC Patient Arrival Status"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-bpmeasmethoddevice.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/bpmeasmethoddevice"/>
+        <display value="Blood Pressure Measure Method Device"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-heightMeasMethodDevice.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/heightMeasMethodDevice"/>
+        <display value="Height Measure Method Device"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-heightPrecond.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/heightPrecond"/>
+        <display value="Height Precondition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-locationCondition.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/locationCondition"/>
+        <display value="HSPC Service Delivery Location Condition code system"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-nullValueReason.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/nullValueReason"/>
+        <display value="HSPC Null Value Reason code system"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-weightMeasMethodDevice.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/weightMeasMethodDevice"/>
+        <display value="Weight Measure Method Device"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/administrativeEncounterId"/>
+        <display value="Administrative encounter id"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/admitMedicationId"/>
+        <display value="Admit medication id"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/ambulatoryStatus"/>
+        <display value="Ambulatory status"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/arrivedByTransportation"/>
+        <display value="Arrived by transportation"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/associatedPrecondition"/>
+        <display value="Associated precondition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/bodyPosition"/>
+        <display value="Body position"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/chiefComplaintId"/>
+        <display value="Chief complaint indicator"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/communicationMode"/>
+        <display value="Communication mode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/confidentiality"/>
+        <display value="Confidentiality"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/contactPeriod"/>
+        <display value="Contact period"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/contraceptionProvisionMethod"/>
+        <display value="Contraception provision method"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/dataAbsentReason"/>
+        <display value="Data absent reason"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/dataOriginationMode"/>
+        <display value="Data origination mode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/deltaFlag"/>
+        <display value="Delta flag"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/departedByTransportation"/>
+        <display value="Departed by transportation"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/dischargeMedicationId"/>
+        <display value="Discharge medication id"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/focalSubject"/>
+        <display value="Focal subject"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/hospitalService"/>
+        <display value="Hospital service"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/organizationPeriod"/>
+        <display value="Organization period"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/preferenceInd"/>
+        <display value="Preference indicator"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/primaryInd"/>
+        <display value="Primary indicator"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/primaryInsuranceClassification"/>
+        <display value="Primary insurance classification"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/primaryLanguage"/>
+        <display value="Primary language"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/reasonCancelled"/>
+        <display value="Reason cancelled"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/reportingMethod"/>
+        <display value="Reporting method"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="Extension/vipLevel"/>
+        <display value="VIP level"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-contraceptiveChoiceAtExit.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-contraceptiveChoiceAtExit"/>
+        <display value="An observation of one&#39;s choice in contraception evaluated at the end of a visit."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-contraceptiveChoiceInitial.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-contraceptiveChoiceInitial"/>
+        <display value="An observation of one&#39;s choice in contraception at the beginning of a visit."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-contraceptiveCounseling.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-contraceptiveCounseling"/>
+        <display value="An education procedure that provides counseling in regards to contraception."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-counselingToAchievePregnancy.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-counselingToAchievePregnancy"/>
+        <display value="An education procedure that provides counseling to achieve pregnancy."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-coverage.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-coverage"/>
+        <display value="The FPAR profile of the Coverage resource."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-genEncounter.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-genEncounter"/>
+        <display value="The FPAR General Encounter profile of the Encounter resource."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-limitedEnglishProficiencyEval.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-limitedEnglishProficiencyEval"/>
+        <display value="An observation about an individual&#39;s ability to communicate in English."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-organization.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-organization"/>
+        <display value="The FPAR profile of the Organization resource."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-patient.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-patient"/>
+        <display value="The FPAR profile of the Patient resource."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-practitioner.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-practitioner"/>
+        <display value="The FPAR profile of the Practitioner resource."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-practitionerRole.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-practitionerRole"/>
+        <display value="The FPAR profile of the Practitioner resource."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-pregnancyIntentionEval.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-pregnancyIntentionEval"/>
+        <display value="An observation of an individual&#39;s intention to be or not be pregnant."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-fpar-pregnancyStatusEval.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/fpar-pregnancyStatusEval"/>
+        <display value="An observation of one&#39;s current state of pregnancy."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-annualHouseholdIncome.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-annualHouseholdIncome"/>
+        <display value="An observation of the income range for a household per year."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-BHcgPregSerplQl.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-BHcgPregSerplQl"/>
+        <display value="The observation Choriogonadotropin.beta subunit (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2110-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-BHcgSerplAcnc.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-BHcgSerplAcnc"/>
+        <display value="The observation Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma based on the LOINC code 21198-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-bodyWeight.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-bodyWeight"/>
+        <display value="An observation of an individual&#39;s weight."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-ChlamydiaDnaXxxQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-ChlamydiaDnaXxxQlPcr"/>
+        <display value="The observation Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia sp DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 35729-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachAndGcDnaCervixQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachAndGcDnaCervixQlPcr"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 45068-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachAndGcDnaGenitalQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachAndGcDnaGenitalQlPcr"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 44807-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachAndGcDnaUrQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachAndGcDnaUrQlPcr"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 44806-8"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachAndGcDnaXxxPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachAndGcDnaXxxPcr"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36903-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachAndGcDnaXxxQlBdna.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachAndGcDnaXxxQlBdna"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43406-8"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CtrachAndGCDNAXXXQlPCR.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CtrachAndGCDNAXXXQlPCR"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis+Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 36902-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachAndGcRrnaCervixQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaCervixQlPrb"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45067-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachAndGcRrnaGenitalQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaGenitalQlPrb"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 45069-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachAndGcRrnaUrQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaUrQlPrb"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Urine by DNA probe based on the LOINC code 45074-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachAndGcRrnaVagQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaVagQlPrb"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45070-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachAndGcRrnaXxxQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachAndGcRrnaXxxQlPrb"/>
+        <display value="The observation Chlamydia trachomatis+Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 45076-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachDnaCervMucusQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachDnaCervMucusQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21189-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachDnaGenitalQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachDnaGenitalQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6356-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachDnaUrQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachDnaUrQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 6357-8"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachDnaUrthQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachDnaUrthQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21191-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachDnaVagQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachDnaVagQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 45084-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachDnaXxxPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachDnaXxxPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Identifier] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47212-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachDnaXxxPcrAcnc.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachDnaXxxPcrAcnc"/>
+        <display value="The observation Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Units/volume] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49096-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachDnaXxxQlBdna.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachDnaXxxQlBdna"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43404-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachDnaXxxQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachDnaXxxQlPcr"/>
+        <display value="The observation Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 21613-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachL2DnaXxxQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachL2DnaXxxQlPcr"/>
+        <display value="The observation Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis L2 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 47211-8"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaCervixQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaCervixQlPcr"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50387-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaCervixQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaCervixQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Cervix by DNA probe based on the LOINC code 45078-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaGenitalFlQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaGenitalFlQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Genital fluid by DNA probe based on the LOINC code 23838-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaGenitalQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaGenitalQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Genital specimen by DNA probe based on the LOINC code 16600-9"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaUrQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaUrQlPcr"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 42931-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaUrQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaUrQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urine by DNA probe based on the LOINC code 16601-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaUrthQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaUrthQlPcr"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53925-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaUrthQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaUrthQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Urethra by DNA probe based on the LOINC code 21192-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaVagQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaVagQlPcr"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53926-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaVagQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaVagQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by DNA probe based on the LOINC code 45080-9"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaXxxQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaXxxQlPcr"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43304-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CTrachRrnaXxxQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CTrachRrnaXxxQlPrb"/>
+        <display value="The observation Chlamydia trachomatis rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 4993-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CytoCervix.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CytoCervix"/>
+        <display value="The observation Microscopic observation [Identifier] in Cervix by Cyto stain based on the LOINC code 10524-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CytoCvxVag.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CytoCvxVag"/>
+        <display value="The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain|Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain Narrative based on the LOINC code 19766-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CytoCvxVagCoded.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CytoCvxVagCoded"/>
+        <display value="The observation Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19765-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CytologyCmntCvxVagCytoImp.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CytologyCmntCvxVagCytoImp"/>
+        <display value="The observation Cytology study comment Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 19774-9"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CytologyCvxVagDocCyto.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CytologyCvxVagDocCyto"/>
+        <display value="The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain based on the LOINC code 47528-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-CytologyCvxVagDocThinPrep.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-CytologyCvxVagDocThinPrep"/>
+        <display value="The observation Cytology report of Cervical or vaginal smear or scraping Cyto stain.thin prep based on the LOINC code 47527-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-diastolicbp.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-diastolicbp"/>
+        <display value="An observation of an individual&#39;s diastolic blood pressure based on the LOINC code 8462-4."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-GenCategCvxVagCytoImp.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-GenCategCvxVagCytoImp"/>
+        <display value="The observation General categories [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|General categories [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19762-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-gravidity.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-gravidity"/>
+        <display value="The observation [#] Pregnancies based on the LOINC code 11996-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HcgPregSerplQl.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HcgPregSerplQl"/>
+        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Serum or Plasma based on the LOINC code 2118-8"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HcgPregSerQlIaRapid.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HcgPregSerQlIaRapid"/>
+        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Serum by Rapid immunoassay based on the LOINC code 80385-8"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HcgPregUrQl.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HcgPregUrQl"/>
+        <display value="The observation Choriogonadotropin (pregnancy test) [Presence] in Urine based on the LOINC code 2106-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HcgSerplAcnc.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HcgSerplAcnc"/>
+        <display value="The observation Choriogonadotropin [Units/volume] in Serum or Plasma based on the LOINC code 19080-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-height.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-height"/>
+        <display value="An observation for a person&#39;s height.  Based on the LOINC code 8302-2."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hiv1AbSerplbldQlEiaRapid.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hiv1AbSerplbldQlEiaRapid"/>
+        <display value="The observation HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood Qualitative by Rapid immunoassay|HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid test based on the LOINC code 68961-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hiv1AbSerQlIb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hiv1AbSerQlIb"/>
+        <display value="The observation HIV 1 Ab [Presence] in Serum by Immunoblot (IB) based on the LOINC code 5221-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hiv1And2AbSerQlEia.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hiv1And2AbSerQlEia"/>
+        <display value="The observation HIV 1+2 Ab [Presence] in Serum by Immunoassay|HIV 1+2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 31201-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hiv1RnaSerplPcrDl17Log.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hiv1RnaSerplPcrDl17Log"/>
+        <display value="The observation HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL|HIV 1 RNA [Log #/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 1.7 log copies/mL based on the LOINC code 48510-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hiv1RnaSerplPcrDl50.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hiv1RnaSerplPcrDl50"/>
+        <display value="The observation HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL|HIV 1 RNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 50 copies/mL based on the LOINC code 48511-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hiv1RnaXxxQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hiv1RnaXxxQlPcr"/>
+        <display value="The observation HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method|HIV 1 RNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 5018-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hiv2AbSerQlEia.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hiv2AbSerQlEia"/>
+        <display value="The observation HIV 2 Ab [Presence] in Serum by Immunoassay|HIV 2 Ab [Presence] in Serum or Plasma by Immunoassay based on the LOINC code 30361-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-householdSize.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-householdSize"/>
+        <display value="An observation of the number of individuals in a household."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hpv12HrTypesDnaTissQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hpv12HrTypesDnaTissQlPrb"/>
+        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+66 DNA [Presence] in Tissue by DNA probe based on the LOINC code 73959-9"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hpv16And18AgCervixQl.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hpv16And18AgCervixQl"/>
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Cervix based on the LOINC code 14503-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hpv16And18AgGenitalQl.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hpv16And18AgGenitalQl"/>
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Genital specimen based on the LOINC code 12223-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hpv16And18AgUrthQl.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hpv16And18AgUrthQl"/>
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Urethra based on the LOINC code 14506-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hpv16And18AgVagQl.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hpv16And18AgVagQl"/>
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Vaginal fluid based on the LOINC code 14504-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-Hpv16And18AgXxxQl.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-Hpv16And18AgXxxQl"/>
+        <display value="The observation Human papilloma virus 16+18 Ag [Presence] in Unspecified specimen based on the LOINC code 17400-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HpvCervix.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HpvCervix"/>
+        <display value="The observation Human papilloma virus identified in Cervix based on the LOINC code 11083-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HpvDnaCervixQlBdna.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HpvDnaCervixQlBdna"/>
+        <display value="The observation Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 6+11+16+18+31+33+35+39+42+43+44+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 38372-9"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HpvDnaCervixQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HpvDnaCervixQlPrb"/>
+        <display value="The observation Human papilloma virus DNA [Presence] in Cervix by DNA probe based on the LOINC code 44550-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HpvE6AndE7MrnaCervixQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HpvE6AndE7MrnaCervixQlPcr"/>
+        <display value="The observation Human papilloma virus E6+E7 mRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 69002-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HpvIHRisk1DnaCervixQlBdna.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HpvIHRisk1DnaCervixQlBdna"/>
+        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 30167-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HpvIHRisk1DnaXxxQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HpvIHRisk1DnaXxxQlPcr"/>
+        <display value="The observation Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+68 DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 49896-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HpvIHRisk4DnaCervixQlBdna.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HpvIHRisk4DnaCervixQlBdna"/>
+        <display value="The observation Human papilloma virus16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method|Human papilloma virus 16+18+31+33+35+39+45+51+52+56+58+59+66+68 DNA [Presence] in Cervix by Probe and signal amplification method based on the LOINC code 59420-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HpvIHRiskDnaCervixQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HpvIHRiskDnaCervixQlPrb"/>
+        <display value="The observation Human papilloma virus 16+18+31+33+35+45+51+52+56 DNA [Presence] in Cervix by DNA probe based on the LOINC code 21440-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HpvRrnaGenitalQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HpvRrnaGenitalQlPcr"/>
+        <display value="The observation Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 6514-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-HpvRrnaXxxQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-HpvRrnaXxxQlPcr"/>
+        <display value="The observation Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Human papilloma virus rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 6516-9"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaAgGenitalQlEia.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaAgGenitalQlEia"/>
+        <display value="The observation Neisseria gonorrhoeae Ag [Presence] in Genital specimen by Immunoassay based on the LOINC code 6487-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaCervixQlCult.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaCervixQlCult"/>
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture based on the LOINC code 688-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaDnaCervMucusQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaCervMucusQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Cervical mucus by Probe and target amplification method based on the LOINC code 21414-8"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaDnaGenitalQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaGenitalQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Genital specimen by Probe and target amplification method based on the LOINC code 47387-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaDnaUrQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaUrQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urine by Probe and target amplification method based on the LOINC code 21416-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaDnaUrthQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaUrthQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 21415-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaDnaVagQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaVagQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 32705-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaDnaXxxQlBdna.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaXxxQlBdna"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and signal amplification method based on the LOINC code 43403-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaDnaXxxQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaDnaXxxQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method|Neisseria gonorrhoeae DNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 24111-7"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaGenitalQlCult.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaGenitalQlCult"/>
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Genital specimen by Organism specific culture based on the LOINC code 691-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaGenLochiaQlCult.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaGenLochiaQlCult"/>
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Genital lochia by Organism specific culture based on the LOINC code 692-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaRrnaCervixQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Cervix by Probe and target amplification method based on the LOINC code 50388-8"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaRrnaCervixQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaCervixQlPrb"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Cervix by DNA probe based on the LOINC code 32198-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaRrnaUrthQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Urethra by Probe and target amplification method based on the LOINC code 53927-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaRrnaUrthQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaUrthQlPrb"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Urethra by DNA probe based on the LOINC code 32199-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaRrnaVagQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaVagQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by Probe and target amplification method based on the LOINC code 53879-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaRrnaXxxQlPcr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPcr"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method|Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by Probe and target amplification method based on the LOINC code 43305-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaRrnaXxxQlPrb.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaRrnaXxxQlPrb"/>
+        <display value="The observation Neisseria gonorrhoeae rRNA [Presence] in Unspecified specimen by DNA probe based on the LOINC code 5028-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaVagQlCult.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaVagQlCult"/>
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Vaginal fluid by Organism specific culture based on the LOINC code 693-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-NGonorrhoeaXxxQlCult.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-NGonorrhoeaXxxQlCult"/>
+        <display value="The observation Neisseria gonorrhoeae [Presence] in Unspecified specimen by Organism specific culture based on the LOINC code 698-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-parity.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-parity"/>
+        <display value="The observation [#] Parity based on the LOINC code 11977-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-sexLastThreeMonths.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-sexLastThreeMonths"/>
+        <display value="An observation to determine if an individual has engaged in sexual activity within the last three months."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-sexLastTwelveMonths.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-sexLastTwelveMonths"/>
+        <display value="An observation to determine if an individual has engaged in sexual activity within the last twelve months."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-smokingStatus.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-smokingStatus"/>
+        <display value="An observation about how much an individual smokes."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-StatOfAdqCvxVagCytoImp.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-StatOfAdqCvxVagCytoImp"/>
+        <display value="The observation Statement of adequacy [interpretation] of Cervical or vaginal smear or scraping by Cyto stain|Statement of adequacy [Interpretation] of Cervical or vaginal smear or scraping by Cyto stain based on the LOINC code 19764-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-StudyreportFindPtCvxVagDocCytology.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-StudyreportFindPtCvxVagDocCytology"/>
+        <display value="The observation Cytology Cervical or vaginal smear or scraping study based on the LOINC code 33717-0"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-systolicbp.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-systolicbp"/>
+        <display value="The observation of an individual&#39;s systolic blood pressure."/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hspc-ThinPrepCervix.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hspc-ThinPrepCervix"/>
+        <display value="The observation Microscopic observation [Identifier] in Cervix by Cyto stain.thin prep based on the LOINC code 18500-9"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-abnInt-CodedNom.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/abnInt-CodedNom"/>
+        <display value="Abnormal Interpretation Coded Nom"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-abnInt-NumericNom.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/abnInt-NumericNom"/>
+        <display value="Abnormal Interpretation Numeric Nom"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-arrivalTransportMode.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/arrivalTransportMode"/>
+        <display value="HSPC Arrival Transport Mode value set"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/bdVerificationMethod"/>
+        <display value="HSPC Verification Method Value Set"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-bpmeasbodylocationprecoord.hmtl"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/bpmeasbodylocationprecoord"/>
+        <display value="Blood Pressure Measure Body Location Precoordinated"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/chlamydiaTrachomatisAndNeisseriaGonorrhoeaeCombinedTests"/>
+        <display value="Chlamydia Trachomatis And Neisseria Gonorrhoeae Combined Tests"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-chlamydiaTrachomatisTests.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/chlamydiaTrachomatisTests"/>
+        <display value="Chlamydia Trachomatis Tests"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-communicationMode.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/communicationMode"/>
+        <display value="HSPC Communication Mode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/contraceptionProvisionMethod"/>
+        <display value="Contraception Provision Method"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-contraceptiveChoice.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/contraceptiveChoice"/>
+        <display value="Contraceptive Choice"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-coverageType.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/coverageType"/>
+        <display value="Coverage Type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-deltaFlag-numericNom.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/deltaFlag-numericNom"/>
+        <display value="Delta Flag Numeric Nom"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-departureTransportMode.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/departureTransportMode"/>
+        <display value="HSPC Departure Transport Mode value set"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-dietType.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dietType"/>
+        <display value="HSPC Diet Type value set"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-encounterPriority.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/encounterPriority"/>
+        <display value="HSPC Encounter Priority value set"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-encounterReason.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/encounterReason"/>
+        <display value="HSPC Encounter Reason"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-englishProficiency.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/englishProficiency"/>
+        <display value="English Proficiency"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-focalSubject.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/focalSubject"/>
+        <display value="Focal Subject"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-fparAnnualHouseholdIncomeRanges.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/fparAnnualHouseholdIncomeRanges"/>
+        <display value="FPAR Annual Household Income Ranges"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/fparDetectedNonDetectedEqInd"/>
+        <display value="FPAR Detected Non Detected Equivalent Indeterminate"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-fparDetectedNotDetected.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/fparDetectedNotDetected"/>
+        <display value="FPAR Detected/Not detected"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-fparHIV1RnaDetectedNotDetected.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/fparHIV1RnaDetectedNotDetected"/>
+        <display value="FPAR HIV1 RNA Detected Not Detected"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-fparHIVAbPosNegEqInd.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/fparHIVAbPosNegEqInd"/>
+        <display value="FPAR HIV Ab Positive Negative Equivalent Indeterminate"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-fparHIVAbReactiveNonReactive.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/fparHIVAbReactiveNonReactive"/>
+        <display value="FPAR HIV Ab Reactive/Non reactive"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-fparProviderRole.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/fparProviderRole"/>
+        <display value="FPAR Provider Role"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-fparSmokingStatus.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/fparSmokingStatus"/>
+        <display value="FPAR Smoking Status"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-hivTests.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/hivTests"/>
+        <display value="HIV Tests"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-humanPapillomaVirusTests.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/humanPapillomaVirusTests"/>
+        <display value="Human Papilloma Virus Tests"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-LabNullFlavor.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/LabNullFlavor"/>
+        <display value="HSPC Lab Null Flavor"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-negativePositive.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/negativePositive"/>
+        <display value="Negative/Positive"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-neisseriaGonorrhoeaeTests.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/neisseriaGonorrhoeaeTests"/>
+        <display value="Neisseria Gonorrhoeae Tests"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-observationFindings.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/observationFindings"/>
+        <display value="HSPC Findings Value Set Definition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-observation-weightPrecond.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/observation-weightPrecond"/>
+        <display value="Weight Precondition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-OrdinalLabCodes.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/OrdinalLabCodes"/>
+        <display value="Ordinal Lab Codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-organismDetectionOrdLabResult.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/organismDetectionOrdLabResult"/>
+        <display value="Organism Detection Ordinal Lab Result"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-organizationtype.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/organizationtype"/>
+        <display value="HSPC Organization Type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-practitioner-providerPractitionerSpecialty.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/practitioner-providerPractitionerSpecialty"/>
+        <display value="HSPC ProviderPractitioner Specialty"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-pregnancyIntention.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/pregnancyIntention"/>
+        <display value="Pregnancy Intention"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-pregnancyStatus.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/pregnancyStatus"/>
+        <display value="Pregnancy Status"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-pregnancyStatusReportingMethod.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/pregnancyStatusReportingMethod"/>
+        <display value="Pregnancy Status Reporting Method"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-papSmearTests.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/pregnancyTests"/>
+        <display value="Pregnancy Tests"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-primaryInsuranceClassification.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/primaryInsuranceClassification"/>
+        <display value="Primary Insurance Classification"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-QuantitativeLabCodes.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/QuantitativeLabCodes"/>
+        <display value="HSPC Quantitative Labs"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-reasonCancelled.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/reasonCancelled"/>
+        <display value="HSPC Reason Cancelled value set"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-reasonNoContraceptiveChosen.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/reasonNoContraceptiveChosen"/>
+        <display value="Reason No Contraceptive Chosen"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-transportPriority.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/transportPriority"/>
+        <display value="Transport Priority"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-viplevel.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/viplevel"/>
+        <display value="HSPC VIP Level value set"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-virginNonVirgin.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/virginNonVirgin"/>
+        <display value="Virgin/Non Virgin"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-weightmassunits.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/weightmassunits"/>
+        <display value="Weight Mass Units"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-yesNo.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/yesNo"/>
+        <display value="HSPC Yes/No value Set"/>
+      </sourceReference>
+    </resource>
+  </package>
+</ImplementationGuide>

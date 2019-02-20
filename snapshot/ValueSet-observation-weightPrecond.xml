@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="observation-weightPrecond"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HSPC Body Weight Associated Precondition</h2><div><p>SNOMED CT code system values descending from the following:'body position finding' 9851009</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=445541000">445541000</a></td><td>Dry body weight (observable entity)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=424927000">424927000</a></td><td>Body weight with shoes (observable entity)</td><td/></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=425024002">425024002</a></td><td>Body weight without shoes (observable entity)</td><td/></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-extensible">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://hl7.org/fhir/fpar/ValueSet/observation-weightPrecond"/>
+  <version value="0.01"/>
+  <name value="HSPC Body Weight Associated Precondition"/>
+  <status value="draft"/>
+  <date value="2015-05-19T00:00:00-04:00"/>
+  <publisher value="HSPC"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://healthcaresoa.org"/>
+    </telecom>
+  </contact>
+  <description value="SNOMED CT code system values descending from the following:&#39;body position finding&#39; 9851009"/>
+  <extensible value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="445541000"/>
+        <display value="Dry body weight (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="424927000"/>
+        <display value="Body weight with shoes (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="425024002"/>
+        <display value="Body weight without shoes (observable entity)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

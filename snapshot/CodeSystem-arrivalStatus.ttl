@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "arrivalStatus"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HSPC Patient Arrival Status</h2><div><p>The codes that describe whether or not the patient has arrived at the specified location for the encounter.</p>\n</div><p><b>Copyright Statement:</b> This value set includes content from and copyrighted by Intermountain Healthcare HDD</p><p>This code system http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">2000000339<a name=\"arrivalStatus-2000000339\"> </a></td><td>Arrived</td><td>The patient is present at the service delivery location.</td></tr><tr><td style=\"white-space:nowrap\">51084650<a name=\"arrivalStatus-51084650\"> </a></td><td>In transit</td><td>The patient is currently travelling to the service delivery location.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus"];
+  fhir:CodeSystem.name [ fhir:value "HSPC Patient Arrival Status"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2019-02-15T12:55:20-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "The codes that describe whether or not the patient has arrived at the specified location for the encounter."];
+  fhir:CodeSystem.copyright [ fhir:value "This value set includes content from and copyrighted by Intermountain Healthcare HDD"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "2000000339" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Arrived" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient is present at the service delivery location." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "51084650" ];
+     fhir:CodeSystem.concept.display [ fhir:value "In transit" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient is currently travelling to the service delivery location." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/fpar/CodeSystem/arrivalStatus.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/fpar/CodeSystem/arrivalStatus.ttl> .
+
+# -------------------------------------------------------------------------------------
+

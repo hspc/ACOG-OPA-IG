@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fparProviderRole",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FPAR Provider Role value set</h2><div><p>Select SNOMED CT codes.  A set of codes that describe the role played by the provider for the FPAR encounter.</p>\n</div><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=112247003\">112247003</a></td><td>Medical doctor (occupation)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=223366009\">223366009</a></td><td>Healthcare professional (occupation)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=224535009\">224535009</a></td><td>Registered nurse (occupation)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=224571005\">224571005</a></td><td>Nurse practitioner (occupation)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=309453006\">309453006</a></td><td>Registered midwife (occupation)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449161006\">449161006</a></td><td>Physician assistant (occupation)</td><td/></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-extensible",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/fpar/ValueSet/fparProviderRole",
+  "version": "0.01",
+  "name": "FPAR Provider Role value set",
+  "status": "draft",
+  "date": "2018-03-29T00:00:00-04:00",
+  "publisher": "Family Planning Annual Report",
+  "description": "Select SNOMED CT codes.  A set of codes that describe the role played by the provider for the FPAR encounter.",
+  "immutable": true,
+  "copyright": "TBD",
+  "extensible": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "112247003",
+            "display": "Medical doctor (occupation)"
+          },
+          {
+            "code": "223366009",
+            "display": "Healthcare professional (occupation)"
+          },
+          {
+            "code": "224535009",
+            "display": "Registered nurse (occupation)"
+          },
+          {
+            "code": "224571005",
+            "display": "Nurse practitioner (occupation)"
+          },
+          {
+            "code": "309453006",
+            "display": "Registered midwife (occupation)"
+          },
+          {
+            "code": "449161006",
+            "display": "Physician assistant (occupation)"
+          }
+        ]
+      }
+    ]
+  }
+}
