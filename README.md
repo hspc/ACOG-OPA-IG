@@ -14,6 +14,7 @@ The FHIR repository for the FPAR project
 
 ## Notes:
 
+  * Open output/index.html to view the results
   * Build output log: http://build.fhir.org/ig/hspc/ACOG-OPA-IG/build.log
   * Use "java -jar org.hl7.fhir.igpublisher.jar -?" to get cli options from the tool.
 
