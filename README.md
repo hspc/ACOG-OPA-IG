@@ -6,7 +6,7 @@ The FHIR repository for the FPAR project
   * Download the FHIR IG Publisher JAR file from http://build.fhir.org/downloads.html
   * (direct link to the publisher jar: http://build.fhir.org/org.hl7.fhir.igpublisher.jar)
   * Put the publisher jar file in the root of this cloned repository
-  * run publish.sh (unix) or publish.bat (windows)
+  * run utils/publish.sh (unix) or utils/publish.bat (windows)
   * Note: The build process creates a number of directories (qa, temp, output, txCache)
 
 ## Latest IG build available at: http://build.fhir.org/ig/hspc/ACOG-OPA-IG/
